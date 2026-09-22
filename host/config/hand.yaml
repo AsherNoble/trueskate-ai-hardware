@@ -1,0 +1,46 @@
+# TrueSkate-AI hand -- one axis for now.
+#
+# The hand is hybrid by design: GM3506 + SimpleFOC on the axes that need
+# real control, cheap servos later for the beautification fingers. Each axis
+# names its own motor_type, so the two families coexist here and in one Hand.
+
+name: trueskate-hand
+motor_type_note: per-axis, see below
+
+# Serial port of the Teensy. Unused while the protocol is a draft.
+port: null
+baudrate: 115200
+
+# Where the phone's screen sits in the rig, in millimetres. origin is the
+# screen's normalised (0, 0) corner; x_axis and y_axis are the full-width and
+# full-height vectors from it, so a rotated phone needs no separate angle.
+#
+# PLACEHOLDER -- not yet measured on the rig.
+screen:
+  origin: [0.0, 0.0]
+  x_axis: [68.0, 0.0]
+  y_axis: [0.0, 148.0]
+
+axes:
+  - name: index
+    motor_type: simplefoc
+    # Radians at the joint. PLACEHOLDER -- no mechanism built yet, so these
+    # are not a measured range of travel.
+    angle_limits: [-1.57, 1.57]
+    # Reachable rectangle in the same rig frame, millimetres. PLACEHOLDER.
+    workspace:
+      x_min: 0.0
+      x_max: 68.0
+      y_min: 0.0
+      y_max: 148.0
+
+  # Second SimpleFOC finger. Uncomment once the axis exists in firmware:
+  # adding it there is one AxisConfig entry (firmware/src/axis_config.h).
+  # - name: middle
+  #   motor_type: simplefoc
+  #   angle_limits: [-1.57, 1.57]
+
+  # Beautification fingers, cheap servos, driven as their own motor family.
+  # - name: ring
+  #   motor_type: servo
+  #   angle_limits: [0.0, 1.57]

@@ -1,0 +1,25 @@
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+.vscode/
+firmware/.pio/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# uv / virtualenvs
+.venv/
+venv/
+
+# uv.lock is committed: the host is an application, not a library, so a
+# reproducible resolve is worth more than floating deps.
+
+# OS
+.DS_Store
