@@ -1,0 +1,48 @@
+ERC report (2026-09-22T23:50:37, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[lib_symbol_mismatch]: Symbol 'PWR_FLAG' doesn't match copy in library 'power'
+    ; warning
+    @(304.80 mm, 50.80 mm): Symbol #FLG01 [PWR_FLAG]
+[lib_symbol_mismatch]: Symbol 'PWR_FLAG' doesn't match copy in library 'power'
+    ; warning
+    @(304.80 mm, 76.20 mm): Symbol #FLG02 [PWR_FLAG]
+[lib_symbol_mismatch]: Symbol 'PWR_FLAG' doesn't match copy in library 'power'
+    ; warning
+    @(304.80 mm, 101.60 mm): Symbol #FLG03 [PWR_FLAG]
+[lib_symbol_mismatch]: Symbol 'PWR_FLAG' doesn't match copy in library 'power'
+    ; warning
+    @(304.80 mm, 127.00 mm): Symbol #FLG04 [PWR_FLAG]
+
+***** Sheet /01 / Socketed Teensy and signal allocation/
+
+***** Sheet /02 / Normally-closed hardware kill/
+
+***** Sheet /03 / Axis 1: index_curl_1/
+
+***** Sheet /04 / Axis 2: index_curl_2/
+
+***** Sheet /05 / Axis 3: index_splay/
+
+***** Sheet /06 / Axis 4: middle_curl_1/
+
+***** Sheet /07 / Axis 5: middle_curl_2/
+
+***** Sheet /08 / Axis 6: middle_splay/
+
+***** Sheet /09 / Power entry and 5V supply - component qualification pending/
+
+***** Sheet /10 / STS3215 12V half-duplex interface/
+
+***** Sheet /11 / Ground star, expansion and decoupling/
+
+***** Sheet /12 / Test points and release holds/
+
+ ** ERC messages: 4  Errors 0  Warnings 4
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

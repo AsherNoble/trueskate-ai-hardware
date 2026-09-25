@@ -21,18 +21,23 @@ sketch in `firmware/bringup/` that established it.
 Encoder VDD is **3.3V**. A 5V test changed nothing and risks exceeding the
 chip's limits if the breakout is strapped for 3.3V operation.
 
-### Encoder wire colours
+### Encoder harness
 
-Placeholder — fill in from the harness.
+Connector contact order read from the JST breakout, pin 1 being the square pad
+with the traces running straight from socket to header. Wire colours are from the
+harness that passed phase 1.
 
-| Colour | Signal | Teensy pin |
-|---|---|---|
-| | CSn | 10 |
-| | CLK | 13 |
-| | MOSI / DI | 11 |
-| | MISO / DO | 12 |
-| | VDD | 3.3V |
-| | GND | GND |
+| JST contact | Signal | Colour | Teensy pin |
+|---|---|---|---|
+| 1 | CLK | purple | 13 |
+| 2 | MISO / DO | green | 12 |
+| 3 | MOSI / DI | yellow | 11 |
+| 4 | CSn | black | 10 |
+| 5 | VDD 3.3V | red | 3.3V |
+| 6 | GND | white | GND |
+
+**CSn is contact 4, not contact 1.** An earlier draft of the carrier assumed CSn
+first, which shifted every signal by one position.
 
 ## SimpleFOC 2.4
 

@@ -1,0 +1,101 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-25T16:48:43",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25",
+            "violations": []
+        },
+        {
+            "path": "/01 / Socketed Teensy and signal allocation/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/c0673a98-1a97-57ff-b79d-0570c0f88eb5",
+            "violations": []
+        },
+        {
+            "path": "/02 / Normally-closed hardware kill/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/ffbda2b6-1dc1-502e-83d5-debdb0880583",
+            "violations": []
+        },
+        {
+            "path": "/03 / Axis 1: index_curl_1/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/1fc653d0-f27f-55e2-8973-0e83b9d9c682",
+            "violations": []
+        },
+        {
+            "path": "/04 / Axis 2: index_curl_2/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/dcdfa8e7-c0b4-5e6c-83c3-2665524ac41c",
+            "violations": []
+        },
+        {
+            "path": "/05 / Axis 3: index_splay/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/104f18a7-3092-5217-9dc3-c3aa0236c046",
+            "violations": []
+        },
+        {
+            "path": "/06 / Axis 4: middle_curl_1/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/e30136b7-9c2d-5d77-b41c-fd10a214baa8",
+            "violations": []
+        },
+        {
+            "path": "/07 / Axis 5: middle_curl_2/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/daca2ca2-f10e-5dfd-9143-bc498358d8e7",
+            "violations": []
+        },
+        {
+            "path": "/08 / Axis 6: middle_splay/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/4e770638-ce82-5c47-8de1-2775d826b825",
+            "violations": []
+        },
+        {
+            "path": "/09 / Power entry and 5V supply/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/efb3d083-a125-51c9-9232-e996dbbbc32c",
+            "violations": []
+        },
+        {
+            "path": "/10 / STS3215 12V half-duplex interface/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/4f10f900-b1cd-58f8-ba1e-1c5cceb1c160",
+            "violations": []
+        },
+        {
+            "path": "/11 / Ground star, expansion and decoupling/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/f6a1fbc8-adc5-5c3d-818e-8f5c5d9bdae1",
+            "violations": []
+        },
+        {
+            "path": "/12 / Test points and release holds/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/9295910a-1af7-56f8-8696-94096dee83db",
+            "violations": []
+        },
+        {
+            "path": "/13 / Rail and driver-enable indicators/",
+            "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/9f9b62de-4b78-555c-8499-b97ee0d9a2a8",
+            "violations": []
+        }
+    ],
+    "source": "trueskate-main-v1.kicad_sch"
+}

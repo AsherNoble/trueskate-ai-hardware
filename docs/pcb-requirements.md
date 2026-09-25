@@ -65,7 +65,7 @@ Needs a pin-map audit before schematic. Constraints:
 
 | Connection | Connector | Notes |
 |---|---|---|
-| Encoder cable | JST-SH 1.0 mm, 6-pin, on the board | Cable plugs straight in. No breakout board |
+| Encoder cable | JST-SH 1.0 mm, 6-pin, on the board | Cable plugs straight in. No breakout board. Contact order **verified**: 1 CLK, 2 MISO, 3 MOSI, 4 CSn, 5 VDD 3.3 V, 6 GND |
 | Motor phases | 3-way terminal per axis | Phase order doesn't matter |
 | SimpleFOC Mini | Sockets for the 2×5 control header and 1×3 phases | Power pads are 3.81 mm pitch, off the 2.54 mm grid. Use the Mini's open-source KiCad footprint |
 | Wrist servo | Feetech 3-pin | Verify signal level: Teensy pins are not 5V tolerant |
@@ -101,6 +101,11 @@ Needs a pin-map audit before schematic. Constraints:
 
 - Test points: 12V, 5V, 3.3V, GND, each SPI line.
 - LEDs: power rails, per-axis enable.
+- **Before plugging in any encoder on a newly assembled board**: power up and
+  meter each encoder socket's contact 5 against contact 6 for 3.3 V, and confirm
+  contact 6 is continuous with board ground. Those two contacts are the ones that
+  can destroy a sensor; contacts 1–4 can only fail to read. See
+  [hardware checks](pcb/hardware-check.md).
 - Bring up one axis at a time.
 
 ## 12. Open decisions

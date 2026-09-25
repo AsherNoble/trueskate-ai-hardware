@@ -1,0 +1,25 @@
+{
+  "status": "REVIEW DRAFT - NOT FOR FABRICATION",
+  "board_mm": [160, 120],
+  "layers": 2,
+  "copper_oz": 1,
+  "axes": [
+    {"name": "index_curl_1", "pwm": [4, 5, 6], "enable": 16, "cs": 26},
+    {"name": "index_curl_2", "pwm": [2, 22, 23], "enable": 17, "cs": 27},
+    {"name": "index_splay", "pwm": [7, 36, 29], "enable": 20, "cs": 32},
+    {"name": "middle_curl_1", "pwm": [24, 0, 25], "enable": 21, "cs": 38},
+    {"name": "middle_curl_2", "pwm": [3, 33, 37], "enable": 30, "cs": 39},
+    {"name": "middle_splay", "pwm": [8, 9, 28], "enable": 31, "cs": 40}
+  ],
+  "spi0": {"mosi": 11, "miso": 12, "sck": 13},
+  "wrist_serial8": {"rx": 34, "tx": 35, "tx_enable": 41},
+  "daughter_i2c": {"sda": 18, "scl": 19},
+  "kill_sense": 10,
+  "spare_pwm": [1, 14, 15],
+  "encoder_provisional_pin_order": ["CSn", "CLK", "MISO", "MOSI", "3V3", "GND"],
+  "mini_source_commit": "848e8ece46d045ac24283e2d6ee9ea4ba8ef95d5",
+  "mini_power_connection": "APPROVED: short paired wires to existing Mini screw terminals",
+  "encoder_confirmation": "AS5048A chip confirmed in user photos; six-contact cable mapping, far-end orientation and 3.3V board strapping PENDING",
+  "kill_reset_decision": "OPEN: user requested flagging the choice for now; non-latching draft is NOT a release approval",
+  "mini_physical_fit": "Downward male headers confirmed in user photo; revision and socket spacing PENDING paper-fit check; source power pitch 4.953 mm differs from described 3.81 mm"
+}

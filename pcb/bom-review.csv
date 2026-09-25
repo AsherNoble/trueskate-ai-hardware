@@ -1,0 +1,150 @@
+Reference,Value,Footprint,LCSC,Assembly,Estimated USD each,Qualification / notes
+J1,Teensy 4.1 FEMALE 1x24,Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical,,Hand,1.5,"24x 2.54 mm; physical pin legend: GND,0,1,2,3,4,5,6,7,8,9,10,11,12,3V3,24,25,26,27,28,29,30,31,32"
+J2,Teensy 4.1 FEMALE 1x24,Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical,,Hand,1.5,"24x 2.54 mm; physical pin legend: VIN,GND,3V3,23,22,21,20,19,18,17,16,15,14,13,GND,41,40,39,38,37,36,35,34,33"
+J3,VUSB from isolated Teensy pad,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,,Hand,0.15,Review candidate; see sourcing.md
+J4,NC KILL SWITCH,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,,Hand,0.15,Review candidate; see sourcing.md
+R1,1k,Resistor_SMD:R_0603_1608Metric,C21190,JLCPCB,0.01,Review candidate; see sourcing.md
+R2,10k,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+C1,1nF 50V,Capacitor_SMD:C_0603_1608Metric,C1588,JLCPCB,0.015,Review candidate; see sourcing.md
+U3,SN74LVC1G17DBVR,Package_TO_SOT_SMD:SOT-23-5,C7836,JLCPCB,0.1696,Review candidate; see sourcing.md
+C2,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+U1,SN74LVC08APWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,C465737,JLCPCB,0.3759,Review candidate; see sourcing.md
+C3,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+U2,SN74LVC08APWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,C465737,JLCPCB,0.3759,Review candidate; see sourcing.md
+C4,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+J11,Mini v1.0 FEMALE sockets,TrueSkate:Mini_v1_Sockets,,Hand,0.7,Socket set: 2x5 plus 1x3; geometry approval pending
+J21,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,Review candidate; see sourcing.md
+J31,ENCODER JST-SH 6p,Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical,C160392,JLCPCB,0.349,CLK MISO MOSI CSn VDD GND verified on bench; footprint contact-1 orientation still to confirm on the fab drawing
+R11,10k EN boot pulldown,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R21,10k EN output pulldown,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R31,10k CS idle pullup,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R41,33R CS source damping,Resistor_SMD:R_0603_1608Metric,C23140,JLCPCB,0.01,Review candidate; see sourcing.md
+C11,EEUFR1V102B 1000uF 35V,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,Review candidate; see sourcing.md
+C21,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+J41,MINI POWER: +12V / GND,TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal,,Hand,0.8,User approved short paired wires; main-board terminal independent of Mini pad pitch
+J12,Mini v1.0 FEMALE sockets,TrueSkate:Mini_v1_Sockets,,Hand,0.7,Socket set: 2x5 plus 1x3; geometry approval pending
+J22,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,Review candidate; see sourcing.md
+J32,ENCODER JST-SH 6p,Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical,C160392,JLCPCB,0.349,CLK MISO MOSI CSn VDD GND verified on bench; footprint contact-1 orientation still to confirm on the fab drawing
+R12,10k EN boot pulldown,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R22,10k EN output pulldown,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R32,10k CS idle pullup,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R42,33R CS source damping,Resistor_SMD:R_0603_1608Metric,C23140,JLCPCB,0.01,Review candidate; see sourcing.md
+C12,EEUFR1V102B 1000uF 35V,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,Review candidate; see sourcing.md
+C22,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+J42,MINI POWER: +12V / GND,TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal,,Hand,0.8,User approved short paired wires; main-board terminal independent of Mini pad pitch
+J13,Mini v1.0 FEMALE sockets,TrueSkate:Mini_v1_Sockets,,Hand,0.7,Socket set: 2x5 plus 1x3; geometry approval pending
+J23,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,Review candidate; see sourcing.md
+J33,ENCODER JST-SH 6p,Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical,C160392,JLCPCB,0.349,CLK MISO MOSI CSn VDD GND verified on bench; footprint contact-1 orientation still to confirm on the fab drawing
+R13,10k EN boot pulldown,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R23,10k EN output pulldown,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R33,10k CS idle pullup,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R43,33R CS source damping,Resistor_SMD:R_0603_1608Metric,C23140,JLCPCB,0.01,Review candidate; see sourcing.md
+C13,EEUFR1V102B 1000uF 35V,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,Review candidate; see sourcing.md
+C23,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+J43,MINI POWER: +12V / GND,TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal,,Hand,0.8,User approved short paired wires; main-board terminal independent of Mini pad pitch
+J14,Mini v1.0 FEMALE sockets,TrueSkate:Mini_v1_Sockets,,Hand,0.7,Socket set: 2x5 plus 1x3; geometry approval pending
+J24,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,Review candidate; see sourcing.md
+J34,ENCODER JST-SH 6p,Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical,C160392,JLCPCB,0.349,CLK MISO MOSI CSn VDD GND verified on bench; footprint contact-1 orientation still to confirm on the fab drawing
+R14,10k EN boot pulldown,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R24,10k EN output pulldown,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R34,10k CS idle pullup,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R44,33R CS source damping,Resistor_SMD:R_0603_1608Metric,C23140,JLCPCB,0.01,Review candidate; see sourcing.md
+C14,EEUFR1V102B 1000uF 35V,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,Review candidate; see sourcing.md
+C24,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+J44,MINI POWER: +12V / GND,TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal,,Hand,0.8,User approved short paired wires; main-board terminal independent of Mini pad pitch
+J15,Mini v1.0 FEMALE sockets,TrueSkate:Mini_v1_Sockets,,Hand,0.7,Socket set: 2x5 plus 1x3; geometry approval pending
+J25,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,Review candidate; see sourcing.md
+J35,ENCODER JST-SH 6p,Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical,C160392,JLCPCB,0.349,CLK MISO MOSI CSn VDD GND verified on bench; footprint contact-1 orientation still to confirm on the fab drawing
+R15,10k EN boot pulldown,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R25,10k EN output pulldown,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R35,10k CS idle pullup,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R45,33R CS source damping,Resistor_SMD:R_0603_1608Metric,C23140,JLCPCB,0.01,Review candidate; see sourcing.md
+C15,EEUFR1V102B 1000uF 35V,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,Review candidate; see sourcing.md
+C25,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+J45,MINI POWER: +12V / GND,TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal,,Hand,0.8,User approved short paired wires; main-board terminal independent of Mini pad pitch
+J16,Mini v1.0 FEMALE sockets,TrueSkate:Mini_v1_Sockets,,Hand,0.7,Socket set: 2x5 plus 1x3; geometry approval pending
+J26,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,Review candidate; see sourcing.md
+J36,ENCODER JST-SH 6p,Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical,C160392,JLCPCB,0.349,CLK MISO MOSI CSn VDD GND verified on bench; footprint contact-1 orientation still to confirm on the fab drawing
+R16,10k EN boot pulldown,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R26,10k EN output pulldown,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R36,10k CS idle pullup,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R46,33R CS source damping,Resistor_SMD:R_0603_1608Metric,C23140,JLCPCB,0.01,Review candidate; see sourcing.md
+C16,EEUFR1V102B 1000uF 35V,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,Review candidate; see sourcing.md
+C26,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+J46,MINI POWER: +12V / GND,TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal,,Hand,0.8,User approved short paired wires; main-board terminal independent of Mini pad pitch
+J5,12V INPUT 5.08mm >=10A,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,Hand,1,Review candidate; see sourcing.md
+F1,5A time-delay fuse / VERIFY,Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open,,Hand,1.8,Review candidate; see sourcing.md
+Q1,FQP47P06 reverse-polarity,Package_TO_SOT_THT:TO-220-3_Vertical,,Hand,1.5,Review candidate; see sourcing.md
+R3,100k,Resistor_SMD:R_0603_1608Metric,C25803,JLCPCB,0.01,Review candidate; see sourcing.md
+D3,1N4742A 12V gate clamp,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,,Hand,0.1,"1=K, 2=A"
+U4,AP63205WU-7 fixed 5V,Package_TO_SOT_SMD:TSOT-23-6,C2071056,JLCPCB,0.4337,Review candidate; see sourcing.md
+L1,SRN6045TA-4R7M 4.7uH,Inductor_SMD:L_Bourns_SRN6045TA,C2044594,JLCPCB,0.3411,4.5A rated / 6.8A saturation; 680 in LCSC listing
+C5,10uF 50V X7R,Capacitor_SMD:C_1210_3225Metric,C432929,JLCPCB,0.2802,Review candidate; see sourcing.md
+C6,100nF bootstrap,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+C7,22uF 25V X5R,Capacitor_SMD:C_1206_3216Metric,C12891,JLCPCB,0.1747,Review candidate; see sourcing.md
+C8,22uF 25V X5R,Capacitor_SMD:C_1206_3216Metric,C12891,JLCPCB,0.1747,Review candidate; see sourcing.md
+D1,SS14 Schottky,Diode_SMD:D_SMA,C2480,JLCPCB,0.06,"1=K cathode (stripe), 2=A anode"
+D2,SS14 Schottky,Diode_SMD:D_SMA,C2480,JLCPCB,0.06,"1=K cathode (stripe), 2=A anode"
+J6,WRIST: GND / 12V / DATA,Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,,Hand,0.3,Confirm Feetech cable housing before release
+U5,SN74AHCT1G125DBVR TX,Package_TO_SOT_SMD:SOT-23-5,C7484,JLCPCB,0.12,Review candidate; see sourcing.md
+U6,SN74LVC1G125DBVR RX,Package_TO_SOT_SMD:SOT-23-5,C23654,JLCPCB,0.0992,Review candidate; see sourcing.md
+Q3,MMBT3904 transmit enable,Package_TO_SOT_SMD:SOT-23,C20526,JLCPCB,0.02,Review candidate; see sourcing.md
+R4,10k,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R58,10k TX boot pulldown,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R59,100k bus off-state bias,Resistor_SMD:R_0603_1608Metric,C25803,JLCPCB,0.01,Review candidate; see sourcing.md
+R60,10k UART idle pullup,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R5,100k,Resistor_SMD:R_0603_1608Metric,C25803,JLCPCB,0.01,Review candidate; see sourcing.md
+R6,10k,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R7,100R bus series,Resistor_SMD:R_0603_1608Metric,C22775,JLCPCB,0.01,Review candidate; see sourcing.md
+R8,2.2k bus idle pullup / DNP,Resistor_SMD:R_0603_1608Metric,C4190,DNP / do not populate,0,DO NOT POPULATE pending servo bus bias and powered-off injection test.
+Q2,FQP47P06 servo power switch,Package_TO_SOT_THT:TO-220-3_Vertical,,Hand,1.5,Review candidate; see sourcing.md
+Q4,MMBT3904 kill power control,Package_TO_SOT_SMD:SOT-23,C20526,JLCPCB,0.02,Review candidate; see sourcing.md
+R9,10k gate sink,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R51,100k gate off,Resistor_SMD:R_0603_1608Metric,C25803,JLCPCB,0.01,Review candidate; see sourcing.md
+R52,10k,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB,0.01,Review candidate; see sourcing.md
+R53,100k,Resistor_SMD:R_0603_1608Metric,C25803,JLCPCB,0.01,Review candidate; see sourcing.md
+NT1,GROUND STAR / dedicated copper,TrueSkate:GroundStar,,PCB copper,0,Review candidate; see sourcing.md
+J7,FUTURE I2C / 3V3 ONLY,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,,Hand,0.15,Review candidate; see sourcing.md
+R54,4.7k,Resistor_SMD:R_0603_1608Metric,C23162,JLCPCB,0.01,Review candidate; see sourcing.md
+R55,4.7k,Resistor_SMD:R_0603_1608Metric,C23162,JLCPCB,0.01,Review candidate; see sourcing.md
+FB1,BLM21PG221SN1D ferrite,Inductor_SMD:L_0805_2012Metric,C85840,JLCPCB,0.04,Review candidate; see sourcing.md
+J8,FINGERTIP 1 GND,Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm,,Hand,0,Solder terminal; strain-relieve wire
+FB2,BLM21PG221SN1D ferrite,Inductor_SMD:L_0805_2012Metric,C85840,JLCPCB,0.04,Review candidate; see sourcing.md
+J9,FINGERTIP 2 GND,Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm,,Hand,0,Solder terminal; strain-relieve wire
+R56,33R source damping,Resistor_SMD:R_0603_1608Metric,C23140,JLCPCB,0.01,Review candidate; see sourcing.md
+R57,33R source damping,Resistor_SMD:R_0603_1608Metric,C23140,JLCPCB,0.01,Review candidate; see sourcing.md
+C31,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+C32,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+C33,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+C34,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+C35,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+C36,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+C37,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+C38,100nF 50V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB,0.015,Review candidate; see sourcing.md
+TP1,GND,TestPoint:TestPoint_Pad_D1.5mm,,PCB copper,0,Review candidate; see sourcing.md
+TP2,12V_PROTECTED,TestPoint:TestPoint_Pad_D1.5mm,,PCB copper,0,Review candidate; see sourcing.md
+TP3,BUCK_5V,TestPoint:TestPoint_Pad_D1.5mm,,PCB copper,0,Review candidate; see sourcing.md
+TP4,VIN_OR,TestPoint:TestPoint_Pad_D1.5mm,,PCB copper,0,Review candidate; see sourcing.md
+TP5,3V3,TestPoint:TestPoint_Pad_D1.5mm,,PCB copper,0,Review candidate; see sourcing.md
+TP6,SPI_SCK_CABLE,TestPoint:TestPoint_Pad_D1.5mm,,PCB copper,0,Review candidate; see sourcing.md
+TP7,SPI_MOSI_CABLE,TestPoint:TestPoint_Pad_D1.5mm,,PCB copper,0,Review candidate; see sourcing.md
+TP8,SPI_MISO,TestPoint:TestPoint_Pad_D1.5mm,,PCB copper,0,Review candidate; see sourcing.md
+TP9,KILL_OK,TestPoint:TestPoint_Pad_D1.5mm,,PCB copper,0,Review candidate; see sourcing.md
+R61,4.7k LED limit,Resistor_SMD:R_0603_1608Metric,C23162,JLCPCB,0.01,Review candidate; see sourcing.md
+D11,KT-0603R red indicator,LED_SMD:LED_0603_1608Metric,C2286,JLCPCB,0.025,"1=cathode, 2=anode; low-current brightness to verify"
+R62,4.7k LED limit,Resistor_SMD:R_0603_1608Metric,C23162,JLCPCB,0.01,Review candidate; see sourcing.md
+D12,KT-0603R red indicator,LED_SMD:LED_0603_1608Metric,C2286,JLCPCB,0.025,"1=cathode, 2=anode; low-current brightness to verify"
+R63,4.7k LED limit,Resistor_SMD:R_0603_1608Metric,C23162,JLCPCB,0.01,Review candidate; see sourcing.md
+D13,KT-0603R red indicator,LED_SMD:LED_0603_1608Metric,C2286,JLCPCB,0.025,"1=cathode, 2=anode; low-current brightness to verify"
+R64,4.7k LED limit,Resistor_SMD:R_0603_1608Metric,C23162,JLCPCB,0.01,Review candidate; see sourcing.md
+D14,KT-0603R red indicator,LED_SMD:LED_0603_1608Metric,C2286,JLCPCB,0.025,"1=cathode, 2=anode; low-current brightness to verify"
+R65,4.7k LED limit,Resistor_SMD:R_0603_1608Metric,C23162,JLCPCB,0.01,Review candidate; see sourcing.md
+D15,KT-0603R red indicator,LED_SMD:LED_0603_1608Metric,C2286,JLCPCB,0.025,"1=cathode, 2=anode; low-current brightness to verify"
+R66,4.7k LED limit,Resistor_SMD:R_0603_1608Metric,C23162,JLCPCB,0.01,Review candidate; see sourcing.md
+D16,KT-0603R red indicator,LED_SMD:LED_0603_1608Metric,C2286,JLCPCB,0.025,"1=cathode, 2=anode; low-current brightness to verify"
+R67,4.7k LED limit,Resistor_SMD:R_0603_1608Metric,C23162,JLCPCB,0.01,Review candidate; see sourcing.md
+D17,KT-0603R red indicator,LED_SMD:LED_0603_1608Metric,C2286,JLCPCB,0.025,"1=cathode, 2=anode; low-current brightness to verify"
+R68,4.7k LED limit,Resistor_SMD:R_0603_1608Metric,C23162,JLCPCB,0.01,Review candidate; see sourcing.md
+D18,KT-0603R red indicator,LED_SMD:LED_0603_1608Metric,C2286,JLCPCB,0.025,"1=cathode, 2=anode; low-current brightness to verify"
+R69,4.7k LED limit,Resistor_SMD:R_0603_1608Metric,C23162,JLCPCB,0.01,Review candidate; see sourcing.md
+D19,KT-0603R red indicator,LED_SMD:LED_0603_1608Metric,C2286,JLCPCB,0.025,"1=cathode, 2=anode; low-current brightness to verify"

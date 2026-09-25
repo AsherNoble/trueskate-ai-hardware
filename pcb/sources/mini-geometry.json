@@ -1,0 +1,103 @@
+{
+  "units": "mm",
+  "view": "top/component side; y increases down",
+  "origin": "H1 pin 1",
+  "connectors": {
+    "control": [
+      {
+        "pin": "1",
+        "upstream_net": "GND",
+        "x_mm": 0.0,
+        "y_mm": 0.0
+      },
+      {
+        "pin": "2",
+        "upstream_net": "3.3V",
+        "x_mm": 0.0,
+        "y_mm": 2.54
+      },
+      {
+        "pin": "3",
+        "upstream_net": "U1_27",
+        "x_mm": -2.54,
+        "y_mm": 0.0
+      },
+      {
+        "pin": "4",
+        "upstream_net": "GND",
+        "x_mm": -2.54,
+        "y_mm": 2.54
+      },
+      {
+        "pin": "5",
+        "upstream_net": "U1_25",
+        "x_mm": -5.08,
+        "y_mm": 0.0
+      },
+      {
+        "pin": "6",
+        "upstream_net": "NRES",
+        "x_mm": -5.08,
+        "y_mm": 2.54
+      },
+      {
+        "pin": "7",
+        "upstream_net": "U1_23",
+        "x_mm": -7.62,
+        "y_mm": 0.0
+      },
+      {
+        "pin": "8",
+        "upstream_net": "NSLP",
+        "x_mm": -7.62,
+        "y_mm": 2.54
+      },
+      {
+        "pin": "9",
+        "upstream_net": "R4_2",
+        "x_mm": -10.16,
+        "y_mm": 0.0
+      },
+      {
+        "pin": "10",
+        "upstream_net": "NFLT",
+        "x_mm": -10.16,
+        "y_mm": 2.54
+      }
+    ],
+    "phase": [
+      {
+        "pin": "1",
+        "upstream_net": "U1_9",
+        "x_mm": -1.524,
+        "y_mm": 17.653
+      },
+      {
+        "pin": "2",
+        "upstream_net": "U1_8",
+        "x_mm": -4.064,
+        "y_mm": 17.653
+      },
+      {
+        "pin": "3",
+        "upstream_net": "U1_5",
+        "x_mm": -6.604,
+        "y_mm": 17.653
+      }
+    ]
+  },
+  "power_evidence_only": [
+    {
+      "net": "GND",
+      "x_mm": 7.239,
+      "y_mm": 3.81
+    },
+    {
+      "net": "VCC",
+      "x_mm": 7.239,
+      "y_mm": 8.763
+    }
+  ],
+  "power_pitch_mm": 4.953,
+  "warning": "Physical board differs in power pitch per bench notes. Verify before fabrication."
+}
