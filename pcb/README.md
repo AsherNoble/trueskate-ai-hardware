@@ -1,26 +1,36 @@
-# Main control PCB v1 — review package
+# USB-powered six-axis carrier v1: review package
 
-**NOT FOR FABRICATION.** Circuit and placement draft with partial local routing.
-Unconnected nets are not waived; this is not the requested finished DRC-clean board.
+**NOT RELEASED FOR FABRICATION.** A 160 x 120 mm, two-layer, entirely through-hole
+carrier: socketed Teensy and six Minis, encoder breakout sockets, fused 12 V,
+local capacitors, EN pull-downs and star ground. No factory assembly. Removed
+features belong to [v2](../docs/pcb/v2-backlog.md).
 
-Start with [the beginner walkthrough](../docs/pcb/design-notes.md), then
-[verification and release holds](../docs/pcb/verification.md).
+Start with [the one-page net guide](../docs/pcb/nets.md), then
+[the beginner walkthrough](../docs/pcb/design-notes.md) and
+[human-review checklist](../docs/pcb/hardware-check.md).
 
 - Open `trueskate-main-v1.kicad_pro` in KiCad 10.
-- `schematic-review.pdf`: native, multi-page electrical drawing.
-- `mechanical-fit-review.pdf`: 1:1 top-view paper template; print at actual size
-  and verify its 50 mm scale before use. See [hardware checks](../docs/pcb/hardware-check.md).
-- `top-review.png`, `bottom-review.png`, `3d-review.png`: actual carrier placement;
-  removable Teensy/Mini boards omitted, not a validated mechanical assembly.
-- `bom-review.csv` and [grouped BOM](../docs/pcb/bom.md): quantities, assembly split,
-  LCSC candidates and cost allowances; see [sourcing](../docs/pcb/sourcing.md).
-- `erc-review.json`, `drc-review.json`: current tool reports. `*-initial.*` files
-  are earlier diagnostic snapshots, not final verification evidence.
-- `design.json`, `generate.py`, `audit.py`, `verify_board.py`, `extract_mini.py`:
-  reproducible source and static checks. See [tooling](../docs/pcb/tooling.md).
+- `schematic-review.pdf`: native nine-page drawing.
+- `net-guide-review.pdf`: one-page plain-English guide to all 67 real nets.
+- `mechanical-fit-review.pdf`: 1:1 top view; print at actual size and check the
+  50 mm ruler. Mini socket fit and base fit have already been confirmed.
+- `top-review.png`, `bottom-review.png`, `3d-review.png`: native board renders;
+  plug-in Teensy/Mini/breakout boards and wiring omitted.
+- `bom-review.csv` and [grouped BOM](../docs/pcb/bom.md): hand-soldered parts,
+  selected LCSC entries and labeled cost allowances.
+- `erc-review.json`, `drc-review.json`, `review-status.json`: checked reports,
+  independent audits and artifact hashes. See [verification](../docs/pcb/verification.md).
+- `design.json`, `generate.py`, `kicad_source.py`: editable design source.
+  `routing/signals.ses`: frozen signal routes. `manual-routes.json`,
+  `ground-links.json`, `ground-stitching.json`: deliberate power/ground records.
+  See [tooling](../docs/pcb/tooling.md).
 
-Target: 160 × 120 mm, two layers. Direct KiCad scripting uses native files and
-KiCad's bundled Python. Do not rerun the generator over unsaved/manual KiCad edits.
+`rebuild.py` reconstructs the board and reimports signals only.
+`export_review.py` validates and produces review PDFs/PNGs only. Neither creates
+Gerbers, drills or assembly files. Do not regenerate over unrecorded manual
+KiCad edits. Upstream geometry evidence stays in `sources/`.
 
-Upstream mechanical evidence belongs in `sources/`; generated artifacts
-must not be confused with validated manufacturing outputs.
+The runtime firmware is still the earlier one-axis bench implementation, not
+six-axis carrier firmware. Do not flash it assuming otherwise. Human electrical
+review before ordering remains essential: ERC/DRC is not a current-capacity,
+noise, power-sequencing or motion-safety certification.

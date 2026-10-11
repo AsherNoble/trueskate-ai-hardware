@@ -1,5 +1,10 @@
 # Teensy 4.1 pin map
 
+Historical bench wiring below, not the six-axis carrier map. The carrier uses
+the [current PCB assignments](pcb-requirements.md#fixed-pin-map): all six axes
+are edge-aligned, EN/CS move to plain digital pins, and the center-aligned build
+flag has been removed. The entries below preserve what the earlier bench proved.
+
 One axis is wired and instantiated. The second axis's pins are proposed, not
 built — nothing below the divider has been tested.
 

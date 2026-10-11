@@ -1,74 +1,66 @@
-# TrueSkate main board v1 — beginner's design walkthrough
+# v1: a six-axis wiring carrier
 
-Status: **review prototype, NOT ready to order**. Start here, then read
-[verification.md](verification.md) for exactly what has and has not passed.
-The schematic is a proposed electrical design; the board has component placement
-and hand-routed local power traces, but still needs its remaining routing and engineering review.
-Do not upload these files for manufacture yet.
+This board is your perfboard wiring made repeatable, not a new motor controller.
+A **printed circuit board (PCB)** replaces wires with **traces**, copper strips
+on its two faces. A **net** is one named electrical connection: every pad and
+trace with that name is joined. Start with [the one-page net guide](nets.md), then
+use this longer explanation when you want the reasons behind a connection.
 
-## What this board does
+The Teensy and six SimpleFOC Minis do the active work. Everything soldered to
+this carrier is **through-hole**: leads go through drilled holes and are soldered
+from underneath. **Female sockets** grip the removable modules' male pins. The
+carrier requires no factory assembly and has no buck supply, hardware kill,
+wrist port, fingertip terminals or expansion connector. Those belong to
+[v2](v2-backlog.md). Human electrical review is required before ordering; passing
+software checks does not prove that a physical board will operate safely.
 
-A printed circuit board (PCB) replaces many loose wires with copper connections.
-This one is a *carrier*: it holds a removable Teensy 4.1 computer module and six
-removable SimpleFOC Mini motor-driver modules. A driver converts low-power control
-signals into current through a motor. An axis is one independently controlled
-motor: two curl motors and one splay motor for each of index and middle fingers.
+## Why native KiCad scripting?
 
-An encoder measures shaft angle. Field-oriented control (FOC) repeatedly uses that
-angle to choose motor currents. That fast loop stays on the Teensy; the host still
-sends gestures, not individual motor-control steps. This work does not add a host
-control loop or change the gesture-coordinate contract.
+Direct KiCad scripting preserves the already verified Mini socket geometry and
+produces editable native schematic and board files without another translation
+tool. It also makes the deliberate power routes reproducible while letting
+KiCad's own command-line checks examine the result.
 
-Only the main board is included. The wrist gets one port for the **12 V variant**
-of the STS3215. There are no beautification drivers and no left-thumb board.
+## 1. Teensy sockets: the brain, powered only by USB
 
-The input document actually present in this checkout is
-[../pcb-requirements.md](../pcb-requirements.md). The newer user instructions take
-precedence: edge-aligned control for all six axes, male motor-phase headers, and
-the approved short screw-terminal power wires. The historical bring-up sketches
-are unchanged.
+J1 and J2 are the two 24-contact female sockets. With the USB connector facing
+left, J2 is the upper row and J1 is the lower row; do not mirror this top view.
+**Pitch** means the distance between neighboring pin centers: 2.54 mm along each
+row, and 15.24 mm between rows. The Teensy must have downward male headers.
 
-## How to read the files
+USB powers the Teensy. Its regulator, a circuit already on the Teensy that
+reduces voltage, supplies the carrier's **3V3** net: 3.3 volts for six encoders.
+The carrier's VIN socket contact is physically present but electrically
+unconnected. There is no carrier connection to USB's 5 V power or to a separate
+5 V supply, so this design needs no cut to the Teensy's USB/VIN connection.
+Do not add external power to VIN or 3V3. Teensy input pins cannot tolerate 5 V.
+[PJRC's electrical guidance](https://www.pjrc.com/store/teensy41.html) is the
+reference for its 3.3 V supply and digital limits.
 
-A schematic describes **what connects to what**, not where it sits. A *net* is a
-named electrical connection; matching red labels on different PDF pages are the
-same wire. A *footprint* describes physical solder pads and holes. A *trace* is a
-strip of copper joining pads. A *via* is a small plated hole joining the two copper
-layers. An *unconnected item* means the required copper path does not exist yet.
+Without these sockets the Teensy would need to be soldered permanently, or the
+connections would depend on loose wires. Without a common ground, its signals
+would not have a reliable voltage reference. USB ground and motor-supply negative
+are intentionally connected at the ground star: this board is not electrically
+isolated from your computer.
 
-The PDF's rectangles represent physical connectors or integrated circuits (ICs,
-several circuit elements in one package). Pin numbers are component contact
-numbers. For the Teensy socket, the name beside a pin is the Teensy signal, while
-the small outside number is the carrier socket's contact number. An X means a
-deliberately unused contact, not an accidental missing wire. `R` references are
-resistors, `C` capacitors, `D` diodes, `Q` transistors, `U` ICs, `J` connectors,
-`L` inductors, `FB` ferrite beads and `TP` test points.
+## 2. Six Mini sockets: low-power instructions, high-power outputs
 
-Direct KiCad scripting was chosen because it preserves the Mini's off-grid socket
-geometry and generates native, editable KiCad files without a conversion layer.
-The generator also makes the six repeated circuits and pin allocation auditable.
-Edit [../../pcb/generate.py](../../pcb/generate.py) and
-[../../pcb/design.json](../../pcb/design.json), then regenerate: rerunning it
-overwrites generated schematic, placement and routing files. Do not make manual
-KiCad edits and then blindly regenerate.
+A **driver** converts the Teensy's small control signals into motor current.
+J11-J16 accept the six existing Minis. Each footprint represents two actual
+female socket pieces: a 2-by-5 control socket and a separate 1-by-3 phase socket.
+An **axis** is one controlled motor, not one motor winding. The socket holes are
+unchanged from the source-derived footprint that you verified on a 1:1 template.
 
-## 1. Controller and pin allocation
+Each Mini receives three **pulse-width modulation (PWM)** signals, rapid on/off
+instructions whose on-time is varied. All six axes use **edge-aligned** PWM: the
+timer starts each pulse at its period boundary. Timer resources can be shared
+at the same frequency; the intended common setting is 25 kHz, or 25,000 periods
+per second. Do not re-enable the center-aligned build flag. **Field-oriented
+control (FOC)** is the firmware method that uses measured shaft angle to choose
+these instructions; the carrier does not perform it.
 
-The Teensy plugs into two 24-contact **female sockets**, 2.54 mm between adjacent
-contacts and 15.24 mm between rows. It is not soldered to this carrier. Choose
-socket height sufficient to clear the small parts beneath it, provisionally at
-least 8.5 mm; check the actual module underside before buying headers. The USB
-connector faces the left side of the board and needs cable clearance.
-
-Pulse-width modulation (PWM) switches a signal rapidly; changing its fraction of
-time high changes the average drive. All six axes use **edge-aligned PWM** at one
-common initial frequency of 25 kHz, above ordinary hearing. Center-aligned PWM is
-not enabled. Channels sharing timer hardware must share frequency, even though
-their duties differ. Allocation has been checked statically; simultaneous six-axis
-waveforms and loop timing have not been bench-tested.
-
-| Axis | Movement | PWM 1 / 2 / 3 | EN request | Encoder CS |
-|---|---|---|---|---|
+| Axis | Movement | PWM1 / PWM2 / PWM3 | EN | CSn |
+|---|---|---|---:|---:|
 | A1 | Index curl 1 | 4 / 5 / 6 | 16 | 26 |
 | A2 | Index curl 2 | 2 / 22 / 23 | 17 | 27 |
 | A3 | Index splay | 7 / 36 / 29 | 20 | 32 |
@@ -76,377 +68,181 @@ waveforms and loop timing have not been bench-tested.
 | A5 | Middle curl 2 | 3 / 33 / 37 | 30 | 39 |
 | A6 | Middle splay | 8 / 9 / 28 | 31 | 40 |
 
-EN means enable: the Teensy requests permission for a motor to run. CS means chip
-select: pulling one encoder's CS low asks that encoder to answer. All twelve
-EN/CS pins are **not PWM-capable**. The user requirement is stronger than simply
-not calling PWM on those pins, and this map satisfies it.
+These are Teensy pin numbers, not header contact numbers. **EN** means enable;
+**CSn** means chip select, active low (0 V selects that encoder). All twelve
+EN/CSn assignments are ordinary non-PWM pins. The nine unused Teensy contacts
+are 1, 10, 14, 15, 18, 19, 34, 35 and 41; v1 has no separate spare connector.
 
-| Shared function | Teensy pins |
-|---|---|
-| Encoder SPI0: MOSI / MISO / clock | 11 / 12 / 13 |
-| Wrist Serial8: receive / transmit / transmit-enable | 34 / 35 / 41 |
-| Future I2C link: data / clock | 18 / 19 |
-| Hardware-kill status input | 10 |
-| Unassigned spare contacts | 1, 14, 15 |
+Mini control pins 3/5/7 receive PWM1/2/3 and pin 9 receives EN. Pins 1 and 4 are
+the Mini's ground and lead to the optional ground bridge. Pin 2 is the Mini's
+own regulator **output**, not an encoder supply input: it is left disconnected
+so six regulators cannot fight each other or back-power the Teensy. Pins 6, 8
+and 10 (reset, sleep and fault) are also unconnected on the carrier; the Mini's
+existing reset/sleep bias remains in use. Check the actual module's behavior
+during first-power testing, not merely the socket symbol.
 
-Serial peripheral interface (SPI) is a clocked connection with controller-to-sensor
-data (MOSI), sensor-to-controller data (MISO), and a clock. Universal asynchronous
-receiver/transmitter (UART) is a serial connection without a separate clock.
-Inter-integrated circuit (I2C) is a two-wire addressed link for the future board.
-The wrist's entire UART allocation is on non-PWM pins.
+J21-J26 are the 1-by-3 male motor headers, accepting the existing female Dupont
+cables. **Phases** are the three motor-winding connections. Their nets are
+PH1/PH2/PH3, carrying switched motor power, not 3.3 V instructions. Short 1 mm
+traces connect these directly to the Mini phase socket, in OUT1/OUT2/OUT3 order
+(custom Mini contacts P3/P2/P1). Without those paths no motor current reaches
+the windings. Never move a phase cable while motor power is live.
 
-**Why not SPI0 plus SPI1?** There are only fifteen non-PWM digital pins on the
-socketed outer headers. Twelve go to EN/CS, two to Serial8 and one to its direction
-control. SPI1 would need pins 26, 27 and 39, already needed for those roles.
-Using it would require changing an explicit constraint or adding pin-expansion
-hardware. The v1 proposal therefore uses SPI0 for all six encoders.
-The authoritative capability reference is [PJRC's PWM table](https://www.pjrc.com/teensy/td_pulse.html).
+## 3. Encoder breakout sockets: the angle feedback
 
-The existing production sketch is still the one-axis bench program: **it is not
-the firmware for this new pin map**. Only its build configuration was changed:
-the center-aligned build flag was removed and `lib_archive = no` retained.
-Six-axis initialization, independent commands, common PWM frequency and measured
-loop deadlines remain firmware work before this board can operate.
+J31-J36 are female 1-by-6, 2.54 mm sockets for your existing JST breakout boards.
+The breakout's square pad is contact 1, and the carrier silkscreen marks
+`ENCn: 1 CLK`. Your verified order is:
 
-## 2. Removable Mini modules and motor phases
+| Contact | Net | Meaning |
+|---:|---|---|
+| 1 | SPI_SCK | Clock: tells the encoder when to shift each data bit |
+| 2 | SPI_MISO | Data from the selected encoder to the Teensy |
+| 3 | SPI_MOSI | Commands from the Teensy to the encoders |
+| 4 | A1_CS ... A6_CS | Separate active-low select for this axis |
+| 5 | 3V3 | Encoder supply, 3.3 V only |
+| 6 | GND | Encoder supply return and signal reference |
 
-Each Mini gets a 2×5 control socket and a separate three-contact phase socket.
-The footprint was extracted from the original
-[SimpleFOCMini v1.0 source](https://github.com/simplefoc/SimpleFOCMini/tree/v1.0),
-commit `848e8ece46d045ac24283e2d6ee9ea4ba8ef95d5`, not guessed from a photo.
-That revision uses EasyEDA source files, not KiCad. The source files, licence,
-extraction script and extracted coordinates are retained in `pcb/sources/`.
+**SPI**, the Serial Peripheral Interface, is this clocked data connection.
+**MISO** means controller-in/peripheral-out; **MOSI** means
+controller-out/peripheral-in. All six share SPI0: MOSI pin 11, MISO pin 12 and
+clock pin 13. Individual chip selects let only one answer at a time. A second
+SPI bus would change your agreed pin map, so it is not used in v1.
 
-Pitch means the distance between adjacent contacts. The phase socket's position
-relative to the control socket is **not** an integer multiple of 2.54 mm. Snapping
-both sockets to a convenient grid would make a rigid module impossible to insert.
-See [mechanical.md](mechanical.md) for the coordinates and the remaining fit check.
+The encoder connections are in the central low-current region. The motor phase
+traces and shared 12 V trunks stay outside it; the ground areas, deliberately
+joined on both faces, provide a nearby return path. The traces still have six branches and
+the external cables add length, so working at the bench is a test requirement,
+not something a drawing can prove. Keep encoder cables away from phase wires.
+Firmware must set every CSn high before starting SPI transfers and keep unused
+encoders deselected. There are no added carrier CS pull-ups, signal filters or
+level shifters. Without reliable angle feedback FOC can push the shaft the wrong
+way; verify readings before enabling a motor.
 
-Important: Mini control pin 2 is the Mini's own 3.3 V regulator **output**, not a
-3.3 V power input. It is left unconnected. Tying it to the Teensy's regulator would
-make two supplies fight each other. Reset, sleep and fault are also not connected
-to the carrier; the original module's own circuitry supplies its normal operating
-bias. This depends on using the verified module revision.
+## 4. Input terminal and fuse: motor power only
 
-Each Mini receives power through the **approved short red/black wire pair** from
-J41–J46 into its existing screw terminal. The carrier terminal uses 3.81 mm pitch;
-its pitch does not have to match the Mini because wires join them. Keep each pair
-short, run its two wires together, strain-relieve it, and mark polarity at both
-ends. Removing a Mini means releasing these two wires as well as unplugging it.
-Its module-side control and phase headers must have downward-facing male pins to
-mate with the carrier's female sockets; confirm what is actually fitted.
+J5 accepts the 12 V bench supply: square contact 1 is positive, contact 2 is
+negative. The positive path is `12V_IN -> F1 -> 12V_FUSED`. A **fuse** contains
+a link intended to melt when excessive current persists. F1 is a through-hole
+Schurter 0031.8201 holder for a separate 5-by-20 mm cartridge. A 3.15 A
+**time-delay** cartridge (marked T, tolerating brief startup surges) is a review
+candidate, not a measured final selection. Its DC breaking rating must suit the
+supply; the holder is not itself the fuse.
 
-The Mini's control-ground contacts are deliberately unused. Its ground reference
-comes from its dedicated power-return wire. This avoids a second motor-current
-return through the controller area. The cost is that ground bounce on the power
-return also changes the driver's logic reference. Short, stout paired wires and
-an oscilloscope check are required; this choice is not proof of adequate signal
-margin by itself.
+Without a fuse, a supply capable of high current could keep heating a wiring
+fault. A fuse does not regulate motor current, protect against every electronic
+fault, or act as an emergency stop. In voltage-mode FOC the firmware's voltage
+limit remains important; the library's `current_limit` does not limit current
+in that mode. Start with a current-limited bench supply and low motor voltage.
 
-A motor has three phase wires: the three winding-drive connections. J21–J26 are
-**male 1×3, 2.54 mm headers**, matching your female Dupont ends. Three deliberately
-routed 1.0 mm traces join each Mini's phase socket to its motor header. These are
-short local routes, not a validated continuous-current rating. Contact quality
-and cable gauge may become the limit before copper does. Start with conservative
-voltage limits, measure temperature, and never move a phase lead with power live.
+There is no reverse-polarity protection in this simplified v1. Reversing J5 can
+damage the Minis and polarized capacitors before the fuse opens. Verify polarity
+with a meter before connection. The 3 mm shared supply trunks, 2 mm branches,
+1.5 mm returns and 1 mm phase traces are deliberately routed and locked. They
+are not a guarantee of a particular ampere rating: the human reviewer must
+approve the load, sockets, wires, fuse and temperature margin together.
 
-## 3. Encoder connectors and signal quality
+## 5. Mini power wires and two capacitors per axis
 
-J31–J36 are genuine JST SH six-contact, 1.0 mm **top-entry** surface-mount sockets,
-part `BM06B-SRSS-TB(LF)(SN)`, LCSC `C160392`. Surface mount means soldered to pads
-on the surface rather than leads pushed through holes; JLCPCB assembles these.
-The cable plugs in vertically. The original side-entry candidate had conflicting
-stock listings, while the top-entry part showed stock on its current product page.
-[JST's SH drawing](https://www.jst-mfg.com/product/pdf/eng/eSH.pdf) covers both types;
-the change does not establish the unknown motor-side pin order.
+J41-J46 are two-contact 3.81 mm screw terminals. Use the approved short paired
+red/black wires from each terminal to that Mini's existing power terminal. Their
+positive contact receives 12V_FUSED; their negative contact has its own PGNDn
+return. There are no rigid carrier pins for the Mini's off-grid power pads.
+The source file's different power-pad spacing therefore does not affect fit.
+Keep the pair short, close together, secured, and removable only with power off.
+Removing a Mini requires releasing the wires as well as unplugging its sockets.
 
-The footprint-pin order is **verified**, read from the working bench breakout
-with pin 1 the square pad and the traces running straight from socket to header:
+A **capacitor** stores electrical charge. Each C11-C16 is your Panasonic
+EEUFR1V102B, 1000 microfarads (uF), 35 V rated, 12.5 mm diameter, 20 mm high,
+5 mm lead pitch. It supplies brief current bursts locally and absorbs some
+supply fluctuations. This **electrolytic** type is polarized: positive lead to
+the square `+` pad, negative stripe to the round PGND pad. Reversing it can cause
+heating or venting. Without it more motor-current pulses travel down the shared
+supply wiring.
 
-| Contact | Signal |
-|---|---|
-| 1 | CLK: SPI clock |
-| 2 | MISO |
-| 3 | MOSI |
-| 4 | CSn: active-low chip select |
-| 5 | VDD: 3.3 V supply |
-| 6 | GND: ground |
+Each C21-C26 is a non-polarized 100 nanofarad (nF), at least 50 V ceramic
+capacitor with 5 mm lead spacing and a body fitting the specified footprint.
+It responds to faster disturbances than the large capacitor. The pair sits
+beside the feed terminal. The short power wires still add **inductance**, the
+tendency to oppose rapid current changes, so the Mini's own onboard capacitors
+remain essential; a carrier ceramic cannot replace them.
 
-**CSn is contact 4, not contact 1.** The earlier assumed order had CSn first and
-every signal shifted by one; anything built to that order will not work.
+Six 1000 uF capacitors store about 0.43 joules at 12 V. Unplugging power does
+not instantly discharge them. There is no guaranteed discharge time, indicator
+or discharge resistor on this carrier: measure the voltage before handling.
+Motor braking can also return energy and raise the rail. A bench supply may
+not absorb it; observe rail voltage during unloaded bring-up and have the human
+reviewer decide whether v1's use needs external overvoltage protection.
 
-What this settles is the *signal order along the connector*. It does not settle
-which physical end of the carrier footprint KiCad calls contact 1 — check that
-against the fabrication drawing before release, because a mirrored footprint
-puts 3.3 V where ground should be. “AS5048A” specifies the chip, not how a
-manufacturer wired its connector. The
-[iFlight motor listing](https://shop.iflight.com/index.php?product_id=1584&route=product%2Fproduct)
-and [encoder listing](https://shop.iflight.com/product-cat123/as5048a-magnetic-encoder-pro262)
-did not establish your complete board-to-board cable mapping. A wrong power order
-can destroy the encoder or Teensy. **Do not order or plug in on this assumption.**
+## 6. Ground star and optional control-ground bridges
 
-Each CS line has a 10 kΩ pull-up: a resistor that holds it high while the Teensy
-starts, so encoders do not all speak at once. A 33 Ω series resistor on each CS,
-and at the shared clock/MOSI source, is intended to soften sharp electrical edges
-and reduce reflections. A reflection is a small echo along a cable that can be
-mistaken for another transition. These values are starting points, not a substitute
-for waveform measurements. Source resistors should ultimately be beside the
-source pins; present CS-resistor placement still needs that routing refinement.
+**Ground (GND)** is the circuit's zero-volt reference and a return conductor,
+not an unlimited sink for current. **Star ground** means keeping the six motor
+returns separate until one deliberate junction, NT1, beside the input. PGND1
+through PGND6 are those returns. GND serves the Teensy and encoders. NT1 is
+already joined PCB copper, not a component to buy or a jumper to fill.
 
-Each encoder connector has a 100 nF bypass capacitor: a small local charge store
-that helps keep its supply quiet. Keep SPI traces in the controller region,
-separated from phase copper, with a continuous logic-ground return beneath them.
-The planned six-cable fan-out needs testing with motors actually switching.
-Start at the bench-proven 1 MHz; raise toward 2–4 MHz only after error and timing
-measurements. Static-shaft tests at 8 MHz do not prove a moving six-axis harness.
+Separating the branches reduces the chance of motor current shifting an
+encoder's reference voltage. It does not eliminate noise, and all grounds are
+electrically common through NT1. GND **copper pours** are broad filled areas in
+the center and around the control sockets, supplemented by two deliberately
+drawn 0.4 mm ground links and **stitching vias**, small plated holes joining the
+two copper faces. The links bypass places where signal traces divide the ground
+fill; they carry quiet reference/encoder current, never an axis power return.
+Motor returns are not joined to a blanket ground pour. The top ground area
+wraps around socket signal paths; the bottom area stays between motor-return
+rails. Nearby supply/return routing is still a two-layer compromise; noise needs
+measurement with motors running.
 
-## 4. The 12 V input, fuse and reverse-polarity protection
+Most ground pads connect to the broad copper through narrow **thermal-relief
+spokes**, making them easier to heat with a soldering iron. Four congested ground
+contacts (J1 contact 1, J2 contacts 2 and 15, JP5 contact 2) instead use solid
+copper joins so a lone spoke cannot become disconnected. They will take more
+heat to solder; use flux and an appropriate tip, not a prolonged low-power iron.
 
-J5 is a two-contact 5.08 mm input terminal. Select a real part rated for at least
-10 A, with its footprint and wire range checked before purchase. Feed it only from
-a regulated, enclosed **12 V DC** supply. DC means fixed polarity; this board does
-not accept mains electricity. No work on exposed mains is part of this design.
+JP1-JP6 are optional control-GND solder/wire bridges: two through-hole pads
+3 mm apart, left OPEN. CGNDn joins Mini control contacts 1 and 4 to one bridge
+pad; the other pad is logic GND. With a Mini installed, those contacts already
+connect internally to the Mini's power ground, which reaches NT1 through its
+black power wire. Closing JP adds a parallel return through the logic region,
+possibly carrying motor current there. Do not close bridges automatically;
+have the reviewer decide, and do not use them to compensate for a missing
+power-return wire. Without the black wire, the Mini is not correctly powered.
 
-F1 is a replaceable 5×20 mm fuse. A fuse opens when excessive current heats it;
-without one, a wiring fault can keep heating a connector or track. **5 A time-delay
-is a candidate, not a final approved rating.** Time-delay fuses tolerate short
-startup surges. Choose the exact fuse, holder and supply after measuring the
-combined load and validating protection of the weakest wire or connector.
+## 7. Six enable pull-downs: off when no output is driving
 
-Q1 is a P-channel MOSFET (a transistor used as a low-loss power switch), proposed
-FQP47P06. Its drain faces the fused input and source faces the protected rail. That
-orientation lets its internal diode initially feed a correctly connected supply
-but block a reversed one; its gate then turns on for lower loss. R3 pulls the gate
-down. D3 is a 12 V Zener diode, a device selected to clamp gate-to-source voltage.
-Without reverse protection, a swapped input pair could damage every powered block.
+R21-R26 are 10 kilohm (10k, or 10,000 ohm) resistors from each EN net to that
+axis's PGND. A **resistor** limits current; a **pull-down** gently holds an
+otherwise undriven signal near zero volts. Teensy pins become **high impedance**
+(neither strongly high nor low) during reset/unpowered conditions. Without
+these resistors EN could float to an unpredictable state. When the Teensy
+deliberately drives 3.3 V high, each resistor only draws about 0.33 milliamps,
+so the output can override it.
 
-There is no completed transient-suppression or braking-energy circuit. A motor can
-return energy to the supply while slowing down, and many wall supplies cannot
-absorb it. The 35 V capacitors do **not** make the 12 V servo safe at 35 V. The
-[12 V STS3215 page](https://www.feetechrc.com/525603.html) specifies a 4–14 V operating
-range and 2.7 A stall current at 12 V. Supply rise during braking must be measured;
-add appropriately engineered clamping or a dissipative braking path if necessary.
+This is a default-off measure, NOT a hardware kill or a certified safety circuit.
+It cannot override a stuck-high output, guarantee every power-sequencing fault,
+or prevent firmware from deliberately enabling a motor. Verify EN at the actual
+Mini with USB removed and during reset while 12 V is present. For v1, physical
+motor-power removal is disconnecting the 12 V supply, then confirming discharge.
+The old latch/restart choice is not applicable because v1 has no kill circuit.
 
-The tentative input envelope is 12 V, 5 A total (60 W). It is not a promise that
-all six motors plus a stalled wrist can operate together. Motor winding current
-is not the same as input-supply current. In SimpleFOC voltage-torque mode,
-`current_limit` is inert: `voltage_limit` is the relevant software bound, and even
-that is not a measured hardware current regulator. Do not size the whole system
-by multiplying a single optimistic bench measurement.
+## 8. What is proved and what is not
 
-## 5. Local motor capacitors
+You confirmed Mini fit on the full-size template, encoder contact 1 and the
+160-by-120 mm base fit. Four 3.2 mm holes accept M3 screws. Allow clearance for
+the screw heads, insulating spacers, 20 mm capacitors, cables and socketed modules.
+The renders show carrier parts; the plugged-in Teensy, Mini boards, breakout
+boards and cables are not a complete mechanical model.
 
-C11–C16 are your Panasonic **EEUFR1V102B**, 1000 µF, 35 V capacitors. Capacitance
-measures stored charge per volt; these large local reservoirs supply short motor
-current pulses and reduce disturbances along the input wiring. Each has a 100 nF
-ceramic capacitor beside it for faster disturbances. Removing them would put more
-pulsed current into the shared cable and logic supply. The Mini's own close-in
-ceramics still matter: the carrier capacitor is separated by the power wires.
+See [verification](verification.md) for current strict ERC/DRC results and
+[hardware checks](hardware-check.md) for review and later bench tests.
+**ERC** checks schematic electrical rules; **DRC** checks PCB geometry and
+connections. The socket symbols are passive, so ERC does not simulate module
+internals. Neither check proves current capacity, correct firmware, noise
+immunity, capacitor polarity in assembly or safe motion.
 
-The [Panasonic dimensions](https://na.industrial.panasonic.com/products/capacitors/aluminum-electrolytic-capacitors/series/83367/model/83812)
-are **12.5 mm diameter, 20 mm high, 5.0 mm lead spacing**. The footprint uses those
-values. These are polarised: the negative stripe goes to the motor return; the
-positive lead goes to +12 V. Reversing one can cause heating, venting or rupture.
-
-Together the six store about 0.432 joule at 12 V:
-`energy = 0.5 × 0.006 farad × 12²`. They also draw an initial charging surge.
-Inrush, fuse survival and supply startup therefore need testing. Hardware kill
-does not instantly empty them. Disconnect power and verify the rail is discharged
-before moving wiring; a software stop is not power isolation.
-
-## 6. Five volts, three volts and safe USB coexistence
-
-U4, AP63205, is a **buck converter**: an efficient switching supply that turns
-12 V into 5 V. L1, an inductor (a coil that stores magnetic energy), and its
-capacitors smooth the switched energy into the 5 V output. C5 is the input bypass;
-C6 is the bootstrap capacitor that supports the converter's internal high-side
-switch; C7/C8 smooth the output. Its fixed-5 V part number matters: do not substitute
-an adjustable or different-voltage variant without redesigning it.
-
-The [manufacturer's reference circuit and layout guidance](https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf)
-are the starting point. The switch node (`BUCK_SW`) must stay small and away from
-SPI. The input-capacitor/current loop must be very short. The local converter
-connections are now hand-routed, with a separate output-voltage sensing branch
-and a bottom-side ground area connected through plated vias. This area carries
-return current and spreads heat; it joins the input ground junction through its
-own branch, not a motor return. An electrically correct but badly laid-out
-converter can create noise or fail.
-
-**Thermal qualification remains open.** The datasheet recommends 2 oz copper
-for a 2 A layout; this draft still proposes 1 oz and does not claim a 2 A usable
-output. Measure the actual Teensy/encoder/logic demand and converter temperature,
-and revise copper weight or layout if needed. Having a ground area is not proof
-of sufficient cooling. The rest of the 5 V distribution remains unrouted.
-
-D1/D2 are Schottky diodes, one-way devices with comparatively low forward voltage
-loss. They select whichever is available, board-generated 5 V or USB 5 V, without
-feeding one source backwards into the other. Their combined output `VIN_OR` feeds
-Teensy VIN. The voltage is a little below 5 V; check the minimum during full-load
-and low-USB-voltage tests against the Teensy's allowed VIN range.
-
-**Required physical modification:** cut the Teensy's factory VUSB-to-VIN link as
-described by [PJRC](https://www.pjrc.com/store/teensy41.html), confirm it is open
-with a continuity meter, and wire the isolated **VUSB pad** to J3. Do not confuse
-that with the USB-host 5 V pad. No cutting or soldering has been done by this task.
-If the link is left intact, the diodes on the carrier cannot prevent back-feeding
-the PC. Never use both sources until this is checked.
-
-The Teensy supplies the 3.3 V logic/encoder rail. Its pins are **not 5 V tolerant**:
-feeding a 5 V signal directly can damage them. PJRC limits external loading of its
-3.3 V output to 250 mA. Add up actual encoder, logic and future-link consumption;
-the daughterboard connector is not an unrestricted power supply. Initially reserve
-only 25 mA for expansion until a measured budget says otherwise.
-
-## 7. Hardware kill
-
-J4 connects a **normally closed (NC)** switch: the contacts conduct when the stop
-button is not pressed. Opening it, or breaking its wire, makes `KILL_RAW` low via
-R2. R1 limits a shorted cable's current; C1 filters brief noise. U3 has a Schmitt
-input, meaning separate thresholds for going high and low, which helps avoid
-chatter from a slowly changing signal.
-
-U1/U2 contain AND gates: an output is high only if **both** inputs are high. Each
-driver enable is `Teensy request AND KILL_OK`. Firmware can request movement but
-cannot override an open NC loop. R11–R16 hold requests low during startup;
-R21–R26 hold driver-side enables low if gate drive is absent. Without these parts,
-an uninitialized input or software fault could leave a driver enabled.
-
-The fourth gate of U2 also prevents wrist transmission while killed. Q4 pulls the
-gate of the wrist's Q2 supply switch down only when kill permission is present;
-otherwise R51 turns that switch off. Driver disable causes loss of commanded
-torque, **not active braking**. A hanging load can fall or a tendon can relax.
-
-This circuit is **non-latching**. Reclosing the switch restores permission and can
-restart a motor if firmware has left its request high. A latching stop would
-require a separate deliberate reset; that is preferable where unexpected restart
-could hurt someone and remains a release decision. Firmware must lower all
-requests on kill and demand explicit re-arming, but firmware alone cannot turn a
-non-latching hardware circuit into a certified safety function.
-
-This is not a safety-rated emergency stop. It does not guarantee protection from
-a shorted power transistor, a ground fault or every possible component failure.
-Bench-test the stop at each axis with stalled firmware and with USB-only power.
-Test with no finger, phone or person in the mechanism's path initially.
-
-## 8. Wrist servo and voltage translation
-
-J6 provisionally uses a three-contact JST PH 2.0 mm through-hole connector, ordered
-**GND, switched 12 V, DATA** by footprint contact number. “Feetech three-pin” alone
-does not prove the housing, orientation or cable reversal. Verify the actual plug.
-
-Half-duplex means both devices share one data wire and take turns speaking.
-Teensy pin 35 transmits; pin 34 receives; pin 41 requests transmit mode. Q3 controls
-the active-low output-enable pin on U5. When disabled, U5 is high impedance: it
-electrically releases the wire so the servo can answer. R58 makes transmit default
-off during boot. Firmware must wait for the last transmitted stop bit before
-releasing the line, then allow the servo's specified reply timing.
-R60 holds the transmit input at the UART's idle-high state during boot. R59 weakly
-holds the shared data wire low if the servo is unpowered, so the receiver input
-does not float; confirm the actual servo's idle pull-up can overcome this 100 kΩ
-load. Ignore receiver activity while the servo is disabled.
-
-The 12 V product is described as TTL half-duplex, but an exact electrical input/
-output-threshold specification for this particular servo has **not** been verified.
-The often-linked 6 V C001 datasheet must not be passed off as proof for the 12 V
-C018. The draft conservatively provides a 5 V transmitter and a 5 V-tolerant
-receiver rather than exposing a Teensy pin directly to the bus.
-
-U5, SN74AHCT1G125, recognizes the Teensy's 3.3 V high and drives a 5 V output. It
-uses `BUCK_5V`, **not** diode-reduced `VIN_OR`: AHCT requires at least 4.5 V.
-[TI's AHCT data](https://www.ti.com/product/SN74AHCT1G125) specify overvoltage-tolerant
-inputs, including input-leakage conditions with its supply at zero. U6,
-[SN74LVC1G125](https://www.ti.com/product/SN74LVC1G125), is powered from 3.3 V but
-accepts a 5 V input and outputs a Teensy-safe level. Its partial-power-down feature
-limits back-powering when the Teensy supply is absent. The two families are not
-interchangeable merely because they share a package.
-
-R7 limits bus contention current and damps edges. R8 is an **unpopulated optional**
-pull-up footprint: do not install it before measuring the servo's bus bias and
-powered-off behavior. Otherwise the pull-up could feed a supposedly off servo
-through its data pin. U5 itself does not provide the same power-off isolation as
-U6: residual servo power, a failed buck supply, USB-only operation and power-down
-sequencing need explicit injection-current tests or a revised isolated interface.
-This is a release hold, not a waived issue. Supply kill, digital tri-state and
-complete electrical isolation are different things.
-
-## 9. Grounding and fingertip terminals
-
-Ground is the common voltage reference and the return path for supply current,
-not a magical place where current disappears. Motor current flowing through the
-same narrow conductor as a sensor reference can move that reference voltage and
-create bad readings or phantom screen touches.
-
-The proposed **star ground** gives each motor its own return branch (`PGND1` to
-`PGND6`) and the wrist its own `WRIST_GND`. They meet logic ground and the fingertip
-branch only at NT1, a *net tie*: intentional copper that joins separately named
-nets at a controlled location. It is copper, not a component you buy or solder.
-NT1 is beside the input connector, with its first pad at (18, 22) mm. The input
-return and converter ground branch are hand-routed; motor, wrist and fingertip
-return branches and the main logic-ground plane are **not yet routed**. A ground
-plane is a broad copper area that provides a low-impedance reference. Only a small
-converter ground area exists so far; do not pour one over every named ground and
-accidentally undo the star separation.
-
-Fingertips connect to J8/J9 via separate ferrite beads FB1/FB2. A bead passes DC but
-opposes high-frequency noise. Both have their own quiet branch to the star, not a
-tap on a Mini ground wire. They are not resistive touch sensors, switched touch
-outputs, galvanic isolation or protective earth. Galvanic isolation means there
-is no direct conductive electrical path; this circuit does have one. Phone, USB
-and supply grounding must be tested together because off-board cables can create
-additional paths that bypass a carefully drawn star.
-
-## 10. Future link and test points
-
-J7 exposes GND, 3.3 V, I2C data and I2C clock. R54/R55 are 4.7 kΩ pull-ups needed
-because I2C devices pull the lines low but normally do not drive them high. Keep
-this cable short and check combined pull-up strength if the daughterboard also
-has resistors. There is no daughterboard motor supply on this connector. An
-external 5 V pull-up would violate the Teensy's input limits.
-
-TP1–TP9 expose ground, protected 12 V, buck 5 V, VIN, 3.3 V, SPI clock, MOSI,
-MISO and kill status. A test point is a safe place to put a meter or oscilloscope
-probe without slipping between fine connector pins. D11–D19 are light-emitting
-diodes (LEDs): three indicate the 12 V, 5 V and 3.3 V rails, and six indicate the
-hardware-gated driver enables. Their 4.7 kΩ series resistors limit current, keeping
-the load on each enable output small. Low-current visibility needs testing.
-These show voltage presence, not actual shaft movement or a proven safety state.
-An LED going dark does not prove capacitors are fully discharged; use a meter.
-
-## 11. Size, assembly and what the pictures mean
-
-Proposed size is **160 × 120 mm**, two copper layers, 1.6 mm board thickness and
-1 oz copper (the conventional name for approximately 35 µm copper). Four 3.2 mm
-non-plated holes accept M3 mounting screws, with centres 5 mm from each edge.
-This is an initial spacious layout for six modules and six tall capacitors, not
-a confirmed fit to the robot base. Leave clearance for the 20 mm capacitors,
-socketed modules, screwdriver access, USB and cable bend radii.
-
-JLCPCB assembles all small surface-mount parts, including the JST SH sockets.
-You hand-solder the female sockets, male headers, screw terminals, fuse holder,
-large capacitors, TO-220 transistors and leaded Zener. Purchase the fuse separately.
-Fit and electrically inspect the carrier before plugging in expensive modules.
-
-The PNGs are rendered from the actual KiCad placement, not AI-generated product
-images. Standard component models are illustrative package shapes, not exact
-supplier colours. The Teensy and Mini circuit boards themselves are **not modelled**;
-their carrier sockets are. The bottom view deliberately shows missing routing:
-the board is not made complete by a polished render.
-
-## What I need from the real hardware
-
-Before freezing connector wiring or completing a fabrication release:
-
-1. Clear top/bottom photos of one actual Mini, its revision text and headers,
-   beside a ruler. Confirm control-to-phase socket positions and power-terminal
-   pitch against the source-derived drawing.
-2. Close photos of the motor's encoder board, any pin labels, and both ends of its
-   six-wire cable. An order screenshot or product link would help. With all power
-   disconnected, identify end-to-end contact continuity; do not guess by colour.
-3. A photo/measurement of the STS3215 plug and confirmation that the actual unit
-   is the 12 V version. Obtain its exact electrical interface specification or
-   measure safely using a suitable breakout before connecting the Teensy.
-4. Available base dimensions, intended motor voltage limits and measured total
-   running/peak input current. Decide whether kill must require a manual reset.
-
-These checks can change footprints, polarity, power protection and board routing.
-Until resolved, this package is for understanding and review, not ordering.
+The working firmware still uses the earlier bench EN/CS assignments and only
+one instantiated axis. Do not flash that build and assume it implements this
+carrier. A later firmware change must use the table above, boot with all EN low,
+initialize FOC only on command, call `loopFOC()` explicitly, and verify six-axis
+timing. Historical bring-up sketches remain unchanged.

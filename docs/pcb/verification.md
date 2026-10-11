@@ -1,123 +1,108 @@
-# Verification and release status
+# Carrier v1 verification and limits
 
-**REVIEW DRAFT — DO NOT ORDER.** This is a real KiCad design-in-progress, not a
-finished fabrication package. No Gerbers, drill files or assembly-placement files
-are released. Source generation is reproducible; physical operation is untested.
+Review design, **not a fabrication release**. Checked with KiCad 10.0.6 on
+2026-10-11. The machine-readable reports and file hashes in
+[`pcb/review-status.json`](../../pcb/review-status.json) identify the checked
+revision of the artifacts. No manufacturing files have been generated.
 
-## Checks
+## Automated results
 
-| Check | Result / scope |
-|---|---|
-| Static pin audit, `pcb/audit.py` | 39 unique assigned pins, 18 PWM pins, all 12 EN/CS on non-PWM pins, Serial8 and direction on non-PWM pins, three spares |
-| Generated board audit, `pcb/verify_board.py` | Checks every generated component pad/net against circuit data, Teensy top-view orientation, selected safety/power invariants and capacitor pitch |
-| Electrical rules check (ERC) | **0 violations**, strict exit code 0; KiCad 10 `kicad-cli`, `pcb/erc-review.json` |
-| Design rules check (DRC) | **0 spacing/placement violations, 263 unconnected items**, strict exit code 5; `pcb/drc-review.json`. **Not DRC-clean; opens are not waived** |
-| Firmware compile | `pio run -d firmware -e teensy41` succeeded after removing the center-aligned flag; no flashing |
-| Mechanical evidence | Original Mini source extracted; user photos confirm AS5048A chip and downward Mini headers, not cable polarity or socket spacing; 1:1 fit template provided |
-| Visual outputs | Native schematic PDF and actual-board top/bottom/3D renders; installed Teensy/Mini boards are not modelled |
-| Electrical/thermal bench verification | Not performed; no claim of safe operation or six-axis timing qualification |
+- Electrical rule check (ERC): zero errors or warnings, no exclusions.
+- Design rule check (DRC): zero violations, zero unconnected items, zero
+  schematic/PCB parity issues, no exclusions and no ignored check types.
+- Native schematic netlist and actual PCB agree on 217 connected contacts and
+  34 individually isolated, intentionally unused contacts.
+- All 53 schematic references use through-hole footprints. Four additional
+  M3 holes are board-only features. There are no surface-mount parts.
+- Fixed pin map: 18 PWM outputs, 12 non-PWM EN/CS pins, SPI0 and nine unused
+  digital contacts. All six axes are edge-aligned; the center-aligned build
+  flag is absent and `lib_archive = no` is retained.
+- Teensy VIN is isolated; Mini regulator outputs and unused control contacts
+  are isolated. Encoder socket order, six 10k pull-downs, six default-open
+  control-ground bridges and source-derived Mini hole geometry are checked.
+- The original 171 deliberate power/phase/ground/supply segments are unchanged
+  after signal routing. Two additional quiet-ground links use four locked
+  segments. All 29 ground vias are deliberately placed and locked.
+- Final copper contains 597 track segments and 66 vias (37 signal, 29 ground).
+  Only PWM, EN, CS and SPI nets may contain imported automatic routes.
+- The one-page guide covers all 67 real nets exactly once. KiCad's 34
+  `unconnected-(...)` names label unused single contacts, not additional wires.
 
-Read the JSON reports as well as this document: a normal tool exit without
-`--exit-code-violations` does **not** mean a board passed. KiCad reports spacing
-violations and unconnected items separately. A board with zero spacing violations
-but hundreds of opens is **not DRC-clean**.
+`export_review.py` fails if any strict check fails. `audit.py`,
+`verify_board.py` and `tools/check_ground_bridges.py` add independent checks
+against the circuit source, exported netlist and actual copper geometry.
 
-## Rule baseline
+## Board rule profile
 
-Proposed stack-up: two layers, 1.6 mm FR-4, 1 oz copper. The project applies:
+The target is ordinary **two-layer, 1 oz copper, green solder mask**, 1.6 mm
+board material. A copper ounce is a thickness specification, not board weight.
+Solder mask is the insulating coating over copper; silkscreen is the printed
+label layer. These settings are checked against
+[JLCPCB's published capabilities](https://jlcpcb.com/capabilities/pcb-capabilities).
+They are deliberately less demanding than the smallest available copper sizes.
 
-- 0.20 mm minimum copper clearance and track width; 0.25 mm default signal width.
-- 0.60 mm minimum via diameter, 0.30 mm minimum drilled hole, 0.15 mm minimum via
-  annular width; default via 0.65/0.30 mm. An annular ring is the copper around a
-  drilled hole. Through-hole component pads additionally need the manufacturer's
-  annular-ring rule checked before release.
-- 0.50 mm copper-to-board-edge clearance and 0.25 mm hole clearance.
-- Deliberately routed local phase paths are 1.0 mm; bulk-capacitor-to-terminal
-  paths are 1.2 mm; ceramic branches are 0.4 mm. These are not validated ampacity
-  claims. No autorouter has touched power or ground.
-- Input/fuse paths are 1.5 mm with a deliberate ground branch to the input star.
-  Local buck paths, sense/boot connections, and a bottom GND area with vias are
-  also hand-routed. These need thermal review; the converter's 2 A datasheet
-  layout recommends 2 oz copper, not this draft's provisional 1 oz.
+| Check | Project minimum / chosen size |
+|---|---:|
+| Copper track width / spacing | 0.20 / 0.20 mm |
+| Via outside diameter / drilled hole | 0.70 / 0.30 mm |
+| Via annular ring (copper around hole) | 0.20 mm |
+| Hole-to-hole and hole-to-other-copper clearance | 0.45 mm |
+| Copper to board edge | 0.50 mm |
+| Solder-mask web / opening expansion | 0.10 / 0 mm (1:1) |
+| Label height / character stroke / label-to-pad clearance | 1.0 / 0.15 / 0.15 mm |
 
-These are conservative signal-size choices relative to
-[JLCPCB's published capabilities](https://jlcpcb.com/capabilities/Capab), not a
-completed manufacturing qualification. Final review must also cover through-hole
-annular rings, solder-mask slivers, silkscreen, finished-hole tolerances, copper
-weight, drill/edge spacing, component courtyards and the chosen assembly process.
-The power distribution cannot be sized from a generic minimum-width rule.
+Motor power uses deliberately routed 3 mm main supply copper, 2 mm supply
+branches, 1.5 mm individual motor returns and 1 mm phase routes. These widths
+are design choices, **not a validated six-motor current rating**.
 
-## ERC modelling limitations — not hidden waivers
+## Visual and mechanical review
 
-The socket symbols are electrically passive: ERC does not know the internal
-Teensy or Mini circuitry. Five power flags explicitly declare real sources after
-passive parts: supply ground, Teensy-generated 3.3 V, protected 12 V, diode-OR VIN,
-and regulated buck output after its inductor. Flags are declarations, not extra
-supplies or proof that the circuit regulates correctly.
+The native schematic PDF has nine pages; the net guide and fit template each
+have one. Review PDFs are rendered to images and inspected for clipping and
+readability. Detail sheets use portrait A4 with enlarged labels. Native top,
+bottom and angled 3D renders are also inspected. Plug-in Teensy, Mini and encoder
+boards and external wires are omitted from the render; it is not an assembled
+rig model.
 
-IC inputs/outputs are typed, but transistor, diode and connector symbols are
-generic physical-pin representations. ERC cannot validate MOSFET orientation,
-analog stability, cable reversal, voltage thresholds, heat, power sequencing or
-firmware. Separate datasheet/physical checks are necessary. There are no approved
-ERC/DRC suppression waivers; intentionally unused contacts have explicit no-connect
-markers. Unrouted nets must be completed, not suppressed.
+The user has confirmed Mini socket fit on a 1:1 template, encoder pin 1/order,
+and the 160 x 120 mm base fit. These confirmations are recorded, not reopened.
+The approved short power-wire pairs avoid the Mini's off-grid power terminals.
 
-## Outstanding work, in order
+## What the checks cannot prove
 
-1. **User hardware evidence:** confirm actual Mini revision/socket geometry,
-   encoder board and every cable contact, and wrist variant/connector. These can
-   change component placement and net order.
-2. **Safety choice:** non-latching kill versus a hardware latch with manual reset.
-   The current draft is non-latching and can restart when the loop is restored.
-   The user explicitly requested leaving this choice flagged for now; do not
-   interpret that as approval of automatic restart behavior.
-3. **Circuit qualification:** exact 12 V STS3215 electrical levels and power-off
-   injection behavior; final wrist bias/isolation; fuse/current budget, inrush,
-   regenerative overvoltage and power-path worst-case voltages.
-4. **Physical design:** confirm available base size and socket heights; refine
-   buck-converter placement and SPI source-resistor placement. Finish legible
-   connector/polarity/test-point silk labels; most reference designators are
-   currently hidden to avoid printing over pads.
-5. **Routing:** input/fuse/MOSFET and local buck connections are now hand-routed.
-   Complete 12 V/5 V distribution, six separate motor returns, wrist return and
-   the remaining ground-star branches. Plan
-   quiet logic ground and fingertip return before signal routing. Complete signals
-   with continuous return paths; do not connect separate ground names with a
-   blanket plane. Remaining open connections are real unfinished design work.
-6. **Release validation:** zero unrouted nets, DRC/ ERC clean with any noncritical
-   waivers individually justified, schematic-to-board consistency, final BOM and
-   assembly rotations/availability, power and mechanical review by an experienced
-   electronics designer, then manufacturing outputs.
-7. **Firmware and bench bring-up:** implement the new six-axis pin map, keep all
-   requests low at boot, run `initFOC` only on command, retain explicit `loopFOC`,
-   and measure simultaneous PWM/SPI/FOC timing. Never use the old bench sketch as
-   though it implemented this board's wiring.
+ERC checks declared electrical connections; DRC checks geometric rules. Neither
+simulates motors or proves safe current, correct purchased parts, solder quality,
+signal integrity, firmware behavior or compatibility with the exact power supply.
 
-## First-prototype test sequence (after release, not permission to order now)
+Human review and bench tests still need to establish:
 
-Use a current-limited bench supply and keep the mechanism unloaded. Do not connect
-the phone or wear/hold the moving assembly for first power-up.
+1. Simultaneous motor current, rail heating, connector limits, supply current
+   limit and the fuse cartridge. 3.15 A time-delay is only a candidate.
+2. Input and electrolytic-capacitor polarity, encoder voltage/current budget,
+   socket orientation/height and final purchased header fit/current rating.
+3. Reliable encoder communication over six real cables. The central on-board
+   SPI copper totals 189.5 mm SCK, 204.4 mm MOSI and 194.7 mm MISO across all
+   branches; these are not single-cable lengths or a speed guarantee.
+4. EN stays low while the Teensy resets or USB is disconnected; power-up/down
+   behavior is tested with a current-limited supply and restrained mechanics.
+5. Motor energy returned to the supply does not raise 12 V excessively; the
+   large capacitors store charge and must be measured before rewiring.
+6. Ground performance with JP1-JP6 left **open**. Closing them creates additional
+   ground paths through the Mini and needs deliberate review.
+7. Six-axis firmware migration and edge-aligned timing. The runtime remains the
+   one-axis bench version with old EN/CS assignments; it is not ready to flash
+   for this carrier. Bench evidence in `firmware/bringup/` is unchanged.
 
-1. Without modules or power: inspect all soldering and polarities, confirm connector
-   mappings, check for unintended rail shorts. Account for capacitors charging
-   from the meter rather than interpreting every initial beep as a permanent short.
-2. Verify the Teensy's VUSB/VIN link is cut before connecting board and USB power
-   together. Check USB-only, board-only and both-source operation without motors;
-   ensure no board power is fed back toward the PC.
-3. Power the carrier alone with a low current limit; measure protected 12 V, buck
-   5 V and VIN. Check converter waveforms and temperature. Disconnect and verify
-   discharge before installing the Teensy.
-4. With Teensy only, measure 3.3 V and startup enable states. Open/short the NC loop
-   and verify all six gated outputs go low with open loop even if firmware stalls.
-5. Add one *verified* encoder, check its 3.3 V and raw SPI data, then add one Mini
-   and motor. Start with a conservative voltage limit; `initFOC` moves the shaft.
-6. Test kill and explicit re-arm, then repeat axis by axis. Scope noise with motors
-   commutating, not just stationary. Validate connector and wire temperature.
-7. Add wrist only after interface qualification. Check data levels, transmit
-   turn-around, kill behavior and powered-off injection before combining loads.
-8. Increase simultaneous load while logging input peaks, supply rise during
-   braking, 5 V/3.3 V dips, loop time and faults. Revisit fuse and copper sizing
-   with measurements. Connect fingertips/phone last and check for phantom touches.
+There is no hardware kill or reverse-polarity protection in this simplified v1.
+Cutting USB is not a motor-power disconnect. See the
+[human-review and staged bring-up checklist](hardware-check.md) before ordering.
+The removed full-feature draft is recoverable from local checkpoint `36e9dca`.
 
-Never move phase leads on a live rail. Stopping firmware does not discharge the
-bulk capacitors or establish safe isolation.
+## Tool diagnostics
+
+Standalone KiCad Python prints a wxApp-traits diagnostic in this environment;
+the scripts exit successfully and their assertions run. Native PDF/PNG commands
+may print a Fontconfig cache-version warning. These are tool-environment messages,
+not ignored ERC/DRC findings. See [tooling](tooling.md) for reproduction commands
+and installed software. No firmware flash, cloud routing, PCB upload or git push
+was performed.

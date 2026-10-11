@@ -1,0 +1,2 @@
+# PDF cross-reference tables contain intentional spacing; never treat as text.
+*.pdf binary

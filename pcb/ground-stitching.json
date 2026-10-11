@@ -1,0 +1,230 @@
+[
+  {
+    "x": 51.25,
+    "y": 51,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "reason": "deliberate ground-link endpoint"
+  },
+  {
+    "x": 56,
+    "y": 54.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "reason": "deliberate ground-link endpoint"
+  },
+  {
+    "x": 87.25,
+    "y": 50,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "reason": "deliberate ground-link endpoint"
+  },
+  {
+    "x": 94.25,
+    "y": 50,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "reason": "deliberate ground-link endpoint"
+  },
+  {
+    "x": 156.75,
+    "y": 59.25,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 18.305,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 34.0,
+    "y": 68.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 8.512,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 80.0,
+    "y": 49.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 4.067,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 93.5,
+    "y": 54.75,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 3.907,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 33.0,
+    "y": 76.25,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 3.423,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 46.75,
+    "y": 82.75,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.49,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 95.5,
+    "y": 82.75,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.358,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 57.75,
+    "y": 49.75,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.188,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 37.5,
+    "y": 45.25,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.028,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 100.25,
+    "y": 49.75,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.026,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 52.75,
+    "y": 55.25,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 1.835,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 69.0,
+    "y": 55.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 1.694,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 65.5,
+    "y": 45.25,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 1.55,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 84.25,
+    "y": 55.25,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.935,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 83.5,
+    "y": 81.75,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.785,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 92.75,
+    "y": 50.25,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.771,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 84.5,
+    "y": 62.25,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.685,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 44.0,
+    "y": 62.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.502,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 46.5,
+    "y": 48.75,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.485,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 51.5,
+    "y": 49.75,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.425,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 104.25,
+    "y": 83.25,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.4,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 100.0,
+    "y": 79.25,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.224,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 54.5,
+    "y": 78.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.2,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 97.5,
+    "y": 78.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.2,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 54.75,
+    "y": 46.25,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.11,
+    "reason": "interplane stitch"
+  }
+]

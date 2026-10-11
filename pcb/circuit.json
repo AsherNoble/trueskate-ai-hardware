@@ -41,7 +41,7 @@
       "A3_PWM1",
       "A6_PWM1",
       "A6_PWM2",
-      "KILL_OK",
+      null,
       "SPI_MOSI",
       "SPI_MISO",
       "3V3",
@@ -51,13 +51,13 @@
       "A2_CS",
       "A6_PWM3",
       "A3_PWM3",
-      "A5_EN_REQ",
-      "A6_EN_REQ",
+      "A5_EN",
+      "A6_EN",
       "A3_CS"
     ],
     "page": "controller",
     "sch": [
-      60,
+      65,
       85
     ],
     "pcb": [
@@ -65,36 +65,10 @@
       75.24,
       90
     ],
-    "lcsc": "",
     "price": 1.5,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "24x 2.54 mm; physical pin legend: GND,0,1,2,3,4,5,6,7,8,9,10,11,12,3V3,24,25,26,27,28,29,30,31,32"
+    "note": "Physical pin legend: GND,0,1,2,3,4,5,6,7,8,9,10,11,12,3V3,24,25,26,27,28,29,30,31,32",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "J2",
@@ -127,34 +101,34 @@
       "24"
     ],
     "nets": [
-      "VIN_OR",
+      null,
       "GND",
       "3V3",
       "A2_PWM3",
       "A2_PWM2",
-      "A4_EN_REQ",
-      "A3_EN_REQ",
-      "LINK_SCL",
-      "LINK_SDA",
-      "A2_EN_REQ",
-      "A1_EN_REQ",
+      "A4_EN",
+      "A3_EN",
+      null,
+      null,
+      "A2_EN",
+      "A1_EN",
       null,
       null,
       "SPI_SCK",
       "GND",
-      "WRIST_TX_ENABLE",
+      null,
       "A6_CS",
       "A5_CS",
       "A4_CS",
       "A5_PWM3",
       "A3_PWM2",
-      "WRIST_TX",
-      "WRIST_RX",
+      null,
+      null,
       "A5_PWM2"
     ],
     "page": "controller",
     "sch": [
-      175,
+      190,
       85
     ],
     "pcb": [
@@ -162,458 +136,10 @@
       60,
       90
     ],
-    "lcsc": "",
     "price": 1.5,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "24x 2.54 mm; physical pin legend: VIN,GND,3V3,23,22,21,20,19,18,17,16,15,14,13,GND,41,40,39,38,37,36,35,34,33"
-  },
-  {
-    "ref": "J3",
-    "value": "VUSB from isolated Teensy pad",
-    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "VUSB",
-      "GND"
-    ],
-    "page": "controller",
-    "sch": [
-      60,
-      150
-    ],
-    "pcb": [
-      40,
-      54,
-      90
-    ],
+    "note": "Physical pin legend: VIN,GND,3V3,23,22,21,20,19,18,17,16,15,14,13,GND,41,40,39,38,37,36,35,34,33",
     "lcsc": "",
-    "price": 0.15,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "J4",
-    "value": "NC KILL SWITCH",
-    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "KILL_SEND",
-      "KILL_RAW"
-    ],
-    "page": "safety",
-    "sch": [
-      55,
-      40
-    ],
-    "pcb": [
-      8,
-      70,
-      0
-    ],
-    "lcsc": "",
-    "price": 0.15,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R1",
-    "value": "1k",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "3V3",
-      "KILL_SEND"
-    ],
-    "page": "safety",
-    "sch": [
-      130,
-      40
-    ],
-    "pcb": [
-      14,
-      67,
-      0
-    ],
-    "lcsc": "C21190",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R2",
-    "value": "10k",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "KILL_RAW",
-      "GND"
-    ],
-    "page": "safety",
-    "sch": [
-      205,
-      40
-    ],
-    "pcb": [
-      14,
-      73,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C1",
-    "value": "1nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "KILL_RAW",
-      "GND"
-    ],
-    "page": "safety",
-    "sch": [
-      55,
-      70
-    ],
-    "pcb": [
-      18,
-      73,
-      0
-    ],
-    "lcsc": "C1588",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "U3",
-    "value": "SN74LVC1G17DBVR",
-    "fp": "Package_TO_SOT_SMD:SOT-23-5",
-    "pins": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
-    "nets": [
-      null,
-      "KILL_RAW",
-      "GND",
-      "KILL_OK",
-      "3V3"
-    ],
-    "page": "safety",
-    "sch": [
-      130,
-      70
-    ],
-    "pcb": [
-      23,
-      73,
-      0
-    ],
-    "lcsc": "C7836",
-    "price": 0.1696,
-    "assembly": "JLCPCB",
-    "types": [
-      "no_connect",
-      "input",
-      "power_in",
-      "output",
-      "power_in"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C2",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "3V3",
-      "GND"
-    ],
-    "page": "safety",
-    "sch": [
-      205,
-      70
-    ],
-    "pcb": [
-      23,
-      78,
-      0
-    ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "U1",
-    "value": "SN74LVC08APWR",
-    "fp": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
-    "pins": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12",
-      "13",
-      "14"
-    ],
-    "nets": [
-      "A1_EN_REQ",
-      "KILL_OK",
-      "A1_EN",
-      "A2_EN_REQ",
-      "KILL_OK",
-      "A2_EN",
-      "GND",
-      "A3_EN",
-      "A3_EN_REQ",
-      "KILL_OK",
-      null,
-      "GND",
-      "GND",
-      "3V3"
-    ],
-    "page": "safety",
-    "sch": [
-      70,
-      120
-    ],
-    "pcb": [
-      60,
-      67,
-      0
-    ],
-    "lcsc": "C465737",
-    "price": 0.3759,
-    "assembly": "JLCPCB",
-    "types": [
-      "input",
-      "input",
-      "output",
-      "input",
-      "input",
-      "output",
-      "power_in",
-      "output",
-      "input",
-      "input",
-      "output",
-      "input",
-      "input",
-      "power_in"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C3",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "3V3",
-      "GND"
-    ],
-    "page": "safety",
-    "sch": [
-      70,
-      165
-    ],
-    "pcb": [
-      60,
-      72,
-      0
-    ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "U2",
-    "value": "SN74LVC08APWR",
-    "fp": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
-    "pins": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12",
-      "13",
-      "14"
-    ],
-    "nets": [
-      "A4_EN_REQ",
-      "KILL_OK",
-      "A4_EN",
-      "A5_EN_REQ",
-      "KILL_OK",
-      "A5_EN",
-      "GND",
-      "A6_EN",
-      "A6_EN_REQ",
-      "KILL_OK",
-      "WRIST_TX_ALLOWED",
-      "WRIST_TX_ENABLE",
-      "KILL_OK",
-      "3V3"
-    ],
-    "page": "safety",
-    "sch": [
-      185,
-      120
-    ],
-    "pcb": [
-      76,
-      67,
-      0
-    ],
-    "lcsc": "C465737",
-    "price": 0.3759,
-    "assembly": "JLCPCB",
-    "types": [
-      "input",
-      "input",
-      "output",
-      "input",
-      "input",
-      "output",
-      "power_in",
-      "output",
-      "input",
-      "input",
-      "output",
-      "input",
-      "input",
-      "power_in"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C4",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "3V3",
-      "GND"
-    ],
-    "page": "safety",
-    "sch": [
-      185,
-      165
-    ],
-    "pcb": [
-      76,
-      72,
-      0
-    ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "assembly": "Hand"
   },
   {
     "ref": "J11",
@@ -635,10 +161,10 @@
       "P3"
     ],
     "nets": [
-      null,
+      "CGND1",
       null,
       "A1_PWM1",
-      null,
+      "CGND1",
       "A1_PWM2",
       null,
       "A1_PWM3",
@@ -656,28 +182,13 @@
     ],
     "pcb": [
       35,
-      36,
+      30,
       180
     ],
-    "lcsc": "",
     "price": 0.7,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "Socket set: 2x5 plus 1x3; geometry approval pending"
+    "note": "User-verified 2x5 and 1x3 female socket geometry",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "J21",
@@ -695,28 +206,23 @@
     ],
     "page": "axis1",
     "sch": [
-      185,
+      190,
       45
     ],
     "pcb": [
       41.604,
-      10,
+      7,
       270
     ],
-    "lcsc": "",
     "price": 0.1,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "note": "",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "J31",
-    "value": "ENCODER JST-SH 6p",
-    "fp": "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical",
+    "value": "ENCODER breakout FEMALE 1x6",
+    "fp": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
     "pins": [
       "1",
       "2",
@@ -726,71 +232,32 @@
       "6"
     ],
     "nets": [
-      "SPI_SCK_CABLE",
+      "SPI_SCK",
       "SPI_MISO",
-      "SPI_MOSI_CABLE",
-      "A1_CS_CABLE",
+      "SPI_MOSI",
+      "A1_CS",
       "3V3",
       "GND"
     ],
     "page": "axis1",
     "sch": [
-      185,
-      92
+      190,
+      90
     ],
     "pcb": [
-      80,
-      48,
-      0
+      43,
+      47,
+      90
     ],
-    "lcsc": "C160392",
-    "price": 0.349,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "CLK MISO MOSI CSn VDD GND verified on bench; footprint contact-1 orientation still to confirm on the fab drawing"
-  },
-  {
-    "ref": "R11",
-    "value": "10k EN boot pulldown",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A1_EN_REQ",
-      "GND"
-    ],
-    "page": "axis1",
-    "sch": [
-      65,
-      123
-    ],
-    "pcb": [
-      50,
-      64,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.5,
+    "note": "Pin 1 = square pad = CLK; verified by user",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "R21",
-    "value": "10k EN output pulldown",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "value": "10k EN pull-down",
+    "fp": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
     "pins": [
       "1",
       "2"
@@ -801,177 +268,126 @@
     ],
     "page": "axis1",
     "sch": [
-      175,
-      123
+      70,
+      120
     ],
     "pcb": [
-      50,
-      80,
+      34,
+      36,
       0
     ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.05,
+    "note": "10k, 1/4 W, 5% or better",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
-    "ref": "R31",
-    "value": "10k CS idle pullup",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "ref": "JP1",
+    "value": "CONTROL GND / OPEN",
+    "fp": "TrueSkate:GroundBridge_THT",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "A1_CS",
-      "3V3"
+      "CGND1",
+      "GND"
     ],
     "page": "axis1",
     "sch": [
-      65,
-      150
+      190,
+      120
     ],
     "pcb": [
-      78,
-      54,
+      25,
+      36,
       0
     ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R41",
-    "value": "33R CS source damping",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A1_CS",
-      "A1_CS_CABLE"
-    ],
-    "page": "axis1",
-    "sch": [
-      175,
-      150
-    ],
-    "pcb": [
-      82,
-      54,
-      0
-    ],
-    "lcsc": "C23140",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0,
+    "note": "Leave open; optional soldered wire bridge after noise review",
+    "lcsc": "",
+    "assembly": "PCB / optional wire"
   },
   {
     "ref": "C11",
-    "value": "EEUFR1V102B 1000uF 35V",
+    "value": "1000uF 35V EEUFR1V102B",
     "fp": "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND1"
     ],
     "page": "axis1",
     "sch": [
-      65,
-      178
+      70,
+      155
     ],
     "pcb": [
       56,
-      20,
+      16,
       0
     ],
-    "lcsc": "C128476",
     "price": 0,
-    "assembly": "Hand / owned",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "note": "Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm",
+    "lcsc": "C128476",
+    "assembly": "Hand / owned"
   },
   {
     "ref": "C21",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "value": "100nF 50V ceramic",
+    "fp": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND1"
     ],
     "page": "axis1",
     "sch": [
-      175,
-      178
+      190,
+      155
     ],
     "pcb": [
-      58,
-      28,
+      56,
+      24.2,
       0
     ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.13,
+    "note": "Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder",
+    "lcsc": "C2979769",
+    "assembly": "Hand"
   },
   {
     "ref": "J41",
-    "value": "MINI POWER: +12V / GND",
+    "value": "MINI POWER +12V / GND",
     "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND1"
     ],
     "page": "axis1",
     "sch": [
-      65,
-      210
+      70,
+      190
     ],
     "pcb": [
       56,
-      36,
+      30,
       0
     ],
+    "price": 2.5,
+    "note": "Phoenix Contact 1727010; approved short paired wires to Mini",
     "lcsc": "",
-    "price": 0.8,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "User approved short paired wires; main-board terminal independent of Mini pad pitch"
+    "assembly": "Hand"
   },
   {
     "ref": "J12",
@@ -993,10 +409,10 @@
       "P3"
     ],
     "nets": [
-      null,
+      "CGND2",
       null,
       "A2_PWM1",
-      null,
+      "CGND2",
       "A2_PWM2",
       null,
       "A2_PWM3",
@@ -1014,28 +430,13 @@
     ],
     "pcb": [
       78,
-      36,
+      30,
       180
     ],
-    "lcsc": "",
     "price": 0.7,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "Socket set: 2x5 plus 1x3; geometry approval pending"
+    "note": "User-verified 2x5 and 1x3 female socket geometry",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "J22",
@@ -1053,28 +454,23 @@
     ],
     "page": "axis2",
     "sch": [
-      185,
+      190,
       45
     ],
     "pcb": [
       84.604,
-      10,
+      7,
       270
     ],
-    "lcsc": "",
     "price": 0.1,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "note": "",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "J32",
-    "value": "ENCODER JST-SH 6p",
-    "fp": "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical",
+    "value": "ENCODER breakout FEMALE 1x6",
+    "fp": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
     "pins": [
       "1",
       "2",
@@ -1084,71 +480,32 @@
       "6"
     ],
     "nets": [
-      "SPI_SCK_CABLE",
+      "SPI_SCK",
       "SPI_MISO",
-      "SPI_MOSI_CABLE",
-      "A2_CS_CABLE",
+      "SPI_MOSI",
+      "A2_CS",
       "3V3",
       "GND"
     ],
     "page": "axis2",
     "sch": [
-      185,
-      92
+      190,
+      90
     ],
     "pcb": [
-      101,
-      48,
-      0
+      86,
+      47,
+      90
     ],
-    "lcsc": "C160392",
-    "price": 0.349,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "CLK MISO MOSI CSn VDD GND verified on bench; footprint contact-1 orientation still to confirm on the fab drawing"
-  },
-  {
-    "ref": "R12",
-    "value": "10k EN boot pulldown",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A2_EN_REQ",
-      "GND"
-    ],
-    "page": "axis2",
-    "sch": [
-      65,
-      123
-    ],
-    "pcb": [
-      50,
-      68,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.5,
+    "note": "Pin 1 = square pad = CLK; verified by user",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "R22",
-    "value": "10k EN output pulldown",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "value": "10k EN pull-down",
+    "fp": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
     "pins": [
       "1",
       "2"
@@ -1159,177 +516,126 @@
     ],
     "page": "axis2",
     "sch": [
-      175,
-      123
+      70,
+      120
     ],
     "pcb": [
-      57,
-      80,
+      77,
+      36,
       0
     ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.05,
+    "note": "10k, 1/4 W, 5% or better",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
-    "ref": "R32",
-    "value": "10k CS idle pullup",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "ref": "JP2",
+    "value": "CONTROL GND / OPEN",
+    "fp": "TrueSkate:GroundBridge_THT",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "A2_CS",
-      "3V3"
+      "CGND2",
+      "GND"
     ],
     "page": "axis2",
     "sch": [
-      65,
-      150
+      190,
+      120
     ],
     "pcb": [
-      99,
-      54,
+      68,
+      36,
       0
     ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R42",
-    "value": "33R CS source damping",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A2_CS",
-      "A2_CS_CABLE"
-    ],
-    "page": "axis2",
-    "sch": [
-      175,
-      150
-    ],
-    "pcb": [
-      103,
-      54,
-      0
-    ],
-    "lcsc": "C23140",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0,
+    "note": "Leave open; optional soldered wire bridge after noise review",
+    "lcsc": "",
+    "assembly": "PCB / optional wire"
   },
   {
     "ref": "C12",
-    "value": "EEUFR1V102B 1000uF 35V",
+    "value": "1000uF 35V EEUFR1V102B",
     "fp": "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND2"
     ],
     "page": "axis2",
     "sch": [
-      65,
-      178
+      70,
+      155
     ],
     "pcb": [
       99,
-      20,
+      16,
       0
     ],
-    "lcsc": "C128476",
     "price": 0,
-    "assembly": "Hand / owned",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "note": "Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm",
+    "lcsc": "C128476",
+    "assembly": "Hand / owned"
   },
   {
     "ref": "C22",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "value": "100nF 50V ceramic",
+    "fp": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND2"
     ],
     "page": "axis2",
     "sch": [
-      175,
-      178
+      190,
+      155
     ],
     "pcb": [
-      101,
-      28,
+      99,
+      24.2,
       0
     ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.13,
+    "note": "Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder",
+    "lcsc": "C2979769",
+    "assembly": "Hand"
   },
   {
     "ref": "J42",
-    "value": "MINI POWER: +12V / GND",
+    "value": "MINI POWER +12V / GND",
     "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND2"
     ],
     "page": "axis2",
     "sch": [
-      65,
-      210
+      70,
+      190
     ],
     "pcb": [
       99,
-      36,
+      30,
       0
     ],
+    "price": 2.5,
+    "note": "Phoenix Contact 1727010; approved short paired wires to Mini",
     "lcsc": "",
-    "price": 0.8,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "User approved short paired wires; main-board terminal independent of Mini pad pitch"
+    "assembly": "Hand"
   },
   {
     "ref": "J13",
@@ -1351,10 +657,10 @@
       "P3"
     ],
     "nets": [
-      null,
+      "CGND3",
       null,
       "A3_PWM1",
-      null,
+      "CGND3",
       "A3_PWM2",
       null,
       "A3_PWM3",
@@ -1372,28 +678,13 @@
     ],
     "pcb": [
       121,
-      36,
+      30,
       180
     ],
-    "lcsc": "",
     "price": 0.7,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "Socket set: 2x5 plus 1x3; geometry approval pending"
+    "note": "User-verified 2x5 and 1x3 female socket geometry",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "J23",
@@ -1411,28 +702,23 @@
     ],
     "page": "axis3",
     "sch": [
-      185,
+      190,
       45
     ],
     "pcb": [
       127.604,
-      10,
+      7,
       270
     ],
-    "lcsc": "",
     "price": 0.1,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "note": "",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "J33",
-    "value": "ENCODER JST-SH 6p",
-    "fp": "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical",
+    "value": "ENCODER breakout FEMALE 1x6",
+    "fp": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
     "pins": [
       "1",
       "2",
@@ -1442,71 +728,32 @@
       "6"
     ],
     "nets": [
-      "SPI_SCK_CABLE",
+      "SPI_SCK",
       "SPI_MISO",
-      "SPI_MOSI_CABLE",
-      "A3_CS_CABLE",
+      "SPI_MOSI",
+      "A3_CS",
       "3V3",
       "GND"
     ],
     "page": "axis3",
     "sch": [
-      185,
-      92
+      190,
+      90
     ],
     "pcb": [
-      122,
-      48,
-      0
+      129,
+      47,
+      90
     ],
-    "lcsc": "C160392",
-    "price": 0.349,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "CLK MISO MOSI CSn VDD GND verified on bench; footprint contact-1 orientation still to confirm on the fab drawing"
-  },
-  {
-    "ref": "R13",
-    "value": "10k EN boot pulldown",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A3_EN_REQ",
-      "GND"
-    ],
-    "page": "axis3",
-    "sch": [
-      65,
-      123
-    ],
-    "pcb": [
-      50,
-      72,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.5,
+    "note": "Pin 1 = square pad = CLK; verified by user",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "R23",
-    "value": "10k EN output pulldown",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "value": "10k EN pull-down",
+    "fp": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
     "pins": [
       "1",
       "2"
@@ -1517,177 +764,126 @@
     ],
     "page": "axis3",
     "sch": [
-      175,
-      123
-    ],
-    "pcb": [
-      64,
-      80,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R33",
-    "value": "10k CS idle pullup",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A3_CS",
-      "3V3"
-    ],
-    "page": "axis3",
-    "sch": [
-      65,
-      150
+      70,
+      120
     ],
     "pcb": [
       120,
-      54,
+      36,
       0
     ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.05,
+    "note": "10k, 1/4 W, 5% or better",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
-    "ref": "R43",
-    "value": "33R CS source damping",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "ref": "JP3",
+    "value": "CONTROL GND / OPEN",
+    "fp": "TrueSkate:GroundBridge_THT",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "A3_CS",
-      "A3_CS_CABLE"
+      "CGND3",
+      "GND"
     ],
     "page": "axis3",
     "sch": [
-      175,
-      150
+      190,
+      120
     ],
     "pcb": [
-      124,
-      54,
+      111,
+      36,
       0
     ],
-    "lcsc": "C23140",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0,
+    "note": "Leave open; optional soldered wire bridge after noise review",
+    "lcsc": "",
+    "assembly": "PCB / optional wire"
   },
   {
     "ref": "C13",
-    "value": "EEUFR1V102B 1000uF 35V",
+    "value": "1000uF 35V EEUFR1V102B",
     "fp": "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND3"
     ],
     "page": "axis3",
     "sch": [
-      65,
-      178
+      70,
+      155
     ],
     "pcb": [
       142,
-      20,
+      16,
       0
     ],
-    "lcsc": "C128476",
     "price": 0,
-    "assembly": "Hand / owned",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "note": "Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm",
+    "lcsc": "C128476",
+    "assembly": "Hand / owned"
   },
   {
     "ref": "C23",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "value": "100nF 50V ceramic",
+    "fp": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND3"
     ],
     "page": "axis3",
     "sch": [
-      175,
-      178
+      190,
+      155
     ],
     "pcb": [
-      144,
-      28,
+      142,
+      24.2,
       0
     ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.13,
+    "note": "Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder",
+    "lcsc": "C2979769",
+    "assembly": "Hand"
   },
   {
     "ref": "J43",
-    "value": "MINI POWER: +12V / GND",
+    "value": "MINI POWER +12V / GND",
     "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND3"
     ],
     "page": "axis3",
     "sch": [
-      65,
-      210
+      70,
+      190
     ],
     "pcb": [
       142,
-      36,
+      30,
       0
     ],
+    "price": 2.5,
+    "note": "Phoenix Contact 1727010; approved short paired wires to Mini",
     "lcsc": "",
-    "price": 0.8,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "User approved short paired wires; main-board terminal independent of Mini pad pitch"
+    "assembly": "Hand"
   },
   {
     "ref": "J14",
@@ -1709,10 +905,10 @@
       "P3"
     ],
     "nets": [
-      null,
+      "CGND4",
       null,
       "A4_PWM1",
-      null,
+      "CGND4",
       "A4_PWM2",
       null,
       "A4_PWM3",
@@ -1733,25 +929,10 @@
       92,
       0
     ],
-    "lcsc": "",
     "price": 0.7,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "Socket set: 2x5 plus 1x3; geometry approval pending"
+    "note": "User-verified 2x5 and 1x3 female socket geometry",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "J24",
@@ -1769,7 +950,7 @@
     ],
     "page": "axis4",
     "sch": [
-      185,
+      190,
       45
     ],
     "pcb": [
@@ -1777,20 +958,15 @@
       116,
       90
     ],
-    "lcsc": "",
     "price": 0.1,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "note": "",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "J34",
-    "value": "ENCODER JST-SH 6p",
-    "fp": "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical",
+    "value": "ENCODER breakout FEMALE 1x6",
+    "fp": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
     "pins": [
       "1",
       "2",
@@ -1800,71 +976,32 @@
       "6"
     ],
     "nets": [
-      "SPI_SCK_CABLE",
+      "SPI_SCK",
       "SPI_MISO",
-      "SPI_MOSI_CABLE",
-      "A4_CS_CABLE",
+      "SPI_MOSI",
+      "A4_CS",
       "3V3",
       "GND"
     ],
     "page": "axis4",
     "sch": [
-      185,
-      92
+      190,
+      90
     ],
     "pcb": [
-      80,
-      85,
-      0
+      43,
+      79,
+      90
     ],
-    "lcsc": "C160392",
-    "price": 0.349,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "CLK MISO MOSI CSn VDD GND verified on bench; footprint contact-1 orientation still to confirm on the fab drawing"
-  },
-  {
-    "ref": "R14",
-    "value": "10k EN boot pulldown",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A4_EN_REQ",
-      "GND"
-    ],
-    "page": "axis4",
-    "sch": [
-      65,
-      123
-    ],
-    "pcb": [
-      92,
-      64,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.5,
+    "note": "Pin 1 = square pad = CLK; verified by user",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "R24",
-    "value": "10k EN output pulldown",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "value": "10k EN pull-down",
+    "fp": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
     "pins": [
       "1",
       "2"
@@ -1875,177 +1012,126 @@
     ],
     "page": "axis4",
     "sch": [
-      175,
-      123
+      70,
+      120
     ],
     "pcb": [
-      50,
-      84,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R34",
-    "value": "10k CS idle pullup",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A4_CS",
-      "3V3"
-    ],
-    "page": "axis4",
-    "sch": [
-      65,
-      150
-    ],
-    "pcb": [
-      78,
+      61,
       79,
       0
     ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.05,
+    "note": "10k, 1/4 W, 5% or better",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
-    "ref": "R44",
-    "value": "33R CS source damping",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "ref": "JP4",
+    "value": "CONTROL GND / OPEN",
+    "fp": "TrueSkate:GroundBridge_THT",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "A4_CS",
-      "A4_CS_CABLE"
+      "CGND4",
+      "GND"
     ],
     "page": "axis4",
     "sch": [
-      175,
-      150
+      190,
+      120
     ],
     "pcb": [
+      35.5,
       82,
-      79,
       0
     ],
-    "lcsc": "C23140",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0,
+    "note": "Leave open; optional soldered wire bridge after noise review",
+    "lcsc": "",
+    "assembly": "PCB / optional wire"
   },
   {
     "ref": "C14",
-    "value": "EEUFR1V102B 1000uF 35V",
+    "value": "1000uF 35V EEUFR1V102B",
     "fp": "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND4"
     ],
     "page": "axis4",
     "sch": [
-      65,
-      178
+      70,
+      155
     ],
     "pcb": [
       53,
-      107,
+      109.5,
       0
     ],
-    "lcsc": "C128476",
     "price": 0,
-    "assembly": "Hand / owned",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "note": "Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm",
+    "lcsc": "C128476",
+    "assembly": "Hand / owned"
   },
   {
     "ref": "C24",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "value": "100nF 50V ceramic",
+    "fp": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND4"
     ],
     "page": "axis4",
     "sch": [
-      175,
-      178
+      190,
+      155
     ],
     "pcb": [
-      55,
-      116,
+      53,
+      101.5,
       0
     ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.13,
+    "note": "Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder",
+    "lcsc": "C2979769",
+    "assembly": "Hand"
   },
   {
     "ref": "J44",
-    "value": "MINI POWER: +12V / GND",
+    "value": "MINI POWER +12V / GND",
     "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND4"
     ],
     "page": "axis4",
     "sch": [
-      65,
-      210
+      70,
+      190
     ],
     "pcb": [
       53,
       94,
       0
     ],
+    "price": 2.5,
+    "note": "Phoenix Contact 1727010; approved short paired wires to Mini",
     "lcsc": "",
-    "price": 0.8,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "User approved short paired wires; main-board terminal independent of Mini pad pitch"
+    "assembly": "Hand"
   },
   {
     "ref": "J15",
@@ -2067,10 +1153,10 @@
       "P3"
     ],
     "nets": [
-      null,
+      "CGND5",
       null,
       "A5_PWM1",
-      null,
+      "CGND5",
       "A5_PWM2",
       null,
       "A5_PWM3",
@@ -2091,25 +1177,10 @@
       92,
       0
     ],
-    "lcsc": "",
     "price": 0.7,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "Socket set: 2x5 plus 1x3; geometry approval pending"
+    "note": "User-verified 2x5 and 1x3 female socket geometry",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "J25",
@@ -2127,7 +1198,7 @@
     ],
     "page": "axis5",
     "sch": [
-      185,
+      190,
       45
     ],
     "pcb": [
@@ -2135,20 +1206,15 @@
       116,
       90
     ],
-    "lcsc": "",
     "price": 0.1,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "note": "",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "J35",
-    "value": "ENCODER JST-SH 6p",
-    "fp": "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical",
+    "value": "ENCODER breakout FEMALE 1x6",
+    "fp": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
     "pins": [
       "1",
       "2",
@@ -2158,71 +1224,32 @@
       "6"
     ],
     "nets": [
-      "SPI_SCK_CABLE",
+      "SPI_SCK",
       "SPI_MISO",
-      "SPI_MOSI_CABLE",
-      "A5_CS_CABLE",
+      "SPI_MOSI",
+      "A5_CS",
       "3V3",
       "GND"
     ],
     "page": "axis5",
     "sch": [
-      185,
-      92
+      190,
+      90
     ],
     "pcb": [
-      101,
-      85,
-      0
+      86,
+      79,
+      90
     ],
-    "lcsc": "C160392",
-    "price": 0.349,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "CLK MISO MOSI CSn VDD GND verified on bench; footprint contact-1 orientation still to confirm on the fab drawing"
-  },
-  {
-    "ref": "R15",
-    "value": "10k EN boot pulldown",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A5_EN_REQ",
-      "GND"
-    ],
-    "page": "axis5",
-    "sch": [
-      65,
-      123
-    ],
-    "pcb": [
-      92,
-      68,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.5,
+    "note": "Pin 1 = square pad = CLK; verified by user",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "R25",
-    "value": "10k EN output pulldown",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "value": "10k EN pull-down",
+    "fp": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
     "pins": [
       "1",
       "2"
@@ -2233,177 +1260,126 @@
     ],
     "page": "axis5",
     "sch": [
-      175,
-      123
+      70,
+      120
     ],
     "pcb": [
-      57,
-      84,
+      104,
+      79,
       0
     ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.05,
+    "note": "10k, 1/4 W, 5% or better",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
-    "ref": "R35",
-    "value": "10k CS idle pullup",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "ref": "JP5",
+    "value": "CONTROL GND / OPEN",
+    "fp": "TrueSkate:GroundBridge_THT",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "A5_CS",
-      "3V3"
+      "CGND5",
+      "GND"
     ],
     "page": "axis5",
     "sch": [
-      65,
-      150
+      190,
+      120
     ],
     "pcb": [
-      99,
-      79,
+      78.5,
+      82,
       0
     ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R45",
-    "value": "33R CS source damping",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A5_CS",
-      "A5_CS_CABLE"
-    ],
-    "page": "axis5",
-    "sch": [
-      175,
-      150
-    ],
-    "pcb": [
-      103,
-      79,
-      0
-    ],
-    "lcsc": "C23140",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0,
+    "note": "Leave open; optional soldered wire bridge after noise review",
+    "lcsc": "",
+    "assembly": "PCB / optional wire"
   },
   {
     "ref": "C15",
-    "value": "EEUFR1V102B 1000uF 35V",
+    "value": "1000uF 35V EEUFR1V102B",
     "fp": "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND5"
     ],
     "page": "axis5",
     "sch": [
-      65,
-      178
+      70,
+      155
     ],
     "pcb": [
       96,
-      107,
+      109.5,
       0
     ],
-    "lcsc": "C128476",
     "price": 0,
-    "assembly": "Hand / owned",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "note": "Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm",
+    "lcsc": "C128476",
+    "assembly": "Hand / owned"
   },
   {
     "ref": "C25",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "value": "100nF 50V ceramic",
+    "fp": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND5"
     ],
     "page": "axis5",
     "sch": [
-      175,
-      178
+      190,
+      155
     ],
     "pcb": [
-      98,
-      116,
+      96,
+      101.5,
       0
     ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.13,
+    "note": "Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder",
+    "lcsc": "C2979769",
+    "assembly": "Hand"
   },
   {
     "ref": "J45",
-    "value": "MINI POWER: +12V / GND",
+    "value": "MINI POWER +12V / GND",
     "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND5"
     ],
     "page": "axis5",
     "sch": [
-      65,
-      210
+      70,
+      190
     ],
     "pcb": [
       96,
       94,
       0
     ],
+    "price": 2.5,
+    "note": "Phoenix Contact 1727010; approved short paired wires to Mini",
     "lcsc": "",
-    "price": 0.8,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "User approved short paired wires; main-board terminal independent of Mini pad pitch"
+    "assembly": "Hand"
   },
   {
     "ref": "J16",
@@ -2425,10 +1401,10 @@
       "P3"
     ],
     "nets": [
-      null,
+      "CGND6",
       null,
       "A6_PWM1",
-      null,
+      "CGND6",
       "A6_PWM2",
       null,
       "A6_PWM3",
@@ -2449,25 +1425,10 @@
       92,
       0
     ],
-    "lcsc": "",
     "price": 0.7,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "Socket set: 2x5 plus 1x3; geometry approval pending"
+    "note": "User-verified 2x5 and 1x3 female socket geometry",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "J26",
@@ -2485,7 +1446,7 @@
     ],
     "page": "axis6",
     "sch": [
-      185,
+      190,
       45
     ],
     "pcb": [
@@ -2493,20 +1454,15 @@
       116,
       90
     ],
-    "lcsc": "",
     "price": 0.1,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "note": "",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "J36",
-    "value": "ENCODER JST-SH 6p",
-    "fp": "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical",
+    "value": "ENCODER breakout FEMALE 1x6",
+    "fp": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
     "pins": [
       "1",
       "2",
@@ -2516,71 +1472,32 @@
       "6"
     ],
     "nets": [
-      "SPI_SCK_CABLE",
+      "SPI_SCK",
       "SPI_MISO",
-      "SPI_MOSI_CABLE",
-      "A6_CS_CABLE",
+      "SPI_MOSI",
+      "A6_CS",
       "3V3",
       "GND"
     ],
     "page": "axis6",
     "sch": [
-      185,
-      92
+      190,
+      90
     ],
     "pcb": [
-      122,
-      85,
-      0
+      129,
+      79,
+      90
     ],
-    "lcsc": "C160392",
-    "price": 0.349,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "CLK MISO MOSI CSn VDD GND verified on bench; footprint contact-1 orientation still to confirm on the fab drawing"
-  },
-  {
-    "ref": "R16",
-    "value": "10k EN boot pulldown",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A6_EN_REQ",
-      "GND"
-    ],
-    "page": "axis6",
-    "sch": [
-      65,
-      123
-    ],
-    "pcb": [
-      92,
-      72,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.5,
+    "note": "Pin 1 = square pad = CLK; verified by user",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
     "ref": "R26",
-    "value": "10k EN output pulldown",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "value": "10k EN pull-down",
+    "fp": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
     "pins": [
       "1",
       "2"
@@ -2591,181 +1508,130 @@
     ],
     "page": "axis6",
     "sch": [
-      175,
-      123
+      70,
+      120
     ],
     "pcb": [
-      64,
-      84,
+      147,
+      79,
       0
     ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.05,
+    "note": "10k, 1/4 W, 5% or better",
+    "lcsc": "",
+    "assembly": "Hand"
   },
   {
-    "ref": "R36",
-    "value": "10k CS idle pullup",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "ref": "JP6",
+    "value": "CONTROL GND / OPEN",
+    "fp": "TrueSkate:GroundBridge_THT",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "A6_CS",
-      "3V3"
+      "CGND6",
+      "GND"
     ],
     "page": "axis6",
     "sch": [
-      65,
-      150
+      190,
+      120
     ],
     "pcb": [
-      120,
-      79,
+      121.5,
+      82,
       0
     ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R46",
-    "value": "33R CS source damping",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A6_CS",
-      "A6_CS_CABLE"
-    ],
-    "page": "axis6",
-    "sch": [
-      175,
-      150
-    ],
-    "pcb": [
-      124,
-      79,
-      0
-    ],
-    "lcsc": "C23140",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0,
+    "note": "Leave open; optional soldered wire bridge after noise review",
+    "lcsc": "",
+    "assembly": "PCB / optional wire"
   },
   {
     "ref": "C16",
-    "value": "EEUFR1V102B 1000uF 35V",
+    "value": "1000uF 35V EEUFR1V102B",
     "fp": "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND6"
     ],
     "page": "axis6",
     "sch": [
-      65,
-      178
+      70,
+      155
     ],
     "pcb": [
       139,
-      107,
+      109.5,
       0
     ],
-    "lcsc": "C128476",
     "price": 0,
-    "assembly": "Hand / owned",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "note": "Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm",
+    "lcsc": "C128476",
+    "assembly": "Hand / owned"
   },
   {
     "ref": "C26",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "value": "100nF 50V ceramic",
+    "fp": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND6"
     ],
     "page": "axis6",
     "sch": [
-      175,
-      178
+      190,
+      155
     ],
     "pcb": [
-      141,
-      116,
+      139,
+      101.5,
       0
     ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "price": 0.13,
+    "note": "Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder",
+    "lcsc": "C2979769",
+    "assembly": "Hand"
   },
   {
     "ref": "J46",
-    "value": "MINI POWER: +12V / GND",
+    "value": "MINI POWER +12V / GND",
     "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
     "pins": [
       "1",
       "2"
     ],
     "nets": [
-      "12V_PROTECTED",
+      "12V_FUSED",
       "PGND6"
     ],
     "page": "axis6",
     "sch": [
-      65,
-      210
+      70,
+      190
     ],
     "pcb": [
       139,
       94,
       0
     ],
+    "price": 2.5,
+    "note": "Phoenix Contact 1727010; approved short paired wires to Mini",
     "lcsc": "",
-    "price": 0.8,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "User approved short paired wires; main-board terminal independent of Mini pad pitch"
+    "assembly": "Hand"
   },
   {
     "ref": "J5",
-    "value": "12V INPUT 5.08mm >=10A",
+    "value": "12V INPUT + / -",
     "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
     "pins": [
       "1",
@@ -2777,26 +1643,22 @@
     ],
     "page": "power",
     "sch": [
-      45,
-      40
+      65,
+      55
     ],
     "pcb": [
-      12,
-      14,
+      7,
+      69,
       0
     ],
+    "price": 2,
+    "note": "Phoenix Contact 1715721; 5.08mm pitch",
     "lcsc": "",
-    "price": 1,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "assembly": "Hand"
   },
   {
     "ref": "F1",
-    "value": "5A time-delay fuse / VERIFY",
+    "value": "5x20 fuse holder / fuse TBD",
     "fp": "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open",
     "pins": [
       "1",
@@ -2808,970 +1670,22 @@
     ],
     "page": "power",
     "sch": [
-      120,
-      40
+      190,
+      55
     ],
     "pcb": [
       8,
-      23.5,
-      270
+      50,
+      90
     ],
-    "lcsc": "",
     "price": 1.8,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "Q1",
-    "value": "FQP47P06 reverse-polarity",
-    "fp": "Package_TO_SOT_THT:TO-220-3_Vertical",
-    "pins": [
-      "1",
-      "2",
-      "3"
-    ],
-    "nets": [
-      "REV_GATE",
-      "12V_FUSED",
-      "12V_PROTECTED"
-    ],
-    "page": "power",
-    "sch": [
-      205,
-      40
-    ],
-    "pcb": [
-      19,
-      49,
-      0
-    ],
-    "lcsc": "",
-    "price": 1.5,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R3",
-    "value": "100k",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "REV_GATE",
-      "GND"
-    ],
-    "page": "power",
-    "sch": [
-      45,
-      70
-    ],
-    "pcb": [
-      18,
-      54,
-      0
-    ],
-    "lcsc": "C25803",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "D3",
-    "value": "1N4742A 12V gate clamp",
-    "fp": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "12V_PROTECTED",
-      "REV_GATE"
-    ],
-    "page": "power",
-    "sch": [
-      120,
-      70
-    ],
-    "pcb": [
-      22,
-      55,
-      0
-    ],
-    "lcsc": "",
-    "price": 0.1,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "1=K, 2=A"
-  },
-  {
-    "ref": "U4",
-    "value": "AP63205WU-7 fixed 5V",
-    "fp": "Package_TO_SOT_SMD:TSOT-23-6",
-    "pins": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6"
-    ],
-    "nets": [
-      "BUCK_5V",
-      "12V_PROTECTED",
-      "12V_PROTECTED",
-      "GND",
-      "BUCK_SW",
-      "BUCK_BST"
-    ],
-    "page": "power",
-    "sch": [
-      205,
-      82
-    ],
-    "pcb": [
-      24,
-      63,
-      0
-    ],
-    "lcsc": "C2071056",
-    "price": 0.4337,
-    "assembly": "JLCPCB",
-    "types": [
-      "input",
-      "input",
-      "power_in",
-      "power_in",
-      "power_out",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "L1",
-    "value": "SRN6045TA-4R7M 4.7uH",
-    "fp": "Inductor_SMD:L_Bourns_SRN6045TA",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "BUCK_SW",
-      "BUCK_5V"
-    ],
-    "page": "power",
-    "sch": [
-      45,
-      108
-    ],
-    "pcb": [
-      30.5,
-      63,
-      0
-    ],
-    "lcsc": "C2044594",
-    "price": 0.3411,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "4.5A rated / 6.8A saturation; 680 in LCSC listing"
-  },
-  {
-    "ref": "C5",
-    "value": "10uF 50V X7R",
-    "fp": "Capacitor_SMD:C_1210_3225Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "12V_PROTECTED",
-      "GND"
-    ],
-    "page": "power",
-    "sch": [
-      120,
-      108
-    ],
-    "pcb": [
-      19.3,
-      64,
-      270
-    ],
-    "lcsc": "C432929",
-    "price": 0.2802,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C6",
-    "value": "100nF bootstrap",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "BUCK_BST",
-      "BUCK_SW"
-    ],
-    "page": "power",
-    "sch": [
-      205,
-      125
-    ],
-    "pcb": [
-      26,
-      59,
-      270
-    ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C7",
-    "value": "22uF 25V X5R",
-    "fp": "Capacitor_SMD:C_1206_3216Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "BUCK_5V",
-      "GND"
-    ],
-    "page": "power",
-    "sch": [
-      45,
-      143
-    ],
-    "pcb": [
-      36.5,
-      59.5,
-      0
-    ],
-    "lcsc": "C12891",
-    "price": 0.1747,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C8",
-    "value": "22uF 25V X5R",
-    "fp": "Capacitor_SMD:C_1206_3216Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "BUCK_5V",
-      "GND"
-    ],
-    "page": "power",
-    "sch": [
-      120,
-      143
-    ],
-    "pcb": [
-      36.5,
-      66.5,
-      0
-    ],
-    "lcsc": "C12891",
-    "price": 0.1747,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "D1",
-    "value": "SS14 Schottky",
-    "fp": "Diode_SMD:D_SMA",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "VIN_OR",
-      "BUCK_5V"
-    ],
-    "page": "power",
-    "sch": [
-      45,
-      178
-    ],
-    "pcb": [
-      32,
-      72,
-      0
-    ],
-    "lcsc": "C2480",
-    "price": 0.06,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "1=K cathode (stripe), 2=A anode"
-  },
-  {
-    "ref": "D2",
-    "value": "SS14 Schottky",
-    "fp": "Diode_SMD:D_SMA",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "VIN_OR",
-      "VUSB"
-    ],
-    "page": "power",
-    "sch": [
-      145,
-      178
-    ],
-    "pcb": [
-      32,
-      79,
-      0
-    ],
-    "lcsc": "C2480",
-    "price": 0.06,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "1=K cathode (stripe), 2=A anode"
-  },
-  {
-    "ref": "J6",
-    "value": "WRIST: GND / 12V / DATA",
-    "fp": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
-    "pins": [
-      "1",
-      "2",
-      "3"
-    ],
-    "nets": [
-      "WRIST_GND",
-      "WRIST_12V",
-      "WRIST_DATA"
-    ],
-    "page": "wrist",
-    "sch": [
-      45,
-      40
-    ],
-    "pcb": [
-      145,
-      64,
-      0
-    ],
-    "lcsc": "",
-    "price": 0.3,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": "Confirm Feetech cable housing before release"
-  },
-  {
-    "ref": "U5",
-    "value": "SN74AHCT1G125DBVR TX",
-    "fp": "Package_TO_SOT_SMD:SOT-23-5",
-    "pins": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
-    "nets": [
-      "WRIST_TX_OE_N",
-      "WRIST_TX",
-      "GND",
-      "WRIST_TX_5V",
-      "BUCK_5V"
-    ],
-    "page": "wrist",
-    "sch": [
-      125,
-      45
-    ],
-    "pcb": [
-      135,
-      63,
-      0
-    ],
-    "lcsc": "C7484",
-    "price": 0.12,
-    "assembly": "JLCPCB",
-    "types": [
-      "input",
-      "input",
-      "power_in",
-      "tri_state",
-      "power_in"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "U6",
-    "value": "SN74LVC1G125DBVR RX",
-    "fp": "Package_TO_SOT_SMD:SOT-23-5",
-    "pins": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
-    "nets": [
-      "GND",
-      "WRIST_DATA",
-      "GND",
-      "WRIST_RX",
-      "3V3"
-    ],
-    "page": "wrist",
-    "sch": [
-      215,
-      45
-    ],
-    "pcb": [
-      135,
-      71,
-      0
-    ],
-    "lcsc": "C23654",
-    "price": 0.0992,
-    "assembly": "JLCPCB",
-    "types": [
-      "input",
-      "input",
-      "power_in",
-      "tri_state",
-      "power_in"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "Q3",
-    "value": "MMBT3904 transmit enable",
-    "fp": "Package_TO_SOT_SMD:SOT-23",
-    "pins": [
-      "1",
-      "2",
-      "3"
-    ],
-    "nets": [
-      "TX_BASE",
-      "GND",
-      "WRIST_TX_OE_N"
-    ],
-    "page": "wrist",
-    "sch": [
-      45,
-      86
-    ],
-    "pcb": [
-      129,
-      64,
-      0
-    ],
-    "lcsc": "C20526",
-    "price": 0.02,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R4",
-    "value": "10k",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "WRIST_TX_ALLOWED",
-      "TX_BASE"
-    ],
-    "page": "wrist",
-    "sch": [
-      125,
-      86
-    ],
-    "pcb": [
-      124,
-      62,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R58",
-    "value": "10k TX boot pulldown",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "WRIST_TX_ENABLE",
-      "GND"
-    ],
-    "page": "safety",
-    "sch": [
-      70,
-      195
-    ],
-    "pcb": [
-      124,
-      74,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R59",
-    "value": "100k bus off-state bias",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "WRIST_DATA",
-      "GND"
-    ],
-    "page": "wrist",
-    "sch": [
-      125,
-      216
-    ],
-    "pcb": [
-      129,
-      74,
-      0
-    ],
-    "lcsc": "C25803",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R60",
-    "value": "10k UART idle pullup",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "WRIST_TX",
-      "3V3"
-    ],
-    "page": "wrist",
-    "sch": [
-      215,
-      216
-    ],
-    "pcb": [
-      125,
-      69,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R5",
-    "value": "100k",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "TX_BASE",
-      "GND"
-    ],
-    "page": "wrist",
-    "sch": [
-      215,
-      86
-    ],
-    "pcb": [
-      124,
-      66,
-      0
-    ],
-    "lcsc": "C25803",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R6",
-    "value": "10k",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "WRIST_TX_OE_N",
-      "BUCK_5V"
-    ],
-    "page": "wrist",
-    "sch": [
-      45,
-      117
-    ],
-    "pcb": [
-      132,
-      59,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R7",
-    "value": "100R bus series",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "WRIST_TX_5V",
-      "WRIST_DATA"
-    ],
-    "page": "wrist",
-    "sch": [
-      125,
-      117
-    ],
-    "pcb": [
-      140,
-      62,
-      0
-    ],
-    "lcsc": "C22775",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R8",
-    "value": "2.2k bus idle pullup / DNP",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "WRIST_DATA",
-      "BUCK_5V"
-    ],
-    "page": "wrist",
-    "sch": [
-      215,
-      117
-    ],
-    "pcb": [
-      140,
-      72,
-      0
-    ],
-    "lcsc": "C4190",
-    "price": 0,
-    "assembly": "DNP / do not populate",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "DO NOT POPULATE pending servo bus bias and powered-off injection test."
-  },
-  {
-    "ref": "Q2",
-    "value": "FQP47P06 servo power switch",
-    "fp": "Package_TO_SOT_THT:TO-220-3_Vertical",
-    "pins": [
-      "1",
-      "2",
-      "3"
-    ],
-    "nets": [
-      "SERVO_GATE",
-      "WRIST_12V",
-      "12V_PROTECTED"
-    ],
-    "page": "wrist",
-    "sch": [
-      45,
-      154
-    ],
-    "pcb": [
-      145,
-      84,
-      0
-    ],
-    "lcsc": "",
-    "price": 1.5,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "Q4",
-    "value": "MMBT3904 kill power control",
-    "fp": "Package_TO_SOT_SMD:SOT-23",
-    "pins": [
-      "1",
-      "2",
-      "3"
-    ],
-    "nets": [
-      "SERVO_BASE",
-      "GND",
-      "SERVO_GATE_SINK"
-    ],
-    "page": "wrist",
-    "sch": [
-      125,
-      154
-    ],
-    "pcb": [
-      136,
-      83,
-      0
-    ],
-    "lcsc": "C20526",
-    "price": 0.02,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R9",
-    "value": "10k gate sink",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "SERVO_GATE",
-      "SERVO_GATE_SINK"
-    ],
-    "page": "wrist",
-    "sch": [
-      215,
-      154
-    ],
-    "pcb": [
-      140,
-      87,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R51",
-    "value": "100k gate off",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "SERVO_GATE",
-      "12V_PROTECTED"
-    ],
-    "page": "wrist",
-    "sch": [
-      45,
-      183
-    ],
-    "pcb": [
-      147,
-      89,
-      0
-    ],
-    "lcsc": "C25803",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R52",
-    "value": "10k",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "KILL_OK",
-      "SERVO_BASE"
-    ],
-    "page": "wrist",
-    "sch": [
-      125,
-      183
-    ],
-    "pcb": [
-      131,
-      83,
-      0
-    ],
-    "lcsc": "C25804",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R53",
-    "value": "100k",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "SERVO_BASE",
-      "GND"
-    ],
-    "page": "wrist",
-    "sch": [
-      215,
-      183
-    ],
-    "pcb": [
-      131,
-      87,
-      0
-    ],
-    "lcsc": "C25803",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
+    "note": "Schurter 0031.8201; cartridge separately purchased",
+    "lcsc": "C3204125",
+    "assembly": "Hand"
   },
   {
     "ref": "NT1",
-    "value": "GROUND STAR / dedicated copper",
+    "value": "GROUND STAR / PCB COPPER",
     "fp": "TrueSkate:GroundStar",
     "pins": [
       "1",
@@ -3780,9 +1694,7 @@
       "4",
       "5",
       "6",
-      "7",
-      "8",
-      "9"
+      "7"
     ],
     "nets": [
       "GND",
@@ -3791,1371 +1703,21 @@
       "PGND3",
       "PGND4",
       "PGND5",
-      "PGND6",
-      "WRIST_GND",
-      "TOUCH_GND"
+      "PGND6"
     ],
-    "page": "io",
+    "page": "power",
     "sch": [
-      55,
-      55
+      65,
+      105
     ],
     "pcb": [
-      18,
       22,
+      69,
       0
     ],
-    "lcsc": "",
     "price": 0,
-    "assembly": "PCB copper",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "J7",
-    "value": "FUTURE I2C / 3V3 ONLY",
-    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
-    "pins": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "nets": [
-      "GND",
-      "3V3",
-      "LINK_SDA",
-      "LINK_SCL"
-    ],
-    "page": "io",
-    "sch": [
-      145,
-      42
-    ],
-    "pcb": [
-      108,
-      56,
-      90
-    ],
+    "note": "",
     "lcsc": "",
-    "price": 0.15,
-    "assembly": "Hand",
-    "types": [
-      "passive",
-      "passive",
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R54",
-    "value": "4.7k",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "LINK_SDA",
-      "3V3"
-    ],
-    "page": "io",
-    "sch": [
-      225,
-      42
-    ],
-    "pcb": [
-      110,
-      51,
-      0
-    ],
-    "lcsc": "C23162",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R55",
-    "value": "4.7k",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "LINK_SCL",
-      "3V3"
-    ],
-    "page": "io",
-    "sch": [
-      225,
-      65
-    ],
-    "pcb": [
-      114,
-      51,
-      0
-    ],
-    "lcsc": "C23162",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "FB1",
-    "value": "BLM21PG221SN1D ferrite",
-    "fp": "Inductor_SMD:L_0805_2012Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "TOUCH_GND",
-      "TIP1"
-    ],
-    "page": "io",
-    "sch": [
-      60,
-      100
-    ],
-    "pcb": [
-      10,
-      109,
-      0
-    ],
-    "lcsc": "C85840",
-    "price": 0.04,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "J8",
-    "value": "FINGERTIP 1 GND",
-    "fp": "Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm",
-    "pins": [
-      "1"
-    ],
-    "nets": [
-      "TIP1"
-    ],
-    "page": "io",
-    "sch": [
-      60,
-      130
-    ],
-    "pcb": [
-      11,
-      115,
-      0
-    ],
-    "lcsc": "",
-    "price": 0,
-    "assembly": "Hand",
-    "types": [
-      "passive"
-    ],
-    "note": "Solder terminal; strain-relieve wire"
-  },
-  {
-    "ref": "FB2",
-    "value": "BLM21PG221SN1D ferrite",
-    "fp": "Inductor_SMD:L_0805_2012Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "TOUCH_GND",
-      "TIP2"
-    ],
-    "page": "io",
-    "sch": [
-      175,
-      100
-    ],
-    "pcb": [
-      16,
-      109,
-      0
-    ],
-    "lcsc": "C85840",
-    "price": 0.04,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "J9",
-    "value": "FINGERTIP 2 GND",
-    "fp": "Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm",
-    "pins": [
-      "1"
-    ],
-    "nets": [
-      "TIP2"
-    ],
-    "page": "io",
-    "sch": [
-      175,
-      130
-    ],
-    "pcb": [
-      17,
-      115,
-      0
-    ],
-    "lcsc": "",
-    "price": 0,
-    "assembly": "Hand",
-    "types": [
-      "passive"
-    ],
-    "note": "Solder terminal; strain-relieve wire"
-  },
-  {
-    "ref": "R56",
-    "value": "33R source damping",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "SPI_SCK",
-      "SPI_SCK_CABLE"
-    ],
-    "page": "io",
-    "sch": [
-      60,
-      160
-    ],
-    "pcb": [
-      67,
-      42,
-      0
-    ],
-    "lcsc": "C23140",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R57",
-    "value": "33R source damping",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "SPI_MOSI",
-      "SPI_MOSI_CABLE"
-    ],
-    "page": "io",
-    "sch": [
-      175,
-      160
-    ],
-    "pcb": [
-      71,
-      42,
-      0
-    ],
-    "lcsc": "C23140",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C31",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "BUCK_5V",
-      "GND"
-    ],
-    "page": "io",
-    "sch": [
-      45,
-      183
-    ],
-    "pcb": [
-      136,
-      58,
-      0
-    ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C32",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "3V3",
-      "GND"
-    ],
-    "page": "io",
-    "sch": [
-      110,
-      183
-    ],
-    "pcb": [
-      135,
-      77,
-      0
-    ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C33",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "3V3",
-      "GND"
-    ],
-    "page": "io",
-    "sch": [
-      175,
-      183
-    ],
-    "pcb": [
-      80,
-      42,
-      0
-    ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C34",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "3V3",
-      "GND"
-    ],
-    "page": "io",
-    "sch": [
-      240,
-      183
-    ],
-    "pcb": [
-      101,
-      42,
-      0
-    ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C35",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "3V3",
-      "GND"
-    ],
-    "page": "io",
-    "sch": [
-      45,
-      200
-    ],
-    "pcb": [
-      122,
-      42,
-      0
-    ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C36",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "3V3",
-      "GND"
-    ],
-    "page": "io",
-    "sch": [
-      110,
-      200
-    ],
-    "pcb": [
-      86,
-      79,
-      0
-    ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C37",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "3V3",
-      "GND"
-    ],
-    "page": "io",
-    "sch": [
-      175,
-      200
-    ],
-    "pcb": [
-      107,
-      79,
-      0
-    ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "C38",
-    "value": "100nF 50V",
-    "fp": "Capacitor_SMD:C_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "3V3",
-      "GND"
-    ],
-    "page": "io",
-    "sch": [
-      240,
-      200
-    ],
-    "pcb": [
-      128,
-      79,
-      0
-    ],
-    "lcsc": "C14663",
-    "price": 0.015,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "TP1",
-    "value": "GND",
-    "fp": "TestPoint:TestPoint_Pad_D1.5mm",
-    "pins": [
-      "1"
-    ],
-    "nets": [
-      "GND"
-    ],
-    "page": "test",
-    "sch": [
-      50,
-      55
-    ],
-    "pcb": [
-      107,
-      63,
-      0
-    ],
-    "lcsc": "",
-    "price": 0,
-    "assembly": "PCB copper",
-    "types": [
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "TP2",
-    "value": "12V_PROTECTED",
-    "fp": "TestPoint:TestPoint_Pad_D1.5mm",
-    "pins": [
-      "1"
-    ],
-    "nets": [
-      "12V_PROTECTED"
-    ],
-    "page": "test",
-    "sch": [
-      135,
-      55
-    ],
-    "pcb": [
-      113,
-      63,
-      0
-    ],
-    "lcsc": "",
-    "price": 0,
-    "assembly": "PCB copper",
-    "types": [
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "TP3",
-    "value": "BUCK_5V",
-    "fp": "TestPoint:TestPoint_Pad_D1.5mm",
-    "pins": [
-      "1"
-    ],
-    "nets": [
-      "BUCK_5V"
-    ],
-    "page": "test",
-    "sch": [
-      220,
-      55
-    ],
-    "pcb": [
-      119,
-      63,
-      0
-    ],
-    "lcsc": "",
-    "price": 0,
-    "assembly": "PCB copper",
-    "types": [
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "TP4",
-    "value": "VIN_OR",
-    "fp": "TestPoint:TestPoint_Pad_D1.5mm",
-    "pins": [
-      "1"
-    ],
-    "nets": [
-      "VIN_OR"
-    ],
-    "page": "test",
-    "sch": [
-      50,
-      85
-    ],
-    "pcb": [
-      107,
-      68,
-      0
-    ],
-    "lcsc": "",
-    "price": 0,
-    "assembly": "PCB copper",
-    "types": [
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "TP5",
-    "value": "3V3",
-    "fp": "TestPoint:TestPoint_Pad_D1.5mm",
-    "pins": [
-      "1"
-    ],
-    "nets": [
-      "3V3"
-    ],
-    "page": "test",
-    "sch": [
-      135,
-      85
-    ],
-    "pcb": [
-      113,
-      68,
-      0
-    ],
-    "lcsc": "",
-    "price": 0,
-    "assembly": "PCB copper",
-    "types": [
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "TP6",
-    "value": "SPI_SCK_CABLE",
-    "fp": "TestPoint:TestPoint_Pad_D1.5mm",
-    "pins": [
-      "1"
-    ],
-    "nets": [
-      "SPI_SCK_CABLE"
-    ],
-    "page": "test",
-    "sch": [
-      220,
-      85
-    ],
-    "pcb": [
-      119,
-      68,
-      0
-    ],
-    "lcsc": "",
-    "price": 0,
-    "assembly": "PCB copper",
-    "types": [
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "TP7",
-    "value": "SPI_MOSI_CABLE",
-    "fp": "TestPoint:TestPoint_Pad_D1.5mm",
-    "pins": [
-      "1"
-    ],
-    "nets": [
-      "SPI_MOSI_CABLE"
-    ],
-    "page": "test",
-    "sch": [
-      50,
-      115
-    ],
-    "pcb": [
-      107,
-      73,
-      0
-    ],
-    "lcsc": "",
-    "price": 0,
-    "assembly": "PCB copper",
-    "types": [
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "TP8",
-    "value": "SPI_MISO",
-    "fp": "TestPoint:TestPoint_Pad_D1.5mm",
-    "pins": [
-      "1"
-    ],
-    "nets": [
-      "SPI_MISO"
-    ],
-    "page": "test",
-    "sch": [
-      135,
-      115
-    ],
-    "pcb": [
-      113,
-      73,
-      0
-    ],
-    "lcsc": "",
-    "price": 0,
-    "assembly": "PCB copper",
-    "types": [
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "TP9",
-    "value": "KILL_OK",
-    "fp": "TestPoint:TestPoint_Pad_D1.5mm",
-    "pins": [
-      "1"
-    ],
-    "nets": [
-      "KILL_OK"
-    ],
-    "page": "test",
-    "sch": [
-      220,
-      115
-    ],
-    "pcb": [
-      119,
-      73,
-      0
-    ],
-    "lcsc": "",
-    "price": 0,
-    "assembly": "PCB copper",
-    "types": [
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "R61",
-    "value": "4.7k LED limit",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "12V_PROTECTED",
-      "LED1_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      45,
-      48
-    ],
-    "pcb": [
-      23,
-      11,
-      0
-    ],
-    "lcsc": "C23162",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "D11",
-    "value": "KT-0603R red indicator",
-    "fp": "LED_SMD:LED_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "GND",
-      "LED1_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      45,
-      72
-    ],
-    "pcb": [
-      20,
-      7,
-      0
-    ],
-    "lcsc": "C2286",
-    "price": 0.025,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "1=cathode, 2=anode; low-current brightness to verify"
-  },
-  {
-    "ref": "R62",
-    "value": "4.7k LED limit",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "BUCK_5V",
-      "LED2_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      140,
-      48
-    ],
-    "pcb": [
-      26,
-      11,
-      0
-    ],
-    "lcsc": "C23162",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "D12",
-    "value": "KT-0603R red indicator",
-    "fp": "LED_SMD:LED_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "GND",
-      "LED2_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      140,
-      72
-    ],
-    "pcb": [
-      26,
-      7,
-      0
-    ],
-    "lcsc": "C2286",
-    "price": 0.025,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "1=cathode, 2=anode; low-current brightness to verify"
-  },
-  {
-    "ref": "R63",
-    "value": "4.7k LED limit",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "3V3",
-      "LED3_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      235,
-      48
-    ],
-    "pcb": [
-      32,
-      11,
-      0
-    ],
-    "lcsc": "C23162",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "D13",
-    "value": "KT-0603R red indicator",
-    "fp": "LED_SMD:LED_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "GND",
-      "LED3_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      235,
-      72
-    ],
-    "pcb": [
-      32,
-      7,
-      0
-    ],
-    "lcsc": "C2286",
-    "price": 0.025,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "1=cathode, 2=anode; low-current brightness to verify"
-  },
-  {
-    "ref": "R64",
-    "value": "4.7k LED limit",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A1_EN",
-      "LED4_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      45,
-      108
-    ],
-    "pcb": [
-      30,
-      48,
-      0
-    ],
-    "lcsc": "C23162",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "D14",
-    "value": "KT-0603R red indicator",
-    "fp": "LED_SMD:LED_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "PGND1",
-      "LED4_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      45,
-      132
-    ],
-    "pcb": [
-      24,
-      44,
-      0
-    ],
-    "lcsc": "C2286",
-    "price": 0.025,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "1=cathode, 2=anode; low-current brightness to verify"
-  },
-  {
-    "ref": "R65",
-    "value": "4.7k LED limit",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A2_EN",
-      "LED5_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      140,
-      108
-    ],
-    "pcb": [
-      67,
-      48,
-      0
-    ],
-    "lcsc": "C23162",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "D15",
-    "value": "KT-0603R red indicator",
-    "fp": "LED_SMD:LED_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "PGND2",
-      "LED5_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      140,
-      132
-    ],
-    "pcb": [
-      67,
-      44,
-      0
-    ],
-    "lcsc": "C2286",
-    "price": 0.025,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "1=cathode, 2=anode; low-current brightness to verify"
-  },
-  {
-    "ref": "R66",
-    "value": "4.7k LED limit",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A3_EN",
-      "LED6_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      235,
-      108
-    ],
-    "pcb": [
-      110,
-      48,
-      0
-    ],
-    "lcsc": "C23162",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "D16",
-    "value": "KT-0603R red indicator",
-    "fp": "LED_SMD:LED_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "PGND3",
-      "LED6_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      235,
-      132
-    ],
-    "pcb": [
-      110,
-      44,
-      0
-    ],
-    "lcsc": "C2286",
-    "price": 0.025,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "1=cathode, 2=anode; low-current brightness to verify"
-  },
-  {
-    "ref": "R67",
-    "value": "4.7k LED limit",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A4_EN",
-      "LED7_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      45,
-      168
-    ],
-    "pcb": [
-      30,
-      83,
-      0
-    ],
-    "lcsc": "C23162",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "D17",
-    "value": "KT-0603R red indicator",
-    "fp": "LED_SMD:LED_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "PGND4",
-      "LED7_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      45,
-      192
-    ],
-    "pcb": [
-      30,
-      87,
-      0
-    ],
-    "lcsc": "C2286",
-    "price": 0.025,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "1=cathode, 2=anode; low-current brightness to verify"
-  },
-  {
-    "ref": "R68",
-    "value": "4.7k LED limit",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A5_EN",
-      "LED8_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      140,
-      168
-    ],
-    "pcb": [
-      73,
-      83,
-      0
-    ],
-    "lcsc": "C23162",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "D18",
-    "value": "KT-0603R red indicator",
-    "fp": "LED_SMD:LED_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "PGND5",
-      "LED8_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      140,
-      192
-    ],
-    "pcb": [
-      73,
-      87,
-      0
-    ],
-    "lcsc": "C2286",
-    "price": 0.025,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "1=cathode, 2=anode; low-current brightness to verify"
-  },
-  {
-    "ref": "R69",
-    "value": "4.7k LED limit",
-    "fp": "Resistor_SMD:R_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "A6_EN",
-      "LED9_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      235,
-      168
-    ],
-    "pcb": [
-      113,
-      82,
-      0
-    ],
-    "lcsc": "C23162",
-    "price": 0.01,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": ""
-  },
-  {
-    "ref": "D19",
-    "value": "KT-0603R red indicator",
-    "fp": "LED_SMD:LED_0603_1608Metric",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "PGND6",
-      "LED9_A"
-    ],
-    "page": "indicators",
-    "sch": [
-      235,
-      192
-    ],
-    "pcb": [
-      114,
-      87,
-      0
-    ],
-    "lcsc": "C2286",
-    "price": 0.025,
-    "assembly": "JLCPCB",
-    "types": [
-      "passive",
-      "passive"
-    ],
-    "note": "1=cathode, 2=anode; low-current brightness to verify"
+    "assembly": "PCB copper"
   }
 ]

@@ -1,58 +1,66 @@
-# Reproducing the review design
+# Native source and review tools
 
-No packages were installed during this work. The machine already had Homebrew,
-KiCad 10.0.6 (including pcbnew Python bindings and component libraries), PlatformIO,
-Poppler (`pdftoppm`) and Java. Homebrew was inspected; no unrelated taps or packages
-were changed. No autorouter was used. Network downloads were upstream mechanical
-source files and manufacturer reference material, not installed software.
+Direct KiCad scripting preserves the verified Mini socket geometry and emits
+editable native files without an intermediate schematic-language translation.
+It reproduces deliberate power/ground routes while KiCad's CLI checks the
+resulting schematic and copper.
 
-The commands below use task-specific variables expanded from absolute paths.
-Run only after saving any manual edits elsewhere: the generator overwrites its
-generated KiCad files. It does not change the historical bring-up firmware.
+## Software installed
+
+KiCad **10.0.6** was already installed. Homebrew installed **Freerouting 2.5.0**
+from the official JAR via local tap `trueskate/pcb-tools`; the formula is retained
+at `pcb/tools/freerouting.rb`. An initial 2.2.2 install hit an internal routing
+error and was replaced with 2.5.0.
+
+Homebrew also upgraded **OpenJDK 27**, libpng 1.6.59, pcre2 10.49, glib 2.90.0,
+xorgproto 2026.1, cairo 1.18.6, harfbuzz 14.5.1 and xz 5.8.4. ReportLab, pypdf,
+Pillow and Poppler were already available. Tap creation enabled Homebrew's
+developer mode. No cloud routing, PCB upload, firmware flash or remote git push.
+
+## Rebuild
 
 ```sh
-PCB_DIR='/Users/ashernoble/Projects/Robotics & hardware/trueskate-ai-hardware/pcb'
-KICAD_PY='/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3'
-KICAD_CLI='/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli'
-KICAD_MODELS='/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels'
-
-"$KICAD_PY" "$PCB_DIR/extract_mini.py"
-"$KICAD_PY" "$PCB_DIR/audit.py"
-"$KICAD_PY" "$PCB_DIR/generate.py"
-"$KICAD_PY" "$PCB_DIR/verify_board.py"
-
-"$KICAD_CLI" sch erc --format json --exit-code-violations \
-  --output "$PCB_DIR/erc-review.json" "$PCB_DIR/trueskate-main-v1.kicad_sch"
-"$KICAD_CLI" pcb drc --format json --exit-code-violations \
-  --output "$PCB_DIR/drc-review.json" "$PCB_DIR/trueskate-main-v1.kicad_pcb"
-
-"$KICAD_CLI" sch export pdf --output "$PCB_DIR/schematic-review.pdf" \
-  "$PCB_DIR/trueskate-main-v1.kicad_sch"
-"$KICAD_PY" "$PCB_DIR/export-fit.py"
-"$KICAD_CLI" pcb render --side top --width 2000 --height 1500 --background opaque \
-  -D "KICAD10_3DMODEL_DIR=$KICAD_MODELS" --output "$PCB_DIR/top-review.png" \
-  "$PCB_DIR/trueskate-main-v1.kicad_pcb"
-"$KICAD_CLI" pcb render --side bottom --width 2000 --height 1500 --background opaque \
-  -D "KICAD10_3DMODEL_DIR=$KICAD_MODELS" --output "$PCB_DIR/bottom-review.png" \
-  "$PCB_DIR/trueskate-main-v1.kicad_pcb"
-"$KICAD_CLI" pcb render --rotate 325,0,30 --width 2000 --height 1500 --background opaque \
-  -D "KICAD10_3DMODEL_DIR=$KICAD_MODELS" --output "$PCB_DIR/3d-review.png" \
-  "$PCB_DIR/trueskate-main-v1.kicad_pcb"
+'/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3' '/Users/ashernoble/Projects/Robotics & hardware/trueskate-ai-hardware/pcb/rebuild.py'
 ```
 
-At the current stage, **DRC is expected to return a failure status** because of
-unconnected nets. Do not remove `--exit-code-violations` merely to make a release
-pipeline green. Earlier interactive calls omitted that option to gather reports;
-their exit code alone was not used to claim a clean board.
+Sequence: `generate.py` -> `route_signals.py export` -> `route_signals.py import`
+-> `finish_ground.py`. It does not launch an autorouter: it reuses checked-in
+`routing/signals.ses`. Do not regenerate over unrecorded manual KiCad edits.
 
-In this agent environment, KiCad DRC needed access to its normal application
-configuration/caches and was run with explicit approval outside the restrictive
-sandbox. Font-cache warnings during PDF/ERC generation did not prevent output.
-The Python binding emitted a wxApp warning but produced board files that loaded
-in `kicad-cli`. The native PDF was rendered with Poppler for visual review; the
-PDF skill's render-and-inspect workflow was used instead of trusting export alone.
+`design.json` is the agreed pin map; `kicad_source.py` writes schematic/project
+files. `generate.py` writes placement and 171 locked manual segments for power,
+phases, control grounds and encoder supply. `finish_ground.py` adds two explicit
+quiet-ground links (`ground-links.json`) and checked stitching vias
+(`ground-stitching.json`). No PGND branch is autorouted.
 
-The fit exporter moves a temporary copy 60 mm right and 35 mm down on A4 paper,
-then exports at scale 1. This preserves dimensions while leaving printable margins;
-it does not move any part on the source PCB. The 50 mm printed reference must still
-be measured because printer dialogs can apply an additional scale factor.
+`SaveBoard(..., aSkipSettings=True)` prevents standalone Python from overwriting
+project rules with application defaults. Project schema versions are explicit.
+Final CLI DRC refills/saves the project-aware copper before review exports.
+
+## Signal routing
+
+The DSN contains locked manual copper and 250 um signal width/clearance,
+0.7/0.3 mm vias. Freerouting ran headlessly, telemetry disabled, Manual class
+excluded. Paths with spaces required temporary DSN/SES copies in `/private/tmp`.
+Only PWM, EN, CS and SPI items are imported back. Any router power/ground changes
+are discarded. Automatic neck-down widths are clamped to at least 0.2 mm;
+strict DRC validates them. The frozen SES is the reproducible source.
+[Official release](https://github.com/freerouting/freerouting/releases/tag/v2.5.0).
+
+## Validate and export review material only
+
+```sh
+'/Library/Frameworks/Python.framework/Versions/3.11/bin/python3' '/Users/ashernoble/Projects/Robotics & hardware/trueskate-ai-hardware/pcb/export_review.py'
+```
+
+Python 3.11 supplies the already-installed PDF libraries. This runs strict CLI
+ERC/DRC with schematic parity, independent audits, three review PDFs and three
+native PNGs. `--checks-only` omits rendering. `review-status.json` records hashes.
+KiCad needs normal configuration/font-cache access; the macOS sandbox otherwise
+terminates some checks/renders.
+
+PDFs are rendered to images for visual inspection, not just text extraction.
+The net guide asserts coverage of all 67 real nets. Standard KiCad
+`unconnected-(...)` single-contact names are bookkeeping, not extra wires.
+No script produces Gerbers, drill, placement or upload files. Stop for human
+review before manufacturing.

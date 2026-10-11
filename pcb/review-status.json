@@ -1,0 +1,25 @@
+{
+  "kicad_version": "10.0.6",
+  "checked_at": "2026-10-11T14:52:49",
+  "erc": "PASS",
+  "drc": "PASS: no violations, opens, parity issues, exclusions or ignored checks",
+  "human_review_required": true,
+  "manufacturing_exports_generated": false,
+  "files_sha256": {
+    "trueskate-main-v1.kicad_pcb": "07ce1593b67b9bafeaed20195cb55540d54c61e23dfcd06500d3691b06bd6e91",
+    "trueskate-main-v1.kicad_pro": "e871a92996deb30f99d04eda890adcda8700e226ff77209cb1d422ea1369cdf3",
+    "trueskate-main-v1.kicad_sch": "cc398bae449e6d047d2e5e89b90636d93815180ec8b961e159df2c599cefade9",
+    "routing/signals.ses": "3d8226cb4c8178840356819799c36068375fae1b2a12ace0a6ab6595f5ae37e3",
+    "circuit.json": "160263319be6c7d685474c5d5465c38ea537b936d797a92ffc690070db0bebe7",
+    "bom-review.csv": "7b3583245e7d9b95d9287d81adf03d322d465b3320909844c6908794884e9e6c",
+    "erc-review.json": "a2c45e16c852a5f373f218aa665679f271b7df5a92d6f83cc83951f672e684f8",
+    "drc-review.json": "389b48eb409b7f628e6c0735ecff6c98817276aad0ed06b65041f568435018f1",
+    "schematic-review.pdf": "de3a2de4c19881143959e408169e0b1f0fa4d7954c727256428679426948cfc7",
+    "mechanical-fit-review.pdf": "cb7e56ea290bc9568fbe3adcab409c4f47a0340284ecaab196b0f7d5968c9cb1",
+    "net-guide-review.pdf": "c4832699ffc04678c77276dec7f65a72cc3aae738fb8d62cbfd5561fb7e65bdc",
+    "top-review.png": "33932954a21ae052db5bbc33278c3bab5d4a5764c3726e0984a125b12b8bf2b4",
+    "bottom-review.png": "ed7f40ebe9022658fd35d0deed721e416798195d59c1e391c8277e7afe5aaa1c",
+    "3d-review.png": "bd4f65e56e88f7748c0c81de047fa2eb9141776b0e46c05bcdd6cb6823aba236"
+  },
+  "independent_checks": "PASS: unchanged six-axis map; 18 PWM; 12 plain-digital EN/CS; SPI0; 9 spare contacts.\nPASS: USB-only passive carrier scope; 53 schematic references; no factory assembly.\nPASS: conservative two-layer rules persisted; no DRC exclusions or ignored checks.\nStatic checks only. Six-axis electrical operation still requires bench testing.\n./src/common/stdpbase.cpp(59): assert \"\"traits\"\" failed in Get(): create wxApp before calling this\nPASS: 217 connected pads + 34 isolated NC contacts agree with KiCad netlist; all 53 references THT.\nPASS: verified Mini geometry, encoder order, USB-only VIN isolation, 6 EN pulldowns, 6 open bridges.\nPASS: 171 manual copper segments unchanged; 597 total segments, 66 vias.\nPASS: 4 deliberate quiet-GND link segments and 29 locked GND vias.\nSPI_SCK: 189.5 mm total branched copper, within central logic region (not one cable length).\nSPI_MOSI: 204.4 mm total branched copper, within central logic region (not one cable length).\nSPI_MISO: 194.7 mm total branched copper, within central logic region (not one cable length).\n./src/common/stdpbase.cpp(59): assert \"\"traits\"\" failed in Get(): create wxApp before calling this\nBRIDGE B.Cu [(51.25, 51), (51.25, 53.5), (52.25, 54.5), (56, 54.5)]\nBRIDGE F.Cu [(87.25, 50), (94.25, 50)]\nPASS: both deliberate quiet-GND bridges independently clear of other copper and holes."
+}

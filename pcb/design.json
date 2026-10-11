@@ -1,5 +1,5 @@
 {
-  "status": "REVIEW DRAFT - NOT FOR FABRICATION",
+  "status": "PASSIVE CARRIER V1 - HUMAN REVIEW BEFORE MANUFACTURING EXPORTS",
   "board_mm": [160, 120],
   "layers": 2,
   "copper_oz": 1,
@@ -12,14 +12,15 @@
     {"name": "middle_splay", "pwm": [8, 9, 28], "enable": 31, "cs": 40}
   ],
   "spi0": {"mosi": 11, "miso": 12, "sck": 13},
-  "wrist_serial8": {"rx": 34, "tx": 35, "tx_enable": 41},
-  "daughter_i2c": {"sda": 18, "scl": 19},
-  "kill_sense": 10,
-  "spare_pwm": [1, 14, 15],
-  "encoder_provisional_pin_order": ["CSn", "CLK", "MISO", "MOSI", "3V3", "GND"],
+  "unused_pins": [1, 10, 14, 15, 18, 19, 34, 35, 41],
+  "encoder_pin_order": ["CLK", "MISO", "MOSI", "CSn", "3V3", "GND"],
+  "teensy_power": "USB ONLY; carrier VIN contact unconnected; no Teensy modification",
+  "assembly": "ALL THROUGH-HOLE; hand soldering; no factory assembly",
   "mini_source_commit": "848e8ece46d045ac24283e2d6ee9ea4ba8ef95d5",
   "mini_power_connection": "APPROVED: short paired wires to existing Mini screw terminals",
-  "encoder_confirmation": "AS5048A chip confirmed in user photos; six-contact cable mapping, far-end orientation and 3.3V board strapping PENDING",
-  "kill_reset_decision": "OPEN: user requested flagging the choice for now; non-latching draft is NOT a release approval",
-  "mini_physical_fit": "Downward male headers confirmed in user photo; revision and socket spacing PENDING paper-fit check; source power pitch 4.953 mm differs from described 3.81 mm"
+  "encoder_confirmation": "RESOLVED by user: breakout pin 1 and signal order verified",
+  "kill_reset_decision": "NOT APPLICABLE TO V1; hardware kill moved to v2 backlog",
+  "mini_physical_fit": "RESOLVED by user: 1:1 template verified; source-derived socket footprint retained",
+  "base_fit": "RESOLVED by user: 160 x 120 mm fits",
+  "control_ground_bridges": "Six through-hole wire/solder bridges, default OPEN"
 }

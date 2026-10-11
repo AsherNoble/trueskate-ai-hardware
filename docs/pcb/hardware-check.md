@@ -1,99 +1,62 @@
-# Checking the actual modules before committing the PCB
+# Human review, then careful bench bring-up
 
-The supplied photographs are saved unchanged in `pcb/sources/user-*.png`.
-They are useful evidence, but a picture cannot establish every electrical
-connection. No wire colour has been assigned a signal from appearance alone.
+No order or manufacturing exports are authorized. The next step is a human
+electrical review of the native KiCad project and the net guide.
 
-## What the photographs establish
+## Already resolved by the user
 
-| Item | Confirmed | Still unknown |
-|---|---|---|
-| Encoder | The chip marking is AS5048A; a six-wire connector and a separate three-contact connector are visible | Each six-pin contact's function, the far-end plug's orientation, exact connector identity and board supply strapping |
-| Mini | Male header pins point down, consistent with plugging into female carrier sockets | Board revision, exact control-to-phase socket spacing, underside clearance and power-terminal pitch |
+- Mini control/phase sockets fit the printed 1:1 template. Keep that geometry.
+- Encoder breakout square pad is pin 1; order is CLK, MISO, MOSI, CSn, 3V3, GND.
+- The 160 x 120 mm carrier fits the base.
+- Short paired screw-terminal wires to Mini power are approved.
+- Kill restart/latch behavior is not applicable to this v1.
 
-The encoder's `PWM` and `GND` printing is beside the separate three-contact
-connection. It is not a six-pin SPI pinout. The two wider outer metal tabs of the
-six-contact socket are mechanical anchors, not extra signal contacts.
+These are recorded confirmations, not reasons to ask for the same photos again.
+At assembly, still check each installed part and cable against the drawing.
 
-The carrier pin order is **CLK, MISO, MOSI, CSn, 3.3 V, GND**, verified on the
-working bench breakout rather than inferred from the photos. The earlier assumed
-order put CSn first; it was wrong by one position on every signal.
-Keep using the bench-proven **3.3 V** supply; do not try 5 V or powered wire-order
-permutations. Identifying an AS5048A chip does not establish how its board connects
-the chip's supply pins.
+## Ask the human reviewer to check
 
-## Simple Mini fit check
+1. Power current and temperature margins: shared trunks, individual returns,
+   phase sockets/Dupont leads, actual wire gauge, input terminal and fuse curve.
+   The 3.15 A T fuse is a candidate; qualify DC breaking rating and capacitor inrush.
+2. Mini EN-low margin with the 10k pull-down, including reset and USB-off with
+   12 V live. No hardware kill exists; a driven-high EN defeats a pull-down.
+3. Ground topology and noise: motor returns to NT1, default-open control-ground
+   bridges, computer/supply grounding, SPI return continuity and all six cables.
+4. Encoder 3.3 V supply current and the actual boards' power configuration.
+   No 5 V data signal may reach the Teensy.
+5. Regenerative voltage rise, correct 12 V polarity and safe capacitor discharge.
+   V1 has no polarity protection, clamp, indicator or guaranteed discharge time.
+6. Exact purchased through-hole bodies, pin diameters, insertion depth, stack
+   height and header current ratings. Check real encoder-breakout body clearance,
+   not just its six pin holes. Confirm capacitor polarity, terminal access and USB access.
+7. Firmware migration: earlier EN8/CS10 code is not this board's six-axis map.
 
-Use `pcb/mechanical-fit-review.pdf`, printed with **Actual size / 100%** selected.
-Disable **Fit to page**. Measure the reference line between its tick centres: it
-must be 50 mm; the carrier outline must be 160 by 120 mm. An incorrectly scaled
-print cannot confirm a footprint.
+## Later first-power sequence (after review and ordering approval)
 
-1. Disconnect USB and the power supply. Disconnect the Mini from all wiring;
-   verify its power terminals are discharged before handling it.
-2. Lay the paper flat. It is a view from above the carrier, not a mirrored
-   underside view. The upper and lower rows of Minis face opposite directions.
-3. Hold the Mini in its intended installed orientation above one matching
-   outline. Its downward pins must align with **both** the 2-by-5 control holes
-   and the separate three phase holes simultaneously. Do not bend pins to fit.
-4. Take a straight-down photo showing this alignment, then a clear top and bottom
-   photo of the Mini with its labels readable. A ruler beside it helps establish
-   scale independently. A paper check catches gross mismatch; it does not prove
-   production tolerances or socket height.
+Keep motors unloaded and clear of fingers and the phone. Use a current-limited
+bench supply, a meter, and an accessible physical 12 V disconnect.
 
-The approved short red/black power wires remain the plan. They remove the need
-to match the Mini's off-grid power terminals with rigid carrier pins.
+1. With USB and 12 V disconnected, inspect soldering, verify pin mappings and
+   check for unintended rail shorts. Capacitors charging from a meter can cause
+   a temporary continuity beep; investigate, do not assume either outcome.
+2. Without plugged-in modules, verify J5 polarity, fuse continuity, every Mini
+   terminal's +/return, and that VIN has no carrier connection. Leave JP1-JP6 open.
+3. Plug in the Teensy with 12 V off. Use suitable firmware with all EN outputs
+   low; check encoder sockets have 3.3 V. Do not cut the USB/VIN link for this design.
+4. Install one Mini and its approved power pair. With low-current 12 V present,
+   confirm EN remains low during reset and with USB removed. Check all six
+   pull-downs and their references before expecting default-off behavior.
+5. Add one verified encoder, read raw angle while turning the shaft manually,
+   and verify orientation before attaching motor power/commanding FOC.
+6. Connect one motor with the rail off. Start at low voltage and PSU current
+   limits. `initFOC` moves the shaft: command it only when ready. Keep explicit
+   `loopFOC()` calls, including open-loop operation.
+7. Repeat one axis at a time. Then measure simultaneous current, loop timing,
+   rail excursions during braking, 3.3 V stability, SPI errors and temperatures.
+   Determine the operating envelope and fuse selection from measured evidence.
+8. Disconnect 12 V and USB before moving wires/modules. Measure residual rail
+   voltage; do not assume it is zero because firmware stopped or a cable unplugged.
 
-## Encoder cable check
-
-The next useful photograph is **both ends of the same six-wire cable**, with the
-key/latch visible and the ends labelled "encoder" and "carrier". If the existing
-bench harness still works, photograph the labelled breakout connections too.
-Do not unplug or change motor wiring while powered.
-
-A continuity check means testing whether two points have an electrical path using
-an unpowered multimeter. With the cable disconnected at both ends, map every
-contact end to end; do not assume a visually straight cable preserves connector
-pin numbering. Prefer a suitable breakout over pushing oversized probes into
-these small contacts. Never probe chip legs if doing so could bridge or damage
-them; leave chip-to-connector verification to someone equipped for it.
-
-Record the results here (blank means **not measured**):
-
-| Signal from known-good bench wiring | Wire colour | Encoder-end contact and viewing direction | Carrier-end contact (verified) |
-|---|---|---|---|
-| CLK | purple | | 1 |
-| MISO / DO | green | | 2 |
-| MOSI / DI | yellow | | 3 |
-| CSn | black | | 4 |
-| 3.3 V | red | | 5 |
-| GND | white | | 6 |
-
-Carrier contacts come from reading the bench breakout (pin 1 = square pad,
-straight traces). Wire colours come from the bench harness that passed phase 1
-with CSn on Teensy 10, CLK 13, MOSI 11, MISO 12 — each wire’s signal is known
-because the working configuration proved where it went, not from appearance.
-Correct this table if the harness has since been re-pinned. The encoder-end
-column is still **not measured**.
-
-## Before the first encoder is plugged into an assembled board
-
-Do this on every newly assembled carrier, with no encoder connected:
-
-1. Power the board and meter **socket contact 5 against contact 6**: it must read
-   3.3 V, not 5 V and not 12 V.
-2. Confirm **contact 6 is continuous with board ground**.
-3. Only then plug an encoder in.
-
-Contacts 5 and 6 are the two that can destroy a sensor. A mirrored footprint, a
-swapped regulator output or a cable plugged the wrong way round all show up as a
-wrong reading here, and all of them are cheap to find at this point and expensive
-to find afterwards. The signal contacts 1–4 cannot damage anything — a wrong
-order there merely fails to read, as the bench history shows.
-
-The historical bench fault included damaged **mated** contacts. Cable continuity
-alone therefore does not clear the connector: check the complete unpowered mating
-path for opens and adjacent shorts as well, using an appropriate breakout.
-
-These checks resolve socket fit and direct-plug polarity. They do **not** replace
-the remaining routing, power qualification, safety decision or release review.
+These checks are not a substitute for the human review or permission to power
+untested hardware unattended. Never move a motor phase lead with the rail live.

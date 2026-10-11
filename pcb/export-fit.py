@@ -18,7 +18,7 @@ for collection in (board.GetFootprints(), board.GetTracks(), board.GetDrawings()
 
 with tempfile.TemporaryDirectory(prefix="trueskate-paper-fit-") as scratch:
     drawing = Path(scratch) / "fit.kicad_pcb"
-    k.SaveBoard(str(drawing), board)
+    k.SaveBoard(str(drawing), board, True)
     subprocess.run([
         "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
         "pcb", "export", "pdf", "--mode-single",
