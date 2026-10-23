@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/simplefoc/SimpleFOCMini",
+  "tag": "v1.0",
+  "commit": "848e8ece46d045ac24283e2d6ee9ea4ba8ef95d5",
+  "sha256": {
+    "Gerber/Drill_PTH_Through.DRL": "0c4392d79eaec34c347271ab5ae29d7081a14a8a70f740f169fcb9f763767144",
+    "Gerber/Gerber_BoardOutlineLayer.GKO": "5211eb3fe9accecc82fcf06397322de3680790ad5718d6f181c0bfd68d500c32",
+    "EasyEDA/PCB_simplefocmini_2022-04-20.json": "aa86e7293847c764005e30c771f4dae7b50969bf4e6d6e9bd015b69c205b3b88",
+    "EasyEDA/SCH_simplefocmini_2022-04-20.json": "d599e6cea4d2c5f940a981bf4db18a1d087c4245d431469f2f3eed1d62e54bc2",
+    "LICENSE": "bf3008c871051b4fa20973c1628c191578541ee69c7478fbb800e30e74c89112"
+  }
+}

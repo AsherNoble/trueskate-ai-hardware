@@ -20,18 +20,18 @@ for ref,number in [('J2','2'),('J2','15'),('J1','1'),('JP5','2')]:
     assert p.GetNetname()=='GND';p.SetLocalZoneConnection(k.ZONE_CONNECTION_FULL)
 def xy(x,y):return k.VECTOR2I(k.FromMM(x),k.FromMM(y))
 def mm(p):return k.ToMM(p.x),k.ToMM(p.y)
-# Two deliberate, short quiet-ground links bypass the signal/3V3 fences. They
-# were selected from the native copper geometry and checked independently;
-# neither carries an axis power return. No autorouter is used for these links.
+# Explicit short quiet-ground links selected against this revision's native
+# copper. They bypass signal fences; no motor net is routed here.
 chosen=[];links=[]
-for layer,points in [(k.B_Cu,[(51.25,51),(51.25,53.5),(52.25,54.5),(56,54.5)]),
-                     (k.F_Cu,[(87.25,50),(94.25,50)])]:
-    for x,y in [points[0],points[-1]]:
-        v=k.PCB_VIA(b);v.SetPosition(xy(x,y));v.SetWidth(k.FromMM(.7));v.SetDrill(k.FromMM(.3))
-        v.SetLayerPair(k.F_Cu,k.B_Cu);v.SetViaType(k.VIATYPE_THROUGH)
-        v.SetNet(b.GetNetsByName()['GND']);v.SetLocked(True);b.Add(v)
-        chosen.append(dict(x=x,y=y,diameter=.7,drill=.3,reason='deliberate ground-link endpoint'))
-    for a,z in zip(points,points[1:]):
+plan=json.loads((ROOT/'ground-link-plan.json').read_text())
+for x,y in plan['vias']:
+    v=k.PCB_VIA(b);v.SetPosition(xy(x,y));v.SetWidth(k.FromMM(.7));v.SetDrill(k.FromMM(.3))
+    v.SetLayerPair(k.F_Cu,k.B_Cu);v.SetViaType(k.VIATYPE_THROUGH)
+    v.SetNet(b.GetNetsByName()['GND']);v.SetLocked(True);b.Add(v)
+    chosen.append(dict(x=x,y=y,diameter=.7,drill=.3,reason='deliberate ground-link endpoint'))
+for path in plan['routes']:
+    layer={'F.Cu':k.F_Cu,'B.Cu':k.B_Cu}[path['layer']]
+    for a,z in zip(path['points'],path['points'][1:]):
         t=k.PCB_TRACK(b);t.SetStart(xy(*a));t.SetEnd(xy(*z));t.SetWidth(k.FromMM(.4))
         t.SetLayer(layer);t.SetNet(b.GetNetsByName()['GND']);t.SetLocked(True);b.Add(t)
         links.append(dict(net='GND',layer=b.GetLayerName(layer),width=.4,start=a,end=z))

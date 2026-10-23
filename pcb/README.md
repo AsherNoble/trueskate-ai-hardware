@@ -13,9 +13,10 @@ Start with [the one-page net guide](../docs/pcb/nets.md), then
 - `schematic-review.pdf`: native nine-page drawing.
 - `net-guide-review.pdf`: one-page plain-English guide to all 67 real nets.
 - `mechanical-fit-review.pdf`: 1:1 top view; print at actual size and check the
-  50 mm ruler. Mini socket fit and base fit have already been confirmed.
+  50 mm ruler. Control/phase locations and base fit are retained; the new power sockets use the exact tagged drill geometry.
 - `top-review.png`, `bottom-review.png`, `3d-review.png`: native board renders;
   plug-in Teensy/Mini/breakout boards and wiring omitted.
+- `mini-drill-overlay.png`, `mini-fit-report.json`: 15-hole footprint versus upstream drills, including all six placements.
 - `bom-review.csv` and [grouped BOM](../docs/pcb/bom.md): hand-soldered parts,
   selected LCSC entries and labeled cost allowances.
 - `erc-review.json`, `drc-review.json`, `review-status.json`: checked reports,
@@ -28,7 +29,9 @@ Start with [the one-page net guide](../docs/pcb/nets.md), then
 `rebuild.py` reconstructs the board and reimports signals only.
 `export_review.py` validates and produces review PDFs/PNGs only. Neither creates
 Gerbers, drills or assembly files. Do not regenerate over unrecorded manual
-KiCad edits. Upstream geometry evidence stays in `sources/`.
+KiCad edits. Upstream geometry evidence stays in `sources/`. See the
+[direct-power change report](../docs/pcb/mini-v1-update.md) for pin assignments,
+trace sizing, capacitor clearances and the drill overlay.
 
 The runtime firmware is still the earlier one-axis bench implementation, not
 six-axis carrier firmware. Do not flash it assuming otherwise. Human electrical

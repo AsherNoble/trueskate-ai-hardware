@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/Users/ashernoble/Projects/Robotics &amp; hardware/trueskate-ai-hardware/pcb/trueskate-main-v1.kicad_sch</source>
-    <date>2026-10-11T14:52:50</date>
+    <date>2026-10-24T09:19:31</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -301,10 +301,10 @@
       </units>
     </comp>
     <comp ref="J11">
-      <value>Mini v1.0 FEMALE sockets</value>
-      <footprint>TrueSkate:Mini_v1_Sockets</footprint>
+      <value>Mini v1.0 / 15-hole socket</value>
+      <footprint>TrueSkate:SimpleFOC_Mini_v1.0</footprint>
       <fields>
-        <field name="Footprint">TrueSkate:Mini_v1_Sockets</field>
+        <field name="Footprint">TrueSkate:SimpleFOC_Mini_v1.0</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -329,6 +329,8 @@
             <pin num="P1"/>
             <pin num="P2"/>
             <pin num="P3"/>
+            <pin num="GND"/>
+            <pin num="VIN"/>
           </pins>
         </unit>
       </units>
@@ -378,28 +380,6 @@
             <pin num="4"/>
             <pin num="5"/>
             <pin num="6"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J41">
-      <value>MINI POWER +12V / GND</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</footprint>
-      <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="TrueSkate" part="J41" description=""/>
-      <property name="Sheetname" value="02 / A1: index_curl_1"/>
-      <property name="Sheetfile" value="axis1.kicad_sch"/>
-      <sheetpath names="/02 / A1: index_curl_1/" tstamps="/1fc653d0-f27f-55e2-8973-0e83b9d9c682/"/>
-      <tstamps>9686d89c-456f-54af-90a3-48daf5ccf4f6</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -493,10 +473,10 @@
       </units>
     </comp>
     <comp ref="J12">
-      <value>Mini v1.0 FEMALE sockets</value>
-      <footprint>TrueSkate:Mini_v1_Sockets</footprint>
+      <value>Mini v1.0 / 15-hole socket</value>
+      <footprint>TrueSkate:SimpleFOC_Mini_v1.0</footprint>
       <fields>
-        <field name="Footprint">TrueSkate:Mini_v1_Sockets</field>
+        <field name="Footprint">TrueSkate:SimpleFOC_Mini_v1.0</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -521,6 +501,8 @@
             <pin num="P1"/>
             <pin num="P2"/>
             <pin num="P3"/>
+            <pin num="GND"/>
+            <pin num="VIN"/>
           </pins>
         </unit>
       </units>
@@ -570,28 +552,6 @@
             <pin num="4"/>
             <pin num="5"/>
             <pin num="6"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J42">
-      <value>MINI POWER +12V / GND</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</footprint>
-      <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="TrueSkate" part="J42" description=""/>
-      <property name="Sheetname" value="03 / A2: index_curl_2"/>
-      <property name="Sheetfile" value="axis2.kicad_sch"/>
-      <sheetpath names="/03 / A2: index_curl_2/" tstamps="/dcdfa8e7-c0b4-5e6c-83c3-2665524ac41c/"/>
-      <tstamps>a8b46ad0-35bb-5d60-bf66-ef77ce64b65d</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -685,10 +645,10 @@
       </units>
     </comp>
     <comp ref="J13">
-      <value>Mini v1.0 FEMALE sockets</value>
-      <footprint>TrueSkate:Mini_v1_Sockets</footprint>
+      <value>Mini v1.0 / 15-hole socket</value>
+      <footprint>TrueSkate:SimpleFOC_Mini_v1.0</footprint>
       <fields>
-        <field name="Footprint">TrueSkate:Mini_v1_Sockets</field>
+        <field name="Footprint">TrueSkate:SimpleFOC_Mini_v1.0</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -713,6 +673,8 @@
             <pin num="P1"/>
             <pin num="P2"/>
             <pin num="P3"/>
+            <pin num="GND"/>
+            <pin num="VIN"/>
           </pins>
         </unit>
       </units>
@@ -762,28 +724,6 @@
             <pin num="4"/>
             <pin num="5"/>
             <pin num="6"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J43">
-      <value>MINI POWER +12V / GND</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</footprint>
-      <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="TrueSkate" part="J43" description=""/>
-      <property name="Sheetname" value="04 / A3: index_splay"/>
-      <property name="Sheetfile" value="axis3.kicad_sch"/>
-      <sheetpath names="/04 / A3: index_splay/" tstamps="/104f18a7-3092-5217-9dc3-c3aa0236c046/"/>
-      <tstamps>6969793d-9365-52a0-a56c-da8f1619c5b9</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -877,10 +817,10 @@
       </units>
     </comp>
     <comp ref="J14">
-      <value>Mini v1.0 FEMALE sockets</value>
-      <footprint>TrueSkate:Mini_v1_Sockets</footprint>
+      <value>Mini v1.0 / 15-hole socket</value>
+      <footprint>TrueSkate:SimpleFOC_Mini_v1.0</footprint>
       <fields>
-        <field name="Footprint">TrueSkate:Mini_v1_Sockets</field>
+        <field name="Footprint">TrueSkate:SimpleFOC_Mini_v1.0</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -905,6 +845,8 @@
             <pin num="P1"/>
             <pin num="P2"/>
             <pin num="P3"/>
+            <pin num="GND"/>
+            <pin num="VIN"/>
           </pins>
         </unit>
       </units>
@@ -954,28 +896,6 @@
             <pin num="4"/>
             <pin num="5"/>
             <pin num="6"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J44">
-      <value>MINI POWER +12V / GND</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</footprint>
-      <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="TrueSkate" part="J44" description=""/>
-      <property name="Sheetname" value="05 / A4: middle_curl_1"/>
-      <property name="Sheetfile" value="axis4.kicad_sch"/>
-      <sheetpath names="/05 / A4: middle_curl_1/" tstamps="/e30136b7-9c2d-5d77-b41c-fd10a214baa8/"/>
-      <tstamps>80aaab5a-5a50-54b6-997e-e27e123fc194</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -1069,10 +989,10 @@
       </units>
     </comp>
     <comp ref="J15">
-      <value>Mini v1.0 FEMALE sockets</value>
-      <footprint>TrueSkate:Mini_v1_Sockets</footprint>
+      <value>Mini v1.0 / 15-hole socket</value>
+      <footprint>TrueSkate:SimpleFOC_Mini_v1.0</footprint>
       <fields>
-        <field name="Footprint">TrueSkate:Mini_v1_Sockets</field>
+        <field name="Footprint">TrueSkate:SimpleFOC_Mini_v1.0</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1097,6 +1017,8 @@
             <pin num="P1"/>
             <pin num="P2"/>
             <pin num="P3"/>
+            <pin num="GND"/>
+            <pin num="VIN"/>
           </pins>
         </unit>
       </units>
@@ -1146,28 +1068,6 @@
             <pin num="4"/>
             <pin num="5"/>
             <pin num="6"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J45">
-      <value>MINI POWER +12V / GND</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</footprint>
-      <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="TrueSkate" part="J45" description=""/>
-      <property name="Sheetname" value="06 / A5: middle_curl_2"/>
-      <property name="Sheetfile" value="axis5.kicad_sch"/>
-      <sheetpath names="/06 / A5: middle_curl_2/" tstamps="/daca2ca2-f10e-5dfd-9143-bc498358d8e7/"/>
-      <tstamps>aa3da365-be64-589e-9927-12b219fc2372</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -1261,10 +1161,10 @@
       </units>
     </comp>
     <comp ref="J16">
-      <value>Mini v1.0 FEMALE sockets</value>
-      <footprint>TrueSkate:Mini_v1_Sockets</footprint>
+      <value>Mini v1.0 / 15-hole socket</value>
+      <footprint>TrueSkate:SimpleFOC_Mini_v1.0</footprint>
       <fields>
-        <field name="Footprint">TrueSkate:Mini_v1_Sockets</field>
+        <field name="Footprint">TrueSkate:SimpleFOC_Mini_v1.0</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1289,6 +1189,8 @@
             <pin num="P1"/>
             <pin num="P2"/>
             <pin num="P3"/>
+            <pin num="GND"/>
+            <pin num="VIN"/>
           </pins>
         </unit>
       </units>
@@ -1338,28 +1240,6 @@
             <pin num="4"/>
             <pin num="5"/>
             <pin num="6"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J46">
-      <value>MINI POWER +12V / GND</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</footprint>
-      <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="TrueSkate" part="J46" description=""/>
-      <property name="Sheetname" value="07 / A6: middle_splay"/>
-      <property name="Sheetfile" value="axis6.kicad_sch"/>
-      <sheetpath names="/07 / A6: middle_splay/" tstamps="/4e770638-ce82-5c47-8de1-2775d826b825/"/>
-      <tstamps>e9b4b0a6-bfd3-500c-8d48-a1ceb22154df</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -1688,8 +1568,8 @@
     <libpart lib="TrueSkate" part="J11">
       <fields>
         <field name="Reference">J11</field>
-        <field name="Value">Mini v1.0 FEMALE sockets</field>
-        <field name="Footprint">TrueSkate:Mini_v1_Sockets</field>
+        <field name="Value">Mini v1.0 / 15-hole socket</field>
+        <field name="Footprint">TrueSkate:SimpleFOC_Mini_v1.0</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1704,16 +1584,18 @@
         <pin num="8" name="8" type="passive"/>
         <pin num="9" name="9" type="passive"/>
         <pin num="10" name="10" type="passive"/>
+        <pin num="GND" name="GND" type="passive"/>
         <pin num="P1" name="P1" type="passive"/>
         <pin num="P2" name="P2" type="passive"/>
         <pin num="P3" name="P3" type="passive"/>
+        <pin num="VIN" name="VIN" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="TrueSkate" part="J12">
       <fields>
         <field name="Reference">J12</field>
-        <field name="Value">Mini v1.0 FEMALE sockets</field>
-        <field name="Footprint">TrueSkate:Mini_v1_Sockets</field>
+        <field name="Value">Mini v1.0 / 15-hole socket</field>
+        <field name="Footprint">TrueSkate:SimpleFOC_Mini_v1.0</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1728,16 +1610,18 @@
         <pin num="8" name="8" type="passive"/>
         <pin num="9" name="9" type="passive"/>
         <pin num="10" name="10" type="passive"/>
+        <pin num="GND" name="GND" type="passive"/>
         <pin num="P1" name="P1" type="passive"/>
         <pin num="P2" name="P2" type="passive"/>
         <pin num="P3" name="P3" type="passive"/>
+        <pin num="VIN" name="VIN" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="TrueSkate" part="J13">
       <fields>
         <field name="Reference">J13</field>
-        <field name="Value">Mini v1.0 FEMALE sockets</field>
-        <field name="Footprint">TrueSkate:Mini_v1_Sockets</field>
+        <field name="Value">Mini v1.0 / 15-hole socket</field>
+        <field name="Footprint">TrueSkate:SimpleFOC_Mini_v1.0</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1752,16 +1636,18 @@
         <pin num="8" name="8" type="passive"/>
         <pin num="9" name="9" type="passive"/>
         <pin num="10" name="10" type="passive"/>
+        <pin num="GND" name="GND" type="passive"/>
         <pin num="P1" name="P1" type="passive"/>
         <pin num="P2" name="P2" type="passive"/>
         <pin num="P3" name="P3" type="passive"/>
+        <pin num="VIN" name="VIN" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="TrueSkate" part="J14">
       <fields>
         <field name="Reference">J14</field>
-        <field name="Value">Mini v1.0 FEMALE sockets</field>
-        <field name="Footprint">TrueSkate:Mini_v1_Sockets</field>
+        <field name="Value">Mini v1.0 / 15-hole socket</field>
+        <field name="Footprint">TrueSkate:SimpleFOC_Mini_v1.0</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1776,16 +1662,18 @@
         <pin num="8" name="8" type="passive"/>
         <pin num="9" name="9" type="passive"/>
         <pin num="10" name="10" type="passive"/>
+        <pin num="GND" name="GND" type="passive"/>
         <pin num="P1" name="P1" type="passive"/>
         <pin num="P2" name="P2" type="passive"/>
         <pin num="P3" name="P3" type="passive"/>
+        <pin num="VIN" name="VIN" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="TrueSkate" part="J15">
       <fields>
         <field name="Reference">J15</field>
-        <field name="Value">Mini v1.0 FEMALE sockets</field>
-        <field name="Footprint">TrueSkate:Mini_v1_Sockets</field>
+        <field name="Value">Mini v1.0 / 15-hole socket</field>
+        <field name="Footprint">TrueSkate:SimpleFOC_Mini_v1.0</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1800,16 +1688,18 @@
         <pin num="8" name="8" type="passive"/>
         <pin num="9" name="9" type="passive"/>
         <pin num="10" name="10" type="passive"/>
+        <pin num="GND" name="GND" type="passive"/>
         <pin num="P1" name="P1" type="passive"/>
         <pin num="P2" name="P2" type="passive"/>
         <pin num="P3" name="P3" type="passive"/>
+        <pin num="VIN" name="VIN" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="TrueSkate" part="J16">
       <fields>
         <field name="Reference">J16</field>
-        <field name="Value">Mini v1.0 FEMALE sockets</field>
-        <field name="Footprint">TrueSkate:Mini_v1_Sockets</field>
+        <field name="Value">Mini v1.0 / 15-hole socket</field>
+        <field name="Footprint">TrueSkate:SimpleFOC_Mini_v1.0</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1824,9 +1714,11 @@
         <pin num="8" name="8" type="passive"/>
         <pin num="9" name="9" type="passive"/>
         <pin num="10" name="10" type="passive"/>
+        <pin num="GND" name="GND" type="passive"/>
         <pin num="P1" name="P1" type="passive"/>
         <pin num="P2" name="P2" type="passive"/>
         <pin num="P3" name="P3" type="passive"/>
+        <pin num="VIN" name="VIN" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="TrueSkate" part="J2">
@@ -2050,84 +1942,6 @@
         <pin num="6" name="6" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="TrueSkate" part="J41">
-      <fields>
-        <field name="Reference">J41</field>
-        <field name="Value">MINI POWER +12V / GND</field>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="TrueSkate" part="J42">
-      <fields>
-        <field name="Reference">J42</field>
-        <field name="Value">MINI POWER +12V / GND</field>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="TrueSkate" part="J43">
-      <fields>
-        <field name="Reference">J43</field>
-        <field name="Value">MINI POWER +12V / GND</field>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="TrueSkate" part="J44">
-      <fields>
-        <field name="Reference">J44</field>
-        <field name="Value">MINI POWER +12V / GND</field>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="TrueSkate" part="J45">
-      <fields>
-        <field name="Reference">J45</field>
-        <field name="Value">MINI POWER +12V / GND</field>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="TrueSkate" part="J46">
-      <fields>
-        <field name="Reference">J46</field>
-        <field name="Value">MINI POWER +12V / GND</field>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="TrueSkate" part="J5">
       <fields>
         <field name="Reference">J5</field>
@@ -2346,12 +2160,12 @@
       <node ref="C25" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="C26" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="F1" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J41" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="J42" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="J43" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="J44" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="J45" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="J46" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J11" pin="VIN" pinfunction="VIN_VIN" pintype="passive"/>
+      <node ref="J12" pin="VIN" pinfunction="VIN_VIN" pintype="passive"/>
+      <node ref="J13" pin="VIN" pinfunction="VIN_VIN" pintype="passive"/>
+      <node ref="J14" pin="VIN" pinfunction="VIN_VIN" pintype="passive"/>
+      <node ref="J15" pin="VIN" pinfunction="VIN_VIN" pintype="passive"/>
+      <node ref="J16" pin="VIN" pinfunction="VIN_VIN" pintype="passive"/>
     </net>
     <net code="3" name="12V_IN" class="Default">
       <node ref="F1" pin="1" pinfunction="1_1" pintype="passive"/>
@@ -2607,42 +2421,42 @@
     <net code="59" name="PGND1" class="Default">
       <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C21" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J41" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J11" pin="GND" pinfunction="GND_GND" pintype="passive"/>
       <node ref="NT1" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R21" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
     <net code="60" name="PGND2" class="Default">
       <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C22" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J42" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J12" pin="GND" pinfunction="GND_GND" pintype="passive"/>
       <node ref="NT1" pin="3" pinfunction="3_3" pintype="passive"/>
       <node ref="R22" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
     <net code="61" name="PGND3" class="Default">
       <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C23" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J43" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J13" pin="GND" pinfunction="GND_GND" pintype="passive"/>
       <node ref="NT1" pin="4" pinfunction="4_4" pintype="passive"/>
       <node ref="R23" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
     <net code="62" name="PGND4" class="Default">
       <node ref="C14" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C24" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J44" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J14" pin="GND" pinfunction="GND_GND" pintype="passive"/>
       <node ref="NT1" pin="5" pinfunction="5_5" pintype="passive"/>
       <node ref="R24" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
     <net code="63" name="PGND5" class="Default">
       <node ref="C15" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C25" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J45" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J15" pin="GND" pinfunction="GND_GND" pintype="passive"/>
       <node ref="NT1" pin="6" pinfunction="6_6" pintype="passive"/>
       <node ref="R25" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
     <net code="64" name="PGND6" class="Default">
       <node ref="C16" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C26" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J46" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J16" pin="GND" pinfunction="GND_GND" pintype="passive"/>
       <node ref="NT1" pin="7" pinfunction="7_7" pintype="passive"/>
       <node ref="R26" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>

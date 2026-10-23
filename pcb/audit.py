@@ -23,7 +23,7 @@ ini=(ROOT.parent/'firmware/platformio.ini').read_text()
 assert 'lib_archive = no' in ini
 assert '-D SIMPLEFOC_TEENSY4_FORCE_CENTER_ALIGNED_3PWM' not in ini
 parts=json.loads((ROOT/'circuit.json').read_text())
-assert len(parts)==53
+assert len(parts)==47
 assert not any(p['assembly']=='JLCPCB' for p in parts)
 assert not any(p['ref'].startswith(('U','Q','D')) for p in parts)
 settings=json.loads((ROOT/'trueskate-main-v1.kicad_pro').read_text())['board']['design_settings']
@@ -35,6 +35,6 @@ for key,value in dict(min_clearance=.2,min_track_width=.2,min_via_diameter=.7,
 assert not settings.get('drc_exclusions')
 assert all(value!='ignore'for value in settings['rule_severities'].values())
 print('PASS: unchanged six-axis map; 18 PWM; 12 plain-digital EN/CS; SPI0; 9 spare contacts.')
-print('PASS: USB-only passive carrier scope; 53 schematic references; no factory assembly.')
+print('PASS: USB-only passive carrier scope; 47 schematic references; no factory assembly.')
 print('PASS: conservative two-layer rules persisted; no DRC exclusions or ignored checks.')
 print('Static checks only. Six-axis electrical operation still requires bench testing.')

@@ -1,0 +1,541 @@
+{
+  "source_tag": "v1.0",
+  "source_commit": "848e8ece46d045ac24283e2d6ee9ea4ba8ef95d5",
+  "contacts_per_footprint": 15,
+  "instances_checked": 6,
+  "max_position_error_mm": 0.0,
+  "tolerance_mm": 0.05,
+  "drill_diameters_mm": [
+    1.101,
+    1.021
+  ],
+  "control_net_mismatches": [],
+  "all_net_mismatches": [],
+  "measurements": [
+    {
+      "reference": "library",
+      "pad": "1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "4",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "5",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "6",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "7",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "8",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "9",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "10",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "GND",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "P1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "P2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "P3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "library",
+      "pad": "VIN",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "4",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "5",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "6",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "7",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "8",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "9",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "10",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "GND",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "P1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "P2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "P3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J13",
+      "pad": "VIN",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "4",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "5",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "6",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "7",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "8",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "9",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "10",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "GND",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "P1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "P2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "P3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J14",
+      "pad": "VIN",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "4",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "5",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "6",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "7",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "8",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "9",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "10",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "GND",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "P1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "P2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "P3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J16",
+      "pad": "VIN",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "4",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "5",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "6",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "7",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "8",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "9",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "10",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "GND",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "P1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "P2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "P3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J12",
+      "pad": "VIN",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "4",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "5",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "6",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "7",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "8",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "9",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "10",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "GND",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "P1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "P2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "P3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J15",
+      "pad": "VIN",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "4",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "5",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "6",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "7",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "8",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "9",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "10",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "GND",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "P1",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "P2",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "P3",
+      "position_error_mm": 0.0
+    },
+    {
+      "reference": "J11",
+      "pad": "VIN",
+      "position_error_mm": 0.0
+    }
+  ]
+}

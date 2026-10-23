@@ -8,6 +8,6 @@ from pathlib import Path
 import subprocess
 import sys
 ROOT=Path(__file__).resolve().parent
-for script,args in [('generate.py',[]),('route_signals.py',['export']),
+for script,args in [('extract_mini.py',[]),('generate.py',[]),('route_signals.py',['export']),
                     ('route_signals.py',['import']),('finish_ground.py',[])]:
     subprocess.run([sys.executable,str(ROOT/script),*args],check=True)

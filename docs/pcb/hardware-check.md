@@ -8,7 +8,7 @@ electrical review of the native KiCad project and the net guide.
 - Mini control/phase sockets fit the printed 1:1 template. Keep that geometry.
 - Encoder breakout square pad is pin 1; order is CLK, MISO, MOSI, CSn, 3V3, GND.
 - The 160 x 120 mm carrier fits the base.
-- Short paired screw-terminal wires to Mini power are approved.
+- Direct Mini v1.0 power receptacles replace the previous terminal/wire scheme.
 - Kill restart/latch behavior is not applicable to this v1.
 
 These are recorded confirmations, not reasons to ask for the same photos again.
@@ -41,7 +41,7 @@ bench supply, a meter, and an accessible physical 12 V disconnect.
    check for unintended rail shorts. Capacitors charging from a meter can cause
    a temporary continuity beep; investigate, do not assume either outcome.
 2. Without plugged-in modules, verify J5 polarity, fuse continuity, every Mini
-   terminal's +/return, and that VIN has no carrier connection. Leave JP1-JP6 open.
+   footprint VIN/GND pads, and that Teensy VIN has no carrier connection. Leave JP1-JP6 open.
 3. Plug in the Teensy with 12 V off. Use suitable firmware with all EN outputs
    low; check encoder sockets have 3.3 V. Do not cut the USB/VIN link for this design.
 4. Install one Mini and its approved power pair. With low-current 12 V present,

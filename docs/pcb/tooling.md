@@ -23,14 +23,14 @@ developer mode. No cloud routing, PCB upload, firmware flash or remote git push.
 '/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3' '/Users/ashernoble/Projects/Robotics & hardware/trueskate-ai-hardware/pcb/rebuild.py'
 ```
 
-Sequence: `generate.py` -> `route_signals.py export` -> `route_signals.py import`
+Sequence: `extract_mini.py` -> `generate.py` -> `route_signals.py export` -> `route_signals.py import`
 -> `finish_ground.py`. It does not launch an autorouter: it reuses checked-in
 `routing/signals.ses`. Do not regenerate over unrecorded manual KiCad edits.
 
 `design.json` is the agreed pin map; `kicad_source.py` writes schematic/project
-files. `generate.py` writes placement and 171 locked manual segments for power,
-phases, control grounds and encoder supply. `finish_ground.py` adds two explicit
-quiet-ground links (`ground-links.json`) and checked stitching vias
+files. `generate.py` writes placement and locked manual segments for power,
+phases, control grounds and encoder supply. `finish_ground.py` adds explicit
+quiet-ground links (`ground-link-plan.json` -> `ground-links.json`) and checked stitching vias
 (`ground-stitching.json`). No PGND branch is autorouted.
 
 `SaveBoard(..., aSkipSettings=True)` prevents standalone Python from overwriting
@@ -64,3 +64,19 @@ The net guide asserts coverage of all 67 real nets. Standard KiCad
 `unconnected-(...)` single-contact names are bookkeeping, not extra wires.
 No script produces Gerbers, drill, placement or upload files. Stop for human
 review before manufacturing.
+
+
+## Mini v1.0 drill and power checks
+
+`extract_mini.py` verifies pinned raw-source hashes, parses metric 3:3 drills,
+traces EasyEDA schematic wires, and obtains the GKO outline without grid snapping.
+`verify_mini.py --checks-only` independently reads actual native library and
+board pads and checks all 105 contacts against the drill file. Without that flag
+it writes the PNG/SVG overlay (Python 3.11 plus matplotlib).
+`verify_power.py` uses KiCad Python to check continuous full-width supply and
+return paths, and records the 3 A / 35 um / 10 C calculation and capacitor spacing.
+
+The direct-power revision reroutes the signals with Freerouting 2.5.0 against
+new locked power copper. The updated SES is checked in. Telemetry was disabled;
+only PWM/EN/CS/SPI routes are imported. Existing manufacturing and assembled
+mockup snapshots are explicitly marked historical; rebuild does not update them.

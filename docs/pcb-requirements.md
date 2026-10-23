@@ -9,18 +9,19 @@ in this checkout.
 
 - Main board only: six GM3506 / SimpleFOC Mini v1.0 / AS5048A axes, index and
   middle fingers, each with two curl motors and one splay motor.
-- Teensy 4.1 and all six Minis in female through-hole sockets. Preserve the
-  source-derived, user-fit-verified Mini socket hole geometry.
+- Teensy 4.1 and all six Minis in female through-hole sockets. Use the exact
+  Mini v1.0 15-hole footprint derived from the tagged plated-drill file.
 - Teensy powered by USB ONLY. VIN socket contact electrically unconnected.
   No buck, external logic supply, USB/VIN isolation or Teensy modification.
 - Six female 1x6, 2.54 mm encoder sockets for existing JST breakout boards.
   From the verified square pad: **1 CLK, 2 MISO, 3 MOSI, 4 CSn, 5 3V3, 6 GND**.
   Mark contact 1 on silkscreen.
 - Six male 1x3 phase headers for existing female Dupont motor leads.
-- Six approved short paired power wires from carrier screw terminals to each
-  Mini's existing terminals; no rigid socket for its off-grid power pads.
+- Twelve single machine-pin receptacles in the six Mini footprints: VIN/GND
+  at the exact 4.953 mm pitch. Route 12V and each PGND directly for 3 A; no
+  J41-J46 terminals or Mini power-wire pairs.
 - Per axis: owned Panasonic EEUFR1V102B 1000 uF / 35 V plus a through-hole
-  100 nF ceramic beside the local Mini supply terminal.
+  100 nF ceramic beside the Mini power pads.
 - 12 V input screw terminal and through-hole 5x20 mm fuse holder. Cartridge
   selection requires measured load/inrush and human review.
 - Six separate motor-return branches to a star beside the input. Teensy/encoder

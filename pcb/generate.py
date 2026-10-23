@@ -36,7 +36,7 @@ page("controller","01 / USB-powered Teensy sockets",[
     "USB is the ONLY Teensy power source. VIN socket contact is deliberately unconnected.",
     "All six axes use edge-aligned PWM. Existing firmware needs the new EN/CS assignments.",
     "Teensy 3.3V powers encoders. Mini regulator outputs are NOT connected to this rail.",
-    "Mini fit, encoder pin 1 and 160 x 120 mm base fit confirmed by the user."])
+    "Mini v1.0 drill-derived footprint; encoder pin 1 and base dimensions retained."])
 pin_nets={}
 for i,a in enumerate(D["axes"],1):
     for n,pin in enumerate(a["pwm"],1): pin_nets[pin]=f"A{i}_PWM{n}"
@@ -52,16 +52,17 @@ for ref,names,sch,y in [("J1",lower,(65,85),75.24),("J2",upper,(190,85),60)]:
 for i,a in enumerate(D["axes"],1):
     pg=f"axis{i}";col=(i-1)%3;top=i<=3;x=35+43*col;y=30 if top else 92
     page(pg,f"{i+1:02} / A{i}: {a['name']}",[
-        "Mini footprint fit confirmed on the 1:1 template. Female control and phase sockets.",
+        "Mini v1.0: exact 15-hole footprint; component side up, pins down; NOT mirrored.",
         "EN goes directly to Teensy; 10k to this Mini's power ground holds EN low at reset.",
-        "JP control-ground bridge defaults OPEN; module already references its power-return wire.",
+        "JP control-ground bridge defaults OPEN; module references its directly routed power-return pad.",
         "Breakout socket: 1 CLK, 2 MISO, 3 MOSI, 4 CSn, 5 3.3V, 6 GND. Pin 1 is marked.",
         "Mini 3.3V output, nRESET, nSLEEP and nFAULT contacts intentionally unconnected."])
-    add(f"J{10+i}","Mini v1.0 FEMALE sockets","TrueSkate:Mini_v1_Sockets",
-        list(range(1,11))+["P1","P2","P3"],
+    add(f"J{10+i}","Mini v1.0 / 15-hole socket","TrueSkate:SimpleFOC_Mini_v1.0",
+        list(range(1,11))+["P1","P2","P3","GND","VIN"],
         [f"CGND{i}",None,f"A{i}_PWM1",f"CGND{i}",f"A{i}_PWM2",None,
-         f"A{i}_PWM3",None,f"A{i}_EN",None,f"A{i}_PH3",f"A{i}_PH2",f"A{i}_PH1"],
-        pg,(70,65),(x,y,180 if top else 0),.7,"User-verified 2x5 and 1x3 female socket geometry")
+         f"A{i}_PWM3",None,f"A{i}_EN",None,f"A{i}_PH3",f"A{i}_PH2",f"A{i}_PH1",f"PGND{i}","12V_FUSED"],
+        pg,(70,65),(x+10.16 if top else x-10.16,y,180 if top else 0),.7,
+        "One footprint: 1 female 2x5 + 1 female 1x3 + 2 single machine-pin receptacles; >=3A per power contact; matched mating height")
     add(f"J{20+i}","MOTOR PHASES male 1x3","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
         [1,2,3],[f"A{i}_PH{n}" for n in (1,2,3)],pg,(190,45),
         (x+6.604 if top else x-6.604,7 if top else 116,270 if top else 90),.1)
@@ -74,17 +75,14 @@ for i,a in enumerate(D["axes"],1):
     add(f"JP{i}","CONTROL GND / OPEN","TrueSkate:GroundBridge_THT",[1,2],[f"CGND{i}","GND"],
         pg,(190,120),(25+43*col,36,0) if top else (35.5+43*col,82,0),0,
         "Leave open; optional soldered wire bridge after noise review",assembly="PCB / optional wire")
-    bx,by=(x+21,16) if top else (x+18,109.5)
+    bx,by=(16.8+43*col,18.737) if top else (55.8+43*col,103.263)
     add(f"C{10+i}","1000uF 35V EEUFR1V102B","Capacitor_THT:CP_Radial_D12.5mm_P5.00mm",
-        [1,2],["12V_FUSED",f"PGND{i}"],pg,(70,155),(bx,by,0),0,
+        [1,2],["12V_FUSED",f"PGND{i}"],pg,(70,155),(bx,by,270 if top else 90),0,
         "Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm",lcsc="C128476",assembly="Hand / owned")
     add(f"C{20+i}","100nF 50V ceramic","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
         [1,2],["12V_FUSED",f"PGND{i}"],pg,(190,155),
-        (x+21,24.2,0) if top else (x+18,101.5,0),.13,
+        (21.5+43*col,29.5,270) if top else (48.5+43*col,95,90),.13,
         "Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder",lcsc="C2979769")
-    add(f"J{40+i}","MINI POWER +12V / GND","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
-        [1,2],["12V_FUSED",f"PGND{i}"],pg,(70,190),
-        (x+21,30,0) if top else (x+18,94,0),2.5,"Phoenix Contact 1727010; approved short paired wires to Mini")
 page("power","08 / Fused 12V and ground star",[
     "12V is motor power only: no connection to Teensy VIN, VUSB or 3.3V.",
     "Through-hole fuse holder; candidate 3.15A time-delay cartridge, qualify load/inrush.",
@@ -94,7 +92,7 @@ page("power","08 / Fused 12V and ground star",[
 add("J5","12V INPUT + / -","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
     [1,2],["12V_IN","GND"],"power",(65,55),(7,69,0),2,"Phoenix Contact 1715721; 5.08mm pitch")
 add("F1","5x20 fuse holder / fuse TBD","Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open",
-    [1,2],["12V_IN","12V_FUSED"],"power",(190,55),(8,50,90),1.8,"Schurter 0031.8201; cartridge separately purchased",lcsc="C3204125")
+    [1,2],["12V_IN","12V_FUSED"],"power",(190,55),(8,58,90),1.8,"Schurter 0031.8201; cartridge separately purchased",lcsc="C3204125")
 add("NT1","GROUND STAR / PCB COPPER","TrueSkate:GroundStar",list(range(1,8)),
     ["GND"]+[f"PGND{i}" for i in range(1,7)],"power",(65,105),(22,69,0),assembly="PCB copper")
 
@@ -109,14 +107,21 @@ def pth(fp,num,x,y,size=1.8,drill=1):
 def save_fp(fp): k.PCB_IO_MGR.FindPlugin(k.PCB_IO_MGR.KICAD_SEXP).FootprintSave(str(ROOT/"TrueSkate.pretty"),fp)
 def custom():
     (ROOT/"TrueSkate.pretty").mkdir(exist_ok=True)
-    mini=k.FOOTPRINT(None);mini.SetFPID(k.LIB_ID("TrueSkate","Mini_v1_Sockets"));mini.SetReference("REF**")
+    mini=k.FOOTPRINT(None);mini.SetFPID(k.LIB_ID("TrueSkate","SimpleFOC_Mini_v1.0"));mini.SetReference("REF**")
     mini.SetAttributes(k.FP_THROUGH_HOLE)
-    for name,prefix in [("control",""),("phase","P")]:
-        for p in G["connectors"][name]: pth(mini,prefix+p["pin"],p["x_mm"],p["y_mm"])
-    for a,z in [((-15,-3),(12,-3)),((12,-3),(12,21)),((12,21),(-15,21)),((-15,21),(-15,-3))]:
-        line(mini,a,z,k.F_CrtYd,.05);line(mini,a,z,k.F_Fab,.1)
-    for a,z in [((-11.5,-1.3),(1.3,-1.3)),((1.3,-1.3),(1.3,3.9)),((1.3,3.9),(-11.5,3.9)),((-11.5,3.9),(-11.5,-1.3))]: line(mini,a,z,k.F_SilkS)
-    for name,offset in [("PinSocket_2x05_P2.54mm_Vertical",(0,-2.54,0)),("PinSocket_1x03_P2.54mm_Vertical",(-1.524,-17.653,0))]:
+    mini.SetLibDescription("SimpleFOCMini tag v1.0; 15 drill-derived contacts; origin H1.9; component-side up, NOT mirrored")
+    for name,prefix in [("control",""),("phase","P"),("power","")]:
+        for p in G["connectors"][name]:
+            pth(mini,prefix+p["pin"],p["x_mm"],p["y_mm"],2.4 if name=="power" else 1.8,p["drill_mm"])
+    for path in G["outline_paths"]:
+        for a,z in zip(path,path[1:]):line(mini,a,z,k.F_Fab,.1)
+    x0,y0,x1,y1=G["courtyard_bounds_mm"]
+    for a,z in [((x0,y0),(x1,y0)),((x1,y0),(x1,y1)),((x1,y1),(x0,y1)),((x0,y1),(x0,y0))]:line(mini,a,z,k.F_CrtYd,.05)
+    for a,z in [((-1.3,-1.3),(11.5,-1.3)),((11.5,-1.3),(11.5,3.9)),((11.5,3.9),(-1.3,3.9)),((-1.3,3.9),(-1.3,-1.3))]:line(mini,a,z,k.F_SilkS)
+    for label,x,y in [("GND",17.399,1.8),("VIN",17.399,10.8)]:
+        t=k.PCB_TEXT(mini);t.SetText(label);t.SetPosition(xy(x,y));t.SetLayer(k.F_SilkS)
+        t.SetTextSize(xy(1,1));t.SetTextThickness(k.FromMM(.15));mini.Add(t)
+    for name,offset in [("PinSocket_2x05_P2.54mm_Vertical",(10.16,-2.54,0)),("PinSocket_1x03_P2.54mm_Vertical",(8.636,-17.653,0))]:
         m=k.FP_3DMODEL();m.m_Filename="${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/"+name+".step"
         m.m_Offset.Set(*offset);m.m_Rotation.z=90;mini.Add3DModel(m)
     save_fp(mini)
@@ -166,15 +171,14 @@ def board():
         t.SetTextSize(xy(size,size));t.SetTextThickness(k.FromMM(.15));b.Add(t)
     text("TrueSkate v1 / USB-POWERED CARRIER",83,1.2,1)
     text("USB ONLY",35,67);text("NO VIN",43,56.5,.8)
-    text("12V +  -",10,78);text("F1 / 5x20",8,21);text("STAR",22,56,.9)
+    text("12V +  -",10,78);text("F1 / 5x20",8,30);text("STAR",22,56,.9)
     text("POWER OFF BEFORE MOVING MOTOR WIRES",87,118.5,.8)
     for i in range(1,7):
         c=(i-1)%3;x=35+43*c;top=i<=3
-        text(f"A{i}",x-5 if top else x-17,32 if top else 96,1.2)
+        text(f"A{i}",x-5 if top else x-5,32 if top else 99,1.2)
         text(f"ENC{i}: 1 CLK",49+43*c,44 if top else 82.1)
-        text(f"JP{i} OPEN",26.5+43*c if top else 37+43*c,33.5 if top else 84.5)
+        text(f"JP{i} OPEN",28+43*c if top else 37+43*c,33.5 if top else 84.5)
         text(f"R{20+i} 10k",37.8+43*c if top else 64.8+43*c,33.5 if top else 82)
-        text("+12  GND",58+43*c,38.5 if top else 89)
         text("1  2  3",44+43*c if top else 31+43*c,4.5 if top else 113.4,.65)
     for a,z in [((55,125),(105,125)),((55,123),(55,127)),((105,123),(105,127))]: line(b,a,z,k.Dwgs_User,.2)
     for label,x,y in [("TOP VIEW / PRINT 100% / NOT MIRRORED",80,-5),("50 mm between ticks - check print scale",80,130)]: text(label,x,y,1.1,k.Dwgs_User)
@@ -191,33 +195,39 @@ def board():
     # All motor phases, 12V feeds and power returns are deliberately drawn and locked.
     for i in range(1,7):
         for ph in (1,2,3): route(f"J{10+i}",f"P{4-ph}",f"J{20+i}",ph,1)
-        bulk,term,cer=f"C{10+i}",f"J{40+i}",f"C{20+i}"
-        route(bulk,1,term,1,1.5)
-        bx,by=pos(pad(bulk,2));tx,ty=pos(pad(term,2));mid=(by+ty)/2
-        route(bulk,2,term,2,1.5,bends=[(bx,mid),(tx,mid+abs(bx-tx)*(1 if ty>by else -1))])
-        for n in (1,2):
-            cx,cy=pos(pad(cer,n));tx,ty=pos(pad(term,n))
-            route(cer,n,term,n,.6,bends=[(cx,(cy+ty)/2),(tx,(cy+ty)/2)])
-        rx,ry=pos(pad(f"R{20+i}",2));tx,ty=pos(pad(term,2))
-        route(f"R{20+i}",2,term,2,.4,k.F_Cu,[(rx,ry+3),(tx,ry+3)] if i<=3 else [(rx-3,ry+3),(rx-8.62,ry+3),(rx-8.62,97),(tx,97)])
+        bulk,mini,cer=f"C{10+i}",f"J{10+i}",f"C{20+i}"
+        # 2 mm external 1 oz branches: conservative 3 A / 10 C IPC-2221 estimate.
+        # No power vias or neck-downs; the 2.4 mm power annuli accept full width.
+        for n,power in [(1,"VIN"),(2,"GND")]:
+            bx,by=pos(pad(bulk,n));tx,ty=pos(pad(mini,power))
+            route(bulk,n,mini,power,2,k.F_Cu,[(tx,by)])
+        cx,cy=pos(pad(cer,1));tx,ty=pos(pad(mini,"VIN"))
+        bend=cx+2.5 if i<=3 else cx-3
+        route(cer,1,mini,"VIN",.6,k.B_Cu,[(bend,cy),(bend,ty)])
+        cx,cy=pos(pad(cer,2));tx,ty=pos(pad(mini,"GND"))
+        bend=cx+2.5 if i<=3 else tx
+        route(cer,2,mini,"GND",.6,k.F_Cu,[(bend,cy),(bend,ty)])
+        rx,ry=pos(pad(f"R{20+i}",2));tx,ty=pos(pad(mini,"GND"))
+        route(f"R{20+i}",2,mini,"GND",.4,k.B_Cu if i<=3 else k.F_Cu,
+              [(rx,34),(tx,34)] if i<=3 else [(rx-3,82),(rx-8.62,82),(rx-8.62,92),(tx,92)])
         route(f"J{10+i}",1,f"J{10+i}",4,.3)
         mx,my=pos(pad(f"J{10+i}",1));jx,jy=pos(pad(f"JP{i}",1))
         route(f"J{10+i}",1,f"JP{i}",1,.3,k.F_Cu,[(jx,my)] if i<=3 else [(mx,84)])
         if i<=3:
             jx,jy=pos(pad(f"JP{i}",2))
             track("GND",[(jx,jy),(jx,45.5)],.5,k.F_Cu)
-    route("J5",1,"F1",1,3,bends=[(7,51)])
+    route("J5",1,"F1",1,3,bends=[(7,59)])
     route("J5",2,"NT1",1,3)
-    track("12V_FUSED",[pos(pad("F1",2)),(17.5,18),(17.5,112.8),(139,112.8)],3,k.B_Cu)
-    track("12V_FUSED",[pos(pad("F1",2)),(17.5,18),(17.5,3.5),(142,3.5)],3,k.F_Cu)
+    track("12V_FUSED",[pos(pad("F1",2)),(17.5,35.5),(17.5,112.8),(128.239,112.8)],3,k.B_Cu)
+    track("12V_FUSED",[pos(pad("F1",2)),(8,10),(11,7),(11,3.5),(113.761,3.5)],3,k.F_Cu)
     for i in range(1,7):
-        x,y=pos(pad(f"C{10+i}",1));track("12V_FUSED",[(x,3.5 if i<=3 else 112.8),(x,y)],2,k.F_Cu if i<=3 else k.B_Cu)
+        x,y=pos(pad(f"J{10+i}","VIN"));track("12V_FUSED",[(x,3.5 if i<=3 else 112.8),(x,y)],2,k.F_Cu if i<=3 else k.B_Cu)
     for i in range(1,4):
-        sx,sy=pos(pad("NT1",i+1));tx,ty=pos(pad(f"J{40+i}",2));rail=37+2*i;fan=28+2*i
-        track(f"PGND{i}",[(sx,sy),(fan,sy-(fan-sx)),(fan,rail),(tx,rail),(tx,ty)],1.5,k.B_Cu)
+        sx,sy=pos(pad("NT1",i+1));tx,ty=pos(pad(f"J{10+i}","GND"));rail=35.5+2.5*i;fan=27+3*i
+        track(f"PGND{i}",[(sx,sy),(fan,sy-(fan-sx)),(fan,rail),(tx+3.3,rail),(tx+3.3,ty),(tx,ty)],1.8,k.B_Cu)
     for i in range(4,7):
-        sx,sy=pos(pad("NT1",i+1));tx,ty=pos(pad(f"J{40+i}",2));rail=97-2*i;fan=22+2*i
-        track(f"PGND{i}",[(sx,sy),(fan,sy+(fan-sx)),(fan,rail),(tx,rail),(tx,ty)],1.5,k.B_Cu)
+        sx,sy=pos(pad("NT1",i+1));tx,ty=pos(pad(f"J{10+i}","GND"));rail=100-2.5*i;fan=16+3*i
+        track(f"PGND{i}",[(sx,sy),(fan,sy+(fan-sx)),(fan,rail),(tx,rail),(tx,ty)],1.8,k.B_Cu)
     track("GND",[pos(pad("NT1",1)),(29,69)],1.5,k.F_Cu)
     # Encoder supply is deliberately routed, separate from the motor-power rails.
     route("J2",3,"J1",15,.4,k.F_Cu,[(49.08,64),(79.56,64)])
@@ -248,8 +258,9 @@ def board():
 def bom():
     (ROOT/"circuit.json").write_text(json.dumps(parts,indent=2)+"\n")
     with (ROOT/"bom-review.csv").open("w",newline="") as f:
-        w=csv.writer(f,lineterminator="\n");w.writerow(["Reference","Value","Footprint","LCSC","Assembly","Estimated USD each","Notes"])
-        for p in parts: w.writerow([p["ref"],p["value"],p["fp"],p["lcsc"],p["assembly"],p["price"],p["note"]])
+        w=csv.writer(f,lineterminator="\n");w.writerow(["Reference","Quantity","Value","Footprint","LCSC","Assembly","Estimated USD each","Notes"])
+        for p in parts: w.writerow([p["ref"],1,p["value"],p["fp"],p["lcsc"],p["assembly"],p["price"],p["note"]])
+        w.writerow(["J11-J16 VIN/GND",12,"Single machine-pin receptacle","Included in SimpleFOC_Mini_v1.0","","Hand",.5,">=3 A/contact; body/tail fits 1.101 mm finished hole; compatible pin and matching seated height; MPN pending mechanical selection"])
 if __name__=="__main__":
     custom();write_project(ROOT,PROJECT,parts);write_schematic(ROOT,PROJECT,parts,pages,uid);bom();board()
     print(f"Generated {len(parts)}-item through-hole carrier. Signal routing follows separately.")

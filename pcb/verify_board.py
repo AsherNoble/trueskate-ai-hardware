@@ -49,24 +49,25 @@ assert net('J1',2)=='A4_PWM2'
 for pin in (16,22,23): assert net('J2',pin)==''  # Teensy 41,35,34.
 geometry=json.loads((root/'sources/mini-geometry.json').read_text())
 for i in range(1,7):
-    mini=f'J{10+i}';origin=pos(mini,1);sign=-1 if i<=3 else 1
-    for group,prefix in [('control',''),('phase','P')]:
+    mini=f'J{10+i}';origin=pos(mini,9);sign=-1 if i<=3 else 1
+    for group,prefix in [('control',''),('phase','P'),('power','')]:
         for point in geometry['connectors'][group]:
             x,y=pos(mini,prefix+point['pin'])
             assert abs(x-origin[0]-sign*point['x_mm'])<.0001
             assert abs(y-origin[1]-sign*point['y_mm'])<.0001
     for unused_contact in (2,6,8,10): assert net(mini,unused_contact)==''
     assert net(mini,9)==net(f'R{20+i}',1)==f'A{i}_EN'
-    assert net(f'R{20+i}',2)==net(f'J{40+i}',2)==f'PGND{i}'
-    assert net(f'J{40+i}',1)=='12V_FUSED'
+    assert net(f'R{20+i}',2)==net(mini,'GND')==f'PGND{i}'
+    assert net(mini,'VIN')=='12V_FUSED'
     assert [net(f'J{30+i}',p) for p in range(1,7)]==['SPI_SCK','SPI_MISO','SPI_MOSI',f'A{i}_CS','3V3','GND']
     assert net(f'JP{i}',1)==net(mini,1)==net(mini,4)==f'CGND{i}'
     assert net(f'JP{i}',2)=='GND'
     for phase in (1,2,3): assert net(f'J{20+i}',phase)==net(mini,f'P{4-phase}')==f'A{i}_PH{phase}'
-    assert pos(f'C{10+i}',2)[0]-pos(f'C{10+i}',1)[0]==5
+    assert abs(pos(f'C{10+i}',2)[1]-pos(f'C{10+i}',1)[1])==5
+    assert f'J{40+i}' not in fps
 assert pos('NT1',1)==(22,69)
 assert len(list(b.Zones()))==2 and all(z.GetNetname()=='GND' for z in b.Zones())
-assert b.GetCopperLayerCount()==2 and len(fps)==57
+assert b.GetCopperLayerCount()==2 and len(fps)==51
 assert k.ToMM(b.GetDesignSettings().m_SolderMaskMinWidth)>=.1
 
 def signature(t):
@@ -86,7 +87,7 @@ assert all(t.GetNetname()=='GND' for t in ground_vias)
 from route_signals import SIGNALS
 assert all(t.IsLocked() or t.GetNetname() in SIGNALS for t in b.GetTracks()),'Unapproved automatic net'
 tracks=list(b.GetTracks());vias=sum(isinstance(t,k.PCB_VIA) for t in tracks)
-print(f'PASS: {len(board)-len(unused)} connected pads + {len(unused)} isolated NC contacts agree with KiCad netlist; all 53 references THT.')
+print(f'PASS: {len(board)-len(unused)} connected pads + {len(unused)} isolated NC contacts agree with KiCad netlist; all 47 references THT.')
 print('PASS: verified Mini geometry, encoder order, USB-only VIN isolation, 6 EN pulldowns, 6 open bridges.')
 print(f'PASS: {sum(expected.values())} manual copper segments unchanged; {len(tracks)-vias} total segments, {vias} vias.')
 print(f'PASS: {sum(links.values())} deliberate quiet-GND link segments and {len(stitches)} locked GND vias.')

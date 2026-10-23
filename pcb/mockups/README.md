@@ -1,5 +1,9 @@
 # Assembled carrier concept
 
+**Historical revision:** these assembled mockups predate the exact 15-hole
+Mini v1.0 direct-power footprint and relocated capacitors. Current board
+geometry is in `pcb/trueskate-main-v1.kicad_pcb` and its review renders.
+
 Superseded by the actual Blender assembly in `assembly-model/`. Use
 `assembly-model/assembled-overview.png` and `assembly-model/trueskate-assembly.blend`.
 The earlier image below is retained only as an abandoned concept.

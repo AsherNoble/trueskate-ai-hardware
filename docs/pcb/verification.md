@@ -1,9 +1,10 @@
 # Carrier v1 verification and limits
 
 Review design, **not a fabrication release**. Checked with KiCad 10.0.6 on
-2026-10-11. The machine-readable reports and file hashes in
+2026-10-24. The machine-readable reports and file hashes in
 [`pcb/review-status.json`](../../pcb/review-status.json) identify the checked
-revision of the artifacts. No manufacturing files have been generated.
+revision of the artifacts. No manufacturing files were regenerated for this update; the older
+`pcb/fabrication/2026-10-18/` snapshot is explicitly marked obsolete for this layout.
 
 ## Automated results
 
@@ -12,7 +13,7 @@ revision of the artifacts. No manufacturing files have been generated.
   schematic/PCB parity issues, no exclusions and no ignored check types.
 - Native schematic netlist and actual PCB agree on 217 connected contacts and
   34 individually isolated, intentionally unused contacts.
-- All 53 schematic references use through-hole footprints. Four additional
+- All 47 schematic references use through-hole footprints. Four additional
   M3 holes are board-only features. There are no surface-mount parts.
 - Fixed pin map: 18 PWM outputs, 12 non-PWM EN/CS pins, SPI0 and nine unused
   digital contacts. All six axes are edge-aligned; the center-aligned build
@@ -20,16 +21,16 @@ revision of the artifacts. No manufacturing files have been generated.
 - Teensy VIN is isolated; Mini regulator outputs and unused control contacts
   are isolated. Encoder socket order, six 10k pull-downs, six default-open
   control-ground bridges and source-derived Mini hole geometry are checked.
-- The original 171 deliberate power/phase/ground/supply segments are unchanged
-  after signal routing. Two additional quiet-ground links use four locked
-  segments. All 29 ground vias are deliberately placed and locked.
-- Final copper contains 597 track segments and 66 vias (37 signal, 29 ground).
+- The updated 178 deliberate power/phase/ground/supply segments are unchanged
+  after signal routing. Explicit quiet-ground links use 15 locked
+  segments. All 32 ground vias are deliberately placed and locked.
+- Final copper contains 615 track segments and 68 vias (36 signal, 32 ground).
   Only PWM, EN, CS and SPI nets may contain imported automatic routes.
 - The one-page guide covers all 67 real nets exactly once. KiCad's 34
   `unconnected-(...)` names label unused single contacts, not additional wires.
 
 `export_review.py` fails if any strict check fails. `audit.py`,
-`verify_board.py` and `tools/check_ground_bridges.py` add independent checks
+`verify_board.py`, `verify_mini.py`, `verify_power.py` and `tools/check_ground_bridges.py` add independent checks
 against the circuit source, exported netlist and actual copper geometry.
 
 ## Board rule profile
@@ -52,8 +53,10 @@ They are deliberately less demanding than the smallest available copper sizes.
 | Label height / character stroke / label-to-pad clearance | 1.0 / 0.15 / 0.15 mm |
 
 Motor power uses deliberately routed 3 mm main supply copper, 2 mm supply
-branches, 1.5 mm individual motor returns and 1 mm phase routes. These widths
-are design choices, **not a validated six-motor current rating**.
+branches, 1.8 mm individual motor returns and 1 mm phase routes. The Mini supply/return paths
+exceed the 1.367 mm IPC-2221 estimate for 3 A on external 35 um copper at a
+10 C rise. `verify_power.py` checks continuous full-width branches. This does
+not establish a simultaneous six-motor current rating.
 
 ## Visual and mechanical review
 
@@ -64,9 +67,10 @@ bottom and angled 3D renders are also inspected. Plug-in Teensy, Mini and encode
 boards and external wires are omitted from the render; it is not an assembled
 rig model.
 
-The user has confirmed Mini socket fit on a 1:1 template, encoder pin 1/order,
-and the 160 x 120 mm base fit. These confirmations are recorded, not reopened.
-The approved short power-wire pairs avoid the Mini's off-grid power terminals.
+The original control/phase socket positions, encoder pin 1/order and base size
+are retained. The new power receptacles follow the exact v1.0 drill geometry.
+The library and all six instances have 0.000000 mm maximum contact-centre error
+against the source drills. See the [drill overlay and pin audit](mini-v1-update.md).
 
 ## What the checks cannot prove
 
@@ -81,7 +85,7 @@ Human review and bench tests still need to establish:
 2. Input and electrolytic-capacitor polarity, encoder voltage/current budget,
    socket orientation/height and final purchased header fit/current rating.
 3. Reliable encoder communication over six real cables. The central on-board
-   SPI copper totals 189.5 mm SCK, 204.4 mm MOSI and 194.7 mm MISO across all
+   SPI copper totals 193.5 mm SCK, 206.2 mm MOSI and 195.4 mm MISO across all
    branches; these are not single-cable lengths or a speed guarantee.
 4. EN stays low while the Teensy resets or USB is disconnected; power-up/down
    behavior is tested with a current-limited supply and restrained mechanics.

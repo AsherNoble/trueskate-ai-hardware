@@ -143,8 +143,8 @@
   },
   {
     "ref": "J11",
-    "value": "Mini v1.0 FEMALE sockets",
-    "fp": "TrueSkate:Mini_v1_Sockets",
+    "value": "Mini v1.0 / 15-hole socket",
+    "fp": "TrueSkate:SimpleFOC_Mini_v1.0",
     "pins": [
       "1",
       "2",
@@ -158,7 +158,9 @@
       "10",
       "P1",
       "P2",
-      "P3"
+      "P3",
+      "GND",
+      "VIN"
     ],
     "nets": [
       "CGND1",
@@ -173,7 +175,9 @@
       null,
       "A1_PH3",
       "A1_PH2",
-      "A1_PH1"
+      "A1_PH1",
+      "PGND1",
+      "12V_FUSED"
     ],
     "page": "axis1",
     "sch": [
@@ -181,12 +185,12 @@
       65
     ],
     "pcb": [
-      35,
+      45.16,
       30,
       180
     ],
     "price": 0.7,
-    "note": "User-verified 2x5 and 1x3 female socket geometry",
+    "note": "One footprint: 1 female 2x5 + 1 female 1x3 + 2 single machine-pin receptacles; >=3A per power contact; matched mating height",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -326,9 +330,9 @@
       155
     ],
     "pcb": [
-      56,
-      16,
-      0
+      16.8,
+      18.737,
+      270
     ],
     "price": 0,
     "note": "Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm",
@@ -353,9 +357,9 @@
       155
     ],
     "pcb": [
-      56,
-      24.2,
-      0
+      21.5,
+      29.5,
+      270
     ],
     "price": 0.13,
     "note": "Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder",
@@ -363,36 +367,9 @@
     "assembly": "Hand"
   },
   {
-    "ref": "J41",
-    "value": "MINI POWER +12V / GND",
-    "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "12V_FUSED",
-      "PGND1"
-    ],
-    "page": "axis1",
-    "sch": [
-      70,
-      190
-    ],
-    "pcb": [
-      56,
-      30,
-      0
-    ],
-    "price": 2.5,
-    "note": "Phoenix Contact 1727010; approved short paired wires to Mini",
-    "lcsc": "",
-    "assembly": "Hand"
-  },
-  {
     "ref": "J12",
-    "value": "Mini v1.0 FEMALE sockets",
-    "fp": "TrueSkate:Mini_v1_Sockets",
+    "value": "Mini v1.0 / 15-hole socket",
+    "fp": "TrueSkate:SimpleFOC_Mini_v1.0",
     "pins": [
       "1",
       "2",
@@ -406,7 +383,9 @@
       "10",
       "P1",
       "P2",
-      "P3"
+      "P3",
+      "GND",
+      "VIN"
     ],
     "nets": [
       "CGND2",
@@ -421,7 +400,9 @@
       null,
       "A2_PH3",
       "A2_PH2",
-      "A2_PH1"
+      "A2_PH1",
+      "PGND2",
+      "12V_FUSED"
     ],
     "page": "axis2",
     "sch": [
@@ -429,12 +410,12 @@
       65
     ],
     "pcb": [
-      78,
+      88.16,
       30,
       180
     ],
     "price": 0.7,
-    "note": "User-verified 2x5 and 1x3 female socket geometry",
+    "note": "One footprint: 1 female 2x5 + 1 female 1x3 + 2 single machine-pin receptacles; >=3A per power contact; matched mating height",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -574,9 +555,9 @@
       155
     ],
     "pcb": [
-      99,
-      16,
-      0
+      59.8,
+      18.737,
+      270
     ],
     "price": 0,
     "note": "Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm",
@@ -601,9 +582,9 @@
       155
     ],
     "pcb": [
-      99,
-      24.2,
-      0
+      64.5,
+      29.5,
+      270
     ],
     "price": 0.13,
     "note": "Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder",
@@ -611,36 +592,9 @@
     "assembly": "Hand"
   },
   {
-    "ref": "J42",
-    "value": "MINI POWER +12V / GND",
-    "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "12V_FUSED",
-      "PGND2"
-    ],
-    "page": "axis2",
-    "sch": [
-      70,
-      190
-    ],
-    "pcb": [
-      99,
-      30,
-      0
-    ],
-    "price": 2.5,
-    "note": "Phoenix Contact 1727010; approved short paired wires to Mini",
-    "lcsc": "",
-    "assembly": "Hand"
-  },
-  {
     "ref": "J13",
-    "value": "Mini v1.0 FEMALE sockets",
-    "fp": "TrueSkate:Mini_v1_Sockets",
+    "value": "Mini v1.0 / 15-hole socket",
+    "fp": "TrueSkate:SimpleFOC_Mini_v1.0",
     "pins": [
       "1",
       "2",
@@ -654,7 +608,9 @@
       "10",
       "P1",
       "P2",
-      "P3"
+      "P3",
+      "GND",
+      "VIN"
     ],
     "nets": [
       "CGND3",
@@ -669,7 +625,9 @@
       null,
       "A3_PH3",
       "A3_PH2",
-      "A3_PH1"
+      "A3_PH1",
+      "PGND3",
+      "12V_FUSED"
     ],
     "page": "axis3",
     "sch": [
@@ -677,12 +635,12 @@
       65
     ],
     "pcb": [
-      121,
+      131.16,
       30,
       180
     ],
     "price": 0.7,
-    "note": "User-verified 2x5 and 1x3 female socket geometry",
+    "note": "One footprint: 1 female 2x5 + 1 female 1x3 + 2 single machine-pin receptacles; >=3A per power contact; matched mating height",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -822,9 +780,9 @@
       155
     ],
     "pcb": [
-      142,
-      16,
-      0
+      102.8,
+      18.737,
+      270
     ],
     "price": 0,
     "note": "Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm",
@@ -849,9 +807,9 @@
       155
     ],
     "pcb": [
-      142,
-      24.2,
-      0
+      107.5,
+      29.5,
+      270
     ],
     "price": 0.13,
     "note": "Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder",
@@ -859,36 +817,9 @@
     "assembly": "Hand"
   },
   {
-    "ref": "J43",
-    "value": "MINI POWER +12V / GND",
-    "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "12V_FUSED",
-      "PGND3"
-    ],
-    "page": "axis3",
-    "sch": [
-      70,
-      190
-    ],
-    "pcb": [
-      142,
-      30,
-      0
-    ],
-    "price": 2.5,
-    "note": "Phoenix Contact 1727010; approved short paired wires to Mini",
-    "lcsc": "",
-    "assembly": "Hand"
-  },
-  {
     "ref": "J14",
-    "value": "Mini v1.0 FEMALE sockets",
-    "fp": "TrueSkate:Mini_v1_Sockets",
+    "value": "Mini v1.0 / 15-hole socket",
+    "fp": "TrueSkate:SimpleFOC_Mini_v1.0",
     "pins": [
       "1",
       "2",
@@ -902,7 +833,9 @@
       "10",
       "P1",
       "P2",
-      "P3"
+      "P3",
+      "GND",
+      "VIN"
     ],
     "nets": [
       "CGND4",
@@ -917,7 +850,9 @@
       null,
       "A4_PH3",
       "A4_PH2",
-      "A4_PH1"
+      "A4_PH1",
+      "PGND4",
+      "12V_FUSED"
     ],
     "page": "axis4",
     "sch": [
@@ -925,12 +860,12 @@
       65
     ],
     "pcb": [
-      35,
+      24.84,
       92,
       0
     ],
     "price": 0.7,
-    "note": "User-verified 2x5 and 1x3 female socket geometry",
+    "note": "One footprint: 1 female 2x5 + 1 female 1x3 + 2 single machine-pin receptacles; >=3A per power contact; matched mating height",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1070,9 +1005,9 @@
       155
     ],
     "pcb": [
-      53,
-      109.5,
-      0
+      55.8,
+      103.263,
+      90
     ],
     "price": 0,
     "note": "Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm",
@@ -1097,9 +1032,9 @@
       155
     ],
     "pcb": [
-      53,
-      101.5,
-      0
+      48.5,
+      95,
+      90
     ],
     "price": 0.13,
     "note": "Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder",
@@ -1107,36 +1042,9 @@
     "assembly": "Hand"
   },
   {
-    "ref": "J44",
-    "value": "MINI POWER +12V / GND",
-    "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "12V_FUSED",
-      "PGND4"
-    ],
-    "page": "axis4",
-    "sch": [
-      70,
-      190
-    ],
-    "pcb": [
-      53,
-      94,
-      0
-    ],
-    "price": 2.5,
-    "note": "Phoenix Contact 1727010; approved short paired wires to Mini",
-    "lcsc": "",
-    "assembly": "Hand"
-  },
-  {
     "ref": "J15",
-    "value": "Mini v1.0 FEMALE sockets",
-    "fp": "TrueSkate:Mini_v1_Sockets",
+    "value": "Mini v1.0 / 15-hole socket",
+    "fp": "TrueSkate:SimpleFOC_Mini_v1.0",
     "pins": [
       "1",
       "2",
@@ -1150,7 +1058,9 @@
       "10",
       "P1",
       "P2",
-      "P3"
+      "P3",
+      "GND",
+      "VIN"
     ],
     "nets": [
       "CGND5",
@@ -1165,7 +1075,9 @@
       null,
       "A5_PH3",
       "A5_PH2",
-      "A5_PH1"
+      "A5_PH1",
+      "PGND5",
+      "12V_FUSED"
     ],
     "page": "axis5",
     "sch": [
@@ -1173,12 +1085,12 @@
       65
     ],
     "pcb": [
-      78,
+      67.84,
       92,
       0
     ],
     "price": 0.7,
-    "note": "User-verified 2x5 and 1x3 female socket geometry",
+    "note": "One footprint: 1 female 2x5 + 1 female 1x3 + 2 single machine-pin receptacles; >=3A per power contact; matched mating height",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1318,9 +1230,9 @@
       155
     ],
     "pcb": [
-      96,
-      109.5,
-      0
+      98.8,
+      103.263,
+      90
     ],
     "price": 0,
     "note": "Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm",
@@ -1345,9 +1257,9 @@
       155
     ],
     "pcb": [
-      96,
-      101.5,
-      0
+      91.5,
+      95,
+      90
     ],
     "price": 0.13,
     "note": "Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder",
@@ -1355,36 +1267,9 @@
     "assembly": "Hand"
   },
   {
-    "ref": "J45",
-    "value": "MINI POWER +12V / GND",
-    "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "12V_FUSED",
-      "PGND5"
-    ],
-    "page": "axis5",
-    "sch": [
-      70,
-      190
-    ],
-    "pcb": [
-      96,
-      94,
-      0
-    ],
-    "price": 2.5,
-    "note": "Phoenix Contact 1727010; approved short paired wires to Mini",
-    "lcsc": "",
-    "assembly": "Hand"
-  },
-  {
     "ref": "J16",
-    "value": "Mini v1.0 FEMALE sockets",
-    "fp": "TrueSkate:Mini_v1_Sockets",
+    "value": "Mini v1.0 / 15-hole socket",
+    "fp": "TrueSkate:SimpleFOC_Mini_v1.0",
     "pins": [
       "1",
       "2",
@@ -1398,7 +1283,9 @@
       "10",
       "P1",
       "P2",
-      "P3"
+      "P3",
+      "GND",
+      "VIN"
     ],
     "nets": [
       "CGND6",
@@ -1413,7 +1300,9 @@
       null,
       "A6_PH3",
       "A6_PH2",
-      "A6_PH1"
+      "A6_PH1",
+      "PGND6",
+      "12V_FUSED"
     ],
     "page": "axis6",
     "sch": [
@@ -1421,12 +1310,12 @@
       65
     ],
     "pcb": [
-      121,
+      110.84,
       92,
       0
     ],
     "price": 0.7,
-    "note": "User-verified 2x5 and 1x3 female socket geometry",
+    "note": "One footprint: 1 female 2x5 + 1 female 1x3 + 2 single machine-pin receptacles; >=3A per power contact; matched mating height",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1566,9 +1455,9 @@
       155
     ],
     "pcb": [
-      139,
-      109.5,
-      0
+      141.8,
+      103.263,
+      90
     ],
     "price": 0,
     "note": "Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm",
@@ -1593,40 +1482,13 @@
       155
     ],
     "pcb": [
-      139,
-      101.5,
-      0
+      134.5,
+      95,
+      90
     ],
     "price": 0.13,
     "note": "Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder",
     "lcsc": "C2979769",
-    "assembly": "Hand"
-  },
-  {
-    "ref": "J46",
-    "value": "MINI POWER +12V / GND",
-    "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
-    "pins": [
-      "1",
-      "2"
-    ],
-    "nets": [
-      "12V_FUSED",
-      "PGND6"
-    ],
-    "page": "axis6",
-    "sch": [
-      70,
-      190
-    ],
-    "pcb": [
-      139,
-      94,
-      0
-    ],
-    "price": 2.5,
-    "note": "Phoenix Contact 1727010; approved short paired wires to Mini",
-    "lcsc": "",
     "assembly": "Hand"
   },
   {
@@ -1675,7 +1537,7 @@
     ],
     "pcb": [
       8,
-      50,
+      58,
       90
     ],
     "price": 1.8,

@@ -5,10 +5,10 @@ A net is one named electrical connection: all its pads and copper are joined. Th
 | Net or repeated family | What it connects and why |
 |---|---|
 | `12V_IN` | J5 positive to F1 input. Raw motor-supply power, before the fuse. Wrong polarity can damage this board. |
-| `12V_FUSED` | F1 output to all six Mini feed terminals and both capacitors per axis. The fuse interrupts sustained excess input current; it does not regulate motor current. |
+| `12V_FUSED` | F1 output to all six Mini VIN pads and both capacitors per axis. The fuse interrupts sustained excess input current; it does not regulate motor current. |
 | `3V3` | Teensy 3.3 V output to encoder contact 5. USB powers the Teensy; neither the carrier VIN contact nor any Mini regulator output feeds this net. |
 | `GND` | Zero-volt reference for Teensy, encoders and bridge GND pads. Joins supply negative and all motor returns at copper junction NT1. USB and motor supply are not electrically isolated. |
-| `PGND1 ... PGND6` | One separate motor-power return per axis: Mini terminal negative, its capacitor negatives and EN pull-down. The six returns meet GND only at NT1 on the bare carrier. |
+| `PGND1 ... PGND6` | One separate motor-power return per axis: Mini GND power pad, its capacitor negatives and EN pull-down. The six returns meet GND only at NT1 on the bare carrier. |
 | `CGND1 ... CGND6` | Mini control contacts 1 and 4 to that axis's optional bridge pad. Leave JP1-JP6 OPEN. The installed Mini already joins these contacts internally to its own power return; closing a bridge adds a parallel path through logic ground. |
 | `SPI_SCK` | Teensy pin 13 to encoder contact 1 on all six sockets. Clock pulses tell encoders when to shift each data bit. |
 | `SPI_MOSI` | Teensy pin 11 to encoder contact 3. Commands go out from the Teensy to all encoders. |

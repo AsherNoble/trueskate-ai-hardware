@@ -46,10 +46,10 @@ isolated from your computer.
 ## 2. Six Mini sockets: low-power instructions, high-power outputs
 
 A **driver** converts the Teensy's small control signals into motor current.
-J11-J16 accept the six existing Minis. Each footprint represents two actual
-female socket pieces: a 2-by-5 control socket and a separate 1-by-3 phase socket.
-An **axis** is one controlled motor, not one motor winding. The socket holes are
-unchanged from the source-derived footprint that you verified on a 1:1 template.
+J11-J16 accept the six existing Minis. Each footprint represents a
+2-by-5 control socket, a 1-by-3 phase socket and two single power receptacles.
+An **axis** is one controlled motor, not one motor winding. The control/phase locations are
+retained; VIN/GND are added from the v1.0 plated-drill source.
 
 Each Mini receives three **pulse-width modulation (PWM)** signals, rapid on/off
 instructions whose on-time is varied. All six axes use **edge-aligned** PWM: the
@@ -138,19 +138,19 @@ in that mode. Start with a current-limited bench supply and low motor voltage.
 There is no reverse-polarity protection in this simplified v1. Reversing J5 can
 damage the Minis and polarized capacitors before the fuse opens. Verify polarity
 with a meter before connection. The 3 mm shared supply trunks, 2 mm branches,
-1.5 mm returns and 1 mm phase traces are deliberately routed and locked. They
+1.8 mm returns and 1 mm phase traces are deliberately routed and locked. They
 are not a guarantee of a particular ampere rating: the human reviewer must
 approve the load, sockets, wires, fuse and temperature margin together.
 
-## 5. Mini power wires and two capacitors per axis
+## 5. Direct Mini power and two capacitors per axis
 
-J41-J46 are two-contact 3.81 mm screw terminals. Use the approved short paired
-red/black wires from each terminal to that Mini's existing power terminal. Their
-positive contact receives 12V_FUSED; their negative contact has its own PGNDn
-return. There are no rigid carrier pins for the Mini's off-grid power pads.
-The source file's different power-pad spacing therefore does not affect fit.
-Keep the pair short, close together, secured, and removable only with power off.
-Removing a Mini requires releasing the wires as well as unplugging its sockets.
+Each J11-J16 now includes VIN and GND receptacles at the exact 4.953 mm
+pitch in the v1.0 drill file. VIN receives 12V_FUSED; GND has its own PGNDn
+return to NT1. J41-J46 and the six external power-wire pairs are removed.
+The Mini plugs in component-side up with pins pointing down, without mirroring.
+The power branches use 2 mm supply and 1.8 mm return copper sized for 3 A
+on external 35 um copper with a 10 C temperature-rise estimate; see
+[the geometry and power report](mini-v1-update.md).
 
 A **capacitor** stores electrical charge. Each C11-C16 is your Panasonic
 EEUFR1V102B, 1000 microfarads (uF), 35 V rated, 12.5 mm diameter, 20 mm high,
@@ -163,9 +163,8 @@ supply wiring.
 Each C21-C26 is a non-polarized 100 nanofarad (nF), at least 50 V ceramic
 capacitor with 5 mm lead spacing and a body fitting the specified footprint.
 It responds to faster disturbances than the large capacitor. The pair sits
-beside the feed terminal. The short power wires still add **inductance**, the
-tendency to oppose rapid current changes, so the Mini's own onboard capacitors
-remain essential; a carrier ceramic cannot replace them.
+alongside the Mini power pads. The Mini's own onboard capacitors remain
+essential; a carrier ceramic cannot replace them.
 
 Six 1000 uF capacitors store about 0.43 joules at 12 V. Unplugging power does
 not instantly discharge them. There is no guaranteed discharge time, indicator
@@ -204,10 +203,10 @@ JP1-JP6 are optional control-GND solder/wire bridges: two through-hole pads
 3 mm apart, left OPEN. CGNDn joins Mini control contacts 1 and 4 to one bridge
 pad; the other pad is logic GND. With a Mini installed, those contacts already
 connect internally to the Mini's power ground, which reaches NT1 through its
-black power wire. Closing JP adds a parallel return through the logic region,
+direct PGND copper branch. Closing JP adds a parallel return through the logic region,
 possibly carrying motor current there. Do not close bridges automatically;
 have the reviewer decide, and do not use them to compensate for a missing
-power-return wire. Without the black wire, the Mini is not correctly powered.
+power-return contact. The Mini requires both VIN and GND receptacles.
 
 ## 7. Six enable pull-downs: off when no output is driving
 

@@ -15,9 +15,12 @@ versions or assume that matching pitch guarantees a matching housing.
   allowance. H5 bent leads have nominal 5 mm pitch; form gently if necessary.
   [Vishay dimensions/codes](https://www.vishay.com/docs/45171/kseries.pdf),
   [LCSC identification](https://www.lcsc.com/product-detail/C2979769.html).
-- J41-J46: Phoenix **1727010**, MKDS 1/2-3.81, two contacts, 3.81 mm pitch,
-  exact KiCad footprint. Do not replace with 5.08 mm terminals.
-  [Manufacturer dimensions](https://www.phoenixcontact.com/en-us/products/printed-circuit-board-terminal-mkds-1-2-381-1727010).
+- J11-J16 power contacts: **12 single machine-pin receptacles**, two per Mini.
+  Specify >=3 A continuous per contact, solder tail/body compatible with the
+  1.101 mm finished hole, mating contact compatible with the actual Mini pin,
+  and seated height matching the control/phase sockets. The two independent
+  receptacles sit at 4.953 mm pitch; do not substitute a 5.08 mm socket block.
+  No exact MPN is asserted until those mechanical details are selected.
 - J5: Phoenix **1715721**, MKDS 1.5/2-5.08, two contacts, pitch 5.08 mm,
   required PCB drill 1.3 mm as used by its footprint.
   [Manufacturer dimensions](https://www.phoenixcontact.com/en-us/products/printed-circuit-board-terminal-mkds-15-2-508-1715721).
@@ -33,15 +36,14 @@ control/phase sockets must hold its board at the same height. The user verified
 the hole pattern, not every brand of socket housing: check insertion depth and
 underside clearance before soldering all six.
 
-J1/J2 are 1x24; Mini sets are 2x5 + 1x3; encoders are female 1x6; phases are male
+J1/J2 are 1x24; Mini sets are 2x5 + 1x3 + two single power receptacles; encoders are female 1x6; phases are male
 1x3. R21-R26 are 10k axial DIN0207-sized resistors (roughly 6.3 x 2.5 mm body),
 leads bent to 7.62 mm pitch. Dissipation is only about 1.1 mW at 3.3 V; 0.25 W
 parts are ample. Review phase/socket contact current ratings for the actual load.
 
-Use short flexible paired red/black wires sized for the reviewed axis current
-and both screw terminals' wire range. Support the housing while tightening;
-clamp copper, not insulation. No carrier socket connects the off-grid Mini
-power pads. Wire connections are approved.
+J41-J46 and the six Mini power-wire pairs are removed. Fit downward-facing
+pins at each Mini VIN/GND hole to mate with the carrier receptacles; component
+side faces up. Keep all four socket pieces at the same seated height.
 
 Check stock, minimum quantities and prices again when buying. The review BOM
 does not imply an order-ready cart or qualification of every generic connector.

@@ -17,7 +17,7 @@
   "teensy_power": "USB ONLY; carrier VIN contact unconnected; no Teensy modification",
   "assembly": "ALL THROUGH-HOLE; hand soldering; no factory assembly",
   "mini_source_commit": "848e8ece46d045ac24283e2d6ee9ea4ba8ef95d5",
-  "mini_power_connection": "APPROVED: short paired wires to existing Mini screw terminals",
+  "mini_power_connection": "Mini v1.0 VIN/GND at 4.953 mm pitch; two single machine-pin receptacles per Mini; direct 3 A branches",
   "encoder_confirmation": "RESOLVED by user: breakout pin 1 and signal order verified",
   "kill_reset_decision": "NOT APPLICABLE TO V1; hardware kill moved to v2 backlog",
   "mini_physical_fit": "RESOLVED by user: 1:1 template verified; source-derived socket footprint retained",

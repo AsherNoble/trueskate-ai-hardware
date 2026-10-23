@@ -1,54 +1,49 @@
-Reference,Value,Footprint,LCSC,Assembly,Estimated USD each,Notes
-J1,Teensy 4.1 FEMALE 1x24,Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical,,Hand,1.5,"Physical pin legend: GND,0,1,2,3,4,5,6,7,8,9,10,11,12,3V3,24,25,26,27,28,29,30,31,32"
-J2,Teensy 4.1 FEMALE 1x24,Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical,,Hand,1.5,"Physical pin legend: VIN,GND,3V3,23,22,21,20,19,18,17,16,15,14,13,GND,41,40,39,38,37,36,35,34,33"
-J11,Mini v1.0 FEMALE sockets,TrueSkate:Mini_v1_Sockets,,Hand,0.7,User-verified 2x5 and 1x3 female socket geometry
-J21,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,
-J31,ENCODER breakout FEMALE 1x6,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical,,Hand,0.5,Pin 1 = square pad = CLK; verified by user
-R21,10k EN pull-down,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"10k, 1/4 W, 5% or better"
-JP1,CONTROL GND / OPEN,TrueSkate:GroundBridge_THT,,PCB / optional wire,0,Leave open; optional soldered wire bridge after noise review
-C11,1000uF 35V EEUFR1V102B,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,"Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm"
-C21,100nF 50V ceramic,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder
-J41,MINI POWER +12V / GND,TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal,,Hand,2.5,Phoenix Contact 1727010; approved short paired wires to Mini
-J12,Mini v1.0 FEMALE sockets,TrueSkate:Mini_v1_Sockets,,Hand,0.7,User-verified 2x5 and 1x3 female socket geometry
-J22,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,
-J32,ENCODER breakout FEMALE 1x6,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical,,Hand,0.5,Pin 1 = square pad = CLK; verified by user
-R22,10k EN pull-down,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"10k, 1/4 W, 5% or better"
-JP2,CONTROL GND / OPEN,TrueSkate:GroundBridge_THT,,PCB / optional wire,0,Leave open; optional soldered wire bridge after noise review
-C12,1000uF 35V EEUFR1V102B,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,"Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm"
-C22,100nF 50V ceramic,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder
-J42,MINI POWER +12V / GND,TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal,,Hand,2.5,Phoenix Contact 1727010; approved short paired wires to Mini
-J13,Mini v1.0 FEMALE sockets,TrueSkate:Mini_v1_Sockets,,Hand,0.7,User-verified 2x5 and 1x3 female socket geometry
-J23,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,
-J33,ENCODER breakout FEMALE 1x6,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical,,Hand,0.5,Pin 1 = square pad = CLK; verified by user
-R23,10k EN pull-down,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"10k, 1/4 W, 5% or better"
-JP3,CONTROL GND / OPEN,TrueSkate:GroundBridge_THT,,PCB / optional wire,0,Leave open; optional soldered wire bridge after noise review
-C13,1000uF 35V EEUFR1V102B,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,"Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm"
-C23,100nF 50V ceramic,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder
-J43,MINI POWER +12V / GND,TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal,,Hand,2.5,Phoenix Contact 1727010; approved short paired wires to Mini
-J14,Mini v1.0 FEMALE sockets,TrueSkate:Mini_v1_Sockets,,Hand,0.7,User-verified 2x5 and 1x3 female socket geometry
-J24,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,
-J34,ENCODER breakout FEMALE 1x6,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical,,Hand,0.5,Pin 1 = square pad = CLK; verified by user
-R24,10k EN pull-down,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"10k, 1/4 W, 5% or better"
-JP4,CONTROL GND / OPEN,TrueSkate:GroundBridge_THT,,PCB / optional wire,0,Leave open; optional soldered wire bridge after noise review
-C14,1000uF 35V EEUFR1V102B,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,"Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm"
-C24,100nF 50V ceramic,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder
-J44,MINI POWER +12V / GND,TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal,,Hand,2.5,Phoenix Contact 1727010; approved short paired wires to Mini
-J15,Mini v1.0 FEMALE sockets,TrueSkate:Mini_v1_Sockets,,Hand,0.7,User-verified 2x5 and 1x3 female socket geometry
-J25,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,
-J35,ENCODER breakout FEMALE 1x6,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical,,Hand,0.5,Pin 1 = square pad = CLK; verified by user
-R25,10k EN pull-down,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"10k, 1/4 W, 5% or better"
-JP5,CONTROL GND / OPEN,TrueSkate:GroundBridge_THT,,PCB / optional wire,0,Leave open; optional soldered wire bridge after noise review
-C15,1000uF 35V EEUFR1V102B,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,"Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm"
-C25,100nF 50V ceramic,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder
-J45,MINI POWER +12V / GND,TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal,,Hand,2.5,Phoenix Contact 1727010; approved short paired wires to Mini
-J16,Mini v1.0 FEMALE sockets,TrueSkate:Mini_v1_Sockets,,Hand,0.7,User-verified 2x5 and 1x3 female socket geometry
-J26,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,
-J36,ENCODER breakout FEMALE 1x6,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical,,Hand,0.5,Pin 1 = square pad = CLK; verified by user
-R26,10k EN pull-down,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"10k, 1/4 W, 5% or better"
-JP6,CONTROL GND / OPEN,TrueSkate:GroundBridge_THT,,PCB / optional wire,0,Leave open; optional soldered wire bridge after noise review
-C16,1000uF 35V EEUFR1V102B,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,"Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm"
-C26,100nF 50V ceramic,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder
-J46,MINI POWER +12V / GND,TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal,,Hand,2.5,Phoenix Contact 1727010; approved short paired wires to Mini
-J5,12V INPUT + / -,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,Hand,2,Phoenix Contact 1715721; 5.08mm pitch
-F1,5x20 fuse holder / fuse TBD,Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open,C3204125,Hand,1.8,Schurter 0031.8201; cartridge separately purchased
-NT1,GROUND STAR / PCB COPPER,TrueSkate:GroundStar,,PCB copper,0,
+Reference,Quantity,Value,Footprint,LCSC,Assembly,Estimated USD each,Notes
+J1,1,Teensy 4.1 FEMALE 1x24,Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical,,Hand,1.5,"Physical pin legend: GND,0,1,2,3,4,5,6,7,8,9,10,11,12,3V3,24,25,26,27,28,29,30,31,32"
+J2,1,Teensy 4.1 FEMALE 1x24,Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical,,Hand,1.5,"Physical pin legend: VIN,GND,3V3,23,22,21,20,19,18,17,16,15,14,13,GND,41,40,39,38,37,36,35,34,33"
+J11,1,Mini v1.0 / 15-hole socket,TrueSkate:SimpleFOC_Mini_v1.0,,Hand,0.7,One footprint: 1 female 2x5 + 1 female 1x3 + 2 single machine-pin receptacles; >=3A per power contact; matched mating height
+J21,1,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,
+J31,1,ENCODER breakout FEMALE 1x6,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical,,Hand,0.5,Pin 1 = square pad = CLK; verified by user
+R21,1,10k EN pull-down,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"10k, 1/4 W, 5% or better"
+JP1,1,CONTROL GND / OPEN,TrueSkate:GroundBridge_THT,,PCB / optional wire,0,Leave open; optional soldered wire bridge after noise review
+C11,1,1000uF 35V EEUFR1V102B,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,"Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm"
+C21,1,100nF 50V ceramic,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder
+J12,1,Mini v1.0 / 15-hole socket,TrueSkate:SimpleFOC_Mini_v1.0,,Hand,0.7,One footprint: 1 female 2x5 + 1 female 1x3 + 2 single machine-pin receptacles; >=3A per power contact; matched mating height
+J22,1,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,
+J32,1,ENCODER breakout FEMALE 1x6,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical,,Hand,0.5,Pin 1 = square pad = CLK; verified by user
+R22,1,10k EN pull-down,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"10k, 1/4 W, 5% or better"
+JP2,1,CONTROL GND / OPEN,TrueSkate:GroundBridge_THT,,PCB / optional wire,0,Leave open; optional soldered wire bridge after noise review
+C12,1,1000uF 35V EEUFR1V102B,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,"Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm"
+C22,1,100nF 50V ceramic,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder
+J13,1,Mini v1.0 / 15-hole socket,TrueSkate:SimpleFOC_Mini_v1.0,,Hand,0.7,One footprint: 1 female 2x5 + 1 female 1x3 + 2 single machine-pin receptacles; >=3A per power contact; matched mating height
+J23,1,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,
+J33,1,ENCODER breakout FEMALE 1x6,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical,,Hand,0.5,Pin 1 = square pad = CLK; verified by user
+R23,1,10k EN pull-down,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"10k, 1/4 W, 5% or better"
+JP3,1,CONTROL GND / OPEN,TrueSkate:GroundBridge_THT,,PCB / optional wire,0,Leave open; optional soldered wire bridge after noise review
+C13,1,1000uF 35V EEUFR1V102B,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,"Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm"
+C23,1,100nF 50V ceramic,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder
+J14,1,Mini v1.0 / 15-hole socket,TrueSkate:SimpleFOC_Mini_v1.0,,Hand,0.7,One footprint: 1 female 2x5 + 1 female 1x3 + 2 single machine-pin receptacles; >=3A per power contact; matched mating height
+J24,1,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,
+J34,1,ENCODER breakout FEMALE 1x6,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical,,Hand,0.5,Pin 1 = square pad = CLK; verified by user
+R24,1,10k EN pull-down,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"10k, 1/4 W, 5% or better"
+JP4,1,CONTROL GND / OPEN,TrueSkate:GroundBridge_THT,,PCB / optional wire,0,Leave open; optional soldered wire bridge after noise review
+C14,1,1000uF 35V EEUFR1V102B,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,"Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm"
+C24,1,100nF 50V ceramic,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder
+J15,1,Mini v1.0 / 15-hole socket,TrueSkate:SimpleFOC_Mini_v1.0,,Hand,0.7,One footprint: 1 female 2x5 + 1 female 1x3 + 2 single machine-pin receptacles; >=3A per power contact; matched mating height
+J25,1,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,
+J35,1,ENCODER breakout FEMALE 1x6,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical,,Hand,0.5,Pin 1 = square pad = CLK; verified by user
+R25,1,10k EN pull-down,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"10k, 1/4 W, 5% or better"
+JP5,1,CONTROL GND / OPEN,TrueSkate:GroundBridge_THT,,PCB / optional wire,0,Leave open; optional soldered wire bridge after noise review
+C15,1,1000uF 35V EEUFR1V102B,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,"Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm"
+C25,1,100nF 50V ceramic,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder
+J16,1,Mini v1.0 / 15-hole socket,TrueSkate:SimpleFOC_Mini_v1.0,,Hand,0.7,One footprint: 1 female 2x5 + 1 female 1x3 + 2 single machine-pin receptacles; >=3A per power contact; matched mating height
+J26,1,MOTOR PHASES male 1x3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,
+J36,1,ENCODER breakout FEMALE 1x6,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical,,Hand,0.5,Pin 1 = square pad = CLK; verified by user
+R26,1,10k EN pull-down,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"10k, 1/4 W, 5% or better"
+JP6,1,CONTROL GND / OPEN,TrueSkate:GroundBridge_THT,,PCB / optional wire,0,Leave open; optional soldered wire bridge after noise review
+C16,1,1000uF 35V EEUFR1V102B,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,"Owned Panasonic; diameter 12.5mm, height 20mm, pitch 5mm"
+C26,1,100nF 50V ceramic,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Vishay K104K10X7RF5UH5; 5mm pitch; body 3.6 x 2.3mm max; hand solder
+J5,1,12V INPUT + / -,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,Hand,2,Phoenix Contact 1715721; 5.08mm pitch
+F1,1,5x20 fuse holder / fuse TBD,Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open,C3204125,Hand,1.8,Schurter 0031.8201; cartridge separately purchased
+NT1,1,GROUND STAR / PCB COPPER,TrueSkate:GroundStar,,PCB copper,0,
+J11-J16 VIN/GND,12,Single machine-pin receptacle,Included in SimpleFOC_Mini_v1.0,,Hand,0.5,>=3 A/contact; body/tail fits 1.101 mm finished hole; compatible pin and matching seated height; MPN pending mechanical selection
