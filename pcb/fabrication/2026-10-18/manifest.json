@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-18",
+  "source_board_sha256": "07ce1593b67b9bafeaed20195cb55540d54c61e23dfcd06500d3691b06bd6e91",
+  "kicad_version": "10.0.6",
+  "checks": "Fresh ERC/DRC passed; DRC has no ignored checks. ERC uses existing project configuration; see erc.json. Source unchanged.",
+  "human_electrical_review_complete": false,
+  "files_sha256": {
+    "trueskate-main-v1-B_Cu.gbl": "6e276af554b38210c487499bc1f692927ebd4a457dc82e4b8b4ca9bf1634a535",
+    "trueskate-main-v1-B_Mask.gbs": "673f5a9999541b09a63a38cacefa16dbfda69509c45cfdfaa68948f3bb699b9d",
+    "trueskate-main-v1-B_Silkscreen.gbo": "9707d82ab51cffd62249d63c17bbd2e27f6450e227c5df4c9a5827e0061630bc",
+    "trueskate-main-v1-Edge_Cuts.gm1": "708433352471564c84583a46fc16072d3b480273e3965986e268e511275d4a2b",
+    "trueskate-main-v1-F_Cu.gtl": "6209605d9abc0e626f6461d11d2b7e0f57488df253aa3077037c8745c34da2de",
+    "trueskate-main-v1-F_Mask.gts": "af5422b23584bc23d9deb01cf645f6c2301acf7993e6d5eaa578abf361eac78d",
+    "trueskate-main-v1-F_Silkscreen.gto": "de0073e736076f3eee2997c249eb9192e502b9d0add29bd44e560dc20a073c5b",
+    "trueskate-main-v1-NPTH.drl": "667beb57865d43ad78e8f53fa97e4d7745db29dcc1d9c9d77520f32d4ffbd690",
+    "trueskate-main-v1-PTH.drl": "311a8025e41aec273cce80c90ed886ab97d4cef6ab28f9446d808e2eb5701da5",
+    "trueskate-main-v1-job.gbrjob": "e3140bcaa362a52639785b30db149838ff6948fc1af9cb78ded877b881181a21",
+    "trueskate-main-v1-JLCPCB.zip": "917c7d7bb758eab129ccdbea57a5af811e6a63fbf5854c32fe5703e4aaa46dfe"
+  }
+}
