@@ -4,8 +4,8 @@
     160,
     120
   ],
-  "layers": 4,
-  "copper_oz": 2,
+  "layers": 2,
+  "copper_oz": 1,
   "axes": [
     {
       "name": "index_curl_1",

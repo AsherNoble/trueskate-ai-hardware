@@ -1,50 +1,26 @@
 {
-  "name": "JLC041622-3313",
-  "source": "https://jlcpcb.com/impedance",
+  "name": "JLC standard two-layer 1.6mm, 1 oz",
+  "source": "https://jlcpcb.com/capabilities/Capabilities",
+  "nominal_thickness_mm": 1.6,
+  "outer_copper_oz": 1,
   "layers": [
     {
       "name": "F.Cu",
       "type": "copper",
-      "thickness_mm": 0.07
+      "thickness_mm": 0.035
     },
     {
       "name": "dielectric 1",
-      "type": "prepreg",
-      "material": "3313 x2 (0.107 + 0.0765mm)",
-      "thickness_mm": 0.1835,
-      "dk": 4.1
-    },
-    {
-      "name": "In1.Cu",
-      "type": "copper",
-      "thickness_mm": 0.061
-    },
-    {
-      "name": "dielectric 2",
       "type": "core",
       "material": "FR4",
-      "thickness_mm": 0.96,
-      "dk": 4.6
-    },
-    {
-      "name": "In2.Cu",
-      "type": "copper",
-      "thickness_mm": 0.061
-    },
-    {
-      "name": "dielectric 3",
-      "type": "prepreg",
-      "material": "3313 x2 (0.107 + 0.0765mm)",
-      "thickness_mm": 0.1835,
-      "dk": 4.1
+      "thickness_mm": 1.51,
+      "dk": 4.5
     },
     {
       "name": "B.Cu",
       "type": "copper",
-      "thickness_mm": 0.07
+      "thickness_mm": 0.035
     }
   ],
-  "nominal_thickness_mm": 1.6,
-  "outer_copper_oz": 2,
-  "inner_copper_oz": 2
+  "note": "Nominal KiCad stack; no controlled impedance or thermal qualification claimed."
 }

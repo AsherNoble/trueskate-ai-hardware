@@ -80,7 +80,7 @@ for i,a in enumerate(D["axes"],1):
     add(f"C{20+i}","100nF 50V ceramic",CFP,[1,2],["12V_FUSED","GND"],pg,(190,155),(x+5,47,270),.13,
         "Optional axis; Vishay K104K10X7RF5UH5",lcsc="C2979769")
 page("power","08 / Power and hardware kill",[
-    "12V motor rail only. 12mm / 2oz shared bus; 2mm per-axis feeds; continuous GND planes.",
+    "12V motor rail only. 12mm shared bus; 2mm per-axis feeds; 1oz copper. Thermal evaluation stopped.",
     "NC switch across J6: closed permits EN commands, open tri-states every EN output.",
     "R1 pulls /OE high on open loop. Local R21-R26 pull EN low independently of firmware.",
     "Reclosing switch restores commanded state; no restart latch. Kill does NOT isolate 12V.",
@@ -272,7 +272,7 @@ def board():
     k.SaveBoard(str(ROOT/(PROJECT+".kicad_pcb")),b,True)
     pcbpath=ROOT/(PROJECT+".kicad_pcb")
     source=pcbpath.read_text()
-    stack='(stackup (layer "F.SilkS" (type "Top Silk Screen")) (layer "F.Mask" (type "Top Solder Mask") (thickness 0.01)) (layer "F.Cu" (type "copper") (thickness 0.07)) (layer "dielectric 1" (type "core") (thickness 1.44) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02)) (layer "B.Cu" (type "copper") (thickness 0.07)) (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01)) (layer "B.SilkS" (type "Bottom Silk Screen")) (copper_finish "HASL lead-free") (dielectric_constraints no))'
+    stack='(stackup (layer "F.SilkS" (type "Top Silk Screen")) (layer "F.Mask" (type "Top Solder Mask") (thickness 0.01)) (layer "F.Cu" (type "copper") (thickness 0.035)) (layer "dielectric 1" (type "core") (thickness 1.51) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02)) (layer "B.Cu" (type "copper") (thickness 0.035)) (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01)) (layer "B.SilkS" (type "Bottom Silk Screen")) (copper_finish "HASL lead-free") (dielectric_constraints no))'
     pcbpath.write_text(source.replace('(setup','(setup '+stack,1))
     (ROOT/"manual-routes.json").write_text(json.dumps([
         dict(net=t.GetNetname(),layer=t.GetLayerName(),width=k.ToMM(t.GetWidth(k.F_Cu) if isinstance(t,k.PCB_VIA) else t.GetWidth()),

@@ -1,3 +1,5 @@
+> Historical review of checkpoint `62ef1ea`. Superseded by the two-layer, 1 oz decision; see [current layout](two-layer-ground.md).
+
 # Four-layer carrier review
 
 The board remains **160 × 120 mm**. All **62 footprint identities, positions,

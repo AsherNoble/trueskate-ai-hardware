@@ -1,0 +1,389 @@
+{
+  "checkpoint": "62ef1ea",
+  "pcb_sha256": "84dbb526d4425a00770a59b0a16e636d85db4c2bbb4fc450e22bbaaf71f7fc8a",
+  "criteria": {
+    "shared_a": 12,
+    "phase_a": 2.5,
+    "per_mini_a": 2.5,
+    "maximum_rise_c": 20,
+    "maximum_copper_drop_v": 0.3,
+    "aggregate_load": "sum axis currents <=12A, each <=2.5A; never six simultaneous 2.5A rail loads"
+  },
+  "supersedes": "Previous 12A-per-phase rejection is withdrawn.",
+  "phase_paths": {
+    "A3_PH1": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 30.683
+    },
+    "A3_PH2": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 33.483
+    },
+    "A3_PH3": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 36.283
+    },
+    "A1_PH3": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 36.283
+    },
+    "A1_PH2": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 33.483
+    },
+    "A1_PH1": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 30.683
+    },
+    "A5_PH3": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 36.283
+    },
+    "A5_PH2": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 33.483
+    },
+    "A5_PH1": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 30.683
+    },
+    "A4_PH1": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 30.683
+    },
+    "A4_PH2": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 33.483
+    },
+    "A4_PH3": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 36.283
+    },
+    "A2_PH3": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 36.283
+    },
+    "A2_PH2": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 33.483
+    },
+    "A2_PH1": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 30.683
+    },
+    "A6_PH3": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 36.283
+    },
+    "A6_PH2": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 33.483
+    },
+    "A6_PH1": {
+      "widths_mm": [
+        1.0
+      ],
+      "length_mm": 30.683
+    }
+  },
+  "ordered_results": [
+    {
+      "order": 1,
+      "outer_um": 35,
+      "inner_um": 15.2,
+      "isolated_phase_fit_rise_c": 14.297117734927053,
+      "isolated_phase_screen": "PASS",
+      "plane_loop_estimate_v": 0.0753066479082955,
+      "barrel_allowance_v": 0.019755397928978784,
+      "receptacle_contact_allowance_v": 0.05,
+      "copper_plus_receptacles_estimate_v": 0.14506204583727428,
+      "thermal_status": "UNRESOLVED: no complete per-neck/assembly thermal qualification",
+      "overall_status": "NOT QUALIFIED",
+      "dc_status": "below 0.3V under stated model assumptions, excluding F1/fuse and input-terminal contact resistance"
+    },
+    {
+      "order": 2,
+      "outer_um": 35,
+      "inner_um": 30,
+      "isolated_phase_fit_rise_c": 14.297117734927053,
+      "isolated_phase_screen": "PASS",
+      "plane_loop_estimate_v": 0.03815536827353638,
+      "barrel_allowance_v": 0.019755397928978784,
+      "receptacle_contact_allowance_v": 0.05,
+      "copper_plus_receptacles_estimate_v": 0.10791076620251516,
+      "thermal_status": "UNRESOLVED: no complete per-neck/assembly thermal qualification",
+      "overall_status": "NOT QUALIFIED",
+      "dc_status": "below 0.3V under stated model assumptions, excluding F1/fuse and input-terminal contact resistance"
+    },
+    {
+      "order": 3,
+      "outer_um": 70,
+      "inner_um": 61,
+      "isolated_phase_fit_rise_c": 7.148558867463526,
+      "isolated_phase_screen": "PASS",
+      "plane_loop_estimate_v": 0.018764935216493302,
+      "barrel_allowance_v": 0.019755397928978784,
+      "receptacle_contact_allowance_v": 0.05,
+      "copper_plus_receptacles_estimate_v": 0.08852033314547209,
+      "thermal_status": "UNRESOLVED: no complete per-neck/assembly thermal qualification",
+      "overall_status": "NOT QUALIFIED",
+      "dc_status": "below 0.3V under stated model assumptions, excluding F1/fuse and input-terminal contact resistance"
+    }
+  ],
+  "selected_option": null,
+  "mesh_results": [
+    {
+      "mesh_mm": 0.25,
+      "axes": [
+        {
+          "axis": 1,
+          "worst_loads_a": [
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.0,
+            0.0
+          ],
+          "plane_loop_drop_v": 0.0650675078959147,
+          "equal_2a_each_plane_drop_v": 0.06334768265966563
+        },
+        {
+          "axis": 2,
+          "worst_loads_a": [
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.0,
+            0.0
+          ],
+          "plane_loop_drop_v": 0.0663979889246028,
+          "equal_2a_each_plane_drop_v": 0.06494879208912158
+        },
+        {
+          "axis": 3,
+          "worst_loads_a": [
+            0.0,
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.0
+          ],
+          "plane_loop_drop_v": 0.06843496091983865,
+          "equal_2a_each_plane_drop_v": 0.06687496299961623
+        },
+        {
+          "axis": 4,
+          "worst_loads_a": [
+            0.0,
+            2.0,
+            2.5,
+            2.5,
+            2.5,
+            2.5
+          ],
+          "plane_loop_drop_v": 0.071710635708476,
+          "equal_2a_each_plane_drop_v": 0.06902934502418151
+        },
+        {
+          "axis": 5,
+          "worst_loads_a": [
+            0.0,
+            2.0,
+            2.5,
+            2.5,
+            2.5,
+            2.5
+          ],
+          "plane_loop_drop_v": 0.07414694148076131,
+          "equal_2a_each_plane_drop_v": 0.07076453845860266
+        },
+        {
+          "axis": 6,
+          "worst_loads_a": [
+            0.0,
+            2.0,
+            2.5,
+            2.5,
+            2.5,
+            2.5
+          ],
+          "plane_loop_drop_v": 0.0753066479082955,
+          "equal_2a_each_plane_drop_v": 0.07161567780474426
+        }
+      ]
+    },
+    {
+      "mesh_mm": 0.125,
+      "axes": [
+        {
+          "axis": 1,
+          "worst_loads_a": [
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.0,
+            0.0
+          ],
+          "plane_loop_drop_v": 0.0646440156002896,
+          "equal_2a_each_plane_drop_v": 0.06294231577476139
+        },
+        {
+          "axis": 2,
+          "worst_loads_a": [
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.0,
+            0.0
+          ],
+          "plane_loop_drop_v": 0.06596661095996315,
+          "equal_2a_each_plane_drop_v": 0.06453256703443941
+        },
+        {
+          "axis": 3,
+          "worst_loads_a": [
+            0.0,
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.0
+          ],
+          "plane_loop_drop_v": 0.06796597703901627,
+          "equal_2a_each_plane_drop_v": 0.06642850623127876
+        },
+        {
+          "axis": 4,
+          "worst_loads_a": [
+            0.0,
+            2.0,
+            2.5,
+            2.5,
+            2.5,
+            2.5
+          ],
+          "plane_loop_drop_v": 0.07121110341763706,
+          "equal_2a_each_plane_drop_v": 0.06856127162541614
+        },
+        {
+          "axis": 5,
+          "worst_loads_a": [
+            0.0,
+            2.0,
+            2.5,
+            2.5,
+            2.5,
+            2.5
+          ],
+          "plane_loop_drop_v": 0.0736051647230771,
+          "equal_2a_each_plane_drop_v": 0.07026446822600338
+        },
+        {
+          "axis": 6,
+          "worst_loads_a": [
+            0.0,
+            2.0,
+            2.5,
+            2.5,
+            2.5,
+            2.5
+          ],
+          "plane_loop_drop_v": 0.07476618647035907,
+          "equal_2a_each_plane_drop_v": 0.07111584083466135
+        }
+      ]
+    }
+  ],
+  "mesh_max_worst_drop_change_v": 0.0005404614379364292,
+  "dc_model": {
+    "temperature_c": 40,
+    "rho_ohm_m": 1.8595064000000003e-08,
+    "source": "actual filled L2/L3 copper; grounded graph Laplacian and equipotential solder-pad ports",
+    "limits": [
+      "Not a thermal model",
+      "L2 only for GND; outer GND copper omitted",
+      "Uniform nominal finished copper thickness; etch tolerances not bounded",
+      "Square-cell boundaries and ideal soldered pads approximate constrictions",
+      "18um barrel plating is an assumption based on JLC published average, not a guaranteed minimum",
+      "Full 1.6mm barrel allowance; F1 barrel allowance assumes all current in one leg per side; no solder conductivity credited",
+      "Input terminal wire-contact resistance not specified; reported separately as remaining allowance"
+    ],
+    "barrel_allowance_v": 0.019755397928978784,
+    "receptacle_ohm_each": 0.01,
+    "input_terminal_total_contact_resistance_budget_ohm": 0.012911496180227142
+  },
+  "fuse_holder": {
+    "resistance_ohm": 0.005,
+    "scope": "total holder resistance, not per contact",
+    "basis": "USER ASSUMPTION; not a Keystone datasheet value",
+    "drop_at_12a_v": 0.06,
+    "power_at_12a_w": 0.72,
+    "excluded_from_copper_budget": true
+  },
+  "fuse": {
+    "source": "https://media.digikey.com/pdf/Data%20Sheets/Littelfuse%20PDFs/257%20Series.pdf",
+    "typical_drop_at_rated_current_mv": {
+      "15A": 102,
+      "20A": 98,
+      "25A": 92,
+      "30A": 84
+    },
+    "note": "Examples, not a fuse selection. Typical rated-current figures are not guaranteed maxima or measured drops at 12A. Fuse remains rated to connected supply."
+  },
+  "price": {
+    "option": 1,
+    "quantity": 5,
+    "usd": 42.4,
+    "status": "candidate quote only; no passing option selected",
+    "excludes": [
+      "shipping",
+      "tax",
+      "assembly"
+    ]
+  },
+  "layout_modified": false,
+  "remaining": [
+    "Complete per-neck IPC-2152 thermal assessment of shared input/fuse escapes and GND return",
+    "Nearby phase-trace thermal interaction and module/holder heat",
+    "Connector/contact temperature rise at requested currents"
+  ]
+}

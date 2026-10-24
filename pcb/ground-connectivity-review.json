@@ -1,0 +1,15 @@
+{
+  "pcb_sha256": "d3d834778e56cac8adad3efcc863834e2f8e0042e190e49a91a666569cb6c2ba",
+  "ground_regions_per_layer": {
+    "F.Cu": 32,
+    "B.Cu": 35
+  },
+  "through_ground_contacts": 400,
+  "connected_ground_networks": 1,
+  "floating_ground_regions": 0,
+  "ground_copper_area_mm2": {
+    "F.Cu": 10989.739,
+    "B.Cu": 15115.297
+  },
+  "method": "Union filled zones, real pad outlines, GND tracks and via annuli per side, then join regions at every through-ground contact; plated holes treated as solid contact nodes."
+}

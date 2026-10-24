@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-25",
+  "url": "https://cart.jlcpcb.com/quote",
+  "quantity": 5,
+  "dimensions_mm": [
+    160,
+    120
+  ],
+  "layers": 2,
+  "copper_oz": 1,
+  "nominal_board_thickness_mm": 1.6,
+  "finish": "LeadFree HASL",
+  "mask": "Green",
+  "silkscreen": "White",
+  "currency": "USD",
+  "price": 14.8,
+  "shipping_tax_assembly_included": false,
+  "order_placed": false,
+  "design_uploaded": false,
+  "files_sha256": {
+    "quote.png": "ebbc09618caae52a90532fa3d36f1c13c0dfb4202281112a628504a874dd1a8c",
+    "quote.txt": "a9ba6e6a81cb9706424697c7e1d3d03eabc2c27a6b49896c5bbb0103a9c96524"
+  }
+}

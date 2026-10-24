@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-25",
+  "checkpoint": "62ef1ea",
+  "pcb_sha256": "84dbb526d4425a00770a59b0a16e636d85db4c2bbb4fc450e22bbaaf71f7fc8a",
+  "quote": {
+    "url": "https://cart.jlcpcb.com/quote",
+    "quantity": 5,
+    "dimensions_mm": [
+      160,
+      120
+    ],
+    "layers": 4,
+    "outer_oz": 1,
+    "inner_oz": 0.5,
+    "nominal_thickness_mm": 1.6,
+    "finish": "LeadFree HASL",
+    "usd": 42.4,
+    "excludes": [
+      "shipping",
+      "tax",
+      "assembly"
+    ],
+    "design_uploaded": false,
+    "order_placed": false
+  },
+  "sources": {
+    "fuse": "https://media.digikey.com/pdf/Data%20Sheets/Littelfuse%20PDFs/257%20Series.pdf",
+    "holder": "https://www.keyelco.com/product-pdf.cfm?p=296",
+    "stack": "https://jlcpcb.com/impedance",
+    "plating": "https://jlcpcb.com/capabilities/Capabilities"
+  },
+  "geometry": "Native filled zones exported without changes; native footprint positions unchanged.",
+  "files": {
+    "quote-1oz-0.5oz.txt": "822e0ce30f83909a816c7b0b83fb586d663c841a465084fd25b4402925f3cfef",
+    "filled-planes.json": "491eec380d0b6922d98936cefad878e1e3184f8f8f151ae81ba4c4bf599a2500",
+    "stackup-1oz-inner.txt": "122f978bbfd422f9a1269506361dcd4bb815f085047dde8a519460ff754f3297",
+    "quote-1oz-0.5oz.png": "8a64f8aa0e4c27702428d2e456fc464298d45f01c1add34cfb8213be8e998c83",
+    "littelfuse-257.pdf": "7cc159f9f425439fc7fa7fde53d485186fead255312bcdad1fe6adab1fa5da23",
+    "stackup-light.txt": "3d240896adfc15c34534d81e171746e6b53b43b6c905056470e87a9f844f23a7",
+    "plane-dc-0.25.json": "4f9228edd16437448ccaa650b30a65f3ebb0789d92f191d5b1b920e22be5fa8a",
+    "plane-dc-0.125.json": "1e79deae3298b0dcb7f3edb3c9bfaf1a916e07146a1da8098cbd5cf434c07d82",
+    "stackup-light.png": "7c324f7bc8295b84df7f40bf63a84c0c9e82d4951b32a115ab0c11d62d2020cc",
+    "terminal-exits.json": "66fc3a5d083f8a1f6b262a6ddbd1a916ef38d011b607b1706e5f1dec711c94f9"
+  }
+}

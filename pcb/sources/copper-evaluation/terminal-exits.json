@@ -1,0 +1,344 @@
+[
+  {
+    "ref": "J11",
+    "pin": "GND",
+    "net": "GND",
+    "xy": [
+      22.19,
+      40.399
+    ],
+    "size": [
+      2.4,
+      2.4
+    ],
+    "drill": [
+      1.101,
+      1.101
+    ],
+    "exit_radius_mm": 1.21,
+    "available_exit_arc_mm": 7.602653476279668
+  },
+  {
+    "ref": "J11",
+    "pin": "VIN",
+    "net": "12V_FUSED",
+    "xy": [
+      17.237,
+      40.399
+    ],
+    "size": [
+      2.4,
+      2.4
+    ],
+    "drill": [
+      1.101,
+      1.101
+    ],
+    "exit_radius_mm": 1.21,
+    "available_exit_arc_mm": 7.602653476279668
+  },
+  {
+    "ref": "J15",
+    "pin": "GND",
+    "net": "GND",
+    "xy": [
+      122.19,
+      40.399
+    ],
+    "size": [
+      2.4,
+      2.4
+    ],
+    "drill": [
+      1.101,
+      1.101
+    ],
+    "exit_radius_mm": 1.21,
+    "available_exit_arc_mm": 7.602653476279645
+  },
+  {
+    "ref": "J15",
+    "pin": "VIN",
+    "net": "12V_FUSED",
+    "xy": [
+      117.237,
+      40.399
+    ],
+    "size": [
+      2.4,
+      2.4
+    ],
+    "drill": [
+      1.101,
+      1.101
+    ],
+    "exit_radius_mm": 1.21,
+    "available_exit_arc_mm": 7.602653476279645
+  },
+  {
+    "ref": "J13",
+    "pin": "GND",
+    "net": "GND",
+    "xy": [
+      72.19,
+      40.399
+    ],
+    "size": [
+      2.4,
+      2.4
+    ],
+    "drill": [
+      1.101,
+      1.101
+    ],
+    "exit_radius_mm": 1.21,
+    "available_exit_arc_mm": 7.602653476279645
+  },
+  {
+    "ref": "J13",
+    "pin": "VIN",
+    "net": "12V_FUSED",
+    "xy": [
+      67.237,
+      40.399
+    ],
+    "size": [
+      2.4,
+      2.4
+    ],
+    "drill": [
+      1.101,
+      1.101
+    ],
+    "exit_radius_mm": 1.21,
+    "available_exit_arc_mm": 7.602653476279645
+  },
+  {
+    "ref": "J12",
+    "pin": "GND",
+    "net": "GND",
+    "xy": [
+      47.19,
+      40.399
+    ],
+    "size": [
+      2.4,
+      2.4
+    ],
+    "drill": [
+      1.101,
+      1.101
+    ],
+    "exit_radius_mm": 1.21,
+    "available_exit_arc_mm": 7.602653476279642
+  },
+  {
+    "ref": "J12",
+    "pin": "VIN",
+    "net": "12V_FUSED",
+    "xy": [
+      42.237,
+      40.399
+    ],
+    "size": [
+      2.4,
+      2.4
+    ],
+    "drill": [
+      1.101,
+      1.101
+    ],
+    "exit_radius_mm": 1.21,
+    "available_exit_arc_mm": 7.602653476279648
+  },
+  {
+    "ref": "J5",
+    "pin": "1",
+    "net": "12V_IN",
+    "xy": [
+      12.0,
+      115.0
+    ],
+    "size": [
+      2.6,
+      2.6
+    ],
+    "drill": [
+      1.3,
+      1.3
+    ],
+    "exit_radius_mm": 1.31,
+    "available_exit_arc_mm": 8.23097194539369
+  },
+  {
+    "ref": "J5",
+    "pin": "2",
+    "net": "GND",
+    "xy": [
+      17.08,
+      115.0
+    ],
+    "size": [
+      2.6,
+      2.6
+    ],
+    "drill": [
+      1.3,
+      1.3
+    ],
+    "exit_radius_mm": 1.31,
+    "available_exit_arc_mm": 8.23097194539369
+  },
+  {
+    "ref": "J16",
+    "pin": "GND",
+    "net": "GND",
+    "xy": [
+      147.19,
+      40.399
+    ],
+    "size": [
+      2.4,
+      2.4
+    ],
+    "drill": [
+      1.101,
+      1.101
+    ],
+    "exit_radius_mm": 1.21,
+    "available_exit_arc_mm": 7.602653476279668
+  },
+  {
+    "ref": "J16",
+    "pin": "VIN",
+    "net": "12V_FUSED",
+    "xy": [
+      142.237,
+      40.399
+    ],
+    "size": [
+      2.4,
+      2.4
+    ],
+    "drill": [
+      1.101,
+      1.101
+    ],
+    "exit_radius_mm": 1.21,
+    "available_exit_arc_mm": 7.602653476279667
+  },
+  {
+    "ref": "J14",
+    "pin": "GND",
+    "net": "GND",
+    "xy": [
+      97.19,
+      40.399
+    ],
+    "size": [
+      2.4,
+      2.4
+    ],
+    "drill": [
+      1.101,
+      1.101
+    ],
+    "exit_radius_mm": 1.21,
+    "available_exit_arc_mm": 7.602653476279645
+  },
+  {
+    "ref": "J14",
+    "pin": "VIN",
+    "net": "12V_FUSED",
+    "xy": [
+      92.237,
+      40.399
+    ],
+    "size": [
+      2.4,
+      2.4
+    ],
+    "drill": [
+      1.101,
+      1.101
+    ],
+    "exit_radius_mm": 1.21,
+    "available_exit_arc_mm": 7.602653476279645
+  },
+  {
+    "ref": "F1",
+    "pin": "1",
+    "net": "12V_IN",
+    "xy": [
+      30.0,
+      112.5
+    ],
+    "size": [
+      3.0,
+      3.0
+    ],
+    "drill": [
+      1.65,
+      1.65
+    ],
+    "exit_radius_mm": 1.51,
+    "available_exit_arc_mm": 9.487608883621737
+  },
+  {
+    "ref": "F1",
+    "pin": "1",
+    "net": "12V_IN",
+    "xy": [
+      30.0,
+      115.9
+    ],
+    "size": [
+      3.0,
+      3.0
+    ],
+    "drill": [
+      1.65,
+      1.65
+    ],
+    "exit_radius_mm": 1.51,
+    "available_exit_arc_mm": 9.487608883621737
+  },
+  {
+    "ref": "F1",
+    "pin": "2",
+    "net": "12V_FUSED",
+    "xy": [
+      43.47,
+      112.5
+    ],
+    "size": [
+      3.0,
+      3.0
+    ],
+    "drill": [
+      1.65,
+      1.65
+    ],
+    "exit_radius_mm": 1.51,
+    "available_exit_arc_mm": 9.487608883621775
+  },
+  {
+    "ref": "F1",
+    "pin": "2",
+    "net": "12V_FUSED",
+    "xy": [
+      43.47,
+      115.9
+    ],
+    "size": [
+      3.0,
+      3.0
+    ],
+    "drill": [
+      1.65,
+      1.65
+    ],
+    "exit_radius_mm": 1.51,
+    "available_exit_arc_mm": 9.487608883621775
+  }
+]

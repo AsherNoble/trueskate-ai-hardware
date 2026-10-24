@@ -1,6 +1,6 @@
 # Six-axis edge connector carrier — review only
 
-160 × 120 mm, **four layers**, JLC041622-3313, **2 oz outer/inner copper**. No board growth. Six columns at 25 mm pitch;
+160 × 120 mm, **two layers, 1 oz copper on each side**. No board growth. Six columns at 25 mm pitch;
 front is Y=0, back is Y=120. J21–J26 motor headers and J31–J36 encoder connectors
 sit at the front. Minis are rotated 90° in-plane, component side up, never mirrored.
 The Mini courtyard follows the tagged GKO outline plus 0.5 mm. Bulk and ceramic bodies are outside it; the measured minimum body gap is 2.9136 mm to the Mini outline (2.4138 mm to its courtyard).
@@ -84,22 +84,30 @@ Axes 1–3 use mutually distinct submodules; 4–6 share some of those resources
 They are not six independently frequency-programmable motor groups. SPI remains
 11/12/13. **No pins reassigned.** Existing firmware is still the earlier bench code.
 
-## Fuse and 12 A copper
+## Copper decision
+
+**Two layers, 1 oz, by user decision. Copper/thermal qualification is stopped.**
+The historical four-layer results remain in [copper-options.md](../docs/pcb/copper-options.md).
+They do not qualify this two-layer board. The current five-board JLC quote is
+**US$14.80**, excluding shipping, tax and assembly.
+
+## Fuse and power routing
 
 **fuse rated to the connected supply.**
 
 F1 is **one Keystone 3557-2 complete holder**, JLC/LCSC **C352820**. One part includes
 both clips and holds one standard ATO blade fuse. “2 in 1” means compatibility
 with two fuse formats, not two separate holder parts. The BOM specifies no fuse
-amperage; the replaceable fuse is separate from the holder. Keep the connected
-supply within the carrier's 12 A design envelope.
+amperage; the replaceable fuse is separate from the holder. The earlier 12 A design target is not a qualification of the selected copper.
 
 The custom footprint comes from Keystone's drawing: 13.47 × 3.40 mm hole centres,
 four ≥1.60 mm holes (1.65 mm selected), two electrical pads with two legs each.
-All 12 V tracks are on L3 and reinforced by broad input/fused power areas.
-L2 is one connected, unrouted GND plane. JLC specifies 70 µm finished outer copper
-and 61 µm inner copper for this standard 2 oz stack. The 12 A target relies on
-the planes, not the old track widths alone. See [four-layer review](../docs/pcb/four-layer.md).
+The original outer-layer power bus and Mini feeds are restored from checkpoint
+`62ef1ea`'s conversion log. Both copper layers are nominal 35 µm. The bottom GND
+pour extends to all available board area subject to the existing clearances;
+the top GND pour is retained. Disconnected islands are removed automatically.
+The independent geometry audit confirms one connected GND network and zero
+floating regions. See [two-layer review](../docs/pcb/two-layer-ground.md).
 
 ## Encoder routing
 
@@ -107,9 +115,9 @@ Each encoder's SPI, CS, 3V3 and GND escape runs down the right/JST half of its
 column. The bundles jog around the Mini power annuli, then join the shared rear
 routing area behind the Minis. Autorouter exclusion areas protect the phase-side
 corridors. The final native-copper audit reports any exception in `layout-review.json`.
-There are no column exceptions. The filled L2 plane covers all SPI/CS/EN traces
-across their width, except necessary insulating antipads at their own PTH/via
-terminals. L4 is adjacent to the L3 power plane rather than directly to L2.
+There are no column exceptions. GND stitching follows every SPI/CS bundle and
+all four board edges: **347 total GND vias**, including 306 added to the baseline.
+The two-layer layout does not have a dedicated unbroken reference plane.
 
 ## Populated assembly views
 
@@ -119,10 +127,10 @@ terminals. L4 is adjacent to the L3 power plane rather than directly to L2.
 Teensy, single power receptacles and fuse assembly fitted to the current carrier.
 Added module models are simplified; see [model assumptions](assembly-review/README.md).
 
-## Inner copper review
+## Copper review
 
-[L2 solid GND](l2-ground-review.svg) · [L3 power](l3-power-review.svg) ·
-[stackup and JLC price comparison](../docs/pcb/four-layer.md)
+[Top copper](top-copper-review.svg) · [Bottom copper and GND fill](bottom-copper-review.svg) ·
+[Ground connectivity and JLC quote](../docs/pcb/two-layer-ground.md)
 
 ## Review artifacts and rebuilding
 
@@ -136,12 +144,16 @@ Added module models are simplified; see [model assumptions](assembly-review/READ
 - [Relayout report](../docs/pcb/edge-layout.md): decisions and outstanding requirements.
 
 Run `rebuild.py` with KiCad's Python to regenerate/import the frozen outer-layer
-routing session, then apply `convert_four_layer.py` with `stackup.json`; run `export_review.py` with the documented Python/reportlab environment
+routing session, restore the two-layer/1 oz stack with `convert_two_layer.py`, and
+add the two passes of `stitch_ground.py`. Run `export_review.py` with Python 3
+and `reportlab`, `pypdf`, `Pillow`, and `shapely` installed
 for strict checks and review exports. Changing placement or mapping requires a new
 signal-routing session. Project-local Edge_ footprints preserve manufacturer pad,
 courtyard and 3D geometry while moving crowded body silkscreen to fabrication layers.
 No manufacturing exports are generated. Older `fabrication/` and `mockups/` files
-are historical and do not describe this revision.
+are historical and do not describe this revision. The old `four-layer-*`,
+`l2-ground-review.*` and `l3-power-review.*` files also describe the archived
+four-layer checkpoint only.
 
 Sources: [JST SH datasheet](https://www.jst-mfg.com/product/pdf/eng/eSH.pdf),
 [TI SN74LV125A](https://www.ti.com/lit/ds/symlink/sn74lv125a.pdf),

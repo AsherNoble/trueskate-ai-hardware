@@ -1,111 +1,14 @@
 {
-  "bus_current_target_a": 12,
-  "axis_current_target_a": 3,
-  "stackup": "JLC041622-3313",
-  "outer_copper_um": 70,
-  "inner_copper_um": 61,
-  "layer": "In2.Cu",
-  "power_zones": {
-    "12V_IN": {
-      "connected_regions": 1,
-      "connection": "solid, no thermal spokes"
-    },
-    "12V_FUSED": {
-      "connected_regions": 1,
-      "connection": "solid, no thermal spokes"
-    }
-  },
-  "input_area_mm": [
-    36,
-    25
+  "layers": 2,
+  "copper_oz": 1,
+  "power_segments": 51,
+  "widths_mm": [
+    0.6,
+    2.0,
+    6.0,
+    12.0
   ],
-  "fused_area": "board-wide plane with input-net clearance and mandatory hole antipads",
-  "original_trunk_mm": 12,
-  "original_branches_mm": 2,
-  "ipc2221_internal_reference": {
-    "temperature_rise_c": 10,
-    "uniform_12a_strip_width_mm": 13.809,
-    "uniform_3a_strip_width_mm": 2.04
-  },
-  "sizing_note": "The original tracks alone are insufficient as internal uniform strips; broad L3 planes carry current in parallel. The strip equation is a reference, not a plane thermal simulation or proof of connector/pad current rating.",
-  "axes": [
-    {
-      "axis": 1,
-      "supply": "direct L3 fused-plane connection; existing 2mm branch retained",
-      "return_path": "dedicated L2 GND plus outer GND fills",
-      "bulk_power_pad_distances_mm": [
-        11.104,
-        11.105
-      ],
-      "ceramic_power_pad_distances_mm": [
-        9.795,
-        16.828
-      ]
-    },
-    {
-      "axis": 2,
-      "supply": "direct L3 fused-plane connection; existing 2mm branch retained",
-      "return_path": "dedicated L2 GND plus outer GND fills",
-      "bulk_power_pad_distances_mm": [
-        11.104,
-        11.105
-      ],
-      "ceramic_power_pad_distances_mm": [
-        9.795,
-        16.828
-      ]
-    },
-    {
-      "axis": 3,
-      "supply": "direct L3 fused-plane connection; existing 2mm branch retained",
-      "return_path": "dedicated L2 GND plus outer GND fills",
-      "bulk_power_pad_distances_mm": [
-        11.104,
-        11.105
-      ],
-      "ceramic_power_pad_distances_mm": [
-        9.795,
-        16.828
-      ]
-    },
-    {
-      "axis": 4,
-      "supply": "direct L3 fused-plane connection; existing 2mm branch retained",
-      "return_path": "dedicated L2 GND plus outer GND fills",
-      "bulk_power_pad_distances_mm": [
-        11.104,
-        11.105
-      ],
-      "ceramic_power_pad_distances_mm": [
-        9.795,
-        16.828
-      ]
-    },
-    {
-      "axis": 5,
-      "supply": "direct L3 fused-plane connection; existing 2mm branch retained",
-      "return_path": "dedicated L2 GND plus outer GND fills",
-      "bulk_power_pad_distances_mm": [
-        11.104,
-        11.105
-      ],
-      "ceramic_power_pad_distances_mm": [
-        9.795,
-        16.828
-      ]
-    },
-    {
-      "axis": 6,
-      "supply": "direct L3 fused-plane connection; existing 2mm branch retained",
-      "return_path": "dedicated L2 GND plus outer GND fills",
-      "bulk_power_pad_distances_mm": [
-        11.104,
-        11.105
-      ],
-      "ceramic_power_pad_distances_mm": [
-        9.795,
-        16.828
-      ]
-    }
-  ]
+  "routing": "Original outer-layer input, fuse, bus and Mini feeds restored from 62ef1ea conversion log",
+  "qualification": "STOPPED by user decision; no current/temperature qualification claimed",
+  "historical_report": "../docs/pcb/copper-options.md"
 }

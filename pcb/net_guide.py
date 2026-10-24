@@ -13,10 +13,10 @@ from pypdf import PdfReader
 ROOT=Path(__file__).resolve().parent
 DOCS=ROOT.parent/'docs/pcb'
 groups=[
-(['12V_IN'],'J5 positive to F1 input, before the fuse. Dedicated L3 input area; correct polarity required.'),
-(['12V_FUSED'],'F1 output to all Mini VIN contacts and local capacitors. Broad fused L3 power plane, 2 oz inner copper.'),
+(['12V_IN'],'J5 positive to F1 input, before the fuse. Original outer-layer input route; correct polarity required.'),
+(['12V_FUSED'],'F1 output to all Mini VIN contacts and local capacitors. Original outer-layer bus and feeds; 1 oz copper.'),
 (['3V3'],'Teensy regulator to encoders, CS pull-ups, kill buffers and /OE pull-up. USB powers the Teensy.'),
-(['GND'],'Solid L2 ground plane and outer fills join supply negative, logic, Minis and capacitor returns. No isolation.'),
+(['GND'],'Stitched top/bottom GND fills join supply negative, logic, Minis and capacitor returns. No isolation.'),
 (['SPI_SCK'],'Teensy 13 to all encoders. SH contact assignment is provisional; see README verification table.'),
 (['SPI_MOSI'],'Teensy 11 to all encoders. Host-to-encoder data.'),
 (['SPI_MISO'],'Encoders to Teensy 12. Only the selected encoder may drive this shared line.'),

@@ -1,3 +1,5 @@
+> Current layer decision: two layers, 1 oz, stitched GND. See [current review](two-layer-ground.md); any four-layer discussion below is historical.
+
 # Edge-layout follow-up review
 
 This report records the preceding two-layer revision. The current
