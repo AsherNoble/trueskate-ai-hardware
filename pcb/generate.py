@@ -5,6 +5,7 @@ The previous full-feature draft is preserved by local checkpoint 36e9dca.
 Run with KiCad's bundled Python. Signal routing is a separate step.
 """
 import csv
+import re
 import math
 import json
 import os
@@ -111,7 +112,13 @@ def pth(fp,num,x,y,size=1.8,drill=1):
     p.SetShape(k.PAD_SHAPE_RECT if str(num)=="1" else k.PAD_SHAPE_CIRCLE)
     p.SetSize(xy(size,size));p.SetDrillSize(xy(drill,drill));p.SetPosition(xy(x,y))
     p.SetLayerSet(layers(k.F_Cu,k.B_Cu,k.F_Mask,k.B_Mask));fp.Add(p)
-def save_fp(fp): k.PCB_IO_MGR.FindPlugin(k.PCB_IO_MGR.KICAD_SEXP).FootprintSave(str(ROOT/"TrueSkate.pretty"),fp)
+def save_fp(fp):
+    path=ROOT/'TrueSkate.pretty'/(str(fp.GetFPID().GetLibItemName())+'.kicad_mod')
+    previous=path.read_text() if path.exists() else None
+    k.PCB_IO_MGR.FindPlugin(k.PCB_IO_MGR.KICAD_SEXP).FootprintSave(str(ROOT/'TrueSkate.pretty'),fp)
+    # Preserve identical libraries rather than rewriting randomly assigned UUIDs.
+    normalize=lambda s:re.sub(r'\(uuid "[^"]+"\)','(uuid "")',s)
+    if previous is not None and normalize(previous)==normalize(path.read_text()):path.write_text(previous)
 def custom():
     (ROOT/"TrueSkate.pretty").mkdir(exist_ok=True)
     mini=k.FOOTPRINT(None);mini.SetFPID(k.LIB_ID("TrueSkate","SimpleFOC_Mini_v1.0"));mini.SetReference("REF**")

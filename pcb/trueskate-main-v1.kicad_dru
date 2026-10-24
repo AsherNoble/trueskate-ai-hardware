@@ -1,0 +1,16 @@
+(version 1)
+(rule "L2 is an unrouted GND plane"
+  (layer "In1.Cu")
+  (constraint disallow track))
+(rule "Only GND zones on L2"
+  (layer "In1.Cu")
+  (condition "A.NetName != 'GND'")
+  (constraint disallow zone))
+(rule "L3 reserved for 12V distribution"
+  (layer "In2.Cu")
+  (condition "A.NetName != '12V_IN' && A.NetName != '12V_FUSED'")
+  (constraint disallow track zone))
+(rule "No outer-layer 12V routing"
+  (layer outer)
+  (condition "A.NetName == '12V_IN' || A.NetName == '12V_FUSED'")
+  (constraint disallow track zone))

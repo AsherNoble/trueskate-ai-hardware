@@ -1,6 +1,6 @@
 # Six-axis edge connector carrier — review only
 
-160 × 120 mm, two layers, **2 oz copper**. No board growth. Six columns at 25 mm pitch;
+160 × 120 mm, **four layers**, JLC041622-3313, **2 oz outer/inner copper**. No board growth. Six columns at 25 mm pitch;
 front is Y=0, back is Y=120. J21–J26 motor headers and J31–J36 encoder connectors
 sit at the front. Minis are rotated 90° in-plane, component side up, never mirrored.
 The Mini courtyard follows the tagged GKO outline plus 0.5 mm. Bulk and ceramic bodies are outside it; the measured minimum body gap is 2.9136 mm to the Mini outline (2.4138 mm to its courtyard).
@@ -96,8 +96,10 @@ supply within the carrier's 12 A design envelope.
 
 The custom footprint comes from Keystone's drawing: 13.47 × 3.40 mm hole centres,
 four ≥1.60 mm holes (1.65 mm selected), two electrical pads with two legs each.
-The PCB retains 2 oz copper, a 12 mm trunk, a 6 mm fused output stem, dual-layer
-2 mm input feeds, and 2 mm per-Mini branches. Grounds use the two filled planes.
+All 12 V tracks are on L3 and reinforced by broad input/fused power areas.
+L2 is one connected, unrouted GND plane. JLC specifies 70 µm finished outer copper
+and 61 µm inner copper for this standard 2 oz stack. The 12 A target relies on
+the planes, not the old track widths alone. See [four-layer review](../docs/pcb/four-layer.md).
 
 ## Encoder routing
 
@@ -105,8 +107,9 @@ Each encoder's SPI, CS, 3V3 and GND escape runs down the right/JST half of its
 column. The bundles jog around the Mini power annuli, then join the shared rear
 routing area behind the Minis. Autorouter exclusion areas protect the phase-side
 corridors. The final native-copper audit reports any exception in `layout-review.json`.
-There are no column exceptions in the checked layout. A continuous reference plane
-beneath every segment is not asserted for this two-layer board.
+There are no column exceptions. The filled L2 plane covers all SPI/CS/EN traces
+across their width, except necessary insulating antipads at their own PTH/via
+terminals. L4 is adjacent to the L3 power plane rather than directly to L2.
 
 ## Populated assembly views
 
@@ -115,6 +118,11 @@ beneath every segment is not asserted for this two-layer board.
 [rear perspective](assembly-review/populated-rear.png) show all six Minis, the
 Teensy, single power receptacles and fuse assembly fitted to the current carrier.
 Added module models are simplified; see [model assumptions](assembly-review/README.md).
+
+## Inner copper review
+
+[L2 solid GND](l2-ground-review.svg) · [L3 power](l3-power-review.svg) ·
+[stackup and JLC price comparison](../docs/pcb/four-layer.md)
 
 ## Review artifacts and rebuilding
 
@@ -127,8 +135,8 @@ Added module models are simplified; see [model assumptions](assembly-review/READ
 - `drc-review.json`, `erc-review.json`, `review-status.json`: validation evidence.
 - [Relayout report](../docs/pcb/edge-layout.md): decisions and outstanding requirements.
 
-Run `rebuild.py` with KiCad's Python to regenerate and import the frozen routing
-session; run `export_review.py` with the documented Python/reportlab environment
+Run `rebuild.py` with KiCad's Python to regenerate/import the frozen outer-layer
+routing session, then apply `convert_four_layer.py` with `stackup.json`; run `export_review.py` with the documented Python/reportlab environment
 for strict checks and review exports. Changing placement or mapping requires a new
 signal-routing session. Project-local Edge_ footprints preserve manufacturer pad,
 courtyard and 3D geometry while moving crowded body silkscreen to fabrication layers.

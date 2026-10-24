@@ -1,22 +1,38 @@
 {
-  "bus_current_a": 12,
-  "bus_calculated_minimum_mm": 4.626,
-  "input_feed": "parallel 2mm top/bottom input paths, 6A design allocation per layer; 6mm fused output stem",
-  "current_a": 3,
-  "copper_thickness_um": 70,
-  "layer": "external",
-  "temperature_rise_c": 10,
-  "estimate": "IPC-2221 external-layer equation; not a thermal qualification",
-  "minimum_calculated_width_mm": 0.684,
-  "supply_chosen_mm": 2,
-  "return_geometry": "filled GND planes",
-  "shared_trunk_mm": 12,
-  "design_bus_rating_a": 12,
+  "bus_current_target_a": 12,
+  "axis_current_target_a": 3,
+  "stackup": "JLC041622-3313",
+  "outer_copper_um": 70,
+  "inner_copper_um": 61,
+  "layer": "In2.Cu",
+  "power_zones": {
+    "12V_IN": {
+      "connected_regions": 1,
+      "connection": "solid, no thermal spokes"
+    },
+    "12V_FUSED": {
+      "connected_regions": 1,
+      "connection": "solid, no thermal spokes"
+    }
+  },
+  "input_area_mm": [
+    36,
+    25
+  ],
+  "fused_area": "board-wide plane with input-net clearance and mandatory hole antipads",
+  "original_trunk_mm": 12,
+  "original_branches_mm": 2,
+  "ipc2221_internal_reference": {
+    "temperature_rise_c": 10,
+    "uniform_12a_strip_width_mm": 13.809,
+    "uniform_3a_strip_width_mm": 2.04
+  },
+  "sizing_note": "The original tracks alone are insufficient as internal uniform strips; broad L3 planes carry current in parallel. The strip equation is a reference, not a plane thermal simulation or proof of connector/pad current rating.",
   "axes": [
     {
       "axis": 1,
-      "supply_min_width_mm": 2,
-      "return_path": "continuous GND planes",
+      "supply": "direct L3 fused-plane connection; existing 2mm branch retained",
+      "return_path": "dedicated L2 GND plus outer GND fills",
       "bulk_power_pad_distances_mm": [
         11.104,
         11.105
@@ -28,8 +44,8 @@
     },
     {
       "axis": 2,
-      "supply_min_width_mm": 2,
-      "return_path": "continuous GND planes",
+      "supply": "direct L3 fused-plane connection; existing 2mm branch retained",
+      "return_path": "dedicated L2 GND plus outer GND fills",
       "bulk_power_pad_distances_mm": [
         11.104,
         11.105
@@ -41,8 +57,8 @@
     },
     {
       "axis": 3,
-      "supply_min_width_mm": 2,
-      "return_path": "continuous GND planes",
+      "supply": "direct L3 fused-plane connection; existing 2mm branch retained",
+      "return_path": "dedicated L2 GND plus outer GND fills",
       "bulk_power_pad_distances_mm": [
         11.104,
         11.105
@@ -54,8 +70,8 @@
     },
     {
       "axis": 4,
-      "supply_min_width_mm": 2,
-      "return_path": "continuous GND planes",
+      "supply": "direct L3 fused-plane connection; existing 2mm branch retained",
+      "return_path": "dedicated L2 GND plus outer GND fills",
       "bulk_power_pad_distances_mm": [
         11.104,
         11.105
@@ -67,8 +83,8 @@
     },
     {
       "axis": 5,
-      "supply_min_width_mm": 2,
-      "return_path": "continuous GND planes",
+      "supply": "direct L3 fused-plane connection; existing 2mm branch retained",
+      "return_path": "dedicated L2 GND plus outer GND fills",
       "bulk_power_pad_distances_mm": [
         11.104,
         11.105
@@ -80,8 +96,8 @@
     },
     {
       "axis": 6,
-      "supply_min_width_mm": 2,
-      "return_path": "continuous GND planes",
+      "supply": "direct L3 fused-plane connection; existing 2mm branch retained",
+      "return_path": "dedicated L2 GND plus outer GND fills",
       "bulk_power_pad_distances_mm": [
         11.104,
         11.105

@@ -56,15 +56,16 @@ for i in range(1,7):
     assert abs(pos(f'J{30+i}',1)[1]-5.3)<1e-5
     for phase in (1,2,3):assert net(f'J{20+i}',phase)==net(mini,f'P{4-phase}')==f'A{i}_PH{phase}'
     assert f'J{40+i}' not in fps
-assert len(list(b.Zones()))==2 and all(z.GetNetname()=='GND' for z in b.Zones())
-assert b.GetCopperLayerCount()==2 and len(fps)==62
+assert len(list(b.Zones()))==5
+assert {(b.GetLayerName(z.GetLayer()),z.GetNetname())for z in b.Zones()}=={('F.Cu','GND'),('B.Cu','GND'),('In1.Cu','GND'),('In2.Cu','12V_IN'),('In2.Cu','12V_FUSED')}
+assert b.GetCopperLayerCount()==4 and len(fps)==62
 assert k.ToMM(b.GetDesignSettings().m_SolderMaskMinWidth)>=.1
 
 def signature(t):
     points=sorted([(round(k.ToMM(t.GetStart().x),6),round(k.ToMM(t.GetStart().y),6)),
                    (round(k.ToMM(t.GetEnd().x),6),round(k.ToMM(t.GetEnd().y),6))])
     return t.GetNetname(),t.GetLayerName(),round(k.ToMM(t.GetWidth(k.F_Cu) if isinstance(t,k.PCB_VIA) else t.GetWidth()),6),tuple(points)
-expected=collections.Counter((t['net'],t['layer'],round(t['width'],6),tuple(sorted(map(tuple,[t['start'],t['end']]))))
+expected=collections.Counter((t['net'],'In2.Cu' if t['net'] in ('12V_IN','12V_FUSED') else t['layer'],round(t['width'],6),tuple(sorted(map(tuple,[t['start'],t['end']]))))
                             for t in json.loads((root/'manual-routes.json').read_text()))
 for trim in json.loads((root/'encoder-tail-trims.json').read_text()):
     for key,delta in [('before',-1),('after',1)]:

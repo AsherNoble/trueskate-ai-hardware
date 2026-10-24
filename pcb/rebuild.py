@@ -9,5 +9,5 @@ import subprocess
 import sys
 ROOT=Path(__file__).resolve().parent
 for script,args in [('extract_mini.py',[]),('generate.py',[]),('route_signals.py',['export']),
-                    ('route_signals.py',['import']),('finish_signals.py',[]),('finish_ground.py',[])]:
+                    ('route_signals.py',['import']),('finish_signals.py',[]),('finish_ground.py',[]),('convert_four_layer.py',[])]:
     subprocess.run([sys.executable,str(ROOT/script),*args],check=True)

@@ -1,0 +1,17 @@
+{
+  "stackup": "JLC041622-3313",
+  "footprints_preserved": 62,
+  "l2_connected_ground_regions": 1,
+  "l2_trace_count": 0,
+  "protected_signal_segments": 721,
+  "coverage_sample_pitch_mm": 0.025,
+  "trace_width_sampled_at": [
+    "left edge",
+    "centre",
+    "right edge"
+  ],
+  "samples": 459420,
+  "own_terminal_antipad_samples": 20435,
+  "unreferenced_samples": [],
+  "scope": "No intentional L2 splits; mandatory non-GND PTH/via antipads at own terminals are excepted. L4 is adjacent to L3 power, not directly to L2."
+}

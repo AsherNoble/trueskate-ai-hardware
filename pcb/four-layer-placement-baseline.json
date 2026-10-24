@@ -1,0 +1,5892 @@
+{
+  "J35": {
+    "fpid": "TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
+    "position": [
+      123.0,
+      3.3
+    ],
+    "angle": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "SPI_SCK",
+        "position": [
+          125.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "SPI_MISO",
+        "position": [
+          124.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "3",
+        "net": "SPI_MOSI",
+        "position": [
+          123.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "4",
+        "net": "A5_CS",
+        "position": [
+          122.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "5",
+        "net": "3V3",
+        "position": [
+          121.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "6",
+        "net": "GND",
+        "position": [
+          120.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position": [
+          126.8,
+          1.425
+        ],
+        "size": [
+          1.2,
+          1.8
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position": [
+          119.2,
+          1.425
+        ],
+        "size": [
+          1.2,
+          1.8
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      }
+    ]
+  },
+  "H3": {
+    "fpid": ":MountingHole_3.2mm_M3",
+    "position": [
+      130.0,
+      116.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "",
+        "net": "",
+        "position": [
+          130.0,
+          116.0
+        ],
+        "size": [
+          3.2,
+          3.2
+        ],
+        "drill": [
+          3.2,
+          3.2
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J23": {
+    "fpid": "TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical",
+    "position": [
+      61.58,
+      3.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A3_PH1",
+        "position": [
+          61.58,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "A3_PH2",
+        "position": [
+          59.04,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A3_PH3",
+        "position": [
+          56.5,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J11": {
+    "fpid": "TrueSkate:SimpleFOC_Mini_v1.0",
+    "position": [
+      26.0,
+      23.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "GND",
+        "position": [
+          26.0,
+          33.16
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "unconnected-(J11-Pad2)",
+        "position": [
+          23.46,
+          33.16
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A1_PWM1",
+        "position": [
+          26.0,
+          30.62
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "4",
+        "net": "GND",
+        "position": [
+          23.46,
+          30.62
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "5",
+        "net": "A1_PWM2",
+        "position": [
+          26.0,
+          28.08
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "6",
+        "net": "unconnected-(J11-Pad6)",
+        "position": [
+          23.46,
+          28.08
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "7",
+        "net": "A1_PWM3",
+        "position": [
+          26.0,
+          25.54
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "8",
+        "net": "unconnected-(J11-Pad8)",
+        "position": [
+          23.46,
+          25.54
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "9",
+        "net": "A1_EN",
+        "position": [
+          26.0,
+          23.0
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "10",
+        "net": "unconnected-(J11-Pad10)",
+        "position": [
+          23.46,
+          23.0
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "GND",
+        "net": "GND",
+        "position": [
+          22.19,
+          40.399
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P1",
+        "net": "A1_PH3",
+        "position": [
+          8.347,
+          31.636
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P2",
+        "net": "A1_PH2",
+        "position": [
+          8.347,
+          29.096
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P3",
+        "net": "A1_PH1",
+        "position": [
+          8.347,
+          26.556
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "VIN",
+        "net": "12V_FUSED",
+        "position": [
+          17.237,
+          40.399
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J15": {
+    "fpid": "TrueSkate:SimpleFOC_Mini_v1.0",
+    "position": [
+      126.0,
+      23.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "GND",
+        "position": [
+          126.0,
+          33.16
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "unconnected-(J15-Pad2)",
+        "position": [
+          123.46,
+          33.16
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A5_PWM1",
+        "position": [
+          126.0,
+          30.62
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "4",
+        "net": "GND",
+        "position": [
+          123.46,
+          30.62
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "5",
+        "net": "A5_PWM2",
+        "position": [
+          126.0,
+          28.08
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "6",
+        "net": "unconnected-(J15-Pad6)",
+        "position": [
+          123.46,
+          28.08
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "7",
+        "net": "A5_PWM3",
+        "position": [
+          126.0,
+          25.54
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "8",
+        "net": "unconnected-(J15-Pad8)",
+        "position": [
+          123.46,
+          25.54
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "9",
+        "net": "A5_EN",
+        "position": [
+          126.0,
+          23.0
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "10",
+        "net": "unconnected-(J15-Pad10)",
+        "position": [
+          123.46,
+          23.0
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "GND",
+        "net": "GND",
+        "position": [
+          122.19,
+          40.399
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P1",
+        "net": "A5_PH3",
+        "position": [
+          108.347,
+          31.636
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P2",
+        "net": "A5_PH2",
+        "position": [
+          108.347,
+          29.096
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P3",
+        "net": "A5_PH1",
+        "position": [
+          108.347,
+          26.556
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "VIN",
+        "net": "12V_FUSED",
+        "position": [
+          117.237,
+          40.399
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J24": {
+    "fpid": "TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical",
+    "position": [
+      86.58,
+      3.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A4_PH1",
+        "position": [
+          86.58,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "A4_PH2",
+        "position": [
+          84.04,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A4_PH3",
+        "position": [
+          81.5,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C23": {
+    "fpid": "TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "position": [
+      60.0,
+      47.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_FUSED",
+        "position": [
+          60.0,
+          47.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          60.0,
+          52.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R24": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      82.0,
+      51.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A4_EN",
+        "position": [
+          82.0,
+          51.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          82.0,
+          58.62
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J25": {
+    "fpid": "TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical",
+    "position": [
+      111.58,
+      3.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A5_PH1",
+        "position": [
+          111.58,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "A5_PH2",
+        "position": [
+          109.04,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A5_PH3",
+        "position": [
+          106.5,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J13": {
+    "fpid": "TrueSkate:SimpleFOC_Mini_v1.0",
+    "position": [
+      76.0,
+      23.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "GND",
+        "position": [
+          76.0,
+          33.16
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "unconnected-(J13-Pad2)",
+        "position": [
+          73.46,
+          33.16
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A3_PWM1",
+        "position": [
+          76.0,
+          30.62
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "4",
+        "net": "GND",
+        "position": [
+          73.46,
+          30.62
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "5",
+        "net": "A3_PWM2",
+        "position": [
+          76.0,
+          28.08
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "6",
+        "net": "unconnected-(J13-Pad6)",
+        "position": [
+          73.46,
+          28.08
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "7",
+        "net": "A3_PWM3",
+        "position": [
+          76.0,
+          25.54
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "8",
+        "net": "unconnected-(J13-Pad8)",
+        "position": [
+          73.46,
+          25.54
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "9",
+        "net": "A3_EN",
+        "position": [
+          76.0,
+          23.0
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "10",
+        "net": "unconnected-(J13-Pad10)",
+        "position": [
+          73.46,
+          23.0
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "GND",
+        "net": "GND",
+        "position": [
+          72.19,
+          40.399
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P1",
+        "net": "A3_PH3",
+        "position": [
+          58.347,
+          31.636
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P2",
+        "net": "A3_PH2",
+        "position": [
+          58.347,
+          29.096
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P3",
+        "net": "A3_PH1",
+        "position": [
+          58.347,
+          26.556
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "VIN",
+        "net": "12V_FUSED",
+        "position": [
+          67.237,
+          40.399
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R46": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      90.0,
+      104.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A6_EN_CMD",
+        "position": [
+          90.0,
+          104.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          97.62,
+          104.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R44": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      90.0,
+      88.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A4_EN_CMD",
+        "position": [
+          90.0,
+          88.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          97.62,
+          88.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R31": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      19.6,
+      61.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A1_CS",
+        "position": [
+          19.6,
+          61.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "3V3",
+        "position": [
+          27.22,
+          61.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J34": {
+    "fpid": "TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
+    "position": [
+      98.0,
+      3.3
+    ],
+    "angle": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "SPI_SCK",
+        "position": [
+          100.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "SPI_MISO",
+        "position": [
+          99.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "3",
+        "net": "SPI_MOSI",
+        "position": [
+          98.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "4",
+        "net": "A4_CS",
+        "position": [
+          97.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "5",
+        "net": "3V3",
+        "position": [
+          96.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "6",
+        "net": "GND",
+        "position": [
+          95.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position": [
+          101.8,
+          1.425
+        ],
+        "size": [
+          1.2,
+          1.8
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position": [
+          94.2,
+          1.425
+        ],
+        "size": [
+          1.2,
+          1.8
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      }
+    ]
+  },
+  "R22": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      32.0,
+      51.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A2_EN",
+        "position": [
+          32.0,
+          51.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          32.0,
+          58.62
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C24": {
+    "fpid": "TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "position": [
+      85.0,
+      47.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_FUSED",
+        "position": [
+          85.0,
+          47.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          85.0,
+          52.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R42": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      63.0,
+      96.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A2_EN_CMD",
+        "position": [
+          63.0,
+          96.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          70.62,
+          96.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C13": {
+    "fpid": "TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm",
+    "position": [
+      67.5,
+      51.5
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_FUSED",
+        "position": [
+          67.5,
+          51.5
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.2,
+          1.2
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          72.5,
+          51.5
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.2,
+          1.2
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "H1": {
+    "fpid": ":MountingHole_3.2mm_M3",
+    "position": [
+      3.0,
+      82.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "",
+        "net": "",
+        "position": [
+          3.0,
+          82.0
+        ],
+        "size": [
+          3.2,
+          3.2
+        ],
+        "drill": [
+          3.2,
+          3.2
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R32": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      44.6,
+      61.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A2_CS",
+        "position": [
+          44.6,
+          61.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "3V3",
+        "position": [
+          52.22,
+          61.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C15": {
+    "fpid": "TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm",
+    "position": [
+      117.5,
+      51.5
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_FUSED",
+        "position": [
+          117.5,
+          51.5
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.2,
+          1.2
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          122.5,
+          51.5
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.2,
+          1.2
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J21": {
+    "fpid": "TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical",
+    "position": [
+      11.58,
+      3.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A1_PH1",
+        "position": [
+          11.58,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "A1_PH2",
+        "position": [
+          9.04,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A1_PH3",
+        "position": [
+          6.5,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J12": {
+    "fpid": "TrueSkate:SimpleFOC_Mini_v1.0",
+    "position": [
+      51.0,
+      23.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "GND",
+        "position": [
+          51.0,
+          33.16
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "unconnected-(J12-Pad2)",
+        "position": [
+          48.46,
+          33.16
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A2_PWM1",
+        "position": [
+          51.0,
+          30.62
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "4",
+        "net": "GND",
+        "position": [
+          48.46,
+          30.62
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "5",
+        "net": "A2_PWM2",
+        "position": [
+          51.0,
+          28.08
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "6",
+        "net": "unconnected-(J12-Pad6)",
+        "position": [
+          48.46,
+          28.08
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "7",
+        "net": "A2_PWM3",
+        "position": [
+          51.0,
+          25.54
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "8",
+        "net": "unconnected-(J12-Pad8)",
+        "position": [
+          48.46,
+          25.54
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "9",
+        "net": "A2_EN",
+        "position": [
+          51.0,
+          23.0
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "10",
+        "net": "unconnected-(J12-Pad10)",
+        "position": [
+          48.46,
+          23.0
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "GND",
+        "net": "GND",
+        "position": [
+          47.19,
+          40.399
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P1",
+        "net": "A2_PH3",
+        "position": [
+          33.347,
+          31.636
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P2",
+        "net": "A2_PH2",
+        "position": [
+          33.347,
+          29.096
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P3",
+        "net": "A2_PH1",
+        "position": [
+          33.347,
+          26.556
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "VIN",
+        "net": "12V_FUSED",
+        "position": [
+          42.237,
+          40.399
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R35": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      119.6,
+      61.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A5_CS",
+        "position": [
+          119.6,
+          61.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "3V3",
+        "position": [
+          127.22,
+          61.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R36": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      144.6,
+      61.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A6_CS",
+        "position": [
+          144.6,
+          61.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "3V3",
+        "position": [
+          152.22,
+          61.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C12": {
+    "fpid": "TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm",
+    "position": [
+      42.5,
+      51.5
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_FUSED",
+        "position": [
+          42.5,
+          51.5
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.2,
+          1.2
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          47.5,
+          51.5
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.2,
+          1.2
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J5": {
+    "fpid": "TrueSkate:Edge_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "position": [
+      12.0,
+      115.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_IN",
+        "position": [
+          12.0,
+          115.0
+        ],
+        "size": [
+          2.6,
+          2.6
+        ],
+        "drill": [
+          1.3,
+          1.3
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          17.08,
+          115.0
+        ],
+        "size": [
+          2.6,
+          2.6
+        ],
+        "drill": [
+          1.3,
+          1.3
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J22": {
+    "fpid": "TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical",
+    "position": [
+      36.58,
+      3.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A2_PH1",
+        "position": [
+          36.58,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "A2_PH2",
+        "position": [
+          34.04,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A2_PH3",
+        "position": [
+          31.5,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "H2": {
+    "fpid": ":MountingHole_3.2mm_M3",
+    "position": [
+      157.0,
+      18.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "",
+        "net": "",
+        "position": [
+          157.0,
+          18.0
+        ],
+        "size": [
+          3.2,
+          3.2
+        ],
+        "drill": [
+          3.2,
+          3.2
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R25": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      107.0,
+      51.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A5_EN",
+        "position": [
+          107.0,
+          51.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          107.0,
+          58.62
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R21": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      7.0,
+      51.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A1_EN",
+        "position": [
+          7.0,
+          51.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          7.0,
+          58.62
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C11": {
+    "fpid": "TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm",
+    "position": [
+      17.5,
+      51.5
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_FUSED",
+        "position": [
+          17.5,
+          51.5
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.2,
+          1.2
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          22.5,
+          51.5
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.2,
+          1.2
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J32": {
+    "fpid": "TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
+    "position": [
+      48.0,
+      3.3
+    ],
+    "angle": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "SPI_SCK",
+        "position": [
+          50.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "SPI_MISO",
+        "position": [
+          49.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "3",
+        "net": "SPI_MOSI",
+        "position": [
+          48.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "4",
+        "net": "A2_CS",
+        "position": [
+          47.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "5",
+        "net": "3V3",
+        "position": [
+          46.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "6",
+        "net": "GND",
+        "position": [
+          45.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position": [
+          51.8,
+          1.425
+        ],
+        "size": [
+          1.2,
+          1.8
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position": [
+          44.2,
+          1.425
+        ],
+        "size": [
+          1.2,
+          1.8
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      }
+    ]
+  },
+  "J31": {
+    "fpid": "TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
+    "position": [
+      23.0,
+      3.3
+    ],
+    "angle": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "SPI_SCK",
+        "position": [
+          25.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "SPI_MISO",
+        "position": [
+          24.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "3",
+        "net": "SPI_MOSI",
+        "position": [
+          23.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "4",
+        "net": "A1_CS",
+        "position": [
+          22.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "5",
+        "net": "3V3",
+        "position": [
+          21.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "6",
+        "net": "GND",
+        "position": [
+          20.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position": [
+          26.8,
+          1.425
+        ],
+        "size": [
+          1.2,
+          1.8
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position": [
+          19.2,
+          1.425
+        ],
+        "size": [
+          1.2,
+          1.8
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      }
+    ]
+  },
+  "J16": {
+    "fpid": "TrueSkate:SimpleFOC_Mini_v1.0",
+    "position": [
+      151.0,
+      23.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "GND",
+        "position": [
+          151.0,
+          33.16
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "unconnected-(J16-Pad2)",
+        "position": [
+          148.46,
+          33.16
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A6_PWM1",
+        "position": [
+          151.0,
+          30.62
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "4",
+        "net": "GND",
+        "position": [
+          148.46,
+          30.62
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "5",
+        "net": "A6_PWM2",
+        "position": [
+          151.0,
+          28.08
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "6",
+        "net": "unconnected-(J16-Pad6)",
+        "position": [
+          148.46,
+          28.08
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "7",
+        "net": "A6_PWM3",
+        "position": [
+          151.0,
+          25.54
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "8",
+        "net": "unconnected-(J16-Pad8)",
+        "position": [
+          148.46,
+          25.54
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "9",
+        "net": "A6_EN",
+        "position": [
+          151.0,
+          23.0
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "10",
+        "net": "unconnected-(J16-Pad10)",
+        "position": [
+          148.46,
+          23.0
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "GND",
+        "net": "GND",
+        "position": [
+          147.19,
+          40.399
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P1",
+        "net": "A6_PH3",
+        "position": [
+          133.347,
+          31.636
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P2",
+        "net": "A6_PH2",
+        "position": [
+          133.347,
+          29.096
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P3",
+        "net": "A6_PH1",
+        "position": [
+          133.347,
+          26.556
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "VIN",
+        "net": "12V_FUSED",
+        "position": [
+          142.237,
+          40.399
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C16": {
+    "fpid": "TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm",
+    "position": [
+      142.5,
+      51.5
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_FUSED",
+        "position": [
+          142.5,
+          51.5
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.2,
+          1.2
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          147.5,
+          51.5
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.2,
+          1.2
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R33": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      69.6,
+      61.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A3_CS",
+        "position": [
+          69.6,
+          61.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "3V3",
+        "position": [
+          77.22,
+          61.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R43": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      63.0,
+      104.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A3_EN_CMD",
+        "position": [
+          63.0,
+          104.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          70.62,
+          104.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J1": {
+    "fpid": "TrueSkate:Edge_PinSocket_1x24_P2.54mm_Vertical",
+    "position": [
+      155.24,
+      118.03
+    ],
+    "angle": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "GND",
+        "position": [
+          155.24,
+          118.03
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "A4_PWM2",
+        "position": [
+          155.24,
+          115.49
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "unconnected-(J1-1-Pad3)",
+        "position": [
+          155.24,
+          112.95
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "4",
+        "net": "A2_PWM1",
+        "position": [
+          155.24,
+          110.41
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "5",
+        "net": "A5_PWM1",
+        "position": [
+          155.24,
+          107.87
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "6",
+        "net": "A1_PWM1",
+        "position": [
+          155.24,
+          105.33
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "7",
+        "net": "A1_PWM2",
+        "position": [
+          155.24,
+          102.79
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "8",
+        "net": "A1_PWM3",
+        "position": [
+          155.24,
+          100.25
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "9",
+        "net": "A3_PWM1",
+        "position": [
+          155.24,
+          97.71
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "10",
+        "net": "A6_PWM1",
+        "position": [
+          155.24,
+          95.17
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "11",
+        "net": "A6_PWM2",
+        "position": [
+          155.24,
+          92.63
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "12",
+        "net": "unconnected-(J1-10-Pad12)",
+        "position": [
+          155.24,
+          90.09
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "13",
+        "net": "SPI_MOSI",
+        "position": [
+          155.24,
+          87.55
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "14",
+        "net": "SPI_MISO",
+        "position": [
+          155.24,
+          85.01
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "15",
+        "net": "3V3",
+        "position": [
+          155.24,
+          82.47
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "16",
+        "net": "A4_PWM1",
+        "position": [
+          155.24,
+          79.93
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "17",
+        "net": "A4_PWM3",
+        "position": [
+          155.24,
+          77.39
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "18",
+        "net": "A1_CS",
+        "position": [
+          155.24,
+          74.85
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "19",
+        "net": "A2_CS",
+        "position": [
+          155.24,
+          72.31
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "20",
+        "net": "A6_PWM3",
+        "position": [
+          155.24,
+          69.77
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "21",
+        "net": "A3_PWM3",
+        "position": [
+          155.24,
+          67.23
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "22",
+        "net": "A5_EN_CMD",
+        "position": [
+          155.24,
+          64.69
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "23",
+        "net": "A6_EN_CMD",
+        "position": [
+          155.24,
+          62.15
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "24",
+        "net": "A3_CS",
+        "position": [
+          155.24,
+          59.61
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C26": {
+    "fpid": "TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "position": [
+      135.0,
+      47.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_FUSED",
+        "position": [
+          135.0,
+          47.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          135.0,
+          52.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J14": {
+    "fpid": "TrueSkate:SimpleFOC_Mini_v1.0",
+    "position": [
+      101.0,
+      23.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "GND",
+        "position": [
+          101.0,
+          33.16
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "unconnected-(J14-Pad2)",
+        "position": [
+          98.46,
+          33.16
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A4_PWM1",
+        "position": [
+          101.0,
+          30.62
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "4",
+        "net": "GND",
+        "position": [
+          98.46,
+          30.62
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "5",
+        "net": "A4_PWM2",
+        "position": [
+          101.0,
+          28.08
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "6",
+        "net": "unconnected-(J14-Pad6)",
+        "position": [
+          98.46,
+          28.08
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "7",
+        "net": "A4_PWM3",
+        "position": [
+          101.0,
+          25.54
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "8",
+        "net": "unconnected-(J14-Pad8)",
+        "position": [
+          98.46,
+          25.54
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "9",
+        "net": "A4_EN",
+        "position": [
+          101.0,
+          23.0
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "10",
+        "net": "unconnected-(J14-Pad10)",
+        "position": [
+          98.46,
+          23.0
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "GND",
+        "net": "GND",
+        "position": [
+          97.19,
+          40.399
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P1",
+        "net": "A4_PH3",
+        "position": [
+          83.347,
+          31.636
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P2",
+        "net": "A4_PH2",
+        "position": [
+          83.347,
+          29.096
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "P3",
+        "net": "A4_PH1",
+        "position": [
+          83.347,
+          26.556
+        ],
+        "size": [
+          1.8,
+          1.8
+        ],
+        "drill": [
+          1.020999,
+          1.020999
+        ],
+        "shape": 0
+      },
+      {
+        "number": "VIN",
+        "net": "12V_FUSED",
+        "position": [
+          92.237,
+          40.399
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.101,
+          1.101
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "F1": {
+    "fpid": "TrueSkate:Keystone_3557-2_ATO",
+    "position": [
+      30.0,
+      112.5
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_IN",
+        "position": [
+          30.0,
+          112.5
+        ],
+        "size": [
+          3.0,
+          3.0
+        ],
+        "drill": [
+          1.65,
+          1.65
+        ],
+        "shape": 1
+      },
+      {
+        "number": "1",
+        "net": "12V_IN",
+        "position": [
+          30.0,
+          115.9
+        ],
+        "size": [
+          3.0,
+          3.0
+        ],
+        "drill": [
+          1.65,
+          1.65
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "12V_FUSED",
+        "position": [
+          43.47,
+          112.5
+        ],
+        "size": [
+          3.0,
+          3.0
+        ],
+        "drill": [
+          1.65,
+          1.65
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "12V_FUSED",
+        "position": [
+          43.47,
+          115.9
+        ],
+        "size": [
+          3.0,
+          3.0
+        ],
+        "drill": [
+          1.65,
+          1.65
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J26": {
+    "fpid": "TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical",
+    "position": [
+      136.58,
+      3.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A6_PH1",
+        "position": [
+          136.58,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "A6_PH2",
+        "position": [
+          134.04,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A6_PH3",
+        "position": [
+          131.5,
+          3.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C14": {
+    "fpid": "TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm",
+    "position": [
+      92.5,
+      51.5
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_FUSED",
+        "position": [
+          92.5,
+          51.5
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.2,
+          1.2
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          97.5,
+          51.5
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "drill": [
+          1.2,
+          1.2
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R26": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      132.0,
+      51.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A6_EN",
+        "position": [
+          132.0,
+          51.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          132.0,
+          58.62
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "H4": {
+    "fpid": ":MountingHole_3.2mm_M3",
+    "position": [
+      3.0,
+      110.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "",
+        "net": "",
+        "position": [
+          3.0,
+          110.0
+        ],
+        "size": [
+          3.2,
+          3.2
+        ],
+        "drill": [
+          3.2,
+          3.2
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C25": {
+    "fpid": "TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "position": [
+      110.0,
+      47.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_FUSED",
+        "position": [
+          110.0,
+          47.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          110.0,
+          52.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J2": {
+    "fpid": "TrueSkate:Edge_PinSocket_1x24_P2.54mm_Vertical",
+    "position": [
+      140.0,
+      118.03
+    ],
+    "angle": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "unconnected-(J2-VIN-Pad1)",
+        "position": [
+          140.0,
+          118.03
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          140.0,
+          115.49
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "3V3",
+        "position": [
+          140.0,
+          112.95
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "4",
+        "net": "A2_PWM3",
+        "position": [
+          140.0,
+          110.41
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "5",
+        "net": "A2_PWM2",
+        "position": [
+          140.0,
+          107.87
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "6",
+        "net": "A4_EN_CMD",
+        "position": [
+          140.0,
+          105.33
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "7",
+        "net": "A3_EN_CMD",
+        "position": [
+          140.0,
+          102.79
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "8",
+        "net": "unconnected-(J2-19-Pad8)",
+        "position": [
+          140.0,
+          100.25
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "9",
+        "net": "unconnected-(J2-18-Pad9)",
+        "position": [
+          140.0,
+          97.71
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "10",
+        "net": "A2_EN_CMD",
+        "position": [
+          140.0,
+          95.17
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "11",
+        "net": "A1_EN_CMD",
+        "position": [
+          140.0,
+          92.63
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "12",
+        "net": "unconnected-(J2-15-Pad12)",
+        "position": [
+          140.0,
+          90.09
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "13",
+        "net": "unconnected-(J2-14-Pad13)",
+        "position": [
+          140.0,
+          87.55
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "14",
+        "net": "SPI_SCK",
+        "position": [
+          140.0,
+          85.01
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "15",
+        "net": "GND",
+        "position": [
+          140.0,
+          82.47
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "16",
+        "net": "unconnected-(J2-41-Pad16)",
+        "position": [
+          140.0,
+          79.93
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "17",
+        "net": "A6_CS",
+        "position": [
+          140.0,
+          77.39
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "18",
+        "net": "A5_CS",
+        "position": [
+          140.0,
+          74.85
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "19",
+        "net": "A4_CS",
+        "position": [
+          140.0,
+          72.31
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "20",
+        "net": "A5_PWM3",
+        "position": [
+          140.0,
+          69.77
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "21",
+        "net": "A3_PWM2",
+        "position": [
+          140.0,
+          67.23
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "22",
+        "net": "unconnected-(J2-35-Pad22)",
+        "position": [
+          140.0,
+          64.69
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "23",
+        "net": "unconnected-(J2-34-Pad23)",
+        "position": [
+          140.0,
+          62.15
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      },
+      {
+        "number": "24",
+        "net": "A5_PWM2",
+        "position": [
+          140.0,
+          59.61
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "U1": {
+    "fpid": "TrueSkate:Edge_DIP-14_W7.62mm",
+    "position": [
+      76.0,
+      89.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "EN_DISABLE",
+        "position": [
+          76.0,
+          89.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "A1_EN_CMD",
+        "position": [
+          76.0,
+          91.54
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A1_EN",
+        "position": [
+          76.0,
+          94.08
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "4",
+        "net": "EN_DISABLE",
+        "position": [
+          76.0,
+          96.62
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "5",
+        "net": "A2_EN_CMD",
+        "position": [
+          76.0,
+          99.16
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "6",
+        "net": "A2_EN",
+        "position": [
+          76.0,
+          101.7
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "7",
+        "net": "GND",
+        "position": [
+          76.0,
+          104.24
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "8",
+        "net": "A3_EN",
+        "position": [
+          83.62,
+          104.24
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "9",
+        "net": "A3_EN_CMD",
+        "position": [
+          83.62,
+          101.7
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "10",
+        "net": "EN_DISABLE",
+        "position": [
+          83.62,
+          99.16
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "11",
+        "net": "unconnected-(U1-4Y-Pad11)",
+        "position": [
+          83.62,
+          96.62
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "12",
+        "net": "GND",
+        "position": [
+          83.62,
+          94.08
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "13",
+        "net": "3V3",
+        "position": [
+          83.62,
+          91.54
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "14",
+        "net": "3V3",
+        "position": [
+          83.62,
+          89.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C1": {
+    "fpid": "TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "position": [
+      83.62,
+      85.0
+    ],
+    "angle": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "3V3",
+        "position": [
+          83.62,
+          85.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          78.62,
+          85.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J36": {
+    "fpid": "TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
+    "position": [
+      148.0,
+      3.3
+    ],
+    "angle": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "SPI_SCK",
+        "position": [
+          150.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "SPI_MISO",
+        "position": [
+          149.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "3",
+        "net": "SPI_MOSI",
+        "position": [
+          148.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "4",
+        "net": "A6_CS",
+        "position": [
+          147.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "5",
+        "net": "3V3",
+        "position": [
+          146.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "6",
+        "net": "GND",
+        "position": [
+          145.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position": [
+          151.8,
+          1.425
+        ],
+        "size": [
+          1.2,
+          1.8
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position": [
+          144.2,
+          1.425
+        ],
+        "size": [
+          1.2,
+          1.8
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      }
+    ]
+  },
+  "J6": {
+    "fpid": "TrueSkate:Edge_PinHeader_1x02_P2.54mm_Vertical",
+    "position": [
+      61.0,
+      117.0
+    ],
+    "angle": 90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "EN_DISABLE",
+        "position": [
+          61.0,
+          117.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 1
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          63.54,
+          117.0
+        ],
+        "size": [
+          1.7,
+          1.7
+        ],
+        "drill": [
+          1.0,
+          1.0
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R1": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      60.0,
+      110.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "EN_DISABLE",
+        "position": [
+          60.0,
+          110.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "3V3",
+        "position": [
+          67.62,
+          110.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C2": {
+    "fpid": "TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "position": [
+      110.62,
+      85.0
+    ],
+    "angle": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "3V3",
+        "position": [
+          110.62,
+          85.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          105.62,
+          85.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R41": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      63.0,
+      88.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A1_EN_CMD",
+        "position": [
+          63.0,
+          88.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          70.62,
+          88.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R23": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      57.0,
+      51.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A3_EN",
+        "position": [
+          57.0,
+          51.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          57.0,
+          58.62
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "R34": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      94.6,
+      61.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A4_CS",
+        "position": [
+          94.6,
+          61.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "3V3",
+        "position": [
+          102.22,
+          61.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C21": {
+    "fpid": "TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "position": [
+      10.0,
+      47.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_FUSED",
+        "position": [
+          10.0,
+          47.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          10.0,
+          52.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "U2": {
+    "fpid": "TrueSkate:Edge_DIP-14_W7.62mm",
+    "position": [
+      103.0,
+      89.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "EN_DISABLE",
+        "position": [
+          103.0,
+          89.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "A4_EN_CMD",
+        "position": [
+          103.0,
+          91.54
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "3",
+        "net": "A4_EN",
+        "position": [
+          103.0,
+          94.08
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "4",
+        "net": "EN_DISABLE",
+        "position": [
+          103.0,
+          96.62
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "5",
+        "net": "A5_EN_CMD",
+        "position": [
+          103.0,
+          99.16
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "6",
+        "net": "A5_EN",
+        "position": [
+          103.0,
+          101.7
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "7",
+        "net": "GND",
+        "position": [
+          103.0,
+          104.24
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "8",
+        "net": "A6_EN",
+        "position": [
+          110.62,
+          104.24
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "9",
+        "net": "A6_EN_CMD",
+        "position": [
+          110.62,
+          101.7
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "10",
+        "net": "EN_DISABLE",
+        "position": [
+          110.62,
+          99.16
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "11",
+        "net": "unconnected-(U2-4Y-Pad11)",
+        "position": [
+          110.62,
+          96.62
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "12",
+        "net": "GND",
+        "position": [
+          110.62,
+          94.08
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "13",
+        "net": "3V3",
+        "position": [
+          110.62,
+          91.54
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "14",
+        "net": "3V3",
+        "position": [
+          110.62,
+          89.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "J33": {
+    "fpid": "TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
+    "position": [
+      73.0,
+      3.3
+    ],
+    "angle": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "SPI_SCK",
+        "position": [
+          75.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "2",
+        "net": "SPI_MISO",
+        "position": [
+          74.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "3",
+        "net": "SPI_MOSI",
+        "position": [
+          73.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "4",
+        "net": "A3_CS",
+        "position": [
+          72.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "5",
+        "net": "3V3",
+        "position": [
+          71.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "6",
+        "net": "GND",
+        "position": [
+          70.5,
+          5.3
+        ],
+        "size": [
+          0.6,
+          1.55
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position": [
+          76.8,
+          1.425
+        ],
+        "size": [
+          1.2,
+          1.8
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position": [
+          69.2,
+          1.425
+        ],
+        "size": [
+          1.2,
+          1.8
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "shape": 4
+      }
+    ]
+  },
+  "R45": {
+    "fpid": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "position": [
+      90.0,
+      96.0
+    ],
+    "angle": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "A5_EN_CMD",
+        "position": [
+          90.0,
+          96.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          97.62,
+          96.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  },
+  "C22": {
+    "fpid": "TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "position": [
+      35.0,
+      47.0
+    ],
+    "angle": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "12V_FUSED",
+        "position": [
+          35.0,
+          47.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position": [
+          35.0,
+          52.0
+        ],
+        "size": [
+          1.6,
+          1.6
+        ],
+        "drill": [
+          0.8,
+          0.8
+        ],
+        "shape": 0
+      }
+    ]
+  }
+}

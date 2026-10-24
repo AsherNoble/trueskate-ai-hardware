@@ -1,5 +1,9 @@
 # Edge-layout follow-up review
 
+This report records the preceding two-layer revision. The current
+[four-layer conversion](four-layer.md) retains these placements and supersedes
+the routing/stackup and ground-reference statements below.
+
 Board remains **160 × 120 mm**, 2 layers, 2 oz. No Teensy pin assignments changed.
 Six 25 mm-pitch columns retain their motor/JST edge connectors. USB shell remains
 flush to Y=120 by the PJRC dimensioned placement.

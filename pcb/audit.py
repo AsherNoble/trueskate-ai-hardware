@@ -18,7 +18,7 @@ used += list(d['spi0'].values())
 assert len(used)==len(set(used))==33
 assert set(range(42))-set(used)==set(d['unused_pins'])
 assert sorted(d['encoder_pin_order'])==sorted(['CLK','MISO','MOSI','CSn','3V3','GND'])
-assert d['board_mm']==[160,120] and d['layers']==2
+assert d['board_mm']==[160,120] and d['layers']==4
 ini=(ROOT.parent/'firmware/platformio.ini').read_text()
 assert 'lib_archive = no' in ini
 assert '-D SIMPLEFOC_TEENSY4_FORCE_CENTER_ALIGNED_3PWM' not in ini
@@ -35,5 +35,5 @@ assert not settings.get('drc_exclusions')
 assert all(value!='ignore'for value in settings['rule_severities'].values())
 print('PASS: unchanged six-axis map; 18 PWM; 12 plain-digital EN/CS; SPI0; 9 spare contacts.')
 print('PASS: USB-only carrier; 58 references; exactly six JST connectors factory assembled.')
-print('PASS: conservative two-layer rules persisted; no DRC exclusions or ignored checks.')
+print('PASS: conservative four-layer rules persisted; no DRC exclusions or ignored checks.')
 print('Static checks only. Six-axis electrical operation still requires bench testing.')

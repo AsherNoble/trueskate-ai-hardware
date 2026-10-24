@@ -1,0 +1,37 @@
+{
+  "checked_date_local": "2026-10-25",
+  "timezone": "Australia/Sydney",
+  "quote_url": "https://cart.jlcpcb.com/quote",
+  "stackup_url": "https://jlcpcb.com/impedance",
+  "quantity": 5,
+  "width_mm": 160,
+  "height_mm": 120,
+  "nominal_thickness_mm": 1.6,
+  "finish": "LeadFree HASL",
+  "mask": "Green",
+  "silkscreen": "White",
+  "outer_copper_oz": 2,
+  "two_layer_usd": 54.3,
+  "four_layer_usd": 122.13,
+  "four_layer_inner_copper_oz": 2,
+  "stackup": "JLC041622-3313",
+  "difference_usd": 67.83,
+  "includes": "PCB manufacture, standard lead time",
+  "excludes": [
+    "shipping",
+    "tax",
+    "assembly",
+    "stencil",
+    "coupons",
+    "JLCONE discount"
+  ],
+  "design_uploaded": false,
+  "order_created": false,
+  "sha256": {
+    "standard-stackup-selector.txt": "8e53478e407c677a05cf35ea33351e672b9ac3d3a9d0ee61d3a318b73d1ab4b5",
+    "quote-4layer.txt": "a65770b3128f6a933b0521f90cbf1db3a4f73b4395657d37795d57d9d5f0bd6b",
+    "quote-2layer.png": "f6fc649e0a077a1ffe24a30edee34d543eb41005af46150e5ba5778875e678a1",
+    "quote-4layer.png": "4efb00ffec3396537d6297ff1bab772cd3b1e25e90bb4ceea0d9e5489450ce13",
+    "quote-2layer.txt": "4d10fc61f7b6b317538dea6fac15460b72c423d41aec56c5f4a16923968258b5"
+  }
+}

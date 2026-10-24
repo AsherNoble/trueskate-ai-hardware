@@ -1,0 +1,1117 @@
+24
+SMT
+24-hour PCB production. Fast Delivery to United States.
+ Coupons
+ Download APP
+USD 
+JLCPCB
+Products
+Capabilities
+Support 
+About Us 
+Order Now
+Sign In
+Multilayer high precision PCB's with impedance control
+
+JLCPCB can produce High-precision multilayer board with capabilities listed in below table.
+
+Min. Trace width/Spacing	Min. Via	Min. BGA
+3.5mil	0.2mm	0.25mm
+
+It is very convenient for customers to conduct an impedance matching design, according to JLCPCB’s laminated structure and related parameters. The PCB will be strictly produced in accordance with the following stackup.
+
+Controlled Impedance PCB Parameters and Stackup
+
+1.Prepreg dielectric constant:
+
+Prepreg type	Dielectric constant
+7628	4.4
+3313	4.1
+1080	3.91
+2116	4.16
+
+2.Solder mask Parameters
+
+Coating Above Substrate C1	Coating Above Trace C2	Coating Between Traces C3	Coating Dielectric CEr
+1.2mil	0.6mil	1.2mil	3.8
+
+3. Core dielectric constant
+
+Core dielectric constant
+4.6
+
+For your convenience, we have designed an Impedance Calculator to help you calculate the impedance and the trace width you require.
+
+4-Layer Impedance Control Stackup
+
+Thickness
+
+0.8mm1.0mm1.2mm1.6mm2.0mm 
+
+Outer Copper Weight
+
+1oz2oz 
+
+inner Copper Weight
+
+0.5oz1oz2oz
+
+1) No requirement Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.07mm
+Prepreg
+3313*1
+0.107mm
+Prepreg
+3313*1
+0.0765mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.061mm
+0.96mm
+0.061mm
+1.10mm 2/2OZ with copper
+Prepreg
+3313*1
+0.0765mm
+Prepreg
+3313*1
+0.107mm
+Bottom Layer
+Copper
+0.07mm
+
+2) JLC041622-3313 Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.07mm
+Prepreg
+3313*1
+0.107mm
+Prepreg
+3313*1
+0.0765mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.061mm
+0.96mm
+0.061mm
+1.10mm 2/2OZ with copper
+Prepreg
+3313*1
+0.0765mm
+Prepreg
+3313*1
+0.107mm
+Bottom Layer
+Copper
+0.07mm
+
+3) JLC041622-7628 Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.07mm
+Prepreg
+7628*1
+0.218mm
+Prepreg
+2116*1
+0.124mm
+Prepreg
+2116*1
+0.0935mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.061mm
+0.5mm
+0.061mm
+0.50mm 2/2OZ without copper
+Prepreg
+2116*1
+0.0935mm
+Prepreg
+2116*1
+0.124mm
+Prepreg
+7628*1
+0.218mm
+Bottom Layer
+Copper
+0.07mm
+
+4) JLC041622-1080 Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.07mm
+Prepreg
+1080*1
+0.084mm
+Prepreg
+1080*1
+0.0535mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.061mm
+0.96mm
+0.061mm
+1.10mm 2/2OZ with copper
+Prepreg
+1080*1
+0.0535mm
+Prepreg
+1080*1
+0.084mm
+Bottom Layer
+Copper
+0.07mm
+
+6-Layer Impedance Control Stackup
+
+Thickness
+
+1.2mm1.6mm2.0mm 
+
+Outer Copper Weight
+
+1oz2oz 
+
+inner Copper Weight
+
+0.5oz1oz2oz
+
+1) No requirement Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+3313*1
+0.09940mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.55mm
+0.0152mm
+0.55mm H/Hwithout copper
+Prepreg
+2116*1
+0.11640mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.55mm
+0.0152mm
+0.55mm H/Hwithout copper
+Prepreg
+3313*1
+0.09940mm
+Bottom Layer
+Copper
+0.035mm
+
+2) JLC06161H-3313 Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+3313*1
+0.09940mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.55mm
+0.0152mm
+0.55mm H/Hwithout copper
+Prepreg
+2116*1
+0.1088mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.55mm
+0.0152mm
+0.55mm H/Hwithout copper
+Prepreg
+3313*1
+0.09940mm
+Bottom Layer
+Copper
+0.035mm
+
+3) JLC06161H-7628 Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+7628*1
+0.21040mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.4mm
+0.0152mm
+0.4mm H/HOZ without copper
+Prepreg
+7628*1
+0.2028mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.4mm
+0.0152mm
+0.4mm H/HOZ without copper
+Prepreg
+7628*1
+0.21040mm
+Bottom Layer
+Copper
+0.035mm
+
+4) JLC06161H-7628D Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+7628*1
+0.216mm
+Prepreg
+7628*1
+0.20840mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.2mm
+0.0152mm
+0.2mm H/HOZ without copper
+Prepreg
+7628*1
+0.20080mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.2mm
+0.0152mm
+0.2mm H/HOZ without copper
+Prepreg
+7628*1
+0.20840mm
+Prepreg
+7628*1
+0.216mm
+Bottom Layer
+Copper
+0.035mm
+
+5) JLC06161H-1080 Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+1080*1
+0.07640mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.55mm
+0.0152mm
+0.55mm H/Hwithout copper
+Prepreg
+7628*1
+0.21040mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.55mm
+0.0152mm
+0.55mm H/Hwithout copper
+Prepreg
+1080*1
+0.07640mm
+Bottom Layer
+Copper
+0.035mm
+
+6) JLC06161H-2116A Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+2116*1
+0.11640mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.13mm
+0.0152mm
+0.13mm H/HOZ without copper
+Prepreg
+2116*1
+0.11640mm
+Core
+Core
+0.7mm
+0.7 H/HOZ without copper
+Prepreg
+2116*1
+0.11640mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.13mm
+0.0152mm
+0.13mm H/HOZ without copper
+Prepreg
+2116*1
+0.11640mm
+Bottom Layer
+Copper
+0.035mm
+
+7) JLC06161H-1080A Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+1080*1
+0.07640mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.6mm
+0.0152mm
+0.6mm H/HOZ without copper
+Prepreg
+3313*1
+0.09940mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.6mm
+0.0152mm
+0.6mm H/HOZ without copper
+Prepreg
+1080*1
+0.07640mm
+Bottom Layer
+Copper
+0.035mm
+
+8) JLC06161H-3313C Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+3313*1
+0.107mm
+Prepreg
+1080*1
+0.07640mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.4mm
+0.0152mm
+0.4mm H/HOZ without copper
+Prepreg
+1080*1
+0.07640mm
+Prepreg
+1080*1
+0.07640mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.4mm
+0.0152mm
+0.4mm H/HOZ without copper
+Prepreg
+1080*1
+0.07840mm
+Prepreg
+3313*1
+0.107mm
+Bottom Layer
+Copper
+0.035mm
+
+9) JLC06161H-1080B Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+1080*1
+0.07640mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.1mm
+0.0152mm
+0.10mm H/HOZ without copper
+Prepreg
+7628*1
+0.21040mm
+Core
+Core
+0.7mm
+0.7 H/HOZ without copper
+Prepreg
+7628*1
+0.21040mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.1mm
+0.0152mm
+0.10mm H/HOZ without copper
+Prepreg
+1080*1
+0.07640mm
+Bottom Layer
+Copper
+0.035mm
+
+10) JLC06161H-3313B Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+3313*1
+0.09940mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.4mm
+0.0152mm
+0.4mm H/HOZ without copper
+Prepreg
+7628*1
+0.21040mm
+Prepreg
+7628*1
+0.21040mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.4mm
+0.0152mm
+0.4mm H/HOZ without copper
+Prepreg
+3313*1
+0.09940mm
+Bottom Layer
+Copper
+0.035mm
+
+11) JLC06161H-3313E Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+3313*1
+0.09940mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.1mm
+0.0152mm
+0.10mm H/HOZ without copper
+Prepreg
+7628*1
+0.21040mm
+Core
+Core
+0.7mm
+0.7 H/HOZ without copper
+Prepreg
+7628*1
+0.21040mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.1mm
+0.0152mm
+0.10mm H/HOZ without copper
+Prepreg
+3313*1
+0.09940mm
+Bottom Layer
+Copper
+0.035mm
+
+12) JLC06161H-1080C Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+1080*1
+0.07640mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.075mm
+0.0152mm
+0.075mm H/HOZ without copper
+Prepreg
+7628*1
+0.21040mm
+Core
+Core
+0.7mm
+0.7 H/HOZ without copper
+Prepreg
+7628*1
+0.21040mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.075mm
+0.0152mm
+0.075mm H/HOZ without copper
+Prepreg
+1080*1
+0.07640mm
+Bottom Layer
+Copper
+0.035mm
+
+13) JLC06161H-2116B Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+2116*1
+0.11640mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.5mm
+0.0152mm
+0.5mm H/HOZ without copper
+Prepreg
+1080*1
+0.07640mm
+Prepreg
+1080*1
+0.07640mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.5mm
+0.0152mm
+0.5mm H/HOZ without copper
+Prepreg
+2116*1
+0.11640mm
+Bottom Layer
+Copper
+0.035mm
+
+14) JLC06161H-2116 Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+2116*1
+0.127mm
+Prepreg
+2313*1
+0.09640mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.3mm
+0.0152mm
+0.30mm H/HOZ without copper
+Prepreg
+7628*1
+0.20840mm
+Prepreg
+7628*1
+0.20840mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.3mm
+0.0152mm
+0.30mm H/HOZ without copper
+Prepreg
+2313*1
+0.09640mm
+Prepreg
+2116*1
+0.127mm
+Bottom Layer
+Copper
+0.035mm
+
+15) JLC06161H-7628B Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+7628*1
+0.218mm
+Prepreg
+1080*1
+0.07640mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.35mm
+0.0152mm
+0.35mm H/HOZ without copper
+Prepreg
+1080*1
+0.07640mm
+Prepreg
+1080*1
+0.07640mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.35mm
+0.0152mm
+0.35mm H/HOZ without copper
+Prepreg
+1080*1
+0.07640mm
+Prepreg
+7628*1
+0.218mm
+Bottom Layer
+Copper
+0.035mm
+
+16) JLC06161H-3313D Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+3313*1
+0.107mm
+Prepreg
+1080*1
+0.07640mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.25mm
+0.0152mm
+0.25mm H/HOZ without copper
+Prepreg
+7628*1
+0.21040mm
+Prepreg
+2116*1
+0.124mm
+Prepreg
+7628*1
+0.21040mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.25mm
+0.0152mm
+0.25mm H/HOZ without copper
+Prepreg
+1080*1
+0.07640mm
+Prepreg
+3313*1
+0.107mm
+Bottom Layer
+Copper
+0.035mm
+
+17) JLC06161H-2116C Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+2116*1
+0.127mm
+Prepreg
+2116*1
+0.11940mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.3mm
+0.0152mm
+0.30mm H/HOZ without copper
+Prepreg
+2116*1
+0.11940mm
+Prepreg
+2116*1
+0.127mm
+Prepreg
+2116*1
+0.11940mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.3mm
+0.0152mm
+0.30mm H/HOZ without copper
+Prepreg
+2116*1
+0.11940mm
+Prepreg
+2116*1
+0.127mm
+Bottom Layer
+Copper
+0.035mm
+
+18) JLC06161H-7628A Stackup
+
+Layer
+Material Type
+Thickness
+Top Layer
+Copper
+0.035mm
+Prepreg
+7628*1
+0.218mm
+Prepreg
+7628*1
+0.218mm
+Prepreg
+1080*1
+0.07640mm
+Inner Layer L2
+Core
+Inner Layer L3
+Copper
+Core
+Copper
+0.0152mm
+0.1mm
+0.0152mm
+0.10mm H/HOZ without copper
+Prepreg
+2116*1
+0.11640mm
+Prepreg
+2116*1
+0.11640mm
+Inner Layer L4
+Core
+Inner Layer L5
+Copper
+Core
+Copper
+0.0152mm
+0.1mm
+0.0152mm
+0.10mm H/HOZ without copper
+Prepreg
+1080*1
+0.07640mm
+Prepreg
+7628*1
+0.218mm
+Prepreg
+7628*1
+0.218mm
+Bottom Layer
+Copper
+0.035mm
+Online Chat >
+Chat with our live agent for fast reply.
+Mon-Fri: 24 hours, Sat: 9am-6pm, GMT+8
+Email Us >
+Contact us at supportjlcpcb.com
+Typically reply within hours.
+Help Center >
+Get instant answers.
+24/7 Available.
+Products
+FR-4 PCBs
+Flexible PCBs
+Metal Core PCBs
+High-Frequency PCBs
+PCBA Service
+PCB Layout
+SMT Stencil
+Flex Heater
+Support
+Help Center
+Contact Us
+Community
+Shipping & Delivery
+Payment Methods
+How to Order
+How to Track
+After-Sales Service
+Blog
+Company
+About Us
+Quality Assurance
+How We Work
+Certifications
+Security
+Environment
+JLCAPI
+News
+Cooperation
+Electronics
+EasyEDA
+JLCPCB
+JLCDFM
+LCSC
+OSHWLAB
+Mechanical
+JLC3DP
+JLCCNC
+JLCMC
+Order on JLCONE Desktop, Save $1–$20 Every Time
+Windows
+MAC
+Android
+IOS
+CONNECT WITH US
+© 2026 JLCPCB.COM All Rights Reserved.
+Privacy Policy
+Terms & Conditions
+Cookies Policy
+Do Not Sell or Share My Personal Information
+ Welcome back, may I help you? Chat Now
