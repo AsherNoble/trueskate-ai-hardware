@@ -48,9 +48,9 @@ design target instead of silently switching to the default 0.5 oz inner copper.
 | B.Cu | 0.070 mm |
 
 The manufacturer construction totals 1.589 mm before mask, within nominal 1.6 mm.
-Prepreg Dk is 4.1 and core Dk 4.6. `pcb/stackup.json` records the construction.
+Prepreg Dk is 4.1 and core Dk 4.6. `pcb/design/data/stackup.json` records the construction.
 [JLC standard stackup selector](https://jlcpcb.com/impedance),
-[archived selector text](../../pcb/sources/jlc-four-layer/standard-stackup-selector.txt).
+[archived selector text](../../pcb/archive/jlc-four-layer/standard-stackup-selector.txt).
 
 The 12 A bus target is retained with broad L3 planes and direct pad connections.
 At JLC's stated 61 µm inner copper, the conservative IPC-2221 internal uniform
@@ -75,20 +75,20 @@ estimate was for another destination and is deliberately excluded. No design
 files were uploaded and no order/cart entry was created.
 
 [JLC quote calculator](https://cart.jlcpcb.com/quote),
-[two-layer quote](../../pcb/sources/jlc-four-layer/quote-2layer.png),
-[four-layer quote](../../pcb/sources/jlc-four-layer/quote-4layer.png).
+[two-layer quote](../../pcb/archive/jlc-four-layer/quote-2layer.png),
+[four-layer quote](../../pcb/archive/jlc-four-layer/quote-4layer.png).
 
 ## Review images
 
-[L2 GND](../../pcb/l2-ground-review.png), [L3 power](../../pcb/l3-power-review.png),
-[populated top](../../pcb/assembly-review/populated-top.png),
-[populated perspective](../../pcb/assembly-review/populated-perspective.png).
+[L2 GND](../../pcb/archive/four-layer/l2-ground-review.png), [L3 power](../../pcb/archive/four-layer/l3-power-review.png),
+[populated top](../../pcb/renders/populated-top.png),
+[populated perspective](../../pcb/renders/populated-perspective.png).
 
 ## Validation and remaining items
 
-Strict ERC/DRC reports and `four-layer-review.json` are regenerated with the native
+Strict ERC/DRC reports and `archive/four-layer/four-layer-review.json` are regenerated with the native
 board. No DRC exemptions or ignored checks are introduced. The separate
-`four-layer-placement-baseline.json` records the preserved geometry.
+`design/data/placement-baseline.json` records the preserved geometry.
 
 The existing AS5048A harness verification, physical socket/cable fit checks and
 kill-buffer supply-ramp limitation remain. None is changed by the stack conversion.

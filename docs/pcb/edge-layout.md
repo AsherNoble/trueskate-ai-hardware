@@ -13,7 +13,7 @@ flush to Y=120 by the PJRC dimensioned placement.
 The real Mini v1.0 GKO outline is now expanded by **0.5 mm** for its courtyard,
 including the curved ears. The upstream GKO has small disconnected endpoints;
 the extraction records the maximum sub-0.12 mm closure used to make a polygon.
-Capacitor bodies are outside this envelope. `layout-review.json` records each
+Capacitor bodies are outside this envelope. `review/checks/layout-review.json` records each
 bulk and ceramic gap; the minimum is **2.9136 mm to the Mini board outline** and
 **2.4138 mm to the expanded courtyard**. Strict courtyard checks also cover other
 carrier parts; no tall carrier component sits inside a Mini courtyard.
@@ -32,7 +32,7 @@ The body envelope is 19.81 × 6.73 mm. The BOM contains no fuse amperage. README
 bus target; the requested 12 A thermal-qualification outstanding item is removed.
 
 U1/U2 are **TI LV-A CMOS SN74LV125AN**, supplied from **Teensy 3V3**. The
-[README state table](../../pcb/README.md) and `kill-state-review.json` show all
+[carrier state table](carrier.md) and `review/checks/kill-state-review.json` show all
 six EN outputs low for unpowered Teensy, floating GPIO at valid 3.3 V, and open
 kill switch. Conservative DC driver EN is ≤0.375 V, below 0.6 V; this includes
 all three DRV8313 EN input leakages and Mini R4. Source: TI SCES124O/SLVSBA5D.
@@ -51,9 +51,9 @@ all three DRV8313 EN input leakages and Mini R4. Source: TI SCES124O/SLVSBA5D.
   cables/switch, fuse and fuse holder. F1 has no 3D model; its four-hole footprint
   and dimensioned body envelope are present in the native design and fit PDF.
 
-[Top](../../pcb/top-review.png), [perspective](../../pcb/3d-review.png),
-[BOM diff](../../pcb/bom-diff.md), [current BOM](../../pcb/bom-review.csv),
-[validation status](../../pcb/review-status.json).
+[Top](../../pcb/renders/bare/top-review.png), [perspective](../../pcb/renders/bare/3d-review.png),
+[BOM diff](../../pcb/bom/bom-diff.md), [current BOM](../../pcb/bom/bom-review.csv),
+[validation status](../../pcb/review/checks/review-status.json).
 
 Sources: [Keystone product](https://www.keyelco.com/product.cfm/product_id/296),
 [Keystone drawing](https://www.keyelco.com/product-pdf.cfm?p=296),

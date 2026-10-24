@@ -167,16 +167,16 @@ JLC's live quote on 2026-10-25 for **five 160 × 120 mm, 1.6 mm, four-layer,
 (board manufacture only; excludes shipping, tax and assembly). This is a
 candidate quote, **not a selected passing option**. No order was created or
 fabrication data uploaded.
-[Quote screenshot](../../pcb/sources/copper-evaluation/quote-1oz-0.5oz.png).
+[Quote screenshot](../../pcb/archive/copper-evaluation/quote-1oz-0.5oz.png).
 
 Outputs and reproducible analysis:
 
-- [Corrected machine-readable report](../../pcb/copper-options-review.json).
-- [Geometry export](../../pcb/analysis/export_planes.py), run with KiCad Python.
-- [Plane DC solver](../../pcb/analysis/plane_dc.py), run with Python 3 plus numpy,
+- [Corrected machine-readable report](../../pcb/archive/copper-evaluation/copper-options-review.json).
+- [Geometry export](../../pcb/archive/copper-evaluation/scripts/export_planes.py), run with KiCad Python.
+- [Plane DC solver](../../pcb/archive/copper-evaluation/scripts/plane_dc.py), run with Python 3 plus numpy,
   scipy, shapely and pyamg, once with argument `0.25`, then `0.125`.
-- [Screen/report generator](../../pcb/evaluate_copper.py), run with KiCad Python.
-- [Source and quote provenance](../../pcb/sources/copper-evaluation/provenance.json).
+- [Screen/report generator](../../pcb/archive/copper-evaluation/scripts/evaluate_copper.py), run with KiCad Python.
+- [Source and quote provenance](../../pcb/archive/copper-evaluation/provenance.json).
 
 The report verifies the board hash matches the exported geometry. Native PCB
 and schematic are unchanged from the committed ERC/strict-DRC-clean checkpoint;

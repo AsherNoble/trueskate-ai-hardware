@@ -27,7 +27,7 @@ zones. Ground regions that connect through the opposite layer are retained.
 
 There are **347 GND stitching vias**: 41 retained from the baseline and **306
 added**. They are 0.7 mm diameter / 0.3 mm drill, locked and recorded in
-[ground-stitching.json](../../pcb/ground-stitching.json). Stitch placement checks
+[ground-stitching.json](../../pcb/design/data/ground-stitching.json). Stitch placement checks
 clearance against non-GND copper and holes on both sides; it does not alter
 signal, phase or power routes.
 
@@ -51,10 +51,10 @@ Bottom GND copper area in that model is **15,115 mm²**; top is **10,990 mm²**.
 Plated contacts are represented as solid electrical nodes in this area figure,
 so it is not a fabrication copper-area measurement.
 
-[Native geometry audit](../../pcb/ground-connectivity-review.json) ·
-[Stitch coverage measurements](../../pcb/two-layer-ground-review.json) ·
-[Top copper](../../pcb/top-copper-review.svg) ·
-[Bottom copper](../../pcb/bottom-copper-review.svg).
+[Native geometry audit](../../pcb/review/checks/ground-connectivity-review.json) ·
+[Stitch coverage measurements](../../pcb/review/checks/two-layer-ground-review.json) ·
+[Top copper](../../pcb/renders/copper/top-copper-review.svg) ·
+[Bottom copper](../../pcb/renders/copper/bottom-copper-review.svg).
 
 ## Checks
 
@@ -70,10 +70,10 @@ The existing harness/physical-fit and supply-ramp notes remain unchanged.
 Copper/thermal qualification is stopped; it is not part of this pass claim.
 No manufacturing exports or PCB orders were created.
 
-[Check evidence](../../pcb/review-status.json) ·
-[Top render](../../pcb/top-review.png) ·
-[Bottom render](../../pcb/bottom-review.png) ·
-[Populated perspective](../../pcb/assembly-review/populated-perspective.png).
+[Check evidence](../../pcb/review/checks/review-status.json) ·
+[Top render](../../pcb/renders/bare/top-review.png) ·
+[Bottom render](../../pcb/renders/bare/bottom-review.png) ·
+[Populated perspective](../../pcb/renders/populated-perspective.png).
 
 ## JLC price
 

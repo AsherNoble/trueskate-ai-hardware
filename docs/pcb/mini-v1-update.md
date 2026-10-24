@@ -14,7 +14,7 @@ commit `848e8ece46d045ac24283e2d6ee9ea4ba8ef95d5`.
 The original files and SHA-256 manifest are retained in
 [`pcb/sources/simplefoc-mini-v1.0`](../../pcb/sources/simplefoc-mini-v1.0).
 
-`extract_mini.py` reads `Drill_PTH_Through.DRL` as metric, absolute, 3:3.
+`scripts/extract_mini.py` reads `Drill_PTH_Through.DRL` as metric, absolute, 3:3.
 Transform: `x = drill_x + 1.143`, `y = -3.937 - drill_y`. This is a Gerber-to-
 PCB coordinate convention change, not a physical mirror. H1 pin **9** is the
 new origin; H1 pin **1** remains at (10.160, 0). The Mini is component-side up,
@@ -30,9 +30,9 @@ pins downward. Existing control/phase locations on the carrier are retained.
   The complete outline spans **26.083 x 21.012 mm**, including the ears.
   Courtyard bounds add 0.25 mm to that envelope.
 
-The [overlay](../../pcb/mini-drill-overlay.png) compares the actual KiCad library
+The [overlay](../../pcb/review/drawings/mini-drill-overlay.png) compares the actual KiCad library
 pad centres to the independently parsed upstream drills. The
-[fit report](../../pcb/mini-fit-report.json) also checks every placed footprint:
+[fit report](../../pcb/review/checks/mini-fit-report.json) also checks every placed footprint:
 **105 contacts checked; maximum position error 0.000000 mm**, below 0.05 mm.
 Grey holes in the overlay include the upstream vias/mounting holes for context;
 only the 15 connector contacts belong on the carrier.
@@ -72,14 +72,14 @@ For 35 um copper and a 10 C rise, the external-layer IPC-2221 estimate
 `I = 0.048 * deltaT^0.44 * area_mil2^0.725` gives a minimum width of
 **1.367 mm at 3 A**. Both chosen branch widths exceed it. See the equation in
 [TI's layout guidance](https://www.ti.com/lit/an/snva766/snva766.pdf).
-`verify_power.py` checks continuous full-width paths from F1/NT1 to all six
+`scripts/verify_power.py` checks continuous full-width paths from F1/NT1 to all six
 power contacts and from each bulk capacitor to its Mini.
 
 C11-C16 and C21-C26 are moved alongside the power-pad edge, with physical
 courtyard clearance from the Mini, neighboring modules and each other. F1
 moves 8 mm toward the input to clear the first capacitor. Capacitor-pad to
 matching Mini-pad distances are recorded in
-[`power-routing-review.json`](../../pcb/power-routing-review.json):
+[`review/checks/power-routing-review.json`](../../pcb/review/checks/power-routing-review.json):
 
 | Placement | Bulk cap | Ceramic cap |
 |---|---:|---:|
@@ -99,7 +99,7 @@ the 1.101 mm finished hole, accept the Mini's actual pin, align with the other
 socket heights and carry at least 3 A per contact. An exact purchased MPN has
 not been asserted without those mechanical specifications.
 
-Existing files under `pcb/fabrication/2026-10-18/` and the old assembled mockups
+Existing files under `pcb/archive/fabrication/2026-10-18/` and the old assembled mockups
 are historical snapshots of the wire-powered revision. They are not outputs
 for this footprint change. The current native board, schematic, fit drawing,
 overlay and review renders describe the direct-power revision.
