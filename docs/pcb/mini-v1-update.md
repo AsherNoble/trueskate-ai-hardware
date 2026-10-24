@@ -1,3 +1,5 @@
+> **Historical scope:** the [edge-layout revision](edge-layout.md) supersedes layout, ground, assembly and hardware-kill descriptions below. Use the current PCB README and review artifacts for this revision.
+
 # Mini v1.0 direct-power footprint
 
 The carrier now uses one `TrueSkate:SimpleFOC_Mini_v1.0` footprint per Mini

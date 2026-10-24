@@ -29,9 +29,9 @@ Sequence: `extract_mini.py` -> `generate.py` -> `route_signals.py export` -> `ro
 
 `design.json` is the agreed pin map; `kicad_source.py` writes schematic/project
 files. `generate.py` writes placement and locked manual segments for power,
-phases, control grounds and encoder supply. `finish_ground.py` adds explicit
+and motor phases. `finish_ground.py` adds explicit
 quiet-ground links (`ground-link-plan.json` -> `ground-links.json`) and checked stitching vias
-(`ground-stitching.json`). No PGND branch is autorouted.
+(`ground-stitching.json`). Ground pours are shared; the old PGND star was removed.
 
 `SaveBoard(..., aSkipSettings=True)` prevents standalone Python from overwriting
 project rules with application defaults. Project schema versions are explicit.
@@ -42,7 +42,7 @@ Final CLI DRC refills/saves the project-aware copper before review exports.
 The DSN contains locked manual copper and 250 um signal width/clearance,
 0.7/0.3 mm vias. Freerouting ran headlessly, telemetry disabled, Manual class
 excluded. Paths with spaces required temporary DSN/SES copies in `/private/tmp`.
-Only PWM, EN, CS and SPI items are imported back. Any router power/ground changes
+Only PWM, EN, EN_CMD, CS, SPI, 3V3 and EN_DISABLE items are imported back. Any router power/ground changes
 are discarded. Automatic neck-down widths are clamped to at least 0.2 mm;
 strict DRC validates them. The frozen SES is the reproducible source.
 [Official release](https://github.com/freerouting/freerouting/releases/tag/v2.5.0).

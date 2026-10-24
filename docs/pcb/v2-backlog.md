@@ -1,3 +1,5 @@
+> **Historical scope:** the [edge-layout revision](edge-layout.md) supersedes layout, ground, assembly and hardware-kill descriptions below. Use the current PCB README and review artifacts for this revision.
+
 # v2 backlog - not fitted or routed on v1
 
 The user changed v1 to a USB-powered, entirely through-hole perfboard-style

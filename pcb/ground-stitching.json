@@ -1,250 +1,186 @@
 [
   {
-    "x": 112.0,
-    "y": 29.0,
+    "x": 17.5,
+    "y": 95.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "reason": "deliberate ground-link endpoint"
-  },
-  {
-    "x": 112.0,
-    "y": 31.0,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "reason": "deliberate ground-link endpoint"
-  },
-  {
-    "x": 70.5,
-    "y": 81.5,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "reason": "deliberate ground-link endpoint"
-  },
-  {
-    "x": 72.0,
-    "y": 83.0,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "reason": "deliberate ground-link endpoint"
-  },
-  {
-    "x": 103.075,
-    "y": 81.175,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "reason": "deliberate ground-link endpoint"
-  },
-  {
-    "x": 104.5,
-    "y": 80.45,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "reason": "deliberate ground-link endpoint"
-  },
-  {
-    "x": 105.975,
-    "y": 73.7,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "reason": "deliberate ground-link endpoint"
-  },
-  {
-    "x": 105.95,
-    "y": 72.0,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "reason": "deliberate ground-link endpoint"
-  },
-  {
-    "x": 156.75,
-    "y": 59.25,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 18.305,
+    "clearance_margin": 17.612,
     "reason": "interplane stitch"
   },
   {
-    "x": 124.25,
-    "y": 66.75,
+    "x": 94.5,
+    "y": 117.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 11.337,
+    "clearance_margin": 12.83,
     "reason": "interplane stitch"
   },
   {
-    "x": 31.75,
-    "y": 68.25,
+    "x": 125.5,
+    "y": 104.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 8.406,
+    "clearance_margin": 9.981,
     "reason": "interplane stitch"
   },
   {
-    "x": 95.75,
-    "y": 54.25,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 2.669,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 77.25,
-    "y": 66.5,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 2.472,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 41.75,
-    "y": 82.75,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 2.151,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 100.25,
-    "y": 49.75,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 2.057,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 106.75,
-    "y": 79.75,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 1.436,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 68.0,
-    "y": 82.75,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 1.413,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 83.75,
-    "y": 82.75,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 1.2,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 81.5,
+    "x": 21.5,
     "y": 62.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 1.076,
+    "clearance_margin": 9.879,
     "reason": "interplane stitch"
   },
   {
-    "x": 81.75,
-    "y": 54.75,
+    "x": 120.0,
+    "y": 62.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 0.882,
+    "clearance_margin": 9.472,
     "reason": "interplane stitch"
   },
   {
-    "x": 107.75,
-    "y": 75.25,
+    "x": 51.0,
+    "y": 87.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 0.871,
+    "clearance_margin": 9.0,
     "reason": "interplane stitch"
   },
   {
-    "x": 40.25,
-    "y": 75.0,
+    "x": 115.0,
+    "y": 62.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 0.844,
+    "clearance_margin": 7.891,
     "reason": "interplane stitch"
   },
   {
-    "x": 54.5,
-    "y": 48.5,
+    "x": 33.5,
+    "y": 17.0,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 0.54,
+    "clearance_margin": 7.614,
     "reason": "interplane stitch"
   },
   {
-    "x": 44.0,
-    "y": 72.75,
+    "x": 83.5,
+    "y": 17.0,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 0.507,
+    "clearance_margin": 7.614,
     "reason": "interplane stitch"
   },
   {
-    "x": 47.25,
-    "y": 45.0,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 0.5,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 46.5,
-    "y": 57.75,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 0.485,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 59.0,
-    "y": 79.0,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 0.474,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 100.25,
-    "y": 79.0,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 0.442,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 51.75,
-    "y": 48.5,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 0.405,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 54.5,
-    "y": 45.75,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 0.383,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 73.0,
-    "y": 83.25,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 0.25,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 141.0,
+    "x": 67.5,
     "y": 80.0,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 0.003,
+    "clearance_margin": 7.587,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 94.0,
+    "y": 80.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 7.544,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 140.5,
+    "y": 23.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 6.46,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 99.5,
+    "y": 58.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 6.346,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 147.5,
+    "y": 61.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 6.138,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 130.5,
+    "y": 94.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 6.092,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 55.5,
+    "y": 90.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 4.545,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 94.5,
+    "y": 98.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.706,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 123.5,
+    "y": 44.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.52,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 95.0,
+    "y": 90.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.296,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 80.0,
+    "y": 98.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.28,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 151.0,
+    "y": 35.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 1.104,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 44.5,
+    "y": 6.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.545,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 130.5,
+    "y": 50.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.403,
     "reason": "interplane stitch"
   }
 ]

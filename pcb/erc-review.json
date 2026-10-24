@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/erc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-10-24T09:19:28",
+    "date": "2026-10-24T14:19:55",
     "ignored_checks": [
         {
             "description": "Global label only appears once in the schematic",
@@ -68,7 +68,7 @@
             "violations": []
         },
         {
-            "path": "/08 / Fused 12V and ground star/",
+            "path": "/08 / Power and hardware kill/",
             "uuid_path": "/f9aaf7f4-206d-5bf0-ad6e-e7da3998db25/efb3d083-a125-51c9-9232-e996dbbbc32c",
             "violations": []
         }

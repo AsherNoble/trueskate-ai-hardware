@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/Users/ashernoble/Projects/Robotics &amp; hardware/trueskate-ai-hardware/pcb/trueskate-main-v1.kicad_sch</source>
-    <date>2026-10-24T09:19:31</date>
+    <date>2026-10-24T14:19:59</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -148,9 +148,9 @@
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="9" name="/08 / Fused 12V and ground star/" tstamps="/efb3d083-a125-51c9-9232-e996dbbbc32c/">
+    <sheet number="9" name="/08 / Power and hardware kill/" tstamps="/efb3d083-a125-51c9-9232-e996dbbbc32c/">
       <title_block>
-        <title>08 / Fused 12V and ground star</title>
+        <title>08 / Power and hardware kill</title>
         <company/>
         <rev>v1 REVIEW</rev>
         <date/>
@@ -170,9 +170,9 @@
   <components>
     <comp ref="J1">
       <value>Teensy 4.1 FEMALE 1x24</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical</footprint>
+      <footprint>TrueSkate:Edge_PinSocket_1x24_P2.54mm_Vertical</footprint>
       <fields>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinSocket_1x24_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -214,9 +214,9 @@
     </comp>
     <comp ref="J2">
       <value>Teensy 4.1 FEMALE 1x24</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical</footprint>
+      <footprint>TrueSkate:Edge_PinSocket_1x24_P2.54mm_Vertical</footprint>
       <fields>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinSocket_1x24_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -256,11 +256,143 @@
         </unit>
       </units>
     </comp>
+    <comp ref="R41">
+      <value>10k EN command pull-down</value>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="R41" description=""/>
+      <property name="Sheetname" value="01 / USB-powered Teensy sockets"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/01 / USB-powered Teensy sockets/" tstamps="/c0673a98-1a97-57ff-b79d-0570c0f88eb5/"/>
+      <tstamps>c72edca3-676c-550d-b8e8-4d5d002ffce2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R42">
+      <value>10k EN command pull-down</value>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="R42" description=""/>
+      <property name="Sheetname" value="01 / USB-powered Teensy sockets"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/01 / USB-powered Teensy sockets/" tstamps="/c0673a98-1a97-57ff-b79d-0570c0f88eb5/"/>
+      <tstamps>851e52e1-d27d-57cc-ad02-a39d08a79b3b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R43">
+      <value>10k EN command pull-down</value>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="R43" description=""/>
+      <property name="Sheetname" value="01 / USB-powered Teensy sockets"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/01 / USB-powered Teensy sockets/" tstamps="/c0673a98-1a97-57ff-b79d-0570c0f88eb5/"/>
+      <tstamps>ca83464c-621f-5023-9aff-f3da940df705</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R44">
+      <value>10k EN command pull-down</value>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="R44" description=""/>
+      <property name="Sheetname" value="01 / USB-powered Teensy sockets"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/01 / USB-powered Teensy sockets/" tstamps="/c0673a98-1a97-57ff-b79d-0570c0f88eb5/"/>
+      <tstamps>9ea342ab-749a-55cd-b66c-bffdce56f898</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R45">
+      <value>10k EN command pull-down</value>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="R45" description=""/>
+      <property name="Sheetname" value="01 / USB-powered Teensy sockets"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/01 / USB-powered Teensy sockets/" tstamps="/c0673a98-1a97-57ff-b79d-0570c0f88eb5/"/>
+      <tstamps>ee55eb28-fbbf-58c1-a620-6fb7341c507a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R46">
+      <value>10k EN command pull-down</value>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="R46" description=""/>
+      <property name="Sheetname" value="01 / USB-powered Teensy sockets"/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/01 / USB-powered Teensy sockets/" tstamps="/c0673a98-1a97-57ff-b79d-0570c0f88eb5/"/>
+      <tstamps>fb0d91fc-642e-5da5-b75a-a3d291d27546</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="C11">
       <value>1000uF 35V EEUFR1V102B</value>
-      <footprint>Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <footprint>TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</footprint>
       <fields>
-        <field name="Footprint">Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -280,9 +412,9 @@
     </comp>
     <comp ref="C21">
       <value>100nF 50V ceramic</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <footprint>TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
       <fields>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -337,9 +469,9 @@
     </comp>
     <comp ref="J21">
       <value>MOTOR PHASES male 1x3</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <footprint>TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</footprint>
       <fields>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -359,10 +491,10 @@
       </units>
     </comp>
     <comp ref="J31">
-      <value>ENCODER breakout FEMALE 1x6</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</footprint>
+      <value>SM06B-SRSS-TB</value>
+      <footprint>TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -384,33 +516,11 @@
         </unit>
       </units>
     </comp>
-    <comp ref="JP1">
-      <value>CONTROL GND / OPEN</value>
-      <footprint>TrueSkate:GroundBridge_THT</footprint>
-      <fields>
-        <field name="Footprint">TrueSkate:GroundBridge_THT</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="TrueSkate" part="JP1" description=""/>
-      <property name="Sheetname" value="02 / A1: index_curl_1"/>
-      <property name="Sheetfile" value="axis1.kicad_sch"/>
-      <sheetpath names="/02 / A1: index_curl_1/" tstamps="/1fc653d0-f27f-55e2-8973-0e83b9d9c682/"/>
-      <tstamps>d54aba83-648c-5bcf-bc0b-13e84e0408eb</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="R21">
       <value>10k EN pull-down</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -428,11 +538,33 @@
         </unit>
       </units>
     </comp>
+    <comp ref="R31">
+      <value>10k CS pull-up</value>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="R31" description=""/>
+      <property name="Sheetname" value="02 / A1: index_curl_1"/>
+      <property name="Sheetfile" value="axis1.kicad_sch"/>
+      <sheetpath names="/02 / A1: index_curl_1/" tstamps="/1fc653d0-f27f-55e2-8973-0e83b9d9c682/"/>
+      <tstamps>f2375ad0-4b3a-598c-902d-b3bb68cf961c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="C12">
       <value>1000uF 35V EEUFR1V102B</value>
-      <footprint>Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <footprint>TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</footprint>
       <fields>
-        <field name="Footprint">Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -452,9 +584,9 @@
     </comp>
     <comp ref="C22">
       <value>100nF 50V ceramic</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <footprint>TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
       <fields>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -509,9 +641,9 @@
     </comp>
     <comp ref="J22">
       <value>MOTOR PHASES male 1x3</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <footprint>TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</footprint>
       <fields>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -531,10 +663,10 @@
       </units>
     </comp>
     <comp ref="J32">
-      <value>ENCODER breakout FEMALE 1x6</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</footprint>
+      <value>SM06B-SRSS-TB</value>
+      <footprint>TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -556,33 +688,11 @@
         </unit>
       </units>
     </comp>
-    <comp ref="JP2">
-      <value>CONTROL GND / OPEN</value>
-      <footprint>TrueSkate:GroundBridge_THT</footprint>
-      <fields>
-        <field name="Footprint">TrueSkate:GroundBridge_THT</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="TrueSkate" part="JP2" description=""/>
-      <property name="Sheetname" value="03 / A2: index_curl_2"/>
-      <property name="Sheetfile" value="axis2.kicad_sch"/>
-      <sheetpath names="/03 / A2: index_curl_2/" tstamps="/dcdfa8e7-c0b4-5e6c-83c3-2665524ac41c/"/>
-      <tstamps>bd34e86b-99e6-5638-9fb6-58996c421d62</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="R22">
       <value>10k EN pull-down</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -600,11 +710,33 @@
         </unit>
       </units>
     </comp>
+    <comp ref="R32">
+      <value>10k CS pull-up</value>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="R32" description=""/>
+      <property name="Sheetname" value="03 / A2: index_curl_2"/>
+      <property name="Sheetfile" value="axis2.kicad_sch"/>
+      <sheetpath names="/03 / A2: index_curl_2/" tstamps="/dcdfa8e7-c0b4-5e6c-83c3-2665524ac41c/"/>
+      <tstamps>cf803763-77db-5365-988b-0ec8478fe67a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="C13">
       <value>1000uF 35V EEUFR1V102B</value>
-      <footprint>Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <footprint>TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</footprint>
       <fields>
-        <field name="Footprint">Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -624,9 +756,9 @@
     </comp>
     <comp ref="C23">
       <value>100nF 50V ceramic</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <footprint>TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
       <fields>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -681,9 +813,9 @@
     </comp>
     <comp ref="J23">
       <value>MOTOR PHASES male 1x3</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <footprint>TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</footprint>
       <fields>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -703,10 +835,10 @@
       </units>
     </comp>
     <comp ref="J33">
-      <value>ENCODER breakout FEMALE 1x6</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</footprint>
+      <value>SM06B-SRSS-TB</value>
+      <footprint>TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -728,33 +860,11 @@
         </unit>
       </units>
     </comp>
-    <comp ref="JP3">
-      <value>CONTROL GND / OPEN</value>
-      <footprint>TrueSkate:GroundBridge_THT</footprint>
-      <fields>
-        <field name="Footprint">TrueSkate:GroundBridge_THT</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="TrueSkate" part="JP3" description=""/>
-      <property name="Sheetname" value="04 / A3: index_splay"/>
-      <property name="Sheetfile" value="axis3.kicad_sch"/>
-      <sheetpath names="/04 / A3: index_splay/" tstamps="/104f18a7-3092-5217-9dc3-c3aa0236c046/"/>
-      <tstamps>c47d0325-6f4b-5e22-90a6-04f37541207e</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="R23">
       <value>10k EN pull-down</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -772,11 +882,33 @@
         </unit>
       </units>
     </comp>
+    <comp ref="R33">
+      <value>10k CS pull-up</value>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="R33" description=""/>
+      <property name="Sheetname" value="04 / A3: index_splay"/>
+      <property name="Sheetfile" value="axis3.kicad_sch"/>
+      <sheetpath names="/04 / A3: index_splay/" tstamps="/104f18a7-3092-5217-9dc3-c3aa0236c046/"/>
+      <tstamps>ac074d81-026b-5d89-8a1a-15eb8b429a73</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="C14">
       <value>1000uF 35V EEUFR1V102B</value>
-      <footprint>Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <footprint>TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</footprint>
       <fields>
-        <field name="Footprint">Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -796,9 +928,9 @@
     </comp>
     <comp ref="C24">
       <value>100nF 50V ceramic</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <footprint>TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
       <fields>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -853,9 +985,9 @@
     </comp>
     <comp ref="J24">
       <value>MOTOR PHASES male 1x3</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <footprint>TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</footprint>
       <fields>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -875,10 +1007,10 @@
       </units>
     </comp>
     <comp ref="J34">
-      <value>ENCODER breakout FEMALE 1x6</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</footprint>
+      <value>SM06B-SRSS-TB</value>
+      <footprint>TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -900,33 +1032,11 @@
         </unit>
       </units>
     </comp>
-    <comp ref="JP4">
-      <value>CONTROL GND / OPEN</value>
-      <footprint>TrueSkate:GroundBridge_THT</footprint>
-      <fields>
-        <field name="Footprint">TrueSkate:GroundBridge_THT</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="TrueSkate" part="JP4" description=""/>
-      <property name="Sheetname" value="05 / A4: middle_curl_1"/>
-      <property name="Sheetfile" value="axis4.kicad_sch"/>
-      <sheetpath names="/05 / A4: middle_curl_1/" tstamps="/e30136b7-9c2d-5d77-b41c-fd10a214baa8/"/>
-      <tstamps>4563d82c-fe42-5717-a30f-0336b162d7d0</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="R24">
       <value>10k EN pull-down</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -944,11 +1054,33 @@
         </unit>
       </units>
     </comp>
+    <comp ref="R34">
+      <value>10k CS pull-up</value>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="R34" description=""/>
+      <property name="Sheetname" value="05 / A4: middle_curl_1"/>
+      <property name="Sheetfile" value="axis4.kicad_sch"/>
+      <sheetpath names="/05 / A4: middle_curl_1/" tstamps="/e30136b7-9c2d-5d77-b41c-fd10a214baa8/"/>
+      <tstamps>cd0cf1c0-baca-5d20-b899-5ea066fde84e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="C15">
       <value>1000uF 35V EEUFR1V102B</value>
-      <footprint>Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <footprint>TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</footprint>
       <fields>
-        <field name="Footprint">Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -968,9 +1100,9 @@
     </comp>
     <comp ref="C25">
       <value>100nF 50V ceramic</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <footprint>TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
       <fields>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1025,9 +1157,9 @@
     </comp>
     <comp ref="J25">
       <value>MOTOR PHASES male 1x3</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <footprint>TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</footprint>
       <fields>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1047,10 +1179,10 @@
       </units>
     </comp>
     <comp ref="J35">
-      <value>ENCODER breakout FEMALE 1x6</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</footprint>
+      <value>SM06B-SRSS-TB</value>
+      <footprint>TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1072,33 +1204,11 @@
         </unit>
       </units>
     </comp>
-    <comp ref="JP5">
-      <value>CONTROL GND / OPEN</value>
-      <footprint>TrueSkate:GroundBridge_THT</footprint>
-      <fields>
-        <field name="Footprint">TrueSkate:GroundBridge_THT</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="TrueSkate" part="JP5" description=""/>
-      <property name="Sheetname" value="06 / A5: middle_curl_2"/>
-      <property name="Sheetfile" value="axis5.kicad_sch"/>
-      <sheetpath names="/06 / A5: middle_curl_2/" tstamps="/daca2ca2-f10e-5dfd-9143-bc498358d8e7/"/>
-      <tstamps>d124eebf-163e-5bc2-92de-67b2343bde62</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="R25">
       <value>10k EN pull-down</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1116,11 +1226,33 @@
         </unit>
       </units>
     </comp>
+    <comp ref="R35">
+      <value>10k CS pull-up</value>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="R35" description=""/>
+      <property name="Sheetname" value="06 / A5: middle_curl_2"/>
+      <property name="Sheetfile" value="axis5.kicad_sch"/>
+      <sheetpath names="/06 / A5: middle_curl_2/" tstamps="/daca2ca2-f10e-5dfd-9143-bc498358d8e7/"/>
+      <tstamps>2cd0243e-afbd-5340-b67f-df8f1ae11234</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="C16">
       <value>1000uF 35V EEUFR1V102B</value>
-      <footprint>Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <footprint>TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</footprint>
       <fields>
-        <field name="Footprint">Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1140,9 +1272,9 @@
     </comp>
     <comp ref="C26">
       <value>100nF 50V ceramic</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <footprint>TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
       <fields>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1197,9 +1329,9 @@
     </comp>
     <comp ref="J26">
       <value>MOTOR PHASES male 1x3</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <footprint>TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</footprint>
       <fields>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1219,10 +1351,10 @@
       </units>
     </comp>
     <comp ref="J36">
-      <value>ENCODER breakout FEMALE 1x6</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</footprint>
+      <value>SM06B-SRSS-TB</value>
+      <footprint>TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1244,33 +1376,11 @@
         </unit>
       </units>
     </comp>
-    <comp ref="JP6">
-      <value>CONTROL GND / OPEN</value>
-      <footprint>TrueSkate:GroundBridge_THT</footprint>
-      <fields>
-        <field name="Footprint">TrueSkate:GroundBridge_THT</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="TrueSkate" part="JP6" description=""/>
-      <property name="Sheetname" value="07 / A6: middle_splay"/>
-      <property name="Sheetfile" value="axis6.kicad_sch"/>
-      <sheetpath names="/07 / A6: middle_splay/" tstamps="/4e770638-ce82-5c47-8de1-2775d826b825/"/>
-      <tstamps>d69d71e7-4715-5f17-8f70-61d34ed00810</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="R26">
       <value>10k EN pull-down</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1288,18 +1398,84 @@
         </unit>
       </units>
     </comp>
-    <comp ref="F1">
-      <value>5x20 fuse holder / fuse TBD</value>
-      <footprint>Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open</footprint>
+    <comp ref="R36">
+      <value>10k CS pull-up</value>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="R36" description=""/>
+      <property name="Sheetname" value="07 / A6: middle_splay"/>
+      <property name="Sheetfile" value="axis6.kicad_sch"/>
+      <sheetpath names="/07 / A6: middle_splay/" tstamps="/4e770638-ce82-5c47-8de1-2775d826b825/"/>
+      <tstamps>db1318ca-7d54-50b6-bb00-b9bce909772f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C1">
+      <value>100nF buffer bypass</value>
+      <footprint>TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="C1" description=""/>
+      <property name="Sheetname" value="08 / Power and hardware kill"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/08 / Power and hardware kill/" tstamps="/efb3d083-a125-51c9-9232-e996dbbbc32c/"/>
+      <tstamps>68200224-07bc-5f8d-b71a-8db957ca34cc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100nF buffer bypass</value>
+      <footprint>TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="C2" description=""/>
+      <property name="Sheetname" value="08 / Power and hardware kill"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/08 / Power and hardware kill/" tstamps="/efb3d083-a125-51c9-9232-e996dbbbc32c/"/>
+      <tstamps>735eda11-b0df-521b-866a-a958c5084178</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F1">
+      <value>ATO fuse holder / fuse TBD</value>
+      <footprint>TrueSkate:Edge_FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="TrueSkate" part="F1" description=""/>
-      <property name="Sheetname" value="08 / Fused 12V and ground star"/>
+      <property name="Sheetname" value="08 / Power and hardware kill"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
-      <sheetpath names="/08 / Fused 12V and ground star/" tstamps="/efb3d083-a125-51c9-9232-e996dbbbc32c/"/>
+      <sheetpath names="/08 / Power and hardware kill/" tstamps="/efb3d083-a125-51c9-9232-e996dbbbc32c/"/>
       <tstamps>9c97d708-ef04-58cf-89b9-88dad79dd865</tstamps>
       <units>
         <unit name="A">
@@ -1312,16 +1488,16 @@
     </comp>
     <comp ref="J5">
       <value>12V INPUT + / -</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <footprint>TrueSkate:Edge_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
       <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="TrueSkate" part="J5" description=""/>
-      <property name="Sheetname" value="08 / Fused 12V and ground star"/>
+      <property name="Sheetname" value="08 / Power and hardware kill"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
-      <sheetpath names="/08 / Fused 12V and ground star/" tstamps="/efb3d083-a125-51c9-9232-e996dbbbc32c/"/>
+      <sheetpath names="/08 / Power and hardware kill/" tstamps="/efb3d083-a125-51c9-9232-e996dbbbc32c/"/>
       <tstamps>67802fe2-cdd5-5959-a103-5e2cc1836b40</tstamps>
       <units>
         <unit name="A">
@@ -1332,19 +1508,63 @@
         </unit>
       </units>
     </comp>
-    <comp ref="NT1">
-      <value>GROUND STAR / PCB COPPER</value>
-      <footprint>TrueSkate:GroundStar</footprint>
+    <comp ref="J6">
+      <value>NC KILL SWITCH</value>
+      <footprint>TrueSkate:Edge_PinHeader_1x02_P2.54mm_Vertical</footprint>
       <fields>
-        <field name="Footprint">TrueSkate:GroundStar</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x02_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
-      <libsource lib="TrueSkate" part="NT1" description=""/>
-      <property name="Sheetname" value="08 / Fused 12V and ground star"/>
+      <libsource lib="TrueSkate" part="J6" description=""/>
+      <property name="Sheetname" value="08 / Power and hardware kill"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
-      <sheetpath names="/08 / Fused 12V and ground star/" tstamps="/efb3d083-a125-51c9-9232-e996dbbbc32c/"/>
-      <tstamps>d7c2f601-93b7-5b11-8d27-3b6c7d6a4ded</tstamps>
+      <sheetpath names="/08 / Power and hardware kill/" tstamps="/efb3d083-a125-51c9-9232-e996dbbbc32c/"/>
+      <tstamps>84167a5e-65ac-55d5-b49c-d132f075a7a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>10k /OE pull-up</value>
+      <footprint>TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="R1" description=""/>
+      <property name="Sheetname" value="08 / Power and hardware kill"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/08 / Power and hardware kill/" tstamps="/efb3d083-a125-51c9-9232-e996dbbbc32c/"/>
+      <tstamps>4b6d61f1-aa4b-5a46-98f7-d10d31d1b07f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>SN74LV125AN</value>
+      <footprint>TrueSkate:Edge_DIP-14_W7.62mm</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_DIP-14_W7.62mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="U1" description=""/>
+      <property name="Sheetname" value="08 / Power and hardware kill"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/08 / Power and hardware kill/" tstamps="/efb3d083-a125-51c9-9232-e996dbbbc32c/"/>
+      <tstamps>74c57304-4226-56ad-a621-926e582c7eaf</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1355,17 +1575,71 @@
             <pin num="5"/>
             <pin num="6"/>
             <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>SN74LV125AN</value>
+      <footprint>TrueSkate:Edge_DIP-14_W7.62mm</footprint>
+      <fields>
+        <field name="Footprint">TrueSkate:Edge_DIP-14_W7.62mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TrueSkate" part="U2" description=""/>
+      <property name="Sheetname" value="08 / Power and hardware kill"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/08 / Power and hardware kill/" tstamps="/efb3d083-a125-51c9-9232-e996dbbbc32c/"/>
+      <tstamps>0f771064-321a-5156-a334-14d190606d15</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
           </pins>
         </unit>
       </units>
     </comp>
   </components>
   <libparts>
+    <libpart lib="TrueSkate" part="C1">
+      <fields>
+        <field name="Reference">C1</field>
+        <field name="Value">100nF buffer bypass</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="TrueSkate" part="C11">
       <fields>
         <field name="Reference">C11</field>
         <field name="Value">1000uF 35V EEUFR1V102B</field>
-        <field name="Footprint">Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1378,7 +1652,7 @@
       <fields>
         <field name="Reference">C12</field>
         <field name="Value">1000uF 35V EEUFR1V102B</field>
-        <field name="Footprint">Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1391,7 +1665,7 @@
       <fields>
         <field name="Reference">C13</field>
         <field name="Value">1000uF 35V EEUFR1V102B</field>
-        <field name="Footprint">Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1404,7 +1678,7 @@
       <fields>
         <field name="Reference">C14</field>
         <field name="Value">1000uF 35V EEUFR1V102B</field>
-        <field name="Footprint">Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1417,7 +1691,7 @@
       <fields>
         <field name="Reference">C15</field>
         <field name="Value">1000uF 35V EEUFR1V102B</field>
-        <field name="Footprint">Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1430,7 +1704,20 @@
       <fields>
         <field name="Reference">C16</field>
         <field name="Value">1000uF 35V EEUFR1V102B</field>
-        <field name="Footprint">Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="C2">
+      <fields>
+        <field name="Reference">C2</field>
+        <field name="Value">100nF buffer bypass</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1443,7 +1730,7 @@
       <fields>
         <field name="Reference">C21</field>
         <field name="Value">100nF 50V ceramic</field>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1456,7 +1743,7 @@
       <fields>
         <field name="Reference">C22</field>
         <field name="Value">100nF 50V ceramic</field>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1469,7 +1756,7 @@
       <fields>
         <field name="Reference">C23</field>
         <field name="Value">100nF 50V ceramic</field>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1482,7 +1769,7 @@
       <fields>
         <field name="Reference">C24</field>
         <field name="Value">100nF 50V ceramic</field>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1495,7 +1782,7 @@
       <fields>
         <field name="Reference">C25</field>
         <field name="Value">100nF 50V ceramic</field>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1508,7 +1795,7 @@
       <fields>
         <field name="Reference">C26</field>
         <field name="Value">100nF 50V ceramic</field>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1520,8 +1807,8 @@
     <libpart lib="TrueSkate" part="F1">
       <fields>
         <field name="Reference">F1</field>
-        <field name="Value">5x20 fuse holder / fuse TBD</field>
-        <field name="Footprint">Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open</field>
+        <field name="Value">ATO fuse holder / fuse TBD</field>
+        <field name="Footprint">TrueSkate:Edge_FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1534,7 +1821,7 @@
       <fields>
         <field name="Reference">J1</field>
         <field name="Value">Teensy 4.1 FEMALE 1x24</field>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinSocket_1x24_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1725,7 +2012,7 @@
       <fields>
         <field name="Reference">J2</field>
         <field name="Value">Teensy 4.1 FEMALE 1x24</field>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinSocket_1x24_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1760,7 +2047,7 @@
       <fields>
         <field name="Reference">J21</field>
         <field name="Value">MOTOR PHASES male 1x3</field>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1774,7 +2061,7 @@
       <fields>
         <field name="Reference">J22</field>
         <field name="Value">MOTOR PHASES male 1x3</field>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1788,7 +2075,7 @@
       <fields>
         <field name="Reference">J23</field>
         <field name="Value">MOTOR PHASES male 1x3</field>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1802,7 +2089,7 @@
       <fields>
         <field name="Reference">J24</field>
         <field name="Value">MOTOR PHASES male 1x3</field>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1816,7 +2103,7 @@
       <fields>
         <field name="Reference">J25</field>
         <field name="Value">MOTOR PHASES male 1x3</field>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1830,7 +2117,7 @@
       <fields>
         <field name="Reference">J26</field>
         <field name="Value">MOTOR PHASES male 1x3</field>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1843,8 +2130,8 @@
     <libpart lib="TrueSkate" part="J31">
       <fields>
         <field name="Reference">J31</field>
-        <field name="Value">ENCODER breakout FEMALE 1x6</field>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</field>
+        <field name="Value">SM06B-SRSS-TB</field>
+        <field name="Footprint">TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1860,8 +2147,8 @@
     <libpart lib="TrueSkate" part="J32">
       <fields>
         <field name="Reference">J32</field>
-        <field name="Value">ENCODER breakout FEMALE 1x6</field>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</field>
+        <field name="Value">SM06B-SRSS-TB</field>
+        <field name="Footprint">TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1877,8 +2164,8 @@
     <libpart lib="TrueSkate" part="J33">
       <fields>
         <field name="Reference">J33</field>
-        <field name="Value">ENCODER breakout FEMALE 1x6</field>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</field>
+        <field name="Value">SM06B-SRSS-TB</field>
+        <field name="Footprint">TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1894,8 +2181,8 @@
     <libpart lib="TrueSkate" part="J34">
       <fields>
         <field name="Reference">J34</field>
-        <field name="Value">ENCODER breakout FEMALE 1x6</field>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</field>
+        <field name="Value">SM06B-SRSS-TB</field>
+        <field name="Footprint">TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1911,8 +2198,8 @@
     <libpart lib="TrueSkate" part="J35">
       <fields>
         <field name="Reference">J35</field>
-        <field name="Value">ENCODER breakout FEMALE 1x6</field>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</field>
+        <field name="Value">SM06B-SRSS-TB</field>
+        <field name="Footprint">TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1928,8 +2215,8 @@
     <libpart lib="TrueSkate" part="J36">
       <fields>
         <field name="Reference">J36</field>
-        <field name="Value">ENCODER breakout FEMALE 1x6</field>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</field>
+        <field name="Value">SM06B-SRSS-TB</field>
+        <field name="Footprint">TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1946,7 +2233,7 @@
       <fields>
         <field name="Reference">J5</field>
         <field name="Value">12V INPUT + / -</field>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1955,11 +2242,11 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="TrueSkate" part="JP1">
+    <libpart lib="TrueSkate" part="J6">
       <fields>
-        <field name="Reference">JP1</field>
-        <field name="Value">CONTROL GND / OPEN</field>
-        <field name="Footprint">TrueSkate:GroundBridge_THT</field>
+        <field name="Reference">J6</field>
+        <field name="Value">NC KILL SWITCH</field>
+        <field name="Footprint">TrueSkate:Edge_PinHeader_1x02_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1968,94 +2255,24 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="TrueSkate" part="JP2">
+    <libpart lib="TrueSkate" part="R1">
       <fields>
-        <field name="Reference">JP2</field>
-        <field name="Value">CONTROL GND / OPEN</field>
-        <field name="Footprint">TrueSkate:GroundBridge_THT</field>
+        <field name="Reference">R1</field>
+        <field name="Value">10k /OE pull-up</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <pins>
         <pin num="1" name="1" type="passive"/>
         <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="TrueSkate" part="JP3">
-      <fields>
-        <field name="Reference">JP3</field>
-        <field name="Value">CONTROL GND / OPEN</field>
-        <field name="Footprint">TrueSkate:GroundBridge_THT</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="TrueSkate" part="JP4">
-      <fields>
-        <field name="Reference">JP4</field>
-        <field name="Value">CONTROL GND / OPEN</field>
-        <field name="Footprint">TrueSkate:GroundBridge_THT</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="TrueSkate" part="JP5">
-      <fields>
-        <field name="Reference">JP5</field>
-        <field name="Value">CONTROL GND / OPEN</field>
-        <field name="Footprint">TrueSkate:GroundBridge_THT</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="TrueSkate" part="JP6">
-      <fields>
-        <field name="Reference">JP6</field>
-        <field name="Value">CONTROL GND / OPEN</field>
-        <field name="Footprint">TrueSkate:GroundBridge_THT</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="TrueSkate" part="NT1">
-      <fields>
-        <field name="Reference">NT1</field>
-        <field name="Value">GROUND STAR / PCB COPPER</field>
-        <field name="Footprint">TrueSkate:GroundStar</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-        <pin num="3" name="3" type="passive"/>
-        <pin num="4" name="4" type="passive"/>
-        <pin num="5" name="5" type="passive"/>
-        <pin num="6" name="6" type="passive"/>
-        <pin num="7" name="7" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="TrueSkate" part="R21">
       <fields>
         <field name="Reference">R21</field>
         <field name="Value">10k EN pull-down</field>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -2068,7 +2285,7 @@
       <fields>
         <field name="Reference">R22</field>
         <field name="Value">10k EN pull-down</field>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -2081,7 +2298,7 @@
       <fields>
         <field name="Reference">R23</field>
         <field name="Value">10k EN pull-down</field>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -2094,7 +2311,7 @@
       <fields>
         <field name="Reference">R24</field>
         <field name="Value">10k EN pull-down</field>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -2107,7 +2324,7 @@
       <fields>
         <field name="Reference">R25</field>
         <field name="Value">10k EN pull-down</field>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -2120,13 +2337,219 @@
       <fields>
         <field name="Reference">R26</field>
         <field name="Value">10k EN pull-down</field>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <pins>
         <pin num="1" name="1" type="passive"/>
         <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="R31">
+      <fields>
+        <field name="Reference">R31</field>
+        <field name="Value">10k CS pull-up</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="R32">
+      <fields>
+        <field name="Reference">R32</field>
+        <field name="Value">10k CS pull-up</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="R33">
+      <fields>
+        <field name="Reference">R33</field>
+        <field name="Value">10k CS pull-up</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="R34">
+      <fields>
+        <field name="Reference">R34</field>
+        <field name="Value">10k CS pull-up</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="R35">
+      <fields>
+        <field name="Reference">R35</field>
+        <field name="Value">10k CS pull-up</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="R36">
+      <fields>
+        <field name="Reference">R36</field>
+        <field name="Value">10k CS pull-up</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="R41">
+      <fields>
+        <field name="Reference">R41</field>
+        <field name="Value">10k EN command pull-down</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="R42">
+      <fields>
+        <field name="Reference">R42</field>
+        <field name="Value">10k EN command pull-down</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="R43">
+      <fields>
+        <field name="Reference">R43</field>
+        <field name="Value">10k EN command pull-down</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="R44">
+      <fields>
+        <field name="Reference">R44</field>
+        <field name="Value">10k EN command pull-down</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="R45">
+      <fields>
+        <field name="Reference">R45</field>
+        <field name="Value">10k EN command pull-down</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="R46">
+      <fields>
+        <field name="Reference">R46</field>
+        <field name="Value">10k EN command pull-down</field>
+        <field name="Footprint">TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="U1">
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">SN74LV125AN</field>
+        <field name="Footprint">TrueSkate:Edge_DIP-14_W7.62mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="/1OE" type="passive"/>
+        <pin num="2" name="1A" type="passive"/>
+        <pin num="3" name="1Y" type="passive"/>
+        <pin num="4" name="/2OE" type="passive"/>
+        <pin num="5" name="2A" type="passive"/>
+        <pin num="6" name="2Y" type="passive"/>
+        <pin num="7" name="GND" type="passive"/>
+        <pin num="8" name="3Y" type="passive"/>
+        <pin num="9" name="3A" type="passive"/>
+        <pin num="10" name="/3OE" type="passive"/>
+        <pin num="11" name="4Y" type="passive"/>
+        <pin num="12" name="4A" type="passive"/>
+        <pin num="13" name="/4OE" type="passive"/>
+        <pin num="14" name="VCC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrueSkate" part="U2">
+      <fields>
+        <field name="Reference">U2</field>
+        <field name="Value">SN74LV125AN</field>
+        <field name="Footprint">TrueSkate:Edge_DIP-14_W7.62mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="/1OE" type="passive"/>
+        <pin num="2" name="1A" type="passive"/>
+        <pin num="3" name="1Y" type="passive"/>
+        <pin num="4" name="/2OE" type="passive"/>
+        <pin num="5" name="2A" type="passive"/>
+        <pin num="6" name="2Y" type="passive"/>
+        <pin num="7" name="GND" type="passive"/>
+        <pin num="8" name="3Y" type="passive"/>
+        <pin num="9" name="3A" type="passive"/>
+        <pin num="10" name="/3OE" type="passive"/>
+        <pin num="11" name="4Y" type="passive"/>
+        <pin num="12" name="4A" type="passive"/>
+        <pin num="13" name="/4OE" type="passive"/>
+        <pin num="14" name="VCC" type="passive"/>
       </pins>
     </libpart>
   </libparts>
@@ -2137,6 +2560,8 @@
   </libraries>
   <nets>
     <net code="1" name="3V3" class="Default">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="J1" pin="15" pinfunction="3V3_15" pintype="passive"/>
       <node ref="J2" pin="3" pinfunction="3V3_3" pintype="passive"/>
       <node ref="J31" pin="5" pinfunction="5_5" pintype="passive"/>
@@ -2145,6 +2570,17 @@
       <node ref="J34" pin="5" pinfunction="5_5" pintype="passive"/>
       <node ref="J35" pin="5" pinfunction="5_5" pintype="passive"/>
       <node ref="J36" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R31" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R32" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R33" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R34" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R35" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R36" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="/4OE_13" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="VCC_14" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="/4OE_13" pintype="passive"/>
+      <node ref="U2" pin="14" pinfunction="VCC_14" pintype="passive"/>
     </net>
     <net code="2" name="12V_FUSED" class="Default">
       <node ref="C11" pin="1" pinfunction="1_1" pintype="passive"/>
@@ -2174,233 +2610,281 @@
     <net code="4" name="A1_CS" class="Default">
       <node ref="J1" pin="18" pinfunction="26_18" pintype="passive"/>
       <node ref="J31" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R31" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="5" name="A1_EN" class="Default">
       <node ref="J11" pin="9" pinfunction="9_9" pintype="passive"/>
-      <node ref="J2" pin="11" pinfunction="16_11" pintype="passive"/>
       <node ref="R21" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="1Y_3" pintype="passive"/>
     </net>
-    <net code="6" name="A1_PH1" class="Default">
+    <net code="6" name="A1_EN_CMD" class="Default">
+      <node ref="J2" pin="11" pinfunction="16_11" pintype="passive"/>
+      <node ref="R41" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="1A_2" pintype="passive"/>
+    </net>
+    <net code="7" name="A1_PH1" class="Default">
       <node ref="J11" pin="P3" pinfunction="P3_P3" pintype="passive"/>
       <node ref="J21" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="7" name="A1_PH2" class="Default">
+    <net code="8" name="A1_PH2" class="Default">
       <node ref="J11" pin="P2" pinfunction="P2_P2" pintype="passive"/>
       <node ref="J21" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="8" name="A1_PH3" class="Default">
+    <net code="9" name="A1_PH3" class="Default">
       <node ref="J11" pin="P1" pinfunction="P1_P1" pintype="passive"/>
       <node ref="J21" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="9" name="A1_PWM1" class="Default">
+    <net code="10" name="A1_PWM1" class="Default">
       <node ref="J1" pin="6" pinfunction="4_6" pintype="passive"/>
       <node ref="J11" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="10" name="A1_PWM2" class="Default">
+    <net code="11" name="A1_PWM2" class="Default">
       <node ref="J1" pin="7" pinfunction="5_7" pintype="passive"/>
       <node ref="J11" pin="5" pinfunction="5_5" pintype="passive"/>
     </net>
-    <net code="11" name="A1_PWM3" class="Default">
+    <net code="12" name="A1_PWM3" class="Default">
       <node ref="J1" pin="8" pinfunction="6_8" pintype="passive"/>
       <node ref="J11" pin="7" pinfunction="7_7" pintype="passive"/>
     </net>
-    <net code="12" name="A2_CS" class="Default">
+    <net code="13" name="A2_CS" class="Default">
       <node ref="J1" pin="19" pinfunction="27_19" pintype="passive"/>
       <node ref="J32" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R32" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="13" name="A2_EN" class="Default">
+    <net code="14" name="A2_EN" class="Default">
       <node ref="J12" pin="9" pinfunction="9_9" pintype="passive"/>
-      <node ref="J2" pin="10" pinfunction="17_10" pintype="passive"/>
       <node ref="R22" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="2Y_6" pintype="passive"/>
     </net>
-    <net code="14" name="A2_PH1" class="Default">
+    <net code="15" name="A2_EN_CMD" class="Default">
+      <node ref="J2" pin="10" pinfunction="17_10" pintype="passive"/>
+      <node ref="R42" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="2A_5" pintype="passive"/>
+    </net>
+    <net code="16" name="A2_PH1" class="Default">
       <node ref="J12" pin="P3" pinfunction="P3_P3" pintype="passive"/>
       <node ref="J22" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="15" name="A2_PH2" class="Default">
+    <net code="17" name="A2_PH2" class="Default">
       <node ref="J12" pin="P2" pinfunction="P2_P2" pintype="passive"/>
       <node ref="J22" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="16" name="A2_PH3" class="Default">
+    <net code="18" name="A2_PH3" class="Default">
       <node ref="J12" pin="P1" pinfunction="P1_P1" pintype="passive"/>
       <node ref="J22" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="17" name="A2_PWM1" class="Default">
+    <net code="19" name="A2_PWM1" class="Default">
       <node ref="J1" pin="4" pinfunction="2_4" pintype="passive"/>
       <node ref="J12" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="18" name="A2_PWM2" class="Default">
+    <net code="20" name="A2_PWM2" class="Default">
       <node ref="J12" pin="5" pinfunction="5_5" pintype="passive"/>
       <node ref="J2" pin="5" pinfunction="22_5" pintype="passive"/>
     </net>
-    <net code="19" name="A2_PWM3" class="Default">
+    <net code="21" name="A2_PWM3" class="Default">
       <node ref="J12" pin="7" pinfunction="7_7" pintype="passive"/>
       <node ref="J2" pin="4" pinfunction="23_4" pintype="passive"/>
     </net>
-    <net code="20" name="A3_CS" class="Default">
+    <net code="22" name="A3_CS" class="Default">
       <node ref="J1" pin="24" pinfunction="32_24" pintype="passive"/>
       <node ref="J33" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R33" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="21" name="A3_EN" class="Default">
+    <net code="23" name="A3_EN" class="Default">
       <node ref="J13" pin="9" pinfunction="9_9" pintype="passive"/>
-      <node ref="J2" pin="7" pinfunction="20_7" pintype="passive"/>
       <node ref="R23" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="3Y_8" pintype="passive"/>
     </net>
-    <net code="22" name="A3_PH1" class="Default">
+    <net code="24" name="A3_EN_CMD" class="Default">
+      <node ref="J2" pin="7" pinfunction="20_7" pintype="passive"/>
+      <node ref="R43" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="3A_9" pintype="passive"/>
+    </net>
+    <net code="25" name="A3_PH1" class="Default">
       <node ref="J13" pin="P3" pinfunction="P3_P3" pintype="passive"/>
       <node ref="J23" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="23" name="A3_PH2" class="Default">
+    <net code="26" name="A3_PH2" class="Default">
       <node ref="J13" pin="P2" pinfunction="P2_P2" pintype="passive"/>
       <node ref="J23" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="24" name="A3_PH3" class="Default">
+    <net code="27" name="A3_PH3" class="Default">
       <node ref="J13" pin="P1" pinfunction="P1_P1" pintype="passive"/>
       <node ref="J23" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="25" name="A3_PWM1" class="Default">
+    <net code="28" name="A3_PWM1" class="Default">
       <node ref="J1" pin="9" pinfunction="7_9" pintype="passive"/>
       <node ref="J13" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="26" name="A3_PWM2" class="Default">
+    <net code="29" name="A3_PWM2" class="Default">
       <node ref="J13" pin="5" pinfunction="5_5" pintype="passive"/>
       <node ref="J2" pin="21" pinfunction="36_21" pintype="passive"/>
     </net>
-    <net code="27" name="A3_PWM3" class="Default">
+    <net code="30" name="A3_PWM3" class="Default">
       <node ref="J1" pin="21" pinfunction="29_21" pintype="passive"/>
       <node ref="J13" pin="7" pinfunction="7_7" pintype="passive"/>
     </net>
-    <net code="28" name="A4_CS" class="Default">
+    <net code="31" name="A4_CS" class="Default">
       <node ref="J2" pin="19" pinfunction="38_19" pintype="passive"/>
       <node ref="J34" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R34" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="29" name="A4_EN" class="Default">
+    <net code="32" name="A4_EN" class="Default">
       <node ref="J14" pin="9" pinfunction="9_9" pintype="passive"/>
-      <node ref="J2" pin="6" pinfunction="21_6" pintype="passive"/>
       <node ref="R24" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="1Y_3" pintype="passive"/>
     </net>
-    <net code="30" name="A4_PH1" class="Default">
+    <net code="33" name="A4_EN_CMD" class="Default">
+      <node ref="J2" pin="6" pinfunction="21_6" pintype="passive"/>
+      <node ref="R44" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="1A_2" pintype="passive"/>
+    </net>
+    <net code="34" name="A4_PH1" class="Default">
       <node ref="J14" pin="P3" pinfunction="P3_P3" pintype="passive"/>
       <node ref="J24" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="31" name="A4_PH2" class="Default">
+    <net code="35" name="A4_PH2" class="Default">
       <node ref="J14" pin="P2" pinfunction="P2_P2" pintype="passive"/>
       <node ref="J24" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="32" name="A4_PH3" class="Default">
+    <net code="36" name="A4_PH3" class="Default">
       <node ref="J14" pin="P1" pinfunction="P1_P1" pintype="passive"/>
       <node ref="J24" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="33" name="A4_PWM1" class="Default">
+    <net code="37" name="A4_PWM1" class="Default">
       <node ref="J1" pin="16" pinfunction="24_16" pintype="passive"/>
       <node ref="J14" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="34" name="A4_PWM2" class="Default">
+    <net code="38" name="A4_PWM2" class="Default">
       <node ref="J1" pin="2" pinfunction="0_2" pintype="passive"/>
       <node ref="J14" pin="5" pinfunction="5_5" pintype="passive"/>
     </net>
-    <net code="35" name="A4_PWM3" class="Default">
+    <net code="39" name="A4_PWM3" class="Default">
       <node ref="J1" pin="17" pinfunction="25_17" pintype="passive"/>
       <node ref="J14" pin="7" pinfunction="7_7" pintype="passive"/>
     </net>
-    <net code="36" name="A5_CS" class="Default">
+    <net code="40" name="A5_CS" class="Default">
       <node ref="J2" pin="18" pinfunction="39_18" pintype="passive"/>
       <node ref="J35" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R35" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="37" name="A5_EN" class="Default">
-      <node ref="J1" pin="22" pinfunction="30_22" pintype="passive"/>
+    <net code="41" name="A5_EN" class="Default">
       <node ref="J15" pin="9" pinfunction="9_9" pintype="passive"/>
       <node ref="R25" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="2Y_6" pintype="passive"/>
     </net>
-    <net code="38" name="A5_PH1" class="Default">
+    <net code="42" name="A5_EN_CMD" class="Default">
+      <node ref="J1" pin="22" pinfunction="30_22" pintype="passive"/>
+      <node ref="R45" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="2A_5" pintype="passive"/>
+    </net>
+    <net code="43" name="A5_PH1" class="Default">
       <node ref="J15" pin="P3" pinfunction="P3_P3" pintype="passive"/>
       <node ref="J25" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="39" name="A5_PH2" class="Default">
+    <net code="44" name="A5_PH2" class="Default">
       <node ref="J15" pin="P2" pinfunction="P2_P2" pintype="passive"/>
       <node ref="J25" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="40" name="A5_PH3" class="Default">
+    <net code="45" name="A5_PH3" class="Default">
       <node ref="J15" pin="P1" pinfunction="P1_P1" pintype="passive"/>
       <node ref="J25" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="41" name="A5_PWM1" class="Default">
+    <net code="46" name="A5_PWM1" class="Default">
       <node ref="J1" pin="5" pinfunction="3_5" pintype="passive"/>
       <node ref="J15" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="42" name="A5_PWM2" class="Default">
+    <net code="47" name="A5_PWM2" class="Default">
       <node ref="J15" pin="5" pinfunction="5_5" pintype="passive"/>
       <node ref="J2" pin="24" pinfunction="33_24" pintype="passive"/>
     </net>
-    <net code="43" name="A5_PWM3" class="Default">
+    <net code="48" name="A5_PWM3" class="Default">
       <node ref="J15" pin="7" pinfunction="7_7" pintype="passive"/>
       <node ref="J2" pin="20" pinfunction="37_20" pintype="passive"/>
     </net>
-    <net code="44" name="A6_CS" class="Default">
+    <net code="49" name="A6_CS" class="Default">
       <node ref="J2" pin="17" pinfunction="40_17" pintype="passive"/>
       <node ref="J36" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R36" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="45" name="A6_EN" class="Default">
-      <node ref="J1" pin="23" pinfunction="31_23" pintype="passive"/>
+    <net code="50" name="A6_EN" class="Default">
       <node ref="J16" pin="9" pinfunction="9_9" pintype="passive"/>
       <node ref="R26" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="3Y_8" pintype="passive"/>
     </net>
-    <net code="46" name="A6_PH1" class="Default">
+    <net code="51" name="A6_EN_CMD" class="Default">
+      <node ref="J1" pin="23" pinfunction="31_23" pintype="passive"/>
+      <node ref="R46" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="3A_9" pintype="passive"/>
+    </net>
+    <net code="52" name="A6_PH1" class="Default">
       <node ref="J16" pin="P3" pinfunction="P3_P3" pintype="passive"/>
       <node ref="J26" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="47" name="A6_PH2" class="Default">
+    <net code="53" name="A6_PH2" class="Default">
       <node ref="J16" pin="P2" pinfunction="P2_P2" pintype="passive"/>
       <node ref="J26" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="48" name="A6_PH3" class="Default">
+    <net code="54" name="A6_PH3" class="Default">
       <node ref="J16" pin="P1" pinfunction="P1_P1" pintype="passive"/>
       <node ref="J26" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="49" name="A6_PWM1" class="Default">
+    <net code="55" name="A6_PWM1" class="Default">
       <node ref="J1" pin="10" pinfunction="8_10" pintype="passive"/>
       <node ref="J16" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="50" name="A6_PWM2" class="Default">
+    <net code="56" name="A6_PWM2" class="Default">
       <node ref="J1" pin="11" pinfunction="9_11" pintype="passive"/>
       <node ref="J16" pin="5" pinfunction="5_5" pintype="passive"/>
     </net>
-    <net code="51" name="A6_PWM3" class="Default">
+    <net code="57" name="A6_PWM3" class="Default">
       <node ref="J1" pin="20" pinfunction="28_20" pintype="passive"/>
       <node ref="J16" pin="7" pinfunction="7_7" pintype="passive"/>
     </net>
-    <net code="52" name="CGND1" class="Default">
+    <net code="58" name="EN_DISABLE" class="Default">
+      <node ref="J6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="/1OE_1" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="/3OE_10" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="/2OE_4" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="/1OE_1" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="/3OE_10" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="/2OE_4" pintype="passive"/>
+    </net>
+    <net code="59" name="GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C21" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C22" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C23" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C24" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C25" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C26" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="GND_1" pintype="passive"/>
       <node ref="J11" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="J11" pin="4" pinfunction="4_4" pintype="passive"/>
-      <node ref="JP1" pin="1" pinfunction="1_1" pintype="passive"/>
-    </net>
-    <net code="53" name="CGND2" class="Default">
+      <node ref="J11" pin="GND" pinfunction="GND_GND" pintype="passive"/>
       <node ref="J12" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="J12" pin="4" pinfunction="4_4" pintype="passive"/>
-      <node ref="JP2" pin="1" pinfunction="1_1" pintype="passive"/>
-    </net>
-    <net code="54" name="CGND3" class="Default">
+      <node ref="J12" pin="GND" pinfunction="GND_GND" pintype="passive"/>
       <node ref="J13" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="J13" pin="4" pinfunction="4_4" pintype="passive"/>
-      <node ref="JP3" pin="1" pinfunction="1_1" pintype="passive"/>
-    </net>
-    <net code="55" name="CGND4" class="Default">
+      <node ref="J13" pin="GND" pinfunction="GND_GND" pintype="passive"/>
       <node ref="J14" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="J14" pin="4" pinfunction="4_4" pintype="passive"/>
-      <node ref="JP4" pin="1" pinfunction="1_1" pintype="passive"/>
-    </net>
-    <net code="56" name="CGND5" class="Default">
+      <node ref="J14" pin="GND" pinfunction="GND_GND" pintype="passive"/>
       <node ref="J15" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="J15" pin="4" pinfunction="4_4" pintype="passive"/>
-      <node ref="JP5" pin="1" pinfunction="1_1" pintype="passive"/>
-    </net>
-    <net code="57" name="CGND6" class="Default">
+      <node ref="J15" pin="GND" pinfunction="GND_GND" pintype="passive"/>
       <node ref="J16" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="J16" pin="4" pinfunction="4_4" pintype="passive"/>
-      <node ref="JP6" pin="1" pinfunction="1_1" pintype="passive"/>
-    </net>
-    <net code="58" name="GND" class="Default">
-      <node ref="J1" pin="1" pinfunction="GND_1" pintype="passive"/>
+      <node ref="J16" pin="GND" pinfunction="GND_GND" pintype="passive"/>
       <node ref="J2" pin="15" pinfunction="GND_15" pintype="passive"/>
       <node ref="J2" pin="2" pinfunction="GND_2" pintype="passive"/>
       <node ref="J31" pin="6" pinfunction="6_6" pintype="passive"/>
@@ -2410,57 +2894,25 @@
       <node ref="J35" pin="6" pinfunction="6_6" pintype="passive"/>
       <node ref="J36" pin="6" pinfunction="6_6" pintype="passive"/>
       <node ref="J5" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="JP1" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="JP2" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="JP3" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="JP4" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="JP5" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="JP6" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="NT1" pin="1" pinfunction="1_1" pintype="passive"/>
-    </net>
-    <net code="59" name="PGND1" class="Default">
-      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="C21" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J11" pin="GND" pinfunction="GND_GND" pintype="passive"/>
-      <node ref="NT1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R21" pin="2" pinfunction="2_2" pintype="passive"/>
-    </net>
-    <net code="60" name="PGND2" class="Default">
-      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="C22" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J12" pin="GND" pinfunction="GND_GND" pintype="passive"/>
-      <node ref="NT1" pin="3" pinfunction="3_3" pintype="passive"/>
       <node ref="R22" pin="2" pinfunction="2_2" pintype="passive"/>
-    </net>
-    <net code="61" name="PGND3" class="Default">
-      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="C23" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J13" pin="GND" pinfunction="GND_GND" pintype="passive"/>
-      <node ref="NT1" pin="4" pinfunction="4_4" pintype="passive"/>
       <node ref="R23" pin="2" pinfunction="2_2" pintype="passive"/>
-    </net>
-    <net code="62" name="PGND4" class="Default">
-      <node ref="C14" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="C24" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J14" pin="GND" pinfunction="GND_GND" pintype="passive"/>
-      <node ref="NT1" pin="5" pinfunction="5_5" pintype="passive"/>
       <node ref="R24" pin="2" pinfunction="2_2" pintype="passive"/>
-    </net>
-    <net code="63" name="PGND5" class="Default">
-      <node ref="C15" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="C25" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J15" pin="GND" pinfunction="GND_GND" pintype="passive"/>
-      <node ref="NT1" pin="6" pinfunction="6_6" pintype="passive"/>
       <node ref="R25" pin="2" pinfunction="2_2" pintype="passive"/>
-    </net>
-    <net code="64" name="PGND6" class="Default">
-      <node ref="C16" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="C26" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J16" pin="GND" pinfunction="GND_GND" pintype="passive"/>
-      <node ref="NT1" pin="7" pinfunction="7_7" pintype="passive"/>
       <node ref="R26" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R41" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R42" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R43" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R44" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R45" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R46" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="4A_12" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="GND_7" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="4A_12" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="GND_7" pintype="passive"/>
     </net>
-    <net code="65" name="SPI_MISO" class="Default">
+    <net code="60" name="SPI_MISO" class="Default">
       <node ref="J1" pin="14" pinfunction="12_14" pintype="passive"/>
       <node ref="J31" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="J32" pin="2" pinfunction="2_2" pintype="passive"/>
@@ -2469,7 +2921,7 @@
       <node ref="J35" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="J36" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="66" name="SPI_MOSI" class="Default">
+    <net code="61" name="SPI_MOSI" class="Default">
       <node ref="J1" pin="13" pinfunction="11_13" pintype="passive"/>
       <node ref="J31" pin="3" pinfunction="3_3" pintype="passive"/>
       <node ref="J32" pin="3" pinfunction="3_3" pintype="passive"/>
@@ -2478,7 +2930,7 @@
       <node ref="J35" pin="3" pinfunction="3_3" pintype="passive"/>
       <node ref="J36" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="67" name="SPI_SCK" class="Default">
+    <net code="62" name="SPI_SCK" class="Default">
       <node ref="J2" pin="14" pinfunction="13_14" pintype="passive"/>
       <node ref="J31" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="J32" pin="1" pinfunction="1_1" pintype="passive"/>
@@ -2487,107 +2939,113 @@
       <node ref="J35" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="J36" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="68" name="unconnected-(J1-1-Pad3)" class="Default">
+    <net code="63" name="unconnected-(J1-1-Pad3)" class="Default">
       <node ref="J1" pin="3" pinfunction="1_3" pintype="passive+no_connect"/>
     </net>
-    <net code="69" name="unconnected-(J1-10-Pad12)" class="Default">
+    <net code="64" name="unconnected-(J1-10-Pad12)" class="Default">
       <node ref="J1" pin="12" pinfunction="10_12" pintype="passive+no_connect"/>
     </net>
-    <net code="70" name="unconnected-(J2-14-Pad13)" class="Default">
+    <net code="65" name="unconnected-(J2-14-Pad13)" class="Default">
       <node ref="J2" pin="13" pinfunction="14_13" pintype="passive+no_connect"/>
     </net>
-    <net code="71" name="unconnected-(J2-15-Pad12)" class="Default">
+    <net code="66" name="unconnected-(J2-15-Pad12)" class="Default">
       <node ref="J2" pin="12" pinfunction="15_12" pintype="passive+no_connect"/>
     </net>
-    <net code="72" name="unconnected-(J2-18-Pad9)" class="Default">
+    <net code="67" name="unconnected-(J2-18-Pad9)" class="Default">
       <node ref="J2" pin="9" pinfunction="18_9" pintype="passive+no_connect"/>
     </net>
-    <net code="73" name="unconnected-(J2-19-Pad8)" class="Default">
+    <net code="68" name="unconnected-(J2-19-Pad8)" class="Default">
       <node ref="J2" pin="8" pinfunction="19_8" pintype="passive+no_connect"/>
     </net>
-    <net code="74" name="unconnected-(J2-34-Pad23)" class="Default">
+    <net code="69" name="unconnected-(J2-34-Pad23)" class="Default">
       <node ref="J2" pin="23" pinfunction="34_23" pintype="passive+no_connect"/>
     </net>
-    <net code="75" name="unconnected-(J2-35-Pad22)" class="Default">
+    <net code="70" name="unconnected-(J2-35-Pad22)" class="Default">
       <node ref="J2" pin="22" pinfunction="35_22" pintype="passive+no_connect"/>
     </net>
-    <net code="76" name="unconnected-(J2-41-Pad16)" class="Default">
+    <net code="71" name="unconnected-(J2-41-Pad16)" class="Default">
       <node ref="J2" pin="16" pinfunction="41_16" pintype="passive+no_connect"/>
     </net>
-    <net code="77" name="unconnected-(J2-VIN-Pad1)" class="Default">
+    <net code="72" name="unconnected-(J2-VIN-Pad1)" class="Default">
       <node ref="J2" pin="1" pinfunction="VIN_1" pintype="passive+no_connect"/>
     </net>
-    <net code="78" name="unconnected-(J11-Pad2)" class="Default">
+    <net code="73" name="unconnected-(J11-Pad2)" class="Default">
       <node ref="J11" pin="2" pinfunction="2_2" pintype="passive+no_connect"/>
     </net>
-    <net code="79" name="unconnected-(J11-Pad6)" class="Default">
+    <net code="74" name="unconnected-(J11-Pad6)" class="Default">
       <node ref="J11" pin="6" pinfunction="6_6" pintype="passive+no_connect"/>
     </net>
-    <net code="80" name="unconnected-(J11-Pad8)" class="Default">
+    <net code="75" name="unconnected-(J11-Pad8)" class="Default">
       <node ref="J11" pin="8" pinfunction="8_8" pintype="passive+no_connect"/>
     </net>
-    <net code="81" name="unconnected-(J11-Pad10)" class="Default">
+    <net code="76" name="unconnected-(J11-Pad10)" class="Default">
       <node ref="J11" pin="10" pinfunction="10_10" pintype="passive+no_connect"/>
     </net>
-    <net code="82" name="unconnected-(J12-Pad2)" class="Default">
+    <net code="77" name="unconnected-(J12-Pad2)" class="Default">
       <node ref="J12" pin="2" pinfunction="2_2" pintype="passive+no_connect"/>
     </net>
-    <net code="83" name="unconnected-(J12-Pad6)" class="Default">
+    <net code="78" name="unconnected-(J12-Pad6)" class="Default">
       <node ref="J12" pin="6" pinfunction="6_6" pintype="passive+no_connect"/>
     </net>
-    <net code="84" name="unconnected-(J12-Pad8)" class="Default">
+    <net code="79" name="unconnected-(J12-Pad8)" class="Default">
       <node ref="J12" pin="8" pinfunction="8_8" pintype="passive+no_connect"/>
     </net>
-    <net code="85" name="unconnected-(J12-Pad10)" class="Default">
+    <net code="80" name="unconnected-(J12-Pad10)" class="Default">
       <node ref="J12" pin="10" pinfunction="10_10" pintype="passive+no_connect"/>
     </net>
-    <net code="86" name="unconnected-(J13-Pad2)" class="Default">
+    <net code="81" name="unconnected-(J13-Pad2)" class="Default">
       <node ref="J13" pin="2" pinfunction="2_2" pintype="passive+no_connect"/>
     </net>
-    <net code="87" name="unconnected-(J13-Pad6)" class="Default">
+    <net code="82" name="unconnected-(J13-Pad6)" class="Default">
       <node ref="J13" pin="6" pinfunction="6_6" pintype="passive+no_connect"/>
     </net>
-    <net code="88" name="unconnected-(J13-Pad8)" class="Default">
+    <net code="83" name="unconnected-(J13-Pad8)" class="Default">
       <node ref="J13" pin="8" pinfunction="8_8" pintype="passive+no_connect"/>
     </net>
-    <net code="89" name="unconnected-(J13-Pad10)" class="Default">
+    <net code="84" name="unconnected-(J13-Pad10)" class="Default">
       <node ref="J13" pin="10" pinfunction="10_10" pintype="passive+no_connect"/>
     </net>
-    <net code="90" name="unconnected-(J14-Pad2)" class="Default">
+    <net code="85" name="unconnected-(J14-Pad2)" class="Default">
       <node ref="J14" pin="2" pinfunction="2_2" pintype="passive+no_connect"/>
     </net>
-    <net code="91" name="unconnected-(J14-Pad6)" class="Default">
+    <net code="86" name="unconnected-(J14-Pad6)" class="Default">
       <node ref="J14" pin="6" pinfunction="6_6" pintype="passive+no_connect"/>
     </net>
-    <net code="92" name="unconnected-(J14-Pad8)" class="Default">
+    <net code="87" name="unconnected-(J14-Pad8)" class="Default">
       <node ref="J14" pin="8" pinfunction="8_8" pintype="passive+no_connect"/>
     </net>
-    <net code="93" name="unconnected-(J14-Pad10)" class="Default">
+    <net code="88" name="unconnected-(J14-Pad10)" class="Default">
       <node ref="J14" pin="10" pinfunction="10_10" pintype="passive+no_connect"/>
     </net>
-    <net code="94" name="unconnected-(J15-Pad2)" class="Default">
+    <net code="89" name="unconnected-(J15-Pad2)" class="Default">
       <node ref="J15" pin="2" pinfunction="2_2" pintype="passive+no_connect"/>
     </net>
-    <net code="95" name="unconnected-(J15-Pad6)" class="Default">
+    <net code="90" name="unconnected-(J15-Pad6)" class="Default">
       <node ref="J15" pin="6" pinfunction="6_6" pintype="passive+no_connect"/>
     </net>
-    <net code="96" name="unconnected-(J15-Pad8)" class="Default">
+    <net code="91" name="unconnected-(J15-Pad8)" class="Default">
       <node ref="J15" pin="8" pinfunction="8_8" pintype="passive+no_connect"/>
     </net>
-    <net code="97" name="unconnected-(J15-Pad10)" class="Default">
+    <net code="92" name="unconnected-(J15-Pad10)" class="Default">
       <node ref="J15" pin="10" pinfunction="10_10" pintype="passive+no_connect"/>
     </net>
-    <net code="98" name="unconnected-(J16-Pad2)" class="Default">
+    <net code="93" name="unconnected-(J16-Pad2)" class="Default">
       <node ref="J16" pin="2" pinfunction="2_2" pintype="passive+no_connect"/>
     </net>
-    <net code="99" name="unconnected-(J16-Pad6)" class="Default">
+    <net code="94" name="unconnected-(J16-Pad6)" class="Default">
       <node ref="J16" pin="6" pinfunction="6_6" pintype="passive+no_connect"/>
     </net>
-    <net code="100" name="unconnected-(J16-Pad8)" class="Default">
+    <net code="95" name="unconnected-(J16-Pad8)" class="Default">
       <node ref="J16" pin="8" pinfunction="8_8" pintype="passive+no_connect"/>
     </net>
-    <net code="101" name="unconnected-(J16-Pad10)" class="Default">
+    <net code="96" name="unconnected-(J16-Pad10)" class="Default">
       <node ref="J16" pin="10" pinfunction="10_10" pintype="passive+no_connect"/>
+    </net>
+    <net code="97" name="unconnected-(U1-4Y-Pad11)" class="Default">
+      <node ref="U1" pin="11" pinfunction="4Y_11" pintype="passive+no_connect"/>
+    </net>
+    <net code="98" name="unconnected-(U2-4Y-Pad11)" class="Default">
+      <node ref="U2" pin="11" pinfunction="4Y_11" pintype="passive+no_connect"/>
     </net>
   </nets>
 </export>

@@ -1,3 +1,5 @@
+> **Historical scope:** the [edge-layout revision](pcb/edge-layout.md) supersedes layout, ground, assembly and hardware-kill descriptions below. Use the current PCB README and review artifacts for this revision.
+
 # PCB requirements: passive carrier v1
 
 This replaces the earlier full-feature draft after the user's scope reduction.

@@ -11,7 +11,7 @@ def symbol(p):
     s+=f'(symbol "{name}_0_1" (rectangle (start -10.16 {height/2}) (end 10.16 {-height/2}) (stroke (width .254) (type default)) (fill (type background)))) (symbol "{name}_1_1" '
     for i,num in enumerate(p["pins"]):
         right=i>=rows;idx=i-rows if right else i;y=(rows-1)*1.27-idx*2.54;x=15.24 if right else -15.24
-        pname=p["note"].split("Physical pin legend: ")[-1].split(",")[i] if name in ("J1","J2") else num
+        pname=p["note"].split("Physical pin legend: ")[-1].split(",")[i] if name in ("J1","J2") else p.get("pin_names",p["pins"])[i]
         s+=f'(pin passive line (at {x} {y} {180 if right else 0}) (length 5.08) (name {q(pname)} {eff(1.27)}) (number {q(num)} {eff(1.27)})) '
     return s+'))',height
 def write_schematic(root,project,parts,pages,uid):
@@ -45,7 +45,7 @@ def write_schematic(root,project,parts,pages,uid):
         s+=f'(property "Sheetname" {q(data["title"])} (at {x} {y-1.27} 0) {eff(1,"(justify left bottom)")}) '
         s+=f'(property "Sheetfile" "{pg}.kicad_sch" (at {x} {y+36.27} 0) {eff(1,"(justify left top)")}) '
         s+=f'(instances (project "{project}" (path "/{uid("root")}" (page "{i+2}"))))) '
-    notes=["REVIEW PACKAGE - STOP BEFORE MANUFACTURING EXPORTS","USB-powered Teensy / six socketed Minis / through-hole assembly / fused 12V motor power","Identical global labels are the same connection. All components are passive carrier connections.","Drill-verified Mini v1.0 footprint; encoder contact 1 and 160 x 120 mm base retained. Review before ordering."]
+    notes=["REVIEW PACKAGE - STOP BEFORE MANUFACTURING EXPORTS","USB-powered Teensy / six socketed Minis / JST SMD + hand THT / fused 12V motor power","Identical global labels are the same connection. Hardware kill buffers gate all six EN lines.","Drill-verified Mini v1.0 footprint; encoder contact 1 and 160 x 120 mm base retained. Review before ordering."]
     for n,note in enumerate(notes): s+=f'(text {q(note)} (at 15 {15+n*5} 0) {eff(1.2,"(justify left)")} (uuid {uid("root-note"+str(n))})) '
     (root/(project+".kicad_sch")).write_text(s+f'(sheet_instances (path "/" (page "1"))))\n')
 def write_project(root,project,parts):

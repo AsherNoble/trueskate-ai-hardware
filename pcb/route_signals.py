@@ -15,7 +15,7 @@ ROOT=Path(__file__).resolve().parent
 PCB=ROOT/"trueskate-main-v1.kicad_pcb"
 EXCHANGE=ROOT/"routing"
 SIGNALS={f"A{i}_{suffix}" for i in range(1,7) for suffix in
-         ("PWM1","PWM2","PWM3","EN","CS")}|{"SPI_SCK","SPI_MISO","SPI_MOSI"}
+         ("PWM1","PWM2","PWM3","EN","EN_CMD","CS")}|{"SPI_SCK","SPI_MISO","SPI_MOSI","3V3","EN_DISABLE"}
 
 def export():
     EXCHANGE.mkdir(exist_ok=True)
@@ -47,6 +47,11 @@ def imp():
         if t.GetNetname() not in SIGNALS-manual: continue
         copied=t.Duplicate();copied.SetNet(nets[t.GetNetname()]);copied.SetLocked(False)
         if not isinstance(copied,k.PCB_VIA): copied.SetWidth(max(copied.GetWidth(),k.FromMM(.2)))
+        # Freerouting uses its own edge rules. Keep every endpoint at least
+        # 0.65mm inside the board (>=0.5mm to a 0.25mm trace edge).
+        if not isinstance(copied,k.PCB_VIA):
+            for getter,setter in [(copied.GetStart,copied.SetStart),(copied.GetEnd,copied.SetEnd)]:
+                q=getter();q.y=max(k.FromMM(.65),min(q.y,k.FromMM(119.35)));q.x=max(k.FromMM(.65),min(q.x,k.FromMM(159.35)));setter(q)
         original.Add(copied);count+=1
     k.ZONE_FILLER(original).Fill(original.Zones())
     k.SaveBoard(str(PCB),original,True)

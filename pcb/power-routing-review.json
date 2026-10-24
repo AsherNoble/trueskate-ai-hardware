@@ -1,91 +1,94 @@
 {
+  "bus_current_a": 12,
+  "bus_calculated_minimum_mm": 4.626,
+  "input_feed": "parallel 2mm top/bottom paths, 6A estimate per layer; connector and fuse pad transitions require thermal validation",
   "current_a": 3,
-  "copper_thickness_um": 35,
+  "copper_thickness_um": 70,
   "layer": "external",
   "temperature_rise_c": 10,
   "estimate": "IPC-2221 external-layer equation; not a thermal qualification",
-  "minimum_calculated_width_mm": 1.367,
+  "minimum_calculated_width_mm": 0.684,
   "supply_chosen_mm": 2,
-  "return_chosen_mm": 1.8,
-  "shared_trunk_mm": 3,
+  "return_geometry": "filled GND planes",
+  "shared_trunk_mm": 12,
   "aggregate_six_axis_rating_established": false,
   "axes": [
     {
       "axis": 1,
       "supply_min_width_mm": 2,
-      "return_min_width_mm": 1.8,
+      "return_path": "continuous GND planes; thermal qualification pending",
       "bulk_power_pad_distances_mm": [
-        11.242,
-        11.232
+        10.604,
+        10.606
       ],
       "ceramic_power_pad_distances_mm": [
-        10.367,
-        10.405
+        9.151,
+        16.155
       ]
     },
     {
       "axis": 2,
       "supply_min_width_mm": 2,
-      "return_min_width_mm": 1.8,
+      "return_path": "continuous GND planes; thermal qualification pending",
       "bulk_power_pad_distances_mm": [
-        11.242,
-        11.232
+        10.604,
+        10.606
       ],
       "ceramic_power_pad_distances_mm": [
-        10.367,
-        10.405
+        9.151,
+        16.155
       ]
     },
     {
       "axis": 3,
       "supply_min_width_mm": 2,
-      "return_min_width_mm": 1.8,
+      "return_path": "continuous GND planes; thermal qualification pending",
       "bulk_power_pad_distances_mm": [
-        11.242,
-        11.232
+        10.604,
+        10.606
       ],
       "ceramic_power_pad_distances_mm": [
-        10.367,
-        10.405
+        9.151,
+        16.155
       ]
     },
     {
       "axis": 4,
       "supply_min_width_mm": 2,
-      "return_min_width_mm": 1.8,
+      "return_path": "continuous GND planes; thermal qualification pending",
       "bulk_power_pad_distances_mm": [
-        13.79,
-        13.781
+        10.604,
+        10.606
       ],
       "ceramic_power_pad_distances_mm": [
-        8.51,
-        8.541
+        9.151,
+        16.155
       ]
     },
     {
       "axis": 5,
       "supply_min_width_mm": 2,
-      "return_min_width_mm": 1.8,
+      "return_path": "continuous GND planes; thermal qualification pending",
       "bulk_power_pad_distances_mm": [
-        13.79,
-        13.781
+        10.604,
+        10.606
       ],
       "ceramic_power_pad_distances_mm": [
-        8.51,
-        8.541
+        9.151,
+        16.155
       ]
     },
     {
       "axis": 6,
       "supply_min_width_mm": 2,
-      "return_min_width_mm": 1.8,
+      "return_path": "continuous GND planes; thermal qualification pending",
       "bulk_power_pad_distances_mm": [
-        13.79,
-        13.781
+        10.604,
+        10.606
       ],
       "ceramic_power_pad_distances_mm": [
-        8.51,
-        8.541
+        9.151,
+        16.155
       ]
     }
   ]

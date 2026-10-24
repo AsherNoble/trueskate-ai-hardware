@@ -1,3 +1,5 @@
+> **Historical scope:** the [edge-layout revision](edge-layout.md) supersedes layout, ground, assembly and hardware-kill descriptions below. Use the current PCB README and review artifacts for this revision.
+
 # v1: a six-axis wiring carrier
 
 This board is your perfboard wiring made repeatable, not a new motor controller.

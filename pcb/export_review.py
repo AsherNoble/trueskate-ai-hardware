@@ -42,7 +42,7 @@ def main():
     run([CLI,'sch','export','netlist','--format','kicadxml','--output',ROOT/'netlist-review.xml',SCH])
     audit=run([sys.executable,ROOT/'audit.py'])
     board_audit=run([PY,ROOT/'verify_board.py'])
-    ground_audit=run([PY,ROOT/'tools/check_ground_bridges.py'])
+    ground_audit=run([sys.executable,ROOT/'verify_kill.py'])
     mini_audit=run([sys.executable,ROOT/'verify_mini.py','--checks-only'])
     power_audit=run([PY,ROOT/'verify_power.py'])
     if not args.checks_only:
@@ -53,7 +53,7 @@ def main():
         for name,side,rotate in [('top','top',None),('bottom','bottom',None),('3d','top','-35,0,25')]:
             cmd=[CLI,'pcb','render','--width','1800','--height','1400','--quality','high',
                  '--background','opaque','--side',side,'--output',ROOT/(name+'-review.png')]
-            if rotate:cmd+=['--rotate',rotate,'--perspective']
+            if rotate:cmd+=['--rotate',rotate,'--perspective','--zoom','0.78']
             jobs.append(cmd+[PCB])
         with ThreadPoolExecutor(max_workers=3) as pool:list(pool.map(run,jobs))
     files=[PCB,ROOT/'trueskate-main-v1.kicad_pro',SCH,ROOT/'routing/signals.ses',
@@ -66,6 +66,7 @@ def main():
     status=dict(kicad_version=drc['kicad_version'],checked_at=drc['date'],
                 erc='PASS',drc='PASS: no violations, opens, parity issues, exclusions or ignored checks',
                 human_review_required=True,manufacturing_exports_generated=False,
+                requirements_not_fully_satisfied=['Requirement 9: uninterrupted ground reference and no parallel SPI/phase geometry not achieved', 'SH harness mapping needs physical verification', '12A assembled-system thermal rating and fuse value unqualified', 'New mounting-hole and socket/cable fit checks pending'],
                 files_sha256={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()for p in files},
                 independent_checks=(audit+board_audit+ground_audit+mini_audit+power_audit).strip())
     (ROOT/'review-status.json').write_text(json.dumps(status,indent=2)+'\n')

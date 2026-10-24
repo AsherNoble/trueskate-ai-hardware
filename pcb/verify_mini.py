@@ -46,10 +46,10 @@ def main():
         assert len(f['pads'])==15 and {p['pin'] for p in f['pads']}==set(reference)
         assert not f['flipped'],ref
         i=int(ref[1:])-10
-        expected={'1':f'CGND{i}','2':None,'3':f'A{i}_PWM1','4':f'CGND{i}',
+        expected={'1':'GND','2':None,'3':f'A{i}_PWM1','4':'GND',
                   '5':f'A{i}_PWM2','6':None,'7':f'A{i}_PWM3','8':None,
                   '9':f'A{i}_EN','10':None,'P1':f'A{i}_PH3','P2':f'A{i}_PH2',
-                  'P3':f'A{i}_PH1','VIN':'12V_FUSED','GND':f'PGND{i}'}
+                  'P3':f'A{i}_PH1','VIN':'12V_FUSED','GND':'GND'}
         for p in f['pads']:
             net=None if p['net'].startswith('unconnected-') else p['net']
             if net!=expected[p['pin']]:mismatches.append(dict(reference=ref,pad=p['pin'],expected=expected[p['pin']],actual=net))

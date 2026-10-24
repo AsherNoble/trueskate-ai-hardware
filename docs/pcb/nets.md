@@ -1,22 +1,22 @@
 # TrueSkate v1 - every net, in plain English
 
-A net is one named electrical connection: all its pads and copper are joined. This guide covers all 67 nets; n means axis 1-6, p means channel 1-3. The carrier is wiring, sockets, capacitors, resistors and a fuse holder; the plugged-in modules do the control.
+Identical labels are one electrical net. Shared copper remains continuous with any axis unpopulated. The two shared kill buffers and their bias/bypass parts remain fitted. Plug-in modules perform motor control.
 
 | Net or repeated family | What it connects and why |
 |---|---|
-| `12V_IN` | J5 positive to F1 input. Raw motor-supply power, before the fuse. Wrong polarity can damage this board. |
-| `12V_FUSED` | F1 output to all six Mini VIN pads and both capacitors per axis. The fuse interrupts sustained excess input current; it does not regulate motor current. |
-| `3V3` | Teensy 3.3 V output to encoder contact 5. USB powers the Teensy; neither the carrier VIN contact nor any Mini regulator output feeds this net. |
-| `GND` | Zero-volt reference for Teensy, encoders and bridge GND pads. Joins supply negative and all motor returns at copper junction NT1. USB and motor supply are not electrically isolated. |
-| `PGND1 ... PGND6` | One separate motor-power return per axis: Mini GND power pad, its capacitor negatives and EN pull-down. The six returns meet GND only at NT1 on the bare carrier. |
-| `CGND1 ... CGND6` | Mini control contacts 1 and 4 to that axis's optional bridge pad. Leave JP1-JP6 OPEN. The installed Mini already joins these contacts internally to its own power return; closing a bridge adds a parallel path through logic ground. |
-| `SPI_SCK` | Teensy pin 13 to encoder contact 1 on all six sockets. Clock pulses tell encoders when to shift each data bit. |
-| `SPI_MOSI` | Teensy pin 11 to encoder contact 3. Commands go out from the Teensy to all encoders. |
-| `SPI_MISO` | Encoder contact 2 to Teensy pin 12. Only the selected encoder may send angle data back. |
-| `A<n>_PWM<p> (18 nets)` | Three low-power pulse-width-modulation instructions per axis, Teensy to Mini control contacts 3/5/7. All axes use edge-aligned PWM at one common frequency (intended 25 kHz). These are NOT motor-phase power. |
-| `A<n>_EN (6 nets)` | Teensy to Mini control contact 9. High enables that driver. R21-R26 each connect EN through 10k ohms to its own PGND, holding it low when the Teensy is not driving. This cannot override a stuck-high output and is not a hardware kill. |
-| `A<n>_CS (6 nets)` | Teensy to encoder contact 4. Chip select is active low: choose one encoder at a time. Firmware must establish all selects high before SPI transfers. |
-| `A<n>_PH<p> (18 nets)` | Three switched motor-power outputs per axis: Mini OUT1/2/3 (socket P3/P2/P1) to male phase-header contacts 1/2/3. Never move these cables with 12 V live. |
+| `12V_IN` | J5 positive to F1 input, before the fuse. Parallel copper feeds; correct polarity required. |
+| `12V_FUSED` | F1 output to all Mini VIN contacts and local capacitors. 12 mm bus, 2 oz copper; 2 mm axis feeds. |
+| `3V3` | Teensy regulator to encoders, CS pull-ups, kill buffers and /OE pull-up. USB powers the Teensy. |
+| `GND` | Continuous top/bottom ground planes join supply negative, logic, Minis and capacitor returns. No isolation. |
+| `SPI_SCK` | Teensy 13 to all encoders. SH contact assignment is provisional; see README verification table. |
+| `SPI_MOSI` | Teensy 11 to all encoders. Host-to-encoder data. |
+| `SPI_MISO` | Encoders to Teensy 12. Only the selected encoder may drive this shared line. |
+| `A<n>_PWM<p>` | Three logic PWM instructions per axis from Teensy to Mini. Existing pin map retained. |
+| `A<n>_EN_CMD` | Teensy EN command to a buffer input; 10k input pull-down holds an undriven command low. |
+| `EN_DISABLE` | J6 NC loop shorts this net to GND to permit commands. Open loop lets R1 pull it high and disable all buffers. |
+| `A<n>_EN` | Buffered enable to Mini pin9. Open kill loop makes buffer high impedance; local 10k pulls EN low. |
+| `A<n>_CS` | Individual active-low encoder select with 10k pull-up. Fit with its encoder; deselect all before SPI. |
+| `A<n>_PH<p>` | Mini P3/P2/P1 to male motor header1/2/3. Never move phase cables with 12V live. |
 
 Names expand literally: for example `A2_PWM3` and `A6_PH1`. This covers every name, not just a sample.
 
@@ -29,4 +29,4 @@ Names expand literally: for example `A2_PWM3` and `A6_PH1`. This covers every na
 | A5 | middle curl 2 | 3 / 33 / 37 | 30 | 39 |
 | A6 | middle splay | 8 / 9 / 28 | 31 | 40 |
 
-No-connect contacts are NOT nets: Teensy VIN and unused digital contacts; Mini 2 (its regulator output), 6 (reset), 8 (sleep), 10 (fault). Encoder square pad/marked pin 1 is CLK; order is CLK, MISO, MOSI, CSn, 3V3, GND. V1 has no polarity protection, hardware kill or guaranteed capacitor discharge. Disconnect 12 V and measure residual voltage before moving wires. Human review before ordering; this is not a manufacturing release.
+SH pin-to-net order is UNVERIFIED: see README and check the actual AS5048A board with a multimeter. Opening kill disables EN but does not disconnect 12V; reclosing permits the current command without a latch. Human review, mechanical fit, load/thermal, startup and noise tests remain required before manufacture.

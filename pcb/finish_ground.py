@@ -13,11 +13,7 @@ import pcbnew as k
 ROOT=Path(__file__).resolve().parent
 b=k.LoadBoard(str(ROOT/'trueskate-main-v1.kicad_pcb'))
 fps={f.GetReference():f for f in b.GetFootprints()}
-# Four congested ground contacts use solid copper instead of a single stranded
-# thermal spoke. This is a geometry correction, not a waived thermal violation.
-for ref,number in [('J2','2'),('J2','15'),('J1','1'),('JP5','2')]:
-    p=next(p for p in fps[ref].Pads() if p.GetNumber()==number)
-    assert p.GetNetname()=='GND';p.SetLocalZoneConnection(k.ZONE_CONNECTION_FULL)
+assert not any(t.IsLocked() and t.GetNetname()=='GND' for t in b.GetTracks()), 'Run on the imported board before ground stitching'
 def xy(x,y):return k.VECTOR2I(k.FromMM(x),k.FromMM(y))
 def mm(p):return k.ToMM(p.x),k.ToMM(p.y)
 # Explicit short quiet-ground links selected against this revision's native
@@ -63,7 +59,7 @@ def clearance(x,y):
         if d<0:return -1
         best=min(best,d)
     for ax,ay,zx,zy,r in segments:
-        if x<min(ax,zx)-2 or x>max(ax,zx)+2 or y<min(ay,zy)-2 or y>max(ay,zy)+2:continue
+        if x<min(ax,zx)-r-1 or x>max(ax,zx)+r+1 or y<min(ay,zy)-r-1 or y>max(ay,zy)+r+1:continue
         dx,dy=zx-ax,zy-ay
         f=max(0,min(1,((x-ax)*dx+(y-ay)*dy)/(dx*dx+dy*dy))) if dx or dy else 0
         d=math.hypot(x-ax-f*dx,y-ay-f*dy)-r-.35-.25
@@ -71,8 +67,8 @@ def clearance(x,y):
         best=min(best,d)
     return best
 candidates={}
-for iy in range(177,336):
-    for ix in range(113,628):
+for iy in range(8,472,2):
+    for ix in range(8,632,2):
         x,y=ix/4,iy/4
         p=xy(x,y)
         if not all(poly.Contains(p) for poly in polys.values()):continue
@@ -102,4 +98,4 @@ k.SaveBoard(str(ROOT/'trueskate-main-v1.kicad_pcb'),b,True)
 (ROOT/'ground-stitching.json').write_text(json.dumps(chosen,indent=2)+'\n')
 (ROOT/'ground-links.json').write_text(json.dumps(links,indent=2)+'\n')
 print(f'Placed {len(chosen)} locked logic-GND stitching vias at independently cleared grid positions.')
-print('Motor returns and existing manual traces were not changed. Run strict DRC next.')
+print('Existing manual power and phase traces were not changed. Run strict DRC next.')

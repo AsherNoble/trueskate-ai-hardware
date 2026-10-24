@@ -45,8 +45,8 @@ mirrors the interface but does not move anything, and the serial protocol in
 Start with [docs/bringup.md](docs/bringup.md) for what the bench has proved.
 
 The [six-axis carrier review package](pcb/README.md) is a separate hardware
-design, not yet released for fabrication. Its USB-only, all-through-hole scope
-is defined in [PCB requirements](docs/pcb-requirements.md); start with the
+design, not yet released for fabrication. Its current edge layout uses six JLC-assembled JST connectors, hand-soldered THT parts,
+and a hardware kill circuit. See [layout changes and outstanding checks](docs/pcb/edge-layout.md); start with the
 [one-page net guide](docs/pcb/nets.md). Firmware still needs migration from the
 one-axis bench pin assignments before use with this carrier.
 

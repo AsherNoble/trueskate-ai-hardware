@@ -1,26 +1,104 @@
 {
-  "status": "PASSIVE CARRIER V1 - HUMAN REVIEW BEFORE MANUFACTURING EXPORTS",
-  "board_mm": [160, 120],
-  "layers": 2,
-  "copper_oz": 1,
-  "axes": [
-    {"name": "index_curl_1", "pwm": [4, 5, 6], "enable": 16, "cs": 26},
-    {"name": "index_curl_2", "pwm": [2, 22, 23], "enable": 17, "cs": 27},
-    {"name": "index_splay", "pwm": [7, 36, 29], "enable": 20, "cs": 32},
-    {"name": "middle_curl_1", "pwm": [24, 0, 25], "enable": 21, "cs": 38},
-    {"name": "middle_curl_2", "pwm": [3, 33, 37], "enable": 30, "cs": 39},
-    {"name": "middle_splay", "pwm": [8, 9, 28], "enable": 31, "cs": 40}
+  "status": "EDGE CARRIER REVIEW - NOT RELEASED FOR MANUFACTURE",
+  "board_mm": [
+    160,
+    120
   ],
-  "spi0": {"mosi": 11, "miso": 12, "sck": 13},
-  "unused_pins": [1, 10, 14, 15, 18, 19, 34, 35, 41],
-  "encoder_pin_order": ["CLK", "MISO", "MOSI", "CSn", "3V3", "GND"],
+  "layers": 2,
+  "copper_oz": 2,
+  "axes": [
+    {
+      "name": "index_curl_1",
+      "pwm": [
+        4,
+        5,
+        6
+      ],
+      "enable": 16,
+      "cs": 26
+    },
+    {
+      "name": "index_curl_2",
+      "pwm": [
+        2,
+        22,
+        23
+      ],
+      "enable": 17,
+      "cs": 27
+    },
+    {
+      "name": "index_splay",
+      "pwm": [
+        7,
+        36,
+        29
+      ],
+      "enable": 20,
+      "cs": 32
+    },
+    {
+      "name": "middle_curl_1",
+      "pwm": [
+        24,
+        0,
+        25
+      ],
+      "enable": 21,
+      "cs": 38
+    },
+    {
+      "name": "middle_curl_2",
+      "pwm": [
+        3,
+        33,
+        37
+      ],
+      "enable": 30,
+      "cs": 39
+    },
+    {
+      "name": "middle_splay",
+      "pwm": [
+        8,
+        9,
+        28
+      ],
+      "enable": 31,
+      "cs": 40
+    }
+  ],
+  "spi0": {
+    "mosi": 11,
+    "miso": 12,
+    "sck": 13
+  },
+  "unused_pins": [
+    1,
+    10,
+    14,
+    15,
+    18,
+    19,
+    34,
+    35,
+    41
+  ],
+  "encoder_pin_order": [
+    "CLK",
+    "MISO",
+    "MOSI",
+    "CSn",
+    "3V3",
+    "GND"
+  ],
   "teensy_power": "USB ONLY; carrier VIN contact unconnected; no Teensy modification",
-  "assembly": "ALL THROUGH-HOLE; hand soldering; no factory assembly",
+  "assembly": "J31-J36 JLCPCB SMD; all other fitted components hand-soldered THT",
   "mini_source_commit": "848e8ece46d045ac24283e2d6ee9ea4ba8ef95d5",
   "mini_power_connection": "Mini v1.0 VIN/GND at 4.953 mm pitch; two single machine-pin receptacles per Mini; direct 3 A branches",
-  "encoder_confirmation": "RESOLVED by user: breakout pin 1 and signal order verified",
-  "kill_reset_decision": "NOT APPLICABLE TO V1; hardware kill moved to v2 backlog",
+  "encoder_confirmation": "UNVERIFIED SH harness mapping; multimeter verification required",
+  "kill_reset_decision": "NC loop enables SN74LV125AN buffers; open loop forces EN low through pull-downs",
   "mini_physical_fit": "RESOLVED by user: 1:1 template verified; source-derived socket footprint retained",
-  "base_fit": "RESOLVED by user: 160 x 120 mm fits",
-  "control_ground_bridges": "Six through-hole wire/solder bridges, default OPEN"
+  "base_fit": "160 x 120 mm outline retained; relocated mounting holes require a new fit check",
+  "control_ground_bridges": "Removed JP1-JP6 and NT1; Mini control and power grounds connect to continuous GND planes"
 }
