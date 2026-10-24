@@ -1,0 +1,43 @@
+{
+  "part": "SN74LV125AN",
+  "logic_family": "LV-A low-voltage CMOS",
+  "supply": "Teensy USB-powered 3V3; no connection to Mini regulator outputs",
+  "axes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "states": [
+    {
+      "state": "Teensy unpowered",
+      "rail_v": 0,
+      "buffer": "Ioff / high impedance",
+      "carrier_en_max_v": 0.21000000000000002,
+      "drv8313_en_max_v": 0.37500000000000006
+    },
+    {
+      "state": "Teensy boot, GPIO high impedance",
+      "rail_v": 3.3,
+      "buffer": "input pulled low; enabled output low, or disabled output pulled low",
+      "carrier_en_max_v": 0.21000000000000002,
+      "drv8313_en_max_v": 0.37500000000000006
+    },
+    {
+      "state": "Kill loop open",
+      "rail_v": 3.3,
+      "buffer": "/OE high, output high impedance",
+      "carrier_en_max_v": 0.21000000000000002,
+      "drv8313_en_max_v": 0.37500000000000006
+    }
+  ],
+  "conservative_drv8313_low_limit_v": 0.6,
+  "assumptions": [
+    "Carrier pull-downs 10k, <=5% tolerance; Mini R4 10k, <=10% tolerance",
+    "Boot state uses valid 3.3V rail and high-impedance GPIO without a pull-up",
+    "No external back-powering; all GND connections intact"
+  ],
+  "scope": "Datasheet DC analysis, not an oscilloscope measurement; the 0<VCC<2V transition is outside the buffer recommended operating range"
+}

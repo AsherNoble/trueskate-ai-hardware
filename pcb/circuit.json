@@ -281,7 +281,7 @@
       270
     ],
     "price": 0.05,
-    "note": "Optional axis; fit with Mini",
+    "note": "Optional axis; fit with Mini; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -303,12 +303,12 @@
       185
     ],
     "pcb": [
-      17,
-      14,
+      19.6,
+      61,
       0
     ],
     "price": 0.05,
-    "note": "Optional axis; fit with encoder",
+    "note": "Optional axis; fit with encoder; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -331,7 +331,7 @@
     ],
     "pcb": [
       17.5,
-      51,
+      51.5,
       0
     ],
     "price": 0,
@@ -358,7 +358,7 @@
     ],
     "pcb": [
       10,
-      46,
+      47,
       270
     ],
     "price": 0.13,
@@ -506,7 +506,7 @@
       270
     ],
     "price": 0.05,
-    "note": "Optional axis; fit with Mini",
+    "note": "Optional axis; fit with Mini; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -528,12 +528,12 @@
       185
     ],
     "pcb": [
-      42,
-      14,
+      44.6,
+      61,
       0
     ],
     "price": 0.05,
-    "note": "Optional axis; fit with encoder",
+    "note": "Optional axis; fit with encoder; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -556,7 +556,7 @@
     ],
     "pcb": [
       42.5,
-      51,
+      51.5,
       0
     ],
     "price": 0,
@@ -583,7 +583,7 @@
     ],
     "pcb": [
       35,
-      46,
+      47,
       270
     ],
     "price": 0.13,
@@ -731,7 +731,7 @@
       270
     ],
     "price": 0.05,
-    "note": "Optional axis; fit with Mini",
+    "note": "Optional axis; fit with Mini; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -753,12 +753,12 @@
       185
     ],
     "pcb": [
-      67,
-      14,
+      69.6,
+      61,
       0
     ],
     "price": 0.05,
-    "note": "Optional axis; fit with encoder",
+    "note": "Optional axis; fit with encoder; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -781,7 +781,7 @@
     ],
     "pcb": [
       67.5,
-      51,
+      51.5,
       0
     ],
     "price": 0,
@@ -808,7 +808,7 @@
     ],
     "pcb": [
       60,
-      46,
+      47,
       270
     ],
     "price": 0.13,
@@ -956,7 +956,7 @@
       270
     ],
     "price": 0.05,
-    "note": "Optional axis; fit with Mini",
+    "note": "Optional axis; fit with Mini; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -978,12 +978,12 @@
       185
     ],
     "pcb": [
-      92,
-      14,
+      94.6,
+      61,
       0
     ],
     "price": 0.05,
-    "note": "Optional axis; fit with encoder",
+    "note": "Optional axis; fit with encoder; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1006,7 +1006,7 @@
     ],
     "pcb": [
       92.5,
-      51,
+      51.5,
       0
     ],
     "price": 0,
@@ -1033,7 +1033,7 @@
     ],
     "pcb": [
       85,
-      46,
+      47,
       270
     ],
     "price": 0.13,
@@ -1181,7 +1181,7 @@
       270
     ],
     "price": 0.05,
-    "note": "Optional axis; fit with Mini",
+    "note": "Optional axis; fit with Mini; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1203,12 +1203,12 @@
       185
     ],
     "pcb": [
-      117,
-      14,
+      119.6,
+      61,
       0
     ],
     "price": 0.05,
-    "note": "Optional axis; fit with encoder",
+    "note": "Optional axis; fit with encoder; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1231,7 +1231,7 @@
     ],
     "pcb": [
       117.5,
-      51,
+      51.5,
       0
     ],
     "price": 0,
@@ -1258,7 +1258,7 @@
     ],
     "pcb": [
       110,
-      46,
+      47,
       270
     ],
     "price": 0.13,
@@ -1406,7 +1406,7 @@
       270
     ],
     "price": 0.05,
-    "note": "Optional axis; fit with Mini",
+    "note": "Optional axis; fit with Mini; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1428,12 +1428,12 @@
       185
     ],
     "pcb": [
-      142,
-      14,
+      144.6,
+      61,
       0
     ],
     "price": 0.05,
-    "note": "Optional axis; fit with encoder",
+    "note": "Optional axis; fit with encoder; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1456,7 +1456,7 @@
     ],
     "pcb": [
       142.5,
-      51,
+      51.5,
       0
     ],
     "price": 0,
@@ -1483,7 +1483,7 @@
     ],
     "pcb": [
       135,
-      46,
+      47,
       270
     ],
     "price": 0.13,
@@ -1520,8 +1520,8 @@
   },
   {
     "ref": "F1",
-    "value": "ATO fuse holder / fuse TBD",
-    "fp": "TrueSkate:Edge_FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165",
+    "value": "Keystone 3557-2 ATO holder",
+    "fp": "TrueSkate:Keystone_3557-2_ATO",
     "pins": [
       "1",
       "2"
@@ -1537,12 +1537,12 @@
     ],
     "pcb": [
       30,
-      113,
+      112.5,
       0
     ],
-    "price": 3,
-    "note": "Littelfuse178.6165.0001; load/inrush and temperature qualification required",
-    "lcsc": "",
+    "price": 1.68,
+    "note": "One complete holder includes both contacts for one standard ATO fuse; fuse purchased separately",
+    "lcsc": "C352820",
     "assembly": "Hand"
   },
   {
@@ -1595,7 +1595,7 @@
       0
     ],
     "price": 0.05,
-    "note": "",
+    "note": "; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1716,7 +1716,7 @@
       0
     ],
     "price": 0.05,
-    "note": "Shared buffer input bias; may omit with corresponding axis",
+    "note": "Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1743,7 +1743,7 @@
       0
     ],
     "price": 0.05,
-    "note": "Shared buffer input bias; may omit with corresponding axis",
+    "note": "Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1770,7 +1770,7 @@
       0
     ],
     "price": 0.05,
-    "note": "Shared buffer input bias; may omit with corresponding axis",
+    "note": "Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1891,7 +1891,7 @@
       0
     ],
     "price": 0.05,
-    "note": "Shared buffer input bias; may omit with corresponding axis",
+    "note": "Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1918,7 +1918,7 @@
       0
     ],
     "price": 0.05,
-    "note": "Shared buffer input bias; may omit with corresponding axis",
+    "note": "Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   },
@@ -1945,7 +1945,7 @@
       0
     ],
     "price": 0.05,
-    "note": "Shared buffer input bias; may omit with corresponding axis",
+    "note": "Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
   }

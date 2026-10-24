@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/Users/ashernoble/Projects/Robotics &amp; hardware/trueskate-ai-hardware/pcb/trueskate-main-v1.kicad_sch</source>
-    <date>2026-10-24T14:19:59</date>
+    <date>2026-10-24T19:28:55</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1465,10 +1465,10 @@
       </units>
     </comp>
     <comp ref="F1">
-      <value>ATO fuse holder / fuse TBD</value>
-      <footprint>TrueSkate:Edge_FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165</footprint>
+      <value>Keystone 3557-2 ATO holder</value>
+      <footprint>TrueSkate:Keystone_3557-2_ATO</footprint>
       <fields>
-        <field name="Footprint">TrueSkate:Edge_FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165</field>
+        <field name="Footprint">TrueSkate:Keystone_3557-2_ATO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1807,8 +1807,8 @@
     <libpart lib="TrueSkate" part="F1">
       <fields>
         <field name="Reference">F1</field>
-        <field name="Value">ATO fuse holder / fuse TBD</field>
-        <field name="Footprint">TrueSkate:Edge_FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165</field>
+        <field name="Value">Keystone 3557-2 ATO holder</field>
+        <field name="Footprint">TrueSkate:Keystone_3557-2_ATO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>

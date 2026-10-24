@@ -1,0 +1,166 @@
+(footprint "Keystone_3557-2_ATO"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Keystone3557-2: one complete ATO holder; manufacturer drawing3557-2 revD / catalog p47; 13.47x3.40mm hole centres, >=1.60mm drills")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "52efb737-d4fc-4d9c-9a62-ec2dbbe584b0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "fc711d15-2b2b-4dd6-8047-548161ee81a2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1ba178b0-d765-4023-8217-4e6e2f8e659d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0968c686-892f-489b-8082-bb80da6c9262")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.67 -2.165)
+		(end 17.14 -2.165)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "77d8776a-8234-4e01-881a-f5fd9a01cb78")
+	)
+	(fp_line
+		(start -3.67 5.565)
+		(end -3.67 -2.165)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "2354dc16-01d1-4b55-95d3-4c64cebc5485")
+	)
+	(fp_line
+		(start 17.14 -2.165)
+		(end 17.14 5.565)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "7338c65b-9b3b-4112-8d4e-945bc9bfea79")
+	)
+	(fp_line
+		(start 17.14 5.565)
+		(end -3.67 5.565)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "ae380a0a-7f5b-4aad-93e5-3cb5891c8a36")
+	)
+	(fp_line
+		(start -3.17 -1.665)
+		(end 16.64 -1.665)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7914e4ba-0928-4adb-a2f6-8e34c740adcb")
+	)
+	(fp_line
+		(start -3.17 5.065)
+		(end -3.17 -1.665)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "3c12c8e7-8b19-42f3-aef2-2a8f3b79ef19")
+	)
+	(fp_line
+		(start 16.64 -1.665)
+		(end 16.64 5.065)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "e68cbddc-0a3a-4d3b-9e82-a3d69226ba2f")
+	)
+	(fp_line
+		(start 16.64 5.065)
+		(end -3.17 5.065)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "40d1634b-3dfa-4e8b-b841-10740b398ddc")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 3 3)
+		(drill 1.65)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "22f5a44a-7945-4eb0-9a9d-5e6922c8dfa1")
+	)
+	(pad "1" thru_hole rect
+		(at 0 3.4)
+		(size 3 3)
+		(drill 1.65)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "fb6e7dc1-971c-4bd3-b1ad-c0979cc51c4b")
+	)
+	(pad "2" thru_hole circle
+		(at 13.47 0)
+		(size 3 3)
+		(drill 1.65)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "96c3cb38-d815-4e92-b5ac-6ccee51d9cee")
+	)
+	(pad "2" thru_hole circle
+		(at 13.47 3.4)
+		(size 3 3)
+		(drill 1.65)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "251abeec-2926-4350-b0dd-916a65ffcfa8")
+	)
+	(embedded_fonts no)
+)

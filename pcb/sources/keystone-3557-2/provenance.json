@@ -1,0 +1,34 @@
+{
+  "manufacturer": "Keystone Electronics",
+  "part": "3557-2",
+  "catalog_url": "https://www.keyelco.com/userAssets/file/M70p46-49.pdf",
+  "drawing_url": "https://www.keyelco.com/product-pdf.cfm?p=296",
+  "catalog_pdf_page": 2,
+  "part_count_per_fuse": 1,
+  "hole_centres_mm": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      3.4
+    ],
+    [
+      13.47,
+      0
+    ],
+    [
+      13.47,
+      3.4
+    ]
+  ],
+  "minimum_drill_mm": 1.6,
+  "chosen_drill_mm": 1.65,
+  "body_mm": [
+    19.81,
+    6.73,
+    7.37
+  ],
+  "sha256": "925c55e524e7aa04f5bf34cc304450f0349b5263738ac5c873e8fee3ad368e8a"
+}

@@ -31,10 +31,18 @@ def export():
     source=source.replace('(circle F.Cu 600)','(circle F.Cu 700)').replace('(circle B.Cu 600)','(circle B.Cu 700)')
     start=source.index('    (class kicad_default ')
     end=source.index('\n  )\n  (wiring',start)
-    manual=sorted({t.GetNetname() for t in b.GetTracks()})
+    manual=sorted({t.GetNetname() for t in b.GetTracks()}-SIGNALS)
     def netclass(name,names):
         return '    (class '+name+' '+' '.join(names)+'\n      (circuit (use_via "Via[0-1]_700:300_um"))\n      (rule (width 250) (clearance 250))\n    )'
     source=source[:start]+netclass('Signals',sorted(SIGNALS-set(manual)))+'\n'+netclass('Manual',manual)+source[end:]
+    # Routing-only exclusion regions protect all phase corridors. Fixed
+    # encoder escape tracks already reach the legal routing area below/right.
+    keepouts=[]
+    regions=[(0,0,160,17)]+[(3+25*i,17,17.5+25*i,44.75) for i in range(6)]
+    for i,(x0,y0,x1,y1) in enumerate(regions):
+        for layer in ('F.Cu','B.Cu'):
+            keepouts.append(f'    (keepout route_guard_{i}_{layer} (rect {layer} {x0*1000:g} {-y1*1000:g} {x1*1000:g} {-y0*1000:g}))')
+    source=source.replace('    (via "Via[0-1]_700:300_um")','\n'.join(keepouts)+'\n    (via "Via[0-1]_700:300_um")',1)
     dsn.write_text(source)
     print('Exported fixed manual copper. Autoroute Signals only, with -inc Manual.')
 
@@ -42,9 +50,9 @@ def imp():
     imported=k.LoadBoard(str(PCB))
     assert k.ImportSpecctraSES(imported,str(EXCHANGE/"signals.ses"))
     original=k.LoadBoard(str(PCB)); nets=original.GetNetsByName()
-    count=0;manual={t.GetNetname() for t in original.GetTracks() if t.IsLocked()}
+    count=0
     for t in imported.GetTracks():
-        if t.GetNetname() not in SIGNALS-manual: continue
+        if t.GetNetname() not in SIGNALS or t.IsLocked(): continue
         copied=t.Duplicate();copied.SetNet(nets[t.GetNetname()]);copied.SetLocked(False)
         if not isinstance(copied,k.PCB_VIA): copied.SetWidth(max(copied.GetWidth(),k.FromMM(.2)))
         # Freerouting uses its own edge rules. Keep every endpoint at least

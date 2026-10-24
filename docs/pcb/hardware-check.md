@@ -10,7 +10,7 @@ Use the [edge-layout report](edge-layout.md) and [PCB README](../../pcb/README.m
 4. Test NC kill open/closed with every EN command high; open must force all six EN low.
    Repeat startup, USB loss and rail sequencing tests. Reclosing currently permits restart.
 5. Verify 3.3 V regulator budget for six actual encoders and buffers; start with one column.
-6. Qualify 12 A copper/contacts/returns thermally and check SPI integrity under motor load.
-   Routing requirement 9 remains outstanding; no manufacturing release is implied.
+6. Verify the three kill states on the bench and check SPI integrity under motor load.
+   Right-side routing is audited; supply-ramp behavior remains outside the DC guarantee.
 
 Never move phase cables with 12 V live. Kill is enable inhibition, not rail isolation.

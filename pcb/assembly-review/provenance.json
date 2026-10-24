@@ -1,0 +1,11 @@
+{
+  "source_pcb_sha256": "1546a76a38b7b9ca66a864741018ece63c31074b0f8af0230f7168a88ca3d703",
+  "geometry": "current native carrier; exact tagged Mini outline/contact placement",
+  "simplifications": [
+    "Mini component bodies and locations illustrative",
+    "Teensy component bodies illustrative; socket rows native",
+    "module seating heights illustrative",
+    "holder and unmarked fuse simplified envelopes",
+    "no external cables"
+  ]
+}

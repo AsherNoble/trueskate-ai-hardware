@@ -45,6 +45,7 @@ def main():
     ground_audit=run([sys.executable,ROOT/'verify_kill.py'])
     mini_audit=run([sys.executable,ROOT/'verify_mini.py','--checks-only'])
     power_audit=run([PY,ROOT/'verify_power.py'])
+    layout_audit=run([PY,ROOT/'verify_layout.py'])
     if not args.checks_only:
         run([CLI,'sch','export','pdf','--output',ROOT/'schematic-review.pdf',SCH])
         run([PY,ROOT/'export-fit.py'])
@@ -59,16 +60,16 @@ def main():
     files=[PCB,ROOT/'trueskate-main-v1.kicad_pro',SCH,ROOT/'routing/signals.ses',
            ROOT/'circuit.json',ROOT/'bom-review.csv',ROOT/'erc-review.json',ROOT/'drc-review.json',
            ROOT/'TrueSkate.pretty/SimpleFOC_Mini_v1.0.kicad_mod',ROOT/'mini-fit-report.json',
-           ROOT/'power-routing-review.json',ROOT/'mini-drill-overlay.png',ROOT/'ground-link-plan.json']
+           ROOT/'power-routing-review.json',ROOT/'layout-review.json',ROOT/'kill-state-review.json',ROOT/'mini-drill-overlay.png',ROOT/'ground-link-plan.json']
     if not args.checks_only:
         files += [ROOT/name for name in ['schematic-review.pdf','mechanical-fit-review.pdf',
                     'net-guide-review.pdf','top-review.png','bottom-review.png','3d-review.png']]
     status=dict(kicad_version=drc['kicad_version'],checked_at=drc['date'],
                 erc='PASS',drc='PASS: no violations, opens, parity issues, exclusions or ignored checks',
                 human_review_required=True,manufacturing_exports_generated=False,
-                requirements_not_fully_satisfied=['Requirement 9: uninterrupted ground reference and no parallel SPI/phase geometry not achieved', 'SH harness mapping needs physical verification', '12A assembled-system thermal rating and fuse value unqualified', 'New mounting-hole and socket/cable fit checks pending'],
+                requirements_not_fully_satisfied=['SH harness mapping needs physical verification', '0<VCC<2V supply-ramp behavior is outside the buffer DC guarantees', 'New mounting-hole and socket/cable fit checks pending', 'Uninterrupted ground reference below every segment is not guaranteed on two layers'],
                 files_sha256={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()for p in files},
-                independent_checks=(audit+board_audit+ground_audit+mini_audit+power_audit).strip())
+                independent_checks=(audit+board_audit+ground_audit+mini_audit+power_audit+layout_audit).strip())
     (ROOT/'review-status.json').write_text(json.dumps(status,indent=2)+'\n')
     print('Review checks passed. STOP: human review before any manufacturing export.',flush=True)
 if __name__=='__main__':main()

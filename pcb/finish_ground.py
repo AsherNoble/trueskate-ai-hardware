@@ -13,7 +13,7 @@ import pcbnew as k
 ROOT=Path(__file__).resolve().parent
 b=k.LoadBoard(str(ROOT/'trueskate-main-v1.kicad_pcb'))
 fps={f.GetReference():f for f in b.GetFootprints()}
-assert not any(t.IsLocked() and t.GetNetname()=='GND' for t in b.GetTracks()), 'Run on the imported board before ground stitching'
+assert not any(isinstance(t,k.PCB_VIA) and t.IsLocked() and t.GetNetname()=='GND' for t in b.GetTracks()), 'Run on the imported board before ground stitching'
 def xy(x,y):return k.VECTOR2I(k.FromMM(x),k.FromMM(y))
 def mm(p):return k.ToMM(p.x),k.ToMM(p.y)
 # Explicit short quiet-ground links selected against this revision's native

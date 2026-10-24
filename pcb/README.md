@@ -3,7 +3,7 @@
 160 × 120 mm, two layers, **2 oz copper**. No board growth. Six columns at 25 mm pitch;
 front is Y=0, back is Y=120. J21–J26 motor headers and J31–J36 encoder connectors
 sit at the front. Minis are rotated 90° in-plane, component side up, never mirrored.
-Bulk/ceramic capacitors sit immediately behind each Mini, near its power contacts.
+The Mini courtyard follows the tagged GKO outline plus 0.5 mm. Bulk and ceramic bodies are outside it; the measured minimum body gap is 2.9136 mm to the Mini outline (2.4138 mm to its courtyard).
 J5 input, F1 fuse and J6 kill header occupy the back. Teensy USB faces the back;
 first socket contacts are at Y=118.03. PJRC dimensions give 1.27 mm from first contact to PCB end plus 0.70 mm USB-shell projection, placing the USB end at Y=120.00. Verify the actual cable shell clearance.
 
@@ -37,15 +37,31 @@ The previous adapter-board pin-order confirmation does not verify this SH cable.
 
 ## Hardware kill and partial population
 
-J6 connects a normally-closed switch between `EN_DISABLE` and GND. Closed permits
-Teensy EN commands through U1/U2 (SN74LV125AN, powered by 3.3 V). Open lets R1 pull
-all six /OE inputs high: outputs become high impedance and R21–R26 pull every Mini
-EN low, even with Teensy outputs stuck high. R41–R46 bias undriven buffer inputs low.
-Unused buffer inputs are tied off; their outputs are unused. C1/C2 bypass the buffers.
-The Ioff feature prevents buffer output backfeed when its supply is absent.
+U1/U2 are **SN74LV125AN, TI LV-A low-voltage CMOS**, PDIP-14. Their supply is
+**Teensy USB-powered 3V3**. No Mini regulator output connects to this rail.
 
-Kill removes enable, **not 12 V**. Reclosing permits the current firmware command;
-there is no restart latch. Bench-test power sequencing and the actual Mini response.
+J6's normally-closed switch joins `EN_DISABLE` to GND. Opening it lets R1 pull
+all six /OE inputs high. R21–R26 are the output pull-downs; R41–R46 bias the buffer
+inputs. All are 10k, 5% or better. Every column has the same circuit:
+
+| State | Buffer behavior | All six Mini EN lines |
+|---|---|---|
+| Teensy unpowered, 3V3=0 V | Ioff isolates outputs | R21–R26 hold low; conservative carrier EN ≤0.210 V |
+| Teensy booting, valid 3.3 V, GPIO floating | R41–R46 pull inputs low; closed kill passes low, open kill gives high impedance | Low in either switch state |
+| Kill switch open, even with GPIO high | /OE high; outputs high impedance | R21–R26 hold low, ≤0.210 V |
+
+The Mini's own 10k R4 is in series with its three DRV8313 EN inputs. Including
+5 µA buffer leakage, 3×5 µA driver-input leakage and resistor tolerances gives a
+conservative downstream EN bound of **0.375 V**, below the conservative **0.6 V**
+low-input limit. An actively driven low during boot has a lower bound ceiling of
+0.265 V. These are datasheet DC calculations, not measured waveforms. They assume
+intact grounds, populated pull-downs, no back-powering, carrier resistors ≤5% and
+Mini R4 ≤10% tolerance. The supply transition between 0 and 2 V is outside the
+buffer's guaranteed operating range; a glitch-free supply-ramp guarantee is not
+established by this circuit or by ERC.
+
+Kill inhibits EN, not 12 V. Reclosing permits the current firmware command;
+there is no restart latch. See `kill-state-review.json` for checks and bounds.
 
 Every axis may be omitted: J1n, J2n, J3n, C1n, C2n, R2n, R3n and R4n are optional
 as a column. Fit its EN pull-down with its Mini and its CS pull-up with its encoder.
@@ -68,11 +84,44 @@ Axes 1–3 use mutually distinct submodules; 4–6 share some of those resources
 They are not six independently frequency-programmable motor groups. SPI remains
 11/12/13. **No pins reassigned.** Existing firmware is still the earlier bench code.
 
+## Fuse and 12 A copper
+
+**fuse rated to the connected supply.**
+
+F1 is **one Keystone 3557-2 complete holder**, JLC/LCSC **C352820**. One part includes
+both clips and holds one standard ATO blade fuse. “2 in 1” means compatibility
+with two fuse formats, not two separate holder parts. The BOM specifies no fuse
+amperage; the replaceable fuse is separate from the holder. Keep the connected
+supply within the carrier's 12 A design envelope.
+
+The custom footprint comes from Keystone's drawing: 13.47 × 3.40 mm hole centres,
+four ≥1.60 mm holes (1.65 mm selected), two electrical pads with two legs each.
+The PCB retains 2 oz copper, a 12 mm trunk, a 6 mm fused output stem, dual-layer
+2 mm input feeds, and 2 mm per-Mini branches. Grounds use the two filled planes.
+
+## Encoder routing
+
+Each encoder's SPI, CS, 3V3 and GND escape runs down the right/JST half of its
+column. The bundles jog around the Mini power annuli, then join the shared rear
+routing area behind the Minis. Autorouter exclusion areas protect the phase-side
+corridors. The final native-copper audit reports any exception in `layout-review.json`.
+There are no column exceptions in the checked layout. A continuous reference plane
+beneath every segment is not asserted for this two-layer board.
+
+## Populated assembly views
+
+[Top](assembly-review/populated-top.png),
+[front perspective](assembly-review/populated-perspective.png), and
+[rear perspective](assembly-review/populated-rear.png) show all six Minis, the
+Teensy, single power receptacles and fuse assembly fitted to the current carrier.
+Added module models are simplified; see [model assumptions](assembly-review/README.md).
+
 ## Review artifacts and rebuilding
 
 - `top-review.png`, `3d-review.png`, `bottom-review.png`: native KiCad renders;
-  plug-in modules, external switch and cables are omitted.
-- `bom-review.csv`, `bom-diff.md`: current BOM and changes from commit 1d2f9e6.
+  plug-in modules, fuse holder/fuse, single power receptacles, external switch
+  and cables are omitted.
+- `bom-review.csv`, `bom-diff.md`: current BOM and changes from commit f5fce90.
 - `schematic-review.pdf`, `mechanical-fit-review.pdf`, `net-guide-review.pdf`.
 - `mini-drill-overlay.png`, `mini-fit-report.json`: exact tagged Mini geometry.
 - `drc-review.json`, `erc-review.json`, `review-status.json`: validation evidence.
@@ -90,4 +139,6 @@ Sources: [JST SH datasheet](https://www.jst-mfg.com/product/pdf/eng/eSH.pdf),
 [TI SN74LV125A](https://www.ti.com/lit/ds/symlink/sn74lv125a.pdf),
 [PJRC timers](https://www.pjrc.com/teensy/td_pulse.html),
 [PJRC dimensions](https://www.pjrc.com/teensy/dimensions.html),
-[Littelfuse FLR PCB](https://www.littelfuse.com/~/media/commercial-vehicle/datasheets/automotive-fuse-holders/ato/littelfuse-fuse-holder-ato-flr-pcb-datasheet.pdf).
+[Keystone 3557-2](https://www.keyelco.com/product.cfm/product_id/296),
+[Keystone dimensional drawing](https://www.keyelco.com/product-pdf.cfm?p=296),
+[DRV8313 logic limits](https://www.ti.com/lit/ds/symlink/drv8313.pdf).

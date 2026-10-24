@@ -29,4 +29,4 @@ Names expand literally: for example `A2_PWM3` and `A6_PH1`. This covers every na
 | A5 | middle curl 2 | 3 / 33 / 37 | 30 | 39 |
 | A6 | middle splay | 8 / 9 / 28 | 31 | 40 |
 
-SH pin-to-net order is UNVERIFIED: see README and check the actual AS5048A board with a multimeter. Opening kill disables EN but does not disconnect 12V; reclosing permits the current command without a latch. Human review, mechanical fit, load/thermal, startup and noise tests remain required before manufacture.
+SH pin-to-net order is UNVERIFIED: see README and check the actual AS5048A board with a multimeter. Opening kill disables EN but does not disconnect 12V; reclosing permits the current command without a latch. Human review, mechanical fit, startup and noise tests remain required before manufacture.

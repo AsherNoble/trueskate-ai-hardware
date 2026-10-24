@@ -50,6 +50,20 @@ def outline():
     assert len(paths)==12
     return paths
 
+def outline_polygon():
+    """Chain all GKO primitives, bridging only the source's sub-0.12mm gaps."""
+    pending=[list(path) for path in outline()]
+    result=pending.pop(0);gaps=[]
+    while pending:
+        choices=[(math.dist(result[-1],path[end]),i,end) for i,path in enumerate(pending) for end in (0,-1)]
+        gap,i,end=min(choices);assert gap<.12,(gap,i)
+        path=pending.pop(i)
+        if end==-1:path.reverse()
+        gaps.append(gap);result.extend(path)
+    gaps.append(math.dist(result[-1],result[0]));assert max(gaps)<.12
+    if result[-1]!=result[0]:result.append(result[0])
+    return result,max(gaps)
+
 def schematic_pins():
     shapes=json.loads((SOURCE/'SCH_simplefocmini_2022-04-20.json').read_text())['schematics'][0]['dataStr']['shape']
     pins={};wires=[];labels=[]
@@ -112,11 +126,11 @@ def extract():
             pin=f[8] if group!='power' else {'GND':'GND','VCC':'VIN'}[f[7]]
             connectors[group].append(dict(pin=pin,upstream_net=f[7],x_mm=hit['x_mm'],y_mm=hit['y_mm'],drill_mm=hit['drill_mm']))
     for group in ('control','phase'):connectors[group].sort(key=lambda p:int(p['pin']))
-    paths=outline();points=[p for path in paths for p in path]
+    paths=outline();polygon,maxgap=outline_polygon();points=[p for path in paths for p in path]
     bounds=[min(p[0] for p in points),min(p[1] for p in points),max(p[0] for p in points),max(p[1] for p in points)]
-    result=dict(units='mm',view='top/component side; +X right, +Y toward phases; NOT mirrored',origin='H1 pin 9 / drill (-1.143, -3.937)',connectors=connectors,power_pitch_mm=4.953,outline_paths=paths,outline_bounds_mm=bounds,courtyard_bounds_mm=[round(bounds[0]-.25,3),round(bounds[1]-.25,3),round(bounds[2]+.25,3),round(bounds[3]+.25,3)],control_net_mismatches=[])
+    result=dict(units='mm',view='top/component side; +X right, +Y toward phases; NOT mirrored',origin='H1 pin 9 / drill (-1.143, -3.937)',connectors=connectors,power_pitch_mm=4.953,outline_paths=paths,outline_polygon=polygon,outline_closure_max_gap_mm=maxgap,courtyard_margin_mm=.5,outline_bounds_mm=bounds,courtyard_bounds_mm=[round(bounds[0]-.5,3),round(bounds[1]-.5,3),round(bounds[2]+.5,3),round(bounds[3]+.5,3)],control_net_mismatches=[])
     (ROOT/'sources/mini-geometry.json').write_text(json.dumps(result,indent=2)+'\n')
-    print(json.dumps({k:v for k,v in result.items() if k!='outline_paths'},indent=2))
+    print(json.dumps({k:v for k,v in result.items() if k not in ('outline_paths','outline_polygon')},indent=2))
     return result
 
 if __name__=='__main__':extract()

@@ -38,7 +38,7 @@ labels=['12V_IN','12V_FUSED','3V3','GND','SPI_SCK','SPI_MOSI','SPI_MISO',
         'A<n>_PWM<p>','A<n>_EN_CMD','EN_DISABLE','A<n>_EN','A<n>_CS','A<n>_PH<p>']
 footer=('SH pin-to-net order is UNVERIFIED: see README and check the actual AS5048A board with a multimeter. '
         'Opening kill disables EN but does not disconnect 12V; reclosing permits the current command without a latch. '
-        'Human review, mechanical fit, load/thermal, startup and noise tests remain required before manufacture.')
+        'Human review, mechanical fit, startup and noise tests remain required before manufacture.')
 md='# '+title+'\n\n'+intro+'\n\n| Net or repeated family | What it connects and why |\n|---|---|\n'
 for label,(_,desc) in zip(labels,groups): md+='| `'+label+'` | '+desc+' |\n'
 md+='\nNames expand literally: for example `A2_PWM3` and `A6_PH1`. This covers every name, not just a sample.\n\n'

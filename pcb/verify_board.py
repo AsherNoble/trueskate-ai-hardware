@@ -66,6 +66,12 @@ def signature(t):
     return t.GetNetname(),t.GetLayerName(),round(k.ToMM(t.GetWidth(k.F_Cu) if isinstance(t,k.PCB_VIA) else t.GetWidth()),6),tuple(points)
 expected=collections.Counter((t['net'],t['layer'],round(t['width'],6),tuple(sorted(map(tuple,[t['start'],t['end']]))))
                             for t in json.loads((root/'manual-routes.json').read_text()))
+for trim in json.loads((root/'encoder-tail-trims.json').read_text()):
+    for key,delta in [('before',-1),('after',1)]:
+        t=trim[key]
+        if t is None:continue
+        expected[(t['net'],t['layer'],round(t['width'],6),tuple(sorted(map(tuple,[t['start'],t['end']]))))]+=delta
+expected=+expected
 actual=collections.Counter(signature(t) for t in b.GetTracks() if t.IsLocked() and not isinstance(t,k.PCB_VIA))
 links=collections.Counter((t['net'],t['layer'],round(t['width'],6),tuple(sorted(map(tuple,[t['start'],t['end']]))))
                           for t in json.loads((root/'ground-links.json').read_text()))

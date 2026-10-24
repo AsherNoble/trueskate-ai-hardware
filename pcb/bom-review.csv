@@ -4,57 +4,57 @@ J2,1,Teensy 4.1 FEMALE 1x24,TrueSkate:Edge_PinSocket_1x24_P2.54mm_Vertical,,Hand
 J11,1,Mini v1.0 / 15-hole socket,TrueSkate:SimpleFOC_Mini_v1.0,,Hand,0.7,Optional axis; female 2x5 + female 1x3 + two >=3A single receptacles; matched mating height
 J21,1,MOTOR PHASES male 1x3,TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,Optional axis; outward cable clearance at front edge
 J31,1,SM06B-SRSS-TB,TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal,C7588156,JLCPCB,0.5,Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED
-R21,1,10k EN pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Optional axis; fit with Mini
-R31,1,10k CS pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Optional axis; fit with encoder
+R21,1,10k EN pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Optional axis; fit with Mini; 10k, 5% or better"
+R31,1,10k CS pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Optional axis; fit with encoder; 10k, 5% or better"
 C11,1,1000uF 35V EEUFR1V102B,TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,Optional axis; owned Panasonic diameter12.5mm height20mm pitch5mm
 C21,1,100nF 50V ceramic,TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Optional axis; Vishay K104K10X7RF5UH5
 J12,1,Mini v1.0 / 15-hole socket,TrueSkate:SimpleFOC_Mini_v1.0,,Hand,0.7,Optional axis; female 2x5 + female 1x3 + two >=3A single receptacles; matched mating height
 J22,1,MOTOR PHASES male 1x3,TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,Optional axis; outward cable clearance at front edge
 J32,1,SM06B-SRSS-TB,TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal,C7588156,JLCPCB,0.5,Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED
-R22,1,10k EN pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Optional axis; fit with Mini
-R32,1,10k CS pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Optional axis; fit with encoder
+R22,1,10k EN pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Optional axis; fit with Mini; 10k, 5% or better"
+R32,1,10k CS pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Optional axis; fit with encoder; 10k, 5% or better"
 C12,1,1000uF 35V EEUFR1V102B,TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,Optional axis; owned Panasonic diameter12.5mm height20mm pitch5mm
 C22,1,100nF 50V ceramic,TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Optional axis; Vishay K104K10X7RF5UH5
 J13,1,Mini v1.0 / 15-hole socket,TrueSkate:SimpleFOC_Mini_v1.0,,Hand,0.7,Optional axis; female 2x5 + female 1x3 + two >=3A single receptacles; matched mating height
 J23,1,MOTOR PHASES male 1x3,TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,Optional axis; outward cable clearance at front edge
 J33,1,SM06B-SRSS-TB,TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal,C7588156,JLCPCB,0.5,Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED
-R23,1,10k EN pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Optional axis; fit with Mini
-R33,1,10k CS pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Optional axis; fit with encoder
+R23,1,10k EN pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Optional axis; fit with Mini; 10k, 5% or better"
+R33,1,10k CS pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Optional axis; fit with encoder; 10k, 5% or better"
 C13,1,1000uF 35V EEUFR1V102B,TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,Optional axis; owned Panasonic diameter12.5mm height20mm pitch5mm
 C23,1,100nF 50V ceramic,TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Optional axis; Vishay K104K10X7RF5UH5
 J14,1,Mini v1.0 / 15-hole socket,TrueSkate:SimpleFOC_Mini_v1.0,,Hand,0.7,Optional axis; female 2x5 + female 1x3 + two >=3A single receptacles; matched mating height
 J24,1,MOTOR PHASES male 1x3,TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,Optional axis; outward cable clearance at front edge
 J34,1,SM06B-SRSS-TB,TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal,C7588156,JLCPCB,0.5,Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED
-R24,1,10k EN pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Optional axis; fit with Mini
-R34,1,10k CS pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Optional axis; fit with encoder
+R24,1,10k EN pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Optional axis; fit with Mini; 10k, 5% or better"
+R34,1,10k CS pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Optional axis; fit with encoder; 10k, 5% or better"
 C14,1,1000uF 35V EEUFR1V102B,TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,Optional axis; owned Panasonic diameter12.5mm height20mm pitch5mm
 C24,1,100nF 50V ceramic,TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Optional axis; Vishay K104K10X7RF5UH5
 J15,1,Mini v1.0 / 15-hole socket,TrueSkate:SimpleFOC_Mini_v1.0,,Hand,0.7,Optional axis; female 2x5 + female 1x3 + two >=3A single receptacles; matched mating height
 J25,1,MOTOR PHASES male 1x3,TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,Optional axis; outward cable clearance at front edge
 J35,1,SM06B-SRSS-TB,TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal,C7588156,JLCPCB,0.5,Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED
-R25,1,10k EN pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Optional axis; fit with Mini
-R35,1,10k CS pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Optional axis; fit with encoder
+R25,1,10k EN pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Optional axis; fit with Mini; 10k, 5% or better"
+R35,1,10k CS pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Optional axis; fit with encoder; 10k, 5% or better"
 C15,1,1000uF 35V EEUFR1V102B,TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,Optional axis; owned Panasonic diameter12.5mm height20mm pitch5mm
 C25,1,100nF 50V ceramic,TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Optional axis; Vishay K104K10X7RF5UH5
 J16,1,Mini v1.0 / 15-hole socket,TrueSkate:SimpleFOC_Mini_v1.0,,Hand,0.7,Optional axis; female 2x5 + female 1x3 + two >=3A single receptacles; matched mating height
 J26,1,MOTOR PHASES male 1x3,TrueSkate:Edge_PinHeader_1x03_P2.54mm_Vertical,,Hand,0.1,Optional axis; outward cable clearance at front edge
 J36,1,SM06B-SRSS-TB,TrueSkate:Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal,C7588156,JLCPCB,0.5,Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED
-R26,1,10k EN pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Optional axis; fit with Mini
-R36,1,10k CS pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Optional axis; fit with encoder
+R26,1,10k EN pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Optional axis; fit with Mini; 10k, 5% or better"
+R36,1,10k CS pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Optional axis; fit with encoder; 10k, 5% or better"
 C16,1,1000uF 35V EEUFR1V102B,TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm,C128476,Hand / owned,0,Optional axis; owned Panasonic diameter12.5mm height20mm pitch5mm
 C26,1,100nF 50V ceramic,TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm,C2979769,Hand,0.13,Optional axis; Vishay K104K10X7RF5UH5
 J5,1,12V INPUT + / -,"TrueSkate:Edge_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,Hand,2,Phoenix1715721 17.5A nominal; verify wire size and applicable rating
-F1,1,ATO fuse holder / fuse TBD,TrueSkate:Edge_FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165,,Hand,3,Littelfuse178.6165.0001; load/inrush and temperature qualification required
+F1,1,Keystone 3557-2 ATO holder,TrueSkate:Keystone_3557-2_ATO,C352820,Hand,1.68,One complete holder includes both contacts for one standard ATO fuse; fuse purchased separately
 J6,1,NC KILL SWITCH,TrueSkate:Edge_PinHeader_1x02_P2.54mm_Vertical,,Hand,0.1,Open loop disables every Mini; closed loop permits firmware EN
-R1,1,10k /OE pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,
+R1,1,10k /OE pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"; 10k, 5% or better"
 U1,1,SN74LV125AN,TrueSkate:Edge_DIP-14_W7.62mm,,Hand,1,"Shared mandatory kill buffer; pins1/4/10=/OE,13 disabled; TI SCES124O"
 C1,1,100nF buffer bypass,TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm,,Hand,0.13,
-R41,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Shared buffer input bias; may omit with corresponding axis
-R42,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Shared buffer input bias; may omit with corresponding axis
-R43,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Shared buffer input bias; may omit with corresponding axis
+R41,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better"
+R42,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better"
+R43,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better"
 U2,1,SN74LV125AN,TrueSkate:Edge_DIP-14_W7.62mm,,Hand,1,"Shared mandatory kill buffer; pins1/4/10=/OE,13 disabled; TI SCES124O"
 C2,1,100nF buffer bypass,TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm,,Hand,0.13,
-R44,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Shared buffer input bias; may omit with corresponding axis
-R45,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Shared buffer input bias; may omit with corresponding axis
-R46,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,Shared buffer input bias; may omit with corresponding axis
+R44,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better"
+R45,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better"
+R46,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better"
 J11-J16 VIN/GND,12,Single machine-pin receptacle,Included in SimpleFOC_Mini_v1.0,,Hand,0.5,>=3 A/contact; body/tail fits 1.101 mm finished hole; compatible pin and matching seated height; MPN pending mechanical selection

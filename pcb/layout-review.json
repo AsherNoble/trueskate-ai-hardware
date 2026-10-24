@@ -1,0 +1,75 @@
+{
+  "board_mm": [
+    160,
+    120
+  ],
+  "mini_courtyard_offset_mm": 0.5,
+  "measured_minimum_offset_mm": 0.498522,
+  "gko_max_endpoint_closure_mm": 0.116098,
+  "capacitor_clearances": [
+    {
+      "reference": "C11",
+      "body_to_mini_outline_mm": 3.0177,
+      "body_to_mini_courtyard_mm": 2.5179
+    },
+    {
+      "reference": "C21",
+      "body_to_mini_outline_mm": 2.9136,
+      "body_to_mini_courtyard_mm": 2.4138
+    },
+    {
+      "reference": "C12",
+      "body_to_mini_outline_mm": 3.0177,
+      "body_to_mini_courtyard_mm": 2.5179
+    },
+    {
+      "reference": "C22",
+      "body_to_mini_outline_mm": 2.9136,
+      "body_to_mini_courtyard_mm": 2.4138
+    },
+    {
+      "reference": "C13",
+      "body_to_mini_outline_mm": 3.0177,
+      "body_to_mini_courtyard_mm": 2.5179
+    },
+    {
+      "reference": "C23",
+      "body_to_mini_outline_mm": 2.9136,
+      "body_to_mini_courtyard_mm": 2.4138
+    },
+    {
+      "reference": "C14",
+      "body_to_mini_outline_mm": 3.0177,
+      "body_to_mini_courtyard_mm": 2.5179
+    },
+    {
+      "reference": "C24",
+      "body_to_mini_outline_mm": 2.9136,
+      "body_to_mini_courtyard_mm": 2.4138
+    },
+    {
+      "reference": "C15",
+      "body_to_mini_outline_mm": 3.0177,
+      "body_to_mini_courtyard_mm": 2.5179
+    },
+    {
+      "reference": "C25",
+      "body_to_mini_outline_mm": 2.9136,
+      "body_to_mini_courtyard_mm": 2.4138
+    },
+    {
+      "reference": "C16",
+      "body_to_mini_outline_mm": 3.0177,
+      "body_to_mini_courtyard_mm": 2.5179
+    },
+    {
+      "reference": "C26",
+      "body_to_mini_outline_mm": 2.9136,
+      "body_to_mini_courtyard_mm": 2.4138
+    }
+  ],
+  "min_body_to_outline_mm": 2.9136,
+  "min_body_to_courtyard_mm": 2.4138,
+  "encoder_lane_exceptions": [],
+  "keystone_parts_per_fuse": 1
+}

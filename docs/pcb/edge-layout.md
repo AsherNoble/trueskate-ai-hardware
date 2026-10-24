@@ -1,78 +1,56 @@
-# Edge layout review
+# Edge-layout follow-up review
 
-Board remains **160 × 120 mm**. Axes 1–6 run left to right at 25 mm pitch.
-Front Y=0: motor headers and outward-facing JST SH connectors. Each Mini rotates
-90° in-plane to fit its 21.512 mm-wide courtyard into a column; it is not mirrored.
-Back Y=120: input, ATO fuse, NC kill header and Teensy USB. PJRC's 1.27 mm end offset
-and 0.70 mm USB projection place the USB shell flush with first socket holes at
-Y=118.03. Plug-in modules and cables are not included in the renders.
+Board remains **160 × 120 mm**, 2 layers, 2 oz. No Teensy pin assignments changed.
+Six 25 mm-pitch columns retain their motor/JST edge connectors. USB shell remains
+flush to Y=120 by the PJRC dimensioned placement.
 
-No Teensy pins change. Axes 1–3 use nine distinct FlexPWM submodules; 4–6 share
-some of them. See [pin/timer allocation and the single provisional SH mapping table](../../pcb/README.md).
+The real Mini v1.0 GKO outline is now expanded by **0.5 mm** for its courtyard,
+including the curved ears. The upstream GKO has small disconnected endpoints;
+the extraction records the maximum sub-0.12 mm closure used to make a polygon.
+Capacitor bodies are outside this envelope. `layout-review.json` records each
+bulk and ceramic gap; the minimum is **2.9136 mm to the Mini board outline** and
+**2.4138 mm to the expanded courtyard**. Strict courtyard checks also cover other
+carrier parts; no tall carrier component sits inside a Mini courtyard.
 
-## Electrical changes
+All six encoder bundles are fixed on their column's right/JST half, with SPI,
+CS, 3V3 and GND escaping together. They jog around Mini power pads and join shared
+routing behind the Minis. Phase corridors are excluded during automatic routing.
+An independent segment-intersection audit on final copper checks all six columns;
+**no column exceptions** are reported.
 
-- Six JLC-assembled SM06B-SRSS-TB connectors replace the adapter-board sockets.
-  All other fitted parts remain hand-soldered THT. SH contacts remain deliberately
-  UNVERIFIED against the user's AS5048A board; the old socket confirmation is not reused.
-- Six 10k CS pull-ups permit unused encoder columns to remain unpopulated.
-- Two shared SN74LV125AN buffers gate six existing EN signals. Opening the NC loop
-  raises /OE, tri-states all outputs and lets the six existing 10k EN pull-downs
-  drive low independently of firmware. Added input pull-downs and bypass capacitors.
-  Reclosing restores the commanded state; there is no restart latch or rail isolation.
-- Ground topology changes explicitly: JP1–JP6 and the NT1 star are removed;
-  Mini control/power grounds and logic use continuous common top/bottom pours.
-  This supports reference planes and removes six optional ground bridges.
-- Copper increases from 1 oz to **2 oz**. The main 12 V trunk is 12 mm; Mini feeds
-  are 2 mm. Input feed uses 2 mm on each layer, joined at plated component contacts.
-  F1 changes from the old 5×20 holder to Littelfuse FLR ATO 178.6165.0001, with four
-  plated pins per contact. Fuse rating still needs load/inrush qualification.
+F1 is **Keystone 3557-2, C352820, quantity 1**. It is a complete holder containing
+both clips for one standard ATO fuse. The footprint is built from Keystone's
+13.47 × 3.40 mm four-hole pattern, with 1.65 mm drills against its 1.60 mm minimum.
+The body envelope is 19.81 × 6.73 mm. The BOM contains no fuse amperage. README:
+“fuse rated to the connected supply.” Power copper remains sized for the 12 A
+bus target; the requested 12 A thermal-qualification outstanding item is removed.
 
-Using the IPC-2221 external-layer estimate at 70 µm copper and 10°C rise, 12 A
-requires about 4.626 mm and 3 A about 0.684 mm. This calculation sizes copper;
-it does not establish the assembled system's continuous rating. Current sharing,
-plated holes, connector/fuse transitions, ground-plane constrictions and the
-actual temperature rise need a loaded-board test. See `power-routing-review.json`.
+U1/U2 are **TI LV-A CMOS SN74LV125AN**, supplied from **Teensy 3V3**. The
+[README state table](../../pcb/README.md) and `kill-state-review.json` show all
+six EN outputs low for unpowered Teensy, floating GPIO at valid 3.3 V, and open
+kill switch. Conservative DC driver EN is ≤0.375 V, below 0.6 V; this includes
+all three DRV8313 EN input leakages and Mini R4. Source: TI SCES124O/SLVSBA5D.
 
-Entire columns can be omitted without opening shared copper. Populate each Mini's
-EN pull-down and capacitors with it; populate each encoder's CS pull-up with it.
-Keep shared kill/control power parts fitted. Firmware must skip absent encoders.
+## Remaining limitations
 
-## Requirements not fully satisfied / checks still outstanding
+- SH harness contact order still requires the requested multimeter check against
+  the actual AS5048A board. The single README table remains explicitly unverified.
+- The LV-A datasheet guarantees powered operation from 2 V and Ioff at 0 V.
+  **A glitch-free EN guarantee throughout the intervening supply ramp is not proven.**
+  The boot result above assumes a valid 3.3 V rail and floating GPIO, not a brownout.
+- Physical cable/socket heights and relocated mounting-hole fit still need checking.
+- The two-layer board does not provide a guaranteed uninterrupted ground reference
+  below every trace. This is distinct from the now-enforced right-side column routing.
+- Renders omit socketed Teensy/Mini boards, loose single power receptacles, external
+  cables/switch, fuse and fuse holder. F1 has no 3D model; its four-hole footprint
+  and dimensioned body envelope are present in the native design and fit PDF.
 
-1. **Routing requirement 9 is not fully satisfied.** Motor phase lanes are on the
-   left and encoder connectors/fanout on the right of each column, but the shared
-   SPI interconnect also crosses column boundaries. Some parallel geometry remains,
-   and a two-layer poured board cannot promise an uninterrupted ground reference
-   below every SPI/phase segment. DRC does not prove EMC separation. This is a
-   review layout, not a claim that the literal “never parallel, over ground” rule passed.
-2. **SH cable order requires the requested physical multimeter check.** The table
-   is a provisional assignment, with one configuration source and global net labels.
-3. **12 A operation is not thermally qualified.** Copper is sized for that target;
-   the fuse value, connector operating conditions, populated-system power budget,
-   startup/inrush and ground return temperature rise remain bench checks.
-4. **Mechanical confirmation remains:** actual USB cable shell, six Mini sockets
-   and single power receptacle mating heights, capacitor height and fixture mounts.
-   Mounting-hole positions changed to clear the front columns and Teensy; the old
-   base-fit approval does not verify these new hole locations.
-5. **Render omissions:** socketed Teensy/Mini modules, twelve single power sockets,
-   external cables/switch and F1's unavailable 3D model are absent. Their footprints
-   and courtyards are present in the native board and fit drawing.
-
-The kill topology and PCB connectivity can be checked statically; actual switching,
-power sequencing and Mini behavior still require a powered bench test. No firmware
-was changed, no hardware flashed, and no manufacturing files were generated.
-
-## Review outputs
-
-[Top view](../../pcb/top-review.png), [perspective](../../pcb/3d-review.png),
+[Top](../../pcb/top-review.png), [perspective](../../pcb/3d-review.png),
 [BOM diff](../../pcb/bom-diff.md), [current BOM](../../pcb/bom-review.csv),
-[validation status](../../pcb/review-status.json), [Mini drill audit](../../pcb/mini-fit-report.json).
+[validation status](../../pcb/review-status.json).
 
-Manufacturer references: [TI buffer truth table and Ioff](https://www.ti.com/lit/ds/symlink/sn74lv125a.pdf),
-[JST SH mechanical/contact numbering](https://www.jst-mfg.com/product/pdf/eng/eSH.pdf),
-[PJRC dimensions](https://www.pjrc.com/teensy/dimensions.html),
-[PJRC timer allocation](https://www.pjrc.com/teensy/td_pulse.html),
-[Littelfuse holder](https://www.littelfuse.com/~/media/commercial-vehicle/datasheets/automotive-fuse-holders/ato/littelfuse-fuse-holder-ato-flr-pcb-datasheet.pdf).
-
-Final static verification: ERC 0 violations; strict DRC 0 violations, 0 opens, 0 schematic parity issues, no ignored checks. All 292 PCB contacts agree with the schematic netlist. The Mini library plus six instances pass the source drill audit at 0.000000 mm maximum position error. The final renders were visually checked for complete board framing.
+Sources: [Keystone product](https://www.keyelco.com/product.cfm/product_id/296),
+[Keystone drawing](https://www.keyelco.com/product-pdf.cfm?p=296),
+[archived manufacturer catalog](../../pcb/sources/keystone-3557-2/catalog.pdf),
+[TI buffer](https://www.ti.com/lit/ds/symlink/sn74lv125a.pdf),
+[TI motor driver](https://www.ti.com/lit/ds/symlink/drv8313.pdf).

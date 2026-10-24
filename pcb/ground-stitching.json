@@ -1,114 +1,258 @@
 [
   {
-    "x": 17.5,
-    "y": 95.5,
+    "x": 24.0,
+    "y": 90.0,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 17.612,
+    "clearance_margin": 20.0,
     "reason": "interplane stitch"
   },
   {
-    "x": 94.5,
+    "x": 95.0,
     "y": 117.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 12.83,
+    "clearance_margin": 12.752,
     "reason": "interplane stitch"
   },
   {
-    "x": 125.5,
-    "y": 104.5,
+    "x": 122.5,
+    "y": 108.0,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 9.981,
+    "clearance_margin": 8.486,
     "reason": "interplane stitch"
   },
   {
-    "x": 21.5,
-    "y": 62.5,
+    "x": 156.0,
+    "y": 43.0,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 9.879,
+    "clearance_margin": 8.035,
     "reason": "interplane stitch"
   },
   {
-    "x": 120.0,
-    "y": 62.5,
+    "x": 62.0,
+    "y": 56.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 9.472,
+    "clearance_margin": 3.924,
     "reason": "interplane stitch"
   },
   {
-    "x": 51.0,
-    "y": 87.5,
+    "x": 28.5,
+    "y": 55.0,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 9.0,
+    "clearance_margin": 3.915,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 67.0,
+    "y": 85.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 3.6,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 103.5,
+    "y": 56.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 3.372,
     "reason": "interplane stitch"
   },
   {
     "x": 115.0,
-    "y": 62.5,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 7.891,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 33.5,
-    "y": 17.0,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 7.614,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 83.5,
-    "y": 17.0,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 7.614,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 67.5,
-    "y": 80.0,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 7.587,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 94.0,
-    "y": 80.0,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 7.544,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 140.5,
-    "y": 23.0,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 6.46,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 99.5,
     "y": 58.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 6.346,
+    "clearance_margin": 2.812,
     "reason": "interplane stitch"
   },
   {
-    "x": 147.5,
-    "y": 61.0,
+    "x": 34.0,
+    "y": 55.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 6.138,
+    "clearance_margin": 2.64,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 98.5,
+    "y": 59.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.611,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 21.5,
+    "y": 44.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.516,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 79.5,
+    "y": 56.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.475,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 37.0,
+    "y": 56.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.468,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 138.0,
+    "y": 54.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.212,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 102.5,
+    "y": 85.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 2.12,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 73.0,
+    "y": 105.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 1.707,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 95.0,
+    "y": 96.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 1.667,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 72.5,
+    "y": 62.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 1.409,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 72.0,
+    "y": 49.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 1.35,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 86.0,
+    "y": 54.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 1.186,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 78.5,
+    "y": 94.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 1.101,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 95.5,
+    "y": 87.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.929,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 97.5,
+    "y": 53.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.8,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 50.0,
+    "y": 35.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.768,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 81.5,
+    "y": 85.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.72,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 71.0,
+    "y": 39.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.686,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 111.5,
+    "y": 51.5,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.581,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 132.5,
+    "y": 60.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.468,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 96.5,
+    "y": 39.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.381,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 148.0,
+    "y": 50.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.381,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 105.5,
+    "y": 94.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.374,
     "reason": "interplane stitch"
   },
   {
@@ -116,71 +260,71 @@
     "y": 94.0,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 6.092,
+    "clearance_margin": 0.374,
     "reason": "interplane stitch"
   },
   {
-    "x": 55.5,
-    "y": 90.0,
+    "x": 102.0,
+    "y": 63.0,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 4.545,
+    "clearance_margin": 0.325,
     "reason": "interplane stitch"
   },
   {
-    "x": 94.5,
-    "y": 98.0,
+    "x": 103.5,
+    "y": 52.0,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 2.706,
+    "clearance_margin": 0.275,
     "reason": "interplane stitch"
   },
   {
-    "x": 123.5,
-    "y": 44.0,
+    "x": 99.5,
+    "y": 29.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 2.52,
+    "clearance_margin": 0.26,
     "reason": "interplane stitch"
   },
   {
-    "x": 95.0,
-    "y": 90.0,
+    "x": 124.5,
+    "y": 29.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 2.296,
+    "clearance_margin": 0.26,
     "reason": "interplane stitch"
   },
   {
-    "x": 80.0,
-    "y": 98.5,
+    "x": 47.0,
+    "y": 53.0,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 2.28,
+    "clearance_margin": 0.167,
     "reason": "interplane stitch"
   },
   {
-    "x": 151.0,
+    "x": 135.5,
+    "y": 82.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.101,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 138.5,
+    "y": 105.0,
+    "diameter": 0.7,
+    "drill": 0.3,
+    "clearance_margin": 0.086,
+    "reason": "interplane stitch"
+  },
+  {
+    "x": 101.5,
     "y": 35.5,
     "diameter": 0.7,
     "drill": 0.3,
-    "clearance_margin": 1.104,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 44.5,
-    "y": 6.5,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 0.545,
-    "reason": "interplane stitch"
-  },
-  {
-    "x": 130.5,
-    "y": 50.0,
-    "diameter": 0.7,
-    "drill": 0.3,
-    "clearance_margin": 0.403,
+    "clearance_margin": 0.054,
     "reason": "interplane stitch"
   }
 ]

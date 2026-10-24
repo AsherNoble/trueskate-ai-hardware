@@ -1,0 +1,5 @@
+# Disposable render-only board and KiCad UI state; rebuilt by render_assembly.py.
+populated-review.kicad_pcb
+*.kicad_prl
+*.lck
+*.log

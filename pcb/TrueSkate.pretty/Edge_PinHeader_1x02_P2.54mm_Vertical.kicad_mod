@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at 0 -2.38 0)
 		(layer "F.SilkS")
-		(uuid "7b8e464e-a575-49cc-ba4b-cca3d56455d4")
+		(uuid "b036813f-db24-4004-b9be-ea1c5beab113")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 	(property "Value" "PinHeader_1x02_P2.54mm_Vertical"
 		(at 0 4.92 0)
 		(layer "F.Fab")
-		(uuid "7bff17e9-9b3f-4c69-8993-9645a604f5e7")
+		(uuid "fbf5c958-93f6-4605-a177-2dd76ce4e0db")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1dd663be-3a2c-449f-9f31-0bc40b8dcf8e")
+		(uuid "795b6c9d-5317-4e1a-8b3d-1baf99029801")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +42,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c8a4bf08-0156-4325-9814-63dc5c687f2b")
+		(uuid "afa82887-776d-4075-8a2a-d72411f5d349")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53,7 +53,7 @@
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "673d16c3-7a7f-4a71-a846-87bd1dcd82cb")
+		(uuid "edddda6f-e929-42db-8f00-bcf58cb75193")
 		(effects
 			(font
 				(size 1 1)
@@ -72,7 +72,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "56fcfbb5-9287-4594-a7b7-aaae4ac506f7")
+		(uuid "2d63822a-1a15-472f-bd97-a84fcc7225d5")
 	)
 	(fp_line
 		(start -1.38 -1.38)
@@ -82,7 +82,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "b64c293e-e24c-4b3c-9ddc-f47e9feef1a1")
+		(uuid "84e13513-0740-412a-b913-eb867a988168")
 	)
 	(fp_line
 		(start -1.38 0)
@@ -92,7 +92,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "df7fe7f0-8e68-4534-a6d8-d142acf3c40b")
+		(uuid "28845891-a2ee-43fa-a67c-6b5f5be851bc")
 	)
 	(fp_line
 		(start -1.38 1.27)
@@ -102,7 +102,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "9ceec6b9-23fc-431c-8725-777e10079f5f")
+		(uuid "661678bb-e7f4-4e78-bc85-4532960d5c7e")
 	)
 	(fp_line
 		(start -1.38 1.27)
@@ -112,7 +112,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "21a2bbe9-2edf-4daf-9d2f-b1c9986b10b4")
+		(uuid "46238006-9476-48ca-868e-738a3f29772b")
 	)
 	(fp_line
 		(start -1.38 3.92)
@@ -122,7 +122,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "a151ed6d-6a71-40b6-a9d1-0b76baac48ae")
+		(uuid "81946885-cb8b-4a16-85eb-425ed970a2c0")
 	)
 	(fp_line
 		(start -1.27 -0.635)
@@ -132,7 +132,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "09c8e720-b5e6-4661-8103-f3b68a9033cf")
+		(uuid "c4f56019-8acc-4777-88d6-463dc5f9ba78")
 	)
 	(fp_line
 		(start -1.27 3.81)
@@ -142,7 +142,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "64f5ea3c-7222-4d42-9596-a069eb1e56e7")
+		(uuid "1ebb1e03-ab02-4cba-98e5-d868d681eb69")
 	)
 	(fp_line
 		(start -0.635 -1.27)
@@ -152,7 +152,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "ac6e30b2-eb44-4a2e-9fd0-843f85eef7a5")
+		(uuid "0fd91135-4539-4ab2-8462-ca548ff10ceb")
 	)
 	(fp_line
 		(start 1.27 -1.27)
@@ -162,7 +162,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "2903a09f-5d84-49fc-973d-dfdce4e3d1fa")
+		(uuid "488c39c1-6e9f-4fd4-9270-cb1fb0cadc45")
 	)
 	(fp_line
 		(start 1.27 3.81)
@@ -172,7 +172,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "86935330-776a-4495-a8eb-aff357524679")
+		(uuid "e417ef62-27d8-4266-aad9-10cf06abea23")
 	)
 	(fp_line
 		(start 1.38 1.27)
@@ -182,12 +182,12 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "bfd59420-3327-4f9c-882c-e75935bff902")
+		(uuid "f4403527-4029-4d0e-b7b0-08846abf7895")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 1.27 90)
 		(layer "F.Fab")
-		(uuid "fcf2fdb8-2731-4741-99e5-a0c847742745")
+		(uuid "8c04f670-1012-47dc-9ea0-d887855b7a7d")
 		(effects
 			(font
 				(size 1 1)
@@ -201,7 +201,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "0398869d-d258-4c98-b14c-76d7787fb593")
+		(uuid "2dc0da39-b383-4eb1-ac83-3dcd55f85bf7")
 	)
 	(pad "2" thru_hole circle
 		(at 0 2.54)
@@ -209,7 +209,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "88c0bced-bfb7-4189-89f5-423be94cd944")
+		(uuid "5fe4d9c4-af59-4ce6-8a27-51f1fb369351")
 	)
 	(embedded_fonts no)
 	(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step"

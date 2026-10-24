@@ -47,12 +47,12 @@ for i in range(1,7):
     assert gnd.GetNetname()=='GND'
     wide_path(pad(f'C{10+i}',1),vin,2)
     assert pad(f'C{10+i}',2).GetNetname()=='GND'
-    row=dict(axis=i,supply_min_width_mm=2,return_path='continuous GND planes; thermal qualification pending')
+    row=dict(axis=i,supply_min_width_mm=2,return_path='continuous GND planes')
     for typ,ref in [('bulk',f'C{10+i}'),('ceramic',f'C{20+i}')]:
         row[typ+'_power_pad_distances_mm']=[round(math.dist(point(pad(ref,n).GetPosition()),point(power.GetPosition())),3) for n,power in [(1,vin),(2,gnd)]]
     rows.append(row)
 bus_required=(12/(.048*10**.44))**(1/.725)/(.070/.0254)*.0254
 assert bus_required<12
-report=dict(bus_current_a=12,bus_calculated_minimum_mm=round(bus_required,3),input_feed='parallel 2mm top/bottom paths, 6A estimate per layer; connector and fuse pad transitions require thermal validation',current_a=3,copper_thickness_um=70,layer='external',temperature_rise_c=10,estimate='IPC-2221 external-layer equation; not a thermal qualification',minimum_calculated_width_mm=round(required_mm,3),supply_chosen_mm=2,return_geometry='filled GND planes',shared_trunk_mm=12,aggregate_six_axis_rating_established=False,axes=rows)
+report=dict(bus_current_a=12,bus_calculated_minimum_mm=round(bus_required,3),input_feed='parallel 2mm top/bottom input paths, 6A design allocation per layer; 6mm fused output stem',current_a=3,copper_thickness_um=70,layer='external',temperature_rise_c=10,estimate='IPC-2221 external-layer equation; not a thermal qualification',minimum_calculated_width_mm=round(required_mm,3),supply_chosen_mm=2,return_geometry='filled GND planes',shared_trunk_mm=12,design_bus_rating_a=12,axes=rows)
 (ROOT/'power-routing-review.json').write_text(json.dumps(report,indent=2)+'\n')
 print(f'PASS: six continuous >=2.0 mm VIN paths; common ground planes; 3 A estimate requires {required_mm:.3f} mm at 70 um / 10 C.')

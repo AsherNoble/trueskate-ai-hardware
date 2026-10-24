@@ -5,6 +5,7 @@ The previous full-feature draft is preserved by local checkpoint 36e9dca.
 Run with KiCad's bundled Python. Signal routing is a separate step.
 """
 import csv
+import math
 import json
 import os
 from pathlib import Path
@@ -30,6 +31,7 @@ def add(ref,value,fp,pins,nets,pg,sch,pcb,price=0,note="",lcsc="",assembly="Hand
     assert len(pins)==len(nets) and ref not in {p["ref"] for p in parts}
     p=dict(ref=ref,value=value,fp=fp,pins=[str(n) for n in pins],nets=nets,page=pg,
            sch=sch,pcb=pcb,price=price,note=note,lcsc=lcsc,assembly=assembly)
+    if ref.startswith("R"):p["note"]+="; 10k, 5% or better"
     parts.append(p);pages[pg]["parts"].append(p)
 
 RFP="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
@@ -70,11 +72,11 @@ for i,a in enumerate(D["axes"],1):
         list(range(1,7)),[encmap[n] for n in D['encoder_pin_order']],pg,(190,90),(x+18,3.3,180),.5,
         "Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED",lcsc="C7588156",assembly="JLCPCB")
     add(f"R{20+i}","10k EN pull-down",RFP,[1,2],[f"A{i}_EN","GND"],pg,(70,120),(x+2,51,270),.05,"Optional axis; fit with Mini")
-    add(f"R{30+i}","10k CS pull-up",RFP,[1,2],[f"A{i}_CS","3V3"],pg,(190,185),(x+12,14,0),.05,"Optional axis; fit with encoder")
+    add(f"R{30+i}","10k CS pull-up",RFP,[1,2],[f"A{i}_CS","3V3"],pg,(190,185),(x+14.6,61,0),.05,"Optional axis; fit with encoder")
     add(f"C{10+i}","1000uF 35V EEUFR1V102B","Capacitor_THT:CP_Radial_D12.5mm_P5.00mm",
-        [1,2],["12V_FUSED","GND"],pg,(70,155),(x+12.5,51,0),0,
+        [1,2],["12V_FUSED","GND"],pg,(70,155),(x+12.5,51.5,0),0,
         "Optional axis; owned Panasonic diameter12.5mm height20mm pitch5mm",lcsc="C128476",assembly="Hand / owned")
-    add(f"C{20+i}","100nF 50V ceramic",CFP,[1,2],["12V_FUSED","GND"],pg,(190,155),(x+5,46,270),.13,
+    add(f"C{20+i}","100nF 50V ceramic",CFP,[1,2],["12V_FUSED","GND"],pg,(190,155),(x+5,47,270),.13,
         "Optional axis; Vishay K104K10X7RF5UH5",lcsc="C2979769")
 page("power","08 / Power and hardware kill",[
     "12V motor rail only. 12mm / 2oz shared bus; 2mm per-axis feeds; continuous GND planes.",
@@ -84,8 +86,8 @@ page("power","08 / Power and hardware kill",[
     "U1/U2 SN74LV125AN PDIP14, 3.3V, Ioff. Unused inputs tied; unused outputs NC."])
 add("J5","12V INPUT + / -","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
     [1,2],["12V_IN","GND"],"power",(60,55),(12,115,0),2,"Phoenix1715721 17.5A nominal; verify wire size and applicable rating")
-add("F1","ATO fuse holder / fuse TBD","Fuse:FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165",
-    [1,2],["12V_IN","12V_FUSED"],"power",(190,55),(30,113,0),3,"Littelfuse178.6165.0001; load/inrush and temperature qualification required")
+add("F1","Keystone 3557-2 ATO holder","TrueSkate:Keystone_3557-2_ATO",
+    [1,2],["12V_IN","12V_FUSED"],"power",(190,55),(30,112.5,0),1.68,"One complete holder includes both contacts for one standard ATO fuse; fuse purchased separately",lcsc="C352820")
 add("J6","NC KILL SWITCH","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
     [1,2],["EN_DISABLE","GND"],"power",(60,85),(61,117,90),.1,"Open loop disables every Mini; closed loop permits firmware EN")
 add("R1","10k /OE pull-up",RFP,[1,2],["EN_DISABLE","3V3"],"power",(190,85),(60,110,0),.05)
@@ -120,8 +122,26 @@ def custom():
             pth(mini,prefix+p["pin"],p["x_mm"],p["y_mm"],2.4 if name=="power" else 1.8,p["drill_mm"])
     for path in G["outline_paths"]:
         for a,z in zip(path,path[1:]):line(mini,a,z,k.F_Fab,.1)
-    x0,y0,x1,y1=G["courtyard_bounds_mm"]
-    for a,z in [((x0,y0),(x1,y0)),((x1,y0),(x1,y1)),((x1,y1),(x0,y1)),((x0,y1),(x0,y0))]:line(mini,a,z,k.F_CrtYd,.05)
+    outline=k.SHAPE_POLY_SET();outline.NewOutline()
+    for x,y in G['outline_polygon'][:-1]:outline.Append(k.FromMM(x),k.FromMM(y))
+    outline.Inflate(k.FromMM(.5),k.CORNER_STRATEGY_ROUND_ALL_CORNERS,k.FromMM(.001),True)
+    assert outline.OutlineCount()==1
+    chain=outline.COutline(0)
+    pts=[(k.ToMM(chain.CPoint(i).x),k.ToMM(chain.CPoint(i).y)) for i in range(chain.PointCount())]
+    # Collapse sub-micron offset artifacts before KiCad rotates the courtyard.
+    # RDP retains the source-derived curved outline within 1 micron.
+    def simplify(seq):
+        a,z=seq[0],seq[-1];dx,dy=z[0]-a[0],z[1]-a[1];dd=dx*dx+dy*dy
+        def dist(p):
+            u=max(0,min(1,((p[0]-a[0])*dx+(p[1]-a[1])*dy)/dd)) if dd else 0
+            return math.hypot(p[0]-a[0]-u*dx,p[1]-a[1]-u*dy)
+        if len(seq)<3:return seq
+        error,i=max((dist(p),i) for i,p in enumerate(seq[1:-1],1))
+        return simplify(seq[:i+1])[:-1]+simplify(seq[i:]) if error>.001 else [a,z]
+    mid=len(pts)//2
+    pts=simplify(pts[:mid+1])[:-1]+simplify(pts[mid:]+[pts[0]])[:-1]
+    for a,z in zip(pts,pts[1:]+pts[:1]):line(mini,a,z,k.F_CrtYd,.05)
+    (ROOT/'sources/mini-courtyard.json').write_text(json.dumps(dict(margin_mm=.5,arc_error_mm=.001,points_mm=pts),indent=2)+'\n')
     for a,z in [((-1.3,-1.3),(11.5,-1.3)),((11.5,-1.3),(11.5,3.9)),((11.5,3.9),(-1.3,3.9)),((-1.3,3.9),(-1.3,-1.3))]:line(mini,a,z,k.F_SilkS)
     for label,x,y in [("GND",17.399,1.8),("VIN",17.399,10.8)]:
         t=k.PCB_TEXT(mini);t.SetText(label);t.SetPosition(xy(x,y));t.SetLayer(k.F_SilkS)
@@ -130,6 +150,15 @@ def custom():
         m=k.FP_3DMODEL();m.m_Filename="${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/"+name+".step"
         m.m_Offset.Set(*offset);m.m_Rotation.z=90;mini.Add3DModel(m)
     save_fp(mini)
+    fuse=k.FOOTPRINT(None);fuse.SetFPID(k.LIB_ID('TrueSkate','Keystone_3557-2_ATO'));fuse.SetReference('REF**')
+    fuse.SetAttributes(k.FP_THROUGH_HOLE)
+    fuse.SetLibDescription('Keystone3557-2: one complete ATO holder; manufacturer drawing3557-2 revD / catalog p47; 13.47x3.40mm hole centres, >=1.60mm drills')
+    for n,x in [('1',0),('2',13.47)]:
+        for y in (0,3.40):pth(fuse,n,x,y,3,1.65)
+    for layer,margin,width in [(k.F_Fab,0,.1),(k.F_CrtYd,.5,.05)]:
+        x0,y0,x1,y1=-3.17-margin,-1.665-margin,16.64+margin,5.065+margin
+        for a,z in [((x0,y0),(x1,y0)),((x1,y0),(x1,y1)),((x1,y1),(x0,y1)),((x0,y1),(x0,y0))]:line(fuse,a,z,layer,width)
+    save_fp(fuse)
 
 def edge_libraries():
     # Project-local variants retain full fabrication/model geometry. Silk body
@@ -184,7 +213,7 @@ def board():
         text(f"A{i}",x+5,17,1.5)
         text(f"M{i} 3 2 1",x+4,7)
         text(f"ENC{i}",x+18,8)
-        text(f"CS{i} 10k",x+16,11)
+        text(f"CS{i} 10k",x+16,63.5)
         text(f"MINI {i}",x+12,38)
     for a,z in [((55,125),(105,125)),((55,123),(55,127)),((105,123),(105,127))]: line(b,a,z,k.Dwgs_User,.2)
     for label,x,y in [("TOP VIEW / PRINT 100% / NOT MIRRORED",80,-5),("50 mm between ticks - check print scale",80,130)]: text(label,x,y,1.1,k.Dwgs_User)
@@ -205,19 +234,25 @@ def board():
             a=pos(pad(f"J{10+i}",f"P{4-ph}"));end=pos(pad(f"J{20+i}",ph))
             lane=x+1.4-(ph-1)*1.4
             track(f"A{i}_PH{ph}",[a,(lane,a[1]),(lane,12-2*ph),(end[0],12-2*ph),end],1,k.F_Cu)
+        # Locked encoder fanout stays in the JST/right half. It passes between
+        # the control/phase socket rows and then around the Mini power annuli.
+        for pin in range(1,7):
+            p=pad(f'J{30+i}',pin);start=pos(p);lane=x+16.8-.8*(pin-1)
+            jog=5.5;endx=lane+jog
+            track(p.GetNetname(),[start,(start[0],6.5),(lane,6.5+start[0]-lane),(lane,34.5),(endx,40),(endx,45)],.25 if pin<=4 else .3,k.F_Cu)
         mini,bulk,cer=f"J{10+i}",f"C{10+i}",f"C{20+i}"
         vx,vy=pos(pad(mini,'VIN'))
-        route(mini,'VIN',bulk,1,2,k.F_Cu,[(vx,51)])
-        route(mini,'VIN',cer,1,.6,k.F_Cu,[(vx,46)])
+        route(mini,'VIN',bulk,1,2,k.F_Cu,[(vx,51.5)])
+        route(mini,'VIN',cer,1,.6,k.F_Cu,[(vx,47)])
         # Fused 12V has a 12mm backbone. Each branch is 2mm, no power vias.
         bx,by=pos(pad(bulk,1))
-        track('12V_FUSED',([(128,70),(128,47.5),(bx,47.5),(bx,by)] if i==6 else [(bx,70),(bx,by)]),2,k.F_Cu)
+        track('12V_FUSED',([(129.8,70),(129.8,47.5),(bx,47.5),(bx,by)] if i==6 else [(bx,70),(bx,by)]),2,k.F_Cu)
     # Wide common rail stops before Teensy sockets; axis6 branches around its end.
     track('12V_FUSED',[(42.8,92),(42.8,70),(131,70)],12,k.F_Cu)
     track('12V_FUSED',[(17.5,70),(42.8,70)],12,k.F_Cu)
-    # Short fuse/input connections distribute over all four pins per contact.
+    # Keystone has two legs per contact; 6mm output stem and dual-layer input.
     for p in fps['F1'].Pads():
-        if p.GetNumber()=='2':track('12V_FUSED',[pos(p),(pos(p)[0],96),(42.8,92)],2,k.F_Cu)
+        if p.GetNumber()=='2':track('12V_FUSED',[pos(p),(pos(p)[0],96),(42.8,92)],6,k.F_Cu)
         if p.GetNumber()=='1':
             for l in (k.F_Cu,k.B_Cu):track('12V_IN',[pos(p),(pos(p)[0],118),(12,118),pos(pad('J5',1))],2,l)
     for layer in (k.F_Cu,k.B_Cu):
