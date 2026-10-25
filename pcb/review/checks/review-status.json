@@ -4,7 +4,7 @@
   "erc": "PASS",
   "drc": "PASS: no violations, opens, parity issues, exclusions or ignored checks",
   "human_review_required": true,
-  "manufacturing_exports_generated": false,
+  "manufacturing_exports_generated": true,
   "requirements_not_fully_satisfied": [
     "SH harness mapping needs physical verification",
     "0<VCC<2V supply-ramp behavior is outside the buffer DC guarantees",
@@ -46,5 +46,7 @@
     "review/drawings/schematic-review.pdf": "b062d3dc913cd84f31790f9468242b9887ca90626df9d9fcb3aa821c23de6168"
   },
   "independent_checks": "PASS: unchanged six-axis map; 18 PWM; 12 plain-digital EN/CS; SPI0; 9 spare contacts.\nPASS: USB-only carrier; 58 references; exactly six JST connectors factory assembled.\nPASS: conservative two-layer rules persisted; no DRC exclusions or ignored checks.\nStatic checks only. Six-axis electrical operation still requires bench testing.\n./src/common/stdpbase.cpp(59): assert \"\"traits\"\" failed in Get(): create wxApp before calling this\nPASS: schematic/PCB agree for 292 contacts, including 36 isolated NC contacts.\nPASS: six SMD outward-facing JST connectors; all other fitted parts THT; unchanged Teensy map.\nPASS: 299 locked manual segments and 347 ground stitches retained.\nPASS: six verified buffer channels, CS pullups and EN pulldowns; 8192 population/command/loop cases.\nStatic circuit check; switch behavior, startup and loss of supply still require bench qualification.\nPASS: all six EN lines low in the three DC states; worst carrier EN 0.210V, downstream driver EN 0.375V <0.6V.\nPASS: 105 Mini contacts; max drill position error 0.000000 mm\n./src/common/stdpbase.cpp(59): assert \"\"traits\"\" failed in Get(): create wxApp before calling this\nPASS: two-layer 1 oz design; 51 original locked outer power segments retained. Thermal qualification stopped.\n./src/common/stdpbase.cpp(59): assert \"\"traits\"\" failed in Get(): create wxApp before calling this\nPASS: outline +0.5mm courtyard; minimum capacitor/body gap 2.9136mm to board, 2.4138mm to courtyard.\nPASS: all six encoder columns use the right half; Keystone3557-2 has four holes / one complete holder.\n./src/common/stdpbase.cpp(59): assert \"\"traits\"\" failed in Get(): create wxApp before calling this\nPASS: 2 layers, 1 oz, 62 unchanged footprints; 347 GND vias, island removal enabled on both fills, zero isolated zone islands.\nPASS: every SPI/CS route sampled at <=3mm; maximum distance to a GND stitch 10.146mm; edge targets 5.025mm.\nPASS: every retained GND copper region belongs to one cross-layer network; no floating islands. {'F.Cu': 32, 'B.Cu': 35}",
-  "copper_decision": "Two layers, 1 oz; copper/thermal qualification stopped by user."
+  "copper_decision": "Two layers, 1 oz; copper/thermal qualification stopped by user.",
+  "manufacturing_manifest": "../../manufacturing/manifest.json",
+  "manufacturing_zip": "../../manufacturing/trueskate-main-v1-2layer-1oz-JLCPCB.zip"
 }

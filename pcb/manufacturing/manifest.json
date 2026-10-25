@@ -1,0 +1,72 @@
+{
+  "exported_at": "2026-10-24T23:38:02.529151+00:00",
+  "source_commit": "52ca9a16e5d532eef455dec7262e889e229c9cb6",
+  "source_pcb": "design/trueskate-main-v1.kicad_pcb",
+  "source_pcb_sha256": "d3d834778e56cac8adad3efcc863834e2f8e0042e190e49a91a666569cb6c2ba",
+  "kicad_version": "10.0.6",
+  "board_mm": [
+    160.0,
+    120.0
+  ],
+  "layers": 2,
+  "copper_oz": 1,
+  "nominal_thickness_mm": 1.6,
+  "erc": "PASS (existing reviewed configuration)",
+  "erc_ignored_checks": [
+    {
+      "description": "Global label only appears once in the schematic",
+      "key": "single_global_label"
+    },
+    {
+      "description": "Four connection points are joined together",
+      "key": "four_way_junction"
+    },
+    {
+      "description": "SPICE model issue",
+      "key": "simulation_model_issue"
+    },
+    {
+      "description": "Assigned footprint doesn't match footprint filters",
+      "key": "footprint_filter"
+    }
+  ],
+  "strict_drc": "PASS (no ignored checks)",
+  "plated_holes": 721,
+  "nonplated_holes": 4,
+  "native_hole_match": "All hits matched; metric decimal coordinates rounded to 0.001mm by KiCad",
+  "max_drill_position_error_mm": 0.0007071067811899238,
+  "drill_coordinate_resolution_mm": 0.001,
+  "vias": 463,
+  "via_tenting": "front and back",
+  "drill_origin": "absolute, shared with Gerbers; no mirroring",
+  "layers_exported": [
+    "F.Cu",
+    "B.Cu",
+    "F.Paste",
+    "B.Paste",
+    "F.Silkscreen",
+    "B.Silkscreen",
+    "F.Mask",
+    "B.Mask",
+    "Edge.Cuts"
+  ],
+  "files_sha256": {
+    "trueskate-main-v1-B_Cu.gbl": "5d7f755b96257a77b06de71d652c3ba75c73675b5396dd44710dc7696e9ed9ae",
+    "trueskate-main-v1-B_Mask.gbs": "26d030d9ca5df041b513aafe6877dbb786444a86681b6424a369b4bcc17cf7ca",
+    "trueskate-main-v1-B_Paste.gbp": "0fe70ecb9a9c8732b6510a0adfac80e4be6f68432834fd8510224454b70eed01",
+    "trueskate-main-v1-B_Silkscreen.gbo": "1726069c54bfb1965b45b278b28b02d40ffdbad88f4c5d52d64b340a59c8d274",
+    "trueskate-main-v1-Edge_Cuts.gm1": "4a1f947f3a1f9b9c109e1bd3d1fe846f0a025d28af6c3919629db9919f4089d3",
+    "trueskate-main-v1-F_Cu.gtl": "da09d6c70a14b3c0a2ad411ddbc7934e82574e958863183a8f3047227d641956",
+    "trueskate-main-v1-F_Mask.gts": "9d00b3ce2a9d17b465fdc25edfb51b26bd6a5b4757262c1d7816fab63a714aaf",
+    "trueskate-main-v1-F_Paste.gtp": "2e5180ff6b3302a469230ab7182113d507de6a99eb256f971956290a4e0cd497",
+    "trueskate-main-v1-F_Silkscreen.gto": "70c42ea00c1de8f0007e9f631536d4a83ef80cbd7f491c0c1cfc6ec92890e4a0",
+    "trueskate-main-v1-NPTH.drl": "26214f0c9c53abb1526217ad202579ea8b32c6fd28ee296cc4bffefd2f941a85",
+    "trueskate-main-v1-PTH.drl": "fb16c4c7ffce7c3738cdb54cf935d1e9748e24efd01fbe45646bed049b5da9b0",
+    "trueskate-main-v1-job.gbrjob": "14a68743b96e2c40a20f1e22bbf3c1514ef0e166c1a107c276c2d74076a0ae9c"
+  },
+  "zip_filename": "trueskate-main-v1-2layer-1oz-JLCPCB.zip",
+  "zip_sha256": "296e263271ba7d4d830f9a87da054d57bcfca97afa794b5ded0032807dbf7841",
+  "zip_crc": "PASS",
+  "uploaded": false,
+  "order_placed": false
+}

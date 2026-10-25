@@ -1,0 +1,9557 @@
+{
+  "layers": 2,
+  "board_mm": [
+    160.0,
+    120.0
+  ],
+  "holes": [
+    {
+      "xy": [
+        130.0,
+        116.0
+      ],
+      "diameter": 3.2,
+      "plated": false
+    },
+    {
+      "xy": [
+        61.58,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        59.04,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        56.5,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        26.0,
+        33.16
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        23.46,
+        33.16
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        26.0,
+        30.62
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        23.46,
+        30.62
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        26.0,
+        28.08
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        23.46,
+        28.08
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        26.0,
+        25.54
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        23.46,
+        25.54
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        26.0,
+        23.0
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        23.46,
+        23.0
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        22.19,
+        40.399
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        8.347,
+        31.636
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        8.347,
+        29.096
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        8.347,
+        26.556
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        17.237,
+        40.399
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        126.0,
+        33.16
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        123.46,
+        33.16
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        126.0,
+        30.62
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        123.46,
+        30.62
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        126.0,
+        28.08
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        123.46,
+        28.08
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        126.0,
+        25.54
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        123.46,
+        25.54
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        126.0,
+        23.0
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        123.46,
+        23.0
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        122.19,
+        40.399
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        108.347,
+        31.636
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        108.347,
+        29.096
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        108.347,
+        26.556
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        117.237,
+        40.399
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        86.58,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        84.04,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        81.5,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        60.0,
+        47.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        60.0,
+        52.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        82.0,
+        51.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        82.0,
+        58.62
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        111.58,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        109.04,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        106.5,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        33.16
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        73.46,
+        33.16
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        30.62
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        73.46,
+        30.62
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        28.08
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        73.46,
+        28.08
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        25.54
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        73.46,
+        25.54
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        23.0
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        73.46,
+        23.0
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        72.19,
+        40.399
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        58.347,
+        31.636
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        58.347,
+        29.096
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        58.347,
+        26.556
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        67.237,
+        40.399
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        90.0,
+        104.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        97.62,
+        104.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        90.0,
+        88.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        97.62,
+        88.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        19.6,
+        61.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        27.22,
+        61.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        32.0,
+        51.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        32.0,
+        58.62
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        85.0,
+        47.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        85.0,
+        52.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        63.0,
+        96.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        70.62,
+        96.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        67.5,
+        51.5
+      ],
+      "diameter": 1.2,
+      "plated": true
+    },
+    {
+      "xy": [
+        72.5,
+        51.5
+      ],
+      "diameter": 1.2,
+      "plated": true
+    },
+    {
+      "xy": [
+        3.0,
+        82.0
+      ],
+      "diameter": 3.2,
+      "plated": false
+    },
+    {
+      "xy": [
+        44.6,
+        61.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        52.22,
+        61.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        117.5,
+        51.5
+      ],
+      "diameter": 1.2,
+      "plated": true
+    },
+    {
+      "xy": [
+        122.5,
+        51.5
+      ],
+      "diameter": 1.2,
+      "plated": true
+    },
+    {
+      "xy": [
+        11.58,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        9.04,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        6.5,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        51.0,
+        33.16
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        48.46,
+        33.16
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        51.0,
+        30.62
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        48.46,
+        30.62
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        51.0,
+        28.08
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        48.46,
+        28.08
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        51.0,
+        25.54
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        48.46,
+        25.54
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        51.0,
+        23.0
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        48.46,
+        23.0
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        47.19,
+        40.399
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        33.347,
+        31.636
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        33.347,
+        29.096
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        33.347,
+        26.556
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        42.237,
+        40.399
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        119.6,
+        61.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        127.22,
+        61.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        144.6,
+        61.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        152.22,
+        61.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        42.5,
+        51.5
+      ],
+      "diameter": 1.2,
+      "plated": true
+    },
+    {
+      "xy": [
+        47.5,
+        51.5
+      ],
+      "diameter": 1.2,
+      "plated": true
+    },
+    {
+      "xy": [
+        12.0,
+        115.0
+      ],
+      "diameter": 1.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        17.08,
+        115.0
+      ],
+      "diameter": 1.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        36.58,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        34.04,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        31.5,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        157.0,
+        18.0
+      ],
+      "diameter": 3.2,
+      "plated": false
+    },
+    {
+      "xy": [
+        107.0,
+        51.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        107.0,
+        58.62
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        7.0,
+        51.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        7.0,
+        58.62
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        17.5,
+        51.5
+      ],
+      "diameter": 1.2,
+      "plated": true
+    },
+    {
+      "xy": [
+        22.5,
+        51.5
+      ],
+      "diameter": 1.2,
+      "plated": true
+    },
+    {
+      "xy": [
+        151.0,
+        33.16
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        148.46,
+        33.16
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        151.0,
+        30.62
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        148.46,
+        30.62
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        151.0,
+        28.08
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        148.46,
+        28.08
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        151.0,
+        25.54
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        148.46,
+        25.54
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        151.0,
+        23.0
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        148.46,
+        23.0
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        147.19,
+        40.399
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        133.347,
+        31.636
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        133.347,
+        29.096
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        133.347,
+        26.556
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        142.237,
+        40.399
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        142.5,
+        51.5
+      ],
+      "diameter": 1.2,
+      "plated": true
+    },
+    {
+      "xy": [
+        147.5,
+        51.5
+      ],
+      "diameter": 1.2,
+      "plated": true
+    },
+    {
+      "xy": [
+        69.6,
+        61.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        77.22,
+        61.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        63.0,
+        104.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        70.62,
+        104.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        118.03
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        115.49
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        112.95
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        110.41
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        107.87
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        105.33
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        102.79
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        100.25
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        97.71
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        95.17
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        92.63
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        90.09
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        87.55
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        85.01
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        82.47
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        79.93
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        77.39
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        74.85
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        72.31
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        69.77
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        67.23
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        64.69
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        62.15
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        155.24,
+        59.61
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        135.0,
+        47.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        135.0,
+        52.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        101.0,
+        33.16
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        98.46,
+        33.16
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        101.0,
+        30.62
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        98.46,
+        30.62
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        101.0,
+        28.08
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        98.46,
+        28.08
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        101.0,
+        25.54
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        98.46,
+        25.54
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        101.0,
+        23.0
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        98.46,
+        23.0
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        97.19,
+        40.399
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.347,
+        31.636
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.347,
+        29.096
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.347,
+        26.556
+      ],
+      "diameter": 1.020999,
+      "plated": true
+    },
+    {
+      "xy": [
+        92.237,
+        40.399
+      ],
+      "diameter": 1.101,
+      "plated": true
+    },
+    {
+      "xy": [
+        30.0,
+        112.5
+      ],
+      "diameter": 1.65,
+      "plated": true
+    },
+    {
+      "xy": [
+        30.0,
+        115.9
+      ],
+      "diameter": 1.65,
+      "plated": true
+    },
+    {
+      "xy": [
+        43.47,
+        112.5
+      ],
+      "diameter": 1.65,
+      "plated": true
+    },
+    {
+      "xy": [
+        43.47,
+        115.9
+      ],
+      "diameter": 1.65,
+      "plated": true
+    },
+    {
+      "xy": [
+        136.58,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        134.04,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        131.5,
+        3.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        92.5,
+        51.5
+      ],
+      "diameter": 1.2,
+      "plated": true
+    },
+    {
+      "xy": [
+        97.5,
+        51.5
+      ],
+      "diameter": 1.2,
+      "plated": true
+    },
+    {
+      "xy": [
+        132.0,
+        51.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        132.0,
+        58.62
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        3.0,
+        110.0
+      ],
+      "diameter": 3.2,
+      "plated": false
+    },
+    {
+      "xy": [
+        110.0,
+        47.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        110.0,
+        52.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        118.03
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        115.49
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        112.95
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        110.41
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        107.87
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        105.33
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        102.79
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        100.25
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        97.71
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        95.17
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        92.63
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        90.09
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        87.55
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        85.01
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        82.47
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        79.93
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        77.39
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        74.85
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        72.31
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        69.77
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        67.23
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        64.69
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        62.15
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        140.0,
+        59.61
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        89.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        91.54
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        94.08
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        96.62
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        99.16
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        101.7
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        104.24
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.62,
+        104.24
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.62,
+        101.7
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.62,
+        99.16
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.62,
+        96.62
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.62,
+        94.08
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.62,
+        91.54
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.62,
+        89.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.62,
+        85.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        78.62,
+        85.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        61.0,
+        117.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        63.54,
+        117.0
+      ],
+      "diameter": 1.0,
+      "plated": true
+    },
+    {
+      "xy": [
+        60.0,
+        110.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        67.62,
+        110.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        110.62,
+        85.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        105.62,
+        85.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        63.0,
+        88.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        70.62,
+        88.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        57.0,
+        51.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        57.0,
+        58.62
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        94.6,
+        61.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        102.22,
+        61.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        10.0,
+        47.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        10.0,
+        52.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        103.0,
+        89.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        103.0,
+        91.54
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        103.0,
+        94.08
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        103.0,
+        96.62
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        103.0,
+        99.16
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        103.0,
+        101.7
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        103.0,
+        104.24
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        110.62,
+        104.24
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        110.62,
+        101.7
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        110.62,
+        99.16
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        110.62,
+        96.62
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        110.62,
+        94.08
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        110.62,
+        91.54
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        110.62,
+        89.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        90.0,
+        96.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        97.62,
+        96.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        35.0,
+        47.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        35.0,
+        52.0
+      ],
+      "diameter": 0.8,
+      "plated": true
+    },
+    {
+      "xy": [
+        148.2367,
+        63.5566
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.8306,
+        60.4293
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        65.3451,
+        46.0153
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        128.3645,
+        46.6221
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        86.5921,
+        85.525
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        73.2125,
+        60.2511
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        132.7952,
+        55.1725
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        110.0153,
+        86.793
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        149.253,
+        53.5415
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        103.2667,
+        63.1437
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        51.226,
+        46.1293
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        149.6595,
+        85.3897
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        38.9366,
+        53.184
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        72.5273,
+        56.2857
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        69.7484,
+        52.2858
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        96.0,
+        34.2506
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        142.1917,
+        84.5634
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        65.7013,
+        60.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        145.6154,
+        59.1988
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        77.6291,
+        46.1718
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        46.0,
+        32.48
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        144.7098,
+        73.1672
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        69.6479,
+        56.56
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        89.841,
+        48.6528
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        137.7893,
+        82.9244
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        40.0334,
+        49.4774
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        71.269,
+        56.8133
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        80.3853,
+        46.0879
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        74.1414,
+        56.8336
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        82.5426,
+        82.2477
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        126.609,
+        50.9219
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        48.1456,
+        45.8118
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        79.7958,
+        49.3443
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        142.5436,
+        68.5776
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        145.4909,
+        57.8476
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        39.7991,
+        50.884
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        93.9064,
+        49.1424
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        103.0584,
+        47.321
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        99.3368,
+        49.7434
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        62.8644,
+        48.695
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        75.5356,
+        49.6874
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        100.7501,
+        47.3583
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        50.1037,
+        46.5986
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        125.5631,
+        46.5499
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        72.5924,
+        46.6666
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        87.2492,
+        49.5958
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        68.9302,
+        48.695
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        148.9229,
+        48.8052
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        39.2814,
+        59.3852
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        74.4235,
+        47.7395
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        99.1513,
+        45.0074
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        24.0497,
+        46.5998
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        138.0,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        125.5,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        149.5,
+        55.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        82.0,
+        1.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        47.5,
+        44.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        61.5,
+        61.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        147.0,
+        80.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        107.0,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        136.5,
+        82.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        73.0,
+        61.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        24.0,
+        58.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        103.5,
+        52.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        86.5,
+        88.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        138.5,
+        82.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        141.5,
+        79.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        146.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        103.5,
+        84.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        64.0,
+        82.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        142.0,
+        77.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        109.0,
+        84.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        121.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        138.5,
+        105.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        38.5,
+        51.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        118.0,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        135.5,
+        82.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        98.5,
+        59.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        57.5,
+        61.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        96.5,
+        39.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        40.0,
+        62.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        130.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        67.0,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        31.5,
+        62.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        74.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        158.5,
+        16.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        78.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        132.5,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        122.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        123.0,
+        57.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        148.0,
+        50.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        131.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        77.5,
+        78.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        81.5,
+        88.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        99.5,
+        29.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        137.0,
+        65.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        106.0,
+        1.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        78.5,
+        78.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        149.5,
+        29.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        148.0,
+        15.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        128.5,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        148.0,
+        20.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        81.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        45.5,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        99.0,
+        48.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        95.0,
+        117.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        101.5,
+        35.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        126.5,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        122.5,
+        108.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        82.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        24.0,
+        90.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        75.0,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        156.5,
+        50.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        79.0,
+        45.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        89.0,
+        50.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        67.5,
+        26.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        158.0,
+        34.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        67.5,
+        32.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        114.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        127.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        78.5,
+        94.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        115.0,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        125.5,
+        61.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        62.5,
+        77.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        128.5,
+        40.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        149.5,
+        60.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        153.5,
+        72.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        10.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        142.5,
+        72.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        123.5,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        154.0,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        125.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        84.0,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        154.0,
+        79.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        156.5,
+        55.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        146.5,
+        53.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        101.5,
+        45.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        96.5,
+        86.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        47.0,
+        53.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        40.5,
+        118.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        90.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        10.0,
+        1.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        21.5,
+        44.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        74.5,
+        29.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        55.0,
+        80.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.0,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        158.5,
+        95.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        78.5,
+        82.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        77.0,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        42.5,
+        26.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        58.5,
+        61.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        90.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        99.0,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        59.5,
+        61.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        69.5,
+        77.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        115.0,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        46.5,
+        39.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        48.5,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        117.0,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        17.5,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        58.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        94.5,
+        87.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        34.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        73.0,
+        20.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        33.5,
+        1.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        158.0,
+        106.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        123.0,
+        15.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.0,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        128.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        50.5,
+        58.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        134.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        125.0,
+        34.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        117.5,
+        26.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        73.0,
+        15.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        28.5,
+        40.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        42.5,
+        32.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        80.5,
+        82.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        23.0,
+        10.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        123.5,
+        61.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        148.0,
+        10.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        138.0,
+        66.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        117.0,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        130.5,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        81.5,
+        82.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        111.5,
+        51.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        118.0,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        153.0,
+        39.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        24.0,
+        50.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        60.0,
+        44.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        148.5,
+        35.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.0,
+        59.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        62.0,
+        56.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        108.0,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        66.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        25.0,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        72.5,
+        62.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        48.0,
+        10.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        158.0,
+        10.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        82.5,
+        47.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        98.0,
+        15.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        96.5,
+        88.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        72.0,
+        60.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        86.0,
+        54.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        130.0,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        124.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        82.0,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        80.0,
+        89.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        53.0,
+        77.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        142.5,
+        70.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        44.5,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        48.0,
+        15.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        132.5,
+        60.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        1.5,
+        80.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        100.0,
+        32.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        72.0,
+        59.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        90.0,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        66.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        102.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        26.5,
+        6.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        98.0,
+        20.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        112.5,
+        89.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        50.0,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        74.5,
+        78.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        50.0,
+        35.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        123.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        102.0,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        66.0,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        69.5,
+        78.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        37.0,
+        62.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        119.0,
+        48.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        130.5,
+        94.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        74.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        24.5,
+        29.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        130.0,
+        118.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        123.0,
+        10.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        58.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        107.0,
+        89.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        149.5,
+        65.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        153.5,
+        59.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        127.0,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        73.0,
+        105.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        34.0,
+        55.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        28.5,
+        44.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        124.5,
+        29.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        26.0,
+        116.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        34.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        104.5,
+        62.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        99.0,
+        88.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        33.5,
+        47.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        103.5,
+        40.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        147.5,
+        86.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        60.5,
+        61.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        79.5,
+        56.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        158.0,
+        96.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        85.0,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        91.0,
+        91.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        124.5,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        50.0,
+        49.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        129.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        128.5,
+        45.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        138.5,
+        79.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        114.0,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        53.5,
+        46.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        58.5,
+        77.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        112.0,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        49.5,
+        29.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        137.5,
+        57.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        154.0,
+        71.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        142.5,
+        32.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        122.0,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        72.0,
+        61.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        70.5,
+        78.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        156.0,
+        43.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        94.0,
+        46.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        108.0,
+        89.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        76.5,
+        6.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        63.5,
+        49.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        18.0,
+        116.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        18.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        67.5,
+        77.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        106.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        122.5,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        61.5,
+        77.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        104.5,
+        84.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        107.0,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        101.5,
+        6.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        74.0,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        86.5,
+        89.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        95.5,
+        87.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        68.5,
+        77.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        22.0,
+        62.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        127.5,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        57.5,
+        77.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        158.0,
+        114.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        120.0,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        73.0,
+        10.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        116.0,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        42.0,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        106.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        124.5,
+        61.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        98.0,
+        10.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        123.0,
+        20.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        38.0,
+        61.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        26.0,
+        62.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        120.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        123.0,
+        41.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        23.5,
+        35.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        48.0,
+        20.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        132.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        72.0,
+        49.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        133.0,
+        54.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        37.0,
+        61.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        42.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        23.0,
+        20.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        136.0,
+        64.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        92.5,
+        26.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        158.0,
+        26.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        117.5,
+        33.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        146.0,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        141.5,
+        67.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        122.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        153.5,
+        85.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        109.0,
+        89.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        95.5,
+        88.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        137.5,
+        71.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        58.0,
+        1.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        98.0,
+        2.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        119.0,
+        41.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        115.0,
+        58.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        47.5,
+        63.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        103.5,
+        56.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        119.5,
+        54.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        119.0,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        105.5,
+        94.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        95.0,
+        96.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        49.5,
+        80.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        17.0,
+        32.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        106.5,
+        60.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        17.5,
+        25.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        127.0,
+        5.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        87.0,
+        90.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        149.5,
+        75.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        142.5,
+        26.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        151.5,
+        6.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        95.5,
+        86.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        53.5,
+        40.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        153.5,
+        65.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        23.0,
+        15.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        120.0,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        126.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        82.0,
+        89.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        40.5,
+        46.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        154.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        50.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        79.5,
+        82.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        142.5,
+        59.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        99.0,
+        84.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        26.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        105.0,
+        48.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        121.5,
+        44.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        63.5,
+        60.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        138.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        138.0,
+        1.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        135.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        78.0,
+        51.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        133.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        71.5,
+        53.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        71.0,
+        39.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        65.0,
+        44.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        51.5,
+        6.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        75.0,
+        62.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        78.5,
+        40.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        97.5,
+        53.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        138.0,
+        54.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        121.5,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        84.0,
+        62.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        2.0,
+        98.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        119.5,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        147.0,
+        69.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        37.0,
+        56.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        52.0,
+        77.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        129.5,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        114.0,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        96.5,
+        87.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        10.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        28.5,
+        55.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        116.0,
+        85.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        38.0,
+        60.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        82.5,
+        88.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        73.5,
+        35.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        50.0,
+        118.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        126.0,
+        52.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        153.5,
+        47.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        60.5,
+        77.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        93.0,
+        35.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        142.5,
+        86.5
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        125.5,
+        86.0
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        60.8129,
+        105.6011
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        111.2505,
+        83.5997
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        114.2754,
+        89.63
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        20.067,
+        58.2349
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        49.6538,
+        88.3944
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        18.1395,
+        38.357
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        53.102,
+        89.1768
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        25.3935,
+        35.6895
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        51.433,
+        89.2173
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        145.9055,
+        65.4566
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        136.2663,
+        59.4252
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        118.6982,
+        38.648
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        121.776,
+        43.0984
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        131.9888,
+        62.8343
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        124.8626,
+        35.6126
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        101.06,
+        52.1781
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        89.16,
+        93.5387
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        91.4612,
+        95.586
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        68.876,
+        39.435
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        72.428,
+        43.6966
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        86.5933,
+        82.2465
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        134.3423,
+        81.8834
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        80.0014,
+        78.7348
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        75.9397,
+        35.7061
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        84.2875,
+        86.4701
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        79.823,
+        85.8781
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        151.4151,
+        64.45
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        145.122,
+        101.28
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        50.4913,
+        76.6627
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        40.6925,
+        62.888
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        114.2754,
+        53.1216
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        74.3477,
+        99.87
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        61.1068,
+        97.84
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        49.8853,
+        40.5102
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        46.7685,
+        42.9472
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        48.0982,
+        59.0507
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        59.5544,
+        77.4051
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        71.0345,
+        109.6349
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        40.0426,
+        58.8003
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        38.3618,
+        62.1343
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        51.4509,
+        35.92
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        82.3405,
+        90.27
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        101.6217,
+        92.1743
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        84.5051,
+        80.3464
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        55.6893,
+        77.8428
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        46.5952,
+        60.177
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        83.4288,
+        109.6349
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        44.106,
+        41.1841
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        159.1222,
+        70.32
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        142.5438,
+        107.8124
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        73.1466,
+        77.5225
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        114.2754,
+        112.625
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        99.609,
+        89.5831
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        90.0822,
+        52.6234
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        90.2121,
+        54.5934
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        92.5814,
+        86.9207
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        142.1917,
+        81.8836
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        99.1601,
+        80.2657
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        134.8398,
+        80.3347
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        97.6548,
+        46.8328
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        99.999,
+        87.8592
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        99.7832,
+        36.0804
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        96.5933,
+        42.9693
+      ],
+      "diameter": 0.3,
+      "plated": true
+    },
+    {
+      "xy": [
+        96.9034,
+        78.2077
+      ],
+      "diameter": 0.3,
+      "plated": true
+    }
+  ],
+  "vias": [
+    {
+      "xy": [
+        148.2367,
+        63.5566
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        83.8306,
+        60.4293
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        65.3451,
+        46.0153
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        128.3645,
+        46.6221
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        86.5921,
+        85.525
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        73.2125,
+        60.2511
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        132.7952,
+        55.1725
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        110.0153,
+        86.793
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        149.253,
+        53.5415
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        103.2667,
+        63.1437
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        51.226,
+        46.1293
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        149.6595,
+        85.3897
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        38.9366,
+        53.184
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        72.5273,
+        56.2857
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        69.7484,
+        52.2858
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        96.0,
+        34.2506
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        142.1917,
+        84.5634
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        65.7013,
+        60.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        145.6154,
+        59.1988
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        77.6291,
+        46.1718
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        46.0,
+        32.48
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        144.7098,
+        73.1672
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        69.6479,
+        56.56
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        89.841,
+        48.6528
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        137.7893,
+        82.9244
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        40.0334,
+        49.4774
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        71.269,
+        56.8133
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        80.3853,
+        46.0879
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        74.1414,
+        56.8336
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        82.5426,
+        82.2477
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        126.609,
+        50.9219
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        48.1456,
+        45.8118
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        79.7958,
+        49.3443
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        142.5436,
+        68.5776
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        145.4909,
+        57.8476
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        39.7991,
+        50.884
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        93.9064,
+        49.1424
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        103.0584,
+        47.321
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        99.3368,
+        49.7434
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        62.8644,
+        48.695
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        75.5356,
+        49.6874
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        100.7501,
+        47.3583
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        50.1037,
+        46.5986
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        125.5631,
+        46.5499
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        72.5924,
+        46.6666
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        87.2492,
+        49.5958
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        68.9302,
+        48.695
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        148.9229,
+        48.8052
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        39.2814,
+        59.3852
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        74.4235,
+        47.7395
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        99.1513,
+        45.0074
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        24.0497,
+        46.5998
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        138.0,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        125.5,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        149.5,
+        55.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        82.0,
+        1.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        47.5,
+        44.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        61.5,
+        61.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        147.0,
+        80.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        107.0,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        136.5,
+        82.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        73.0,
+        61.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        24.0,
+        58.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        103.5,
+        52.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        86.5,
+        88.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        138.5,
+        82.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        141.5,
+        79.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        146.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        103.5,
+        84.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        64.0,
+        82.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        142.0,
+        77.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        109.0,
+        84.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        121.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        138.5,
+        105.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        38.5,
+        51.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        118.0,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        135.5,
+        82.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        98.5,
+        59.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        57.5,
+        61.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        96.5,
+        39.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        40.0,
+        62.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        130.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        67.0,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        31.5,
+        62.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        74.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        158.5,
+        16.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        76.0,
+        78.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        132.5,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        122.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        123.0,
+        57.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        148.0,
+        50.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        131.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        77.5,
+        78.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        81.5,
+        88.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        99.5,
+        29.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        137.0,
+        65.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        106.0,
+        1.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        78.5,
+        78.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        149.5,
+        29.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        148.0,
+        15.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        128.5,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        148.0,
+        20.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        81.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        45.5,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        99.0,
+        48.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        95.0,
+        117.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        101.5,
+        35.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        126.5,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        122.5,
+        108.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        82.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        24.0,
+        90.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        75.0,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        156.5,
+        50.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        79.0,
+        45.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        89.0,
+        50.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        67.5,
+        26.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        158.0,
+        34.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        67.5,
+        32.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        114.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        127.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        78.5,
+        94.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        115.0,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        125.5,
+        61.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        62.5,
+        77.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        128.5,
+        40.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        149.5,
+        60.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        153.5,
+        72.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        10.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        142.5,
+        72.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        123.5,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        154.0,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        125.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        84.0,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        154.0,
+        79.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        156.5,
+        55.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        146.5,
+        53.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        101.5,
+        45.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        96.5,
+        86.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        47.0,
+        53.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        40.5,
+        118.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        90.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        10.0,
+        1.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        21.5,
+        44.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        74.5,
+        29.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        55.0,
+        80.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        76.0,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        158.5,
+        95.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        78.5,
+        82.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        77.0,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        42.5,
+        26.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        58.5,
+        61.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        90.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        99.0,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        59.5,
+        61.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        69.5,
+        77.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        115.0,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        46.5,
+        39.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        48.5,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        117.0,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        17.5,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        58.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        94.5,
+        87.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        34.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        73.0,
+        20.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        33.5,
+        1.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        158.0,
+        106.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        123.0,
+        15.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        83.0,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        128.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        50.5,
+        58.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        134.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        125.0,
+        34.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        117.5,
+        26.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        73.0,
+        15.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        28.5,
+        40.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        42.5,
+        32.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        80.5,
+        82.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        23.0,
+        10.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        123.5,
+        61.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        148.0,
+        10.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        138.0,
+        66.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        117.0,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        130.5,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        81.5,
+        82.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        111.5,
+        51.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        118.0,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        153.0,
+        39.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        24.0,
+        50.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        60.0,
+        44.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        148.5,
+        35.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        83.0,
+        59.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        62.0,
+        56.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        108.0,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        66.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        25.0,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        72.5,
+        62.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        48.0,
+        10.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        158.0,
+        10.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        82.5,
+        47.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        98.0,
+        15.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        96.5,
+        88.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        72.0,
+        60.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        86.0,
+        54.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        130.0,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        124.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        82.0,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        80.0,
+        89.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        53.0,
+        77.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        142.5,
+        70.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        44.5,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        48.0,
+        15.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        132.5,
+        60.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        1.5,
+        80.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        100.0,
+        32.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        72.0,
+        59.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        90.0,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        66.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        102.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        26.5,
+        6.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        98.0,
+        20.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        112.5,
+        89.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        50.0,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        74.5,
+        78.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        50.0,
+        35.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        123.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        102.0,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        66.0,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        69.5,
+        78.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        37.0,
+        62.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        119.0,
+        48.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        130.5,
+        94.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        74.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        24.5,
+        29.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        130.0,
+        118.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        123.0,
+        10.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        58.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        107.0,
+        89.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        149.5,
+        65.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        153.5,
+        59.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        127.0,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        73.0,
+        105.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        34.0,
+        55.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        28.5,
+        44.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        124.5,
+        29.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        26.0,
+        116.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        34.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        104.5,
+        62.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        99.0,
+        88.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        33.5,
+        47.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        103.5,
+        40.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        147.5,
+        86.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        60.5,
+        61.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        79.5,
+        56.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        158.0,
+        96.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        85.0,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        91.0,
+        91.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        124.5,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        50.0,
+        49.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        129.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        128.5,
+        45.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        138.5,
+        79.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        114.0,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        53.5,
+        46.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        58.5,
+        77.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        112.0,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        49.5,
+        29.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        137.5,
+        57.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        154.0,
+        71.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        142.5,
+        32.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        122.0,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        72.0,
+        61.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        70.5,
+        78.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        156.0,
+        43.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        94.0,
+        46.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        108.0,
+        89.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        76.5,
+        6.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        63.5,
+        49.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        18.0,
+        116.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        18.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        67.5,
+        77.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        106.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        122.5,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        61.5,
+        77.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        104.5,
+        84.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        107.0,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        101.5,
+        6.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        74.0,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        86.5,
+        89.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        95.5,
+        87.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        68.5,
+        77.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        22.0,
+        62.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        127.5,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        57.5,
+        77.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        158.0,
+        114.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        120.0,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        73.0,
+        10.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        116.0,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        42.0,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        106.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        124.5,
+        61.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        98.0,
+        10.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        123.0,
+        20.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        38.0,
+        61.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        26.0,
+        62.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        120.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        123.0,
+        41.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        23.5,
+        35.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        48.0,
+        20.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        132.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        72.0,
+        49.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        133.0,
+        54.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        37.0,
+        61.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        42.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        23.0,
+        20.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        136.0,
+        64.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        92.5,
+        26.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        158.0,
+        26.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        117.5,
+        33.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        146.0,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        141.5,
+        67.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        122.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        153.5,
+        85.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        109.0,
+        89.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        95.5,
+        88.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        137.5,
+        71.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        58.0,
+        1.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        98.0,
+        2.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        119.0,
+        41.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        115.0,
+        58.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        47.5,
+        63.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        103.5,
+        56.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        119.5,
+        54.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        119.0,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        105.5,
+        94.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        95.0,
+        96.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        49.5,
+        80.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        17.0,
+        32.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        106.5,
+        60.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        17.5,
+        25.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        127.0,
+        5.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        87.0,
+        90.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        149.5,
+        75.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        142.5,
+        26.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        151.5,
+        6.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        95.5,
+        86.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        53.5,
+        40.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        153.5,
+        65.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        23.0,
+        15.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        120.0,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        126.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        82.0,
+        89.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        40.5,
+        46.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        154.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        50.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        79.5,
+        82.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        142.5,
+        59.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        99.0,
+        84.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        26.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        105.0,
+        48.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        121.5,
+        44.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        63.5,
+        60.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        138.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        138.0,
+        1.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        135.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        78.0,
+        51.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        133.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        71.5,
+        53.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        71.0,
+        39.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        65.0,
+        44.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        51.5,
+        6.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        75.0,
+        62.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        78.5,
+        40.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        97.5,
+        53.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        138.0,
+        54.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        121.5,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        84.0,
+        62.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        2.0,
+        98.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        119.5,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        147.0,
+        69.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        37.0,
+        56.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        52.0,
+        77.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        129.5,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        114.0,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        96.5,
+        87.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        10.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        28.5,
+        55.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        116.0,
+        85.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        38.0,
+        60.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        82.5,
+        88.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        73.5,
+        35.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        50.0,
+        118.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        126.0,
+        52.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        153.5,
+        47.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        60.5,
+        77.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        93.0,
+        35.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        142.5,
+        86.5
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        125.5,
+        86.0
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        60.8129,
+        105.6011
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        111.2505,
+        83.5997
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        114.2754,
+        89.63
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        20.067,
+        58.2349
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        49.6538,
+        88.3944
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        18.1395,
+        38.357
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        53.102,
+        89.1768
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        25.3935,
+        35.6895
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        51.433,
+        89.2173
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        145.9055,
+        65.4566
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        136.2663,
+        59.4252
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        118.6982,
+        38.648
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        121.776,
+        43.0984
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        131.9888,
+        62.8343
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        124.8626,
+        35.6126
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        101.06,
+        52.1781
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        89.16,
+        93.5387
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        91.4612,
+        95.586
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        68.876,
+        39.435
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        72.428,
+        43.6966
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        86.5933,
+        82.2465
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        134.3423,
+        81.8834
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        80.0014,
+        78.7348
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        75.9397,
+        35.7061
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        84.2875,
+        86.4701
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        79.823,
+        85.8781
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        151.4151,
+        64.45
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        145.122,
+        101.28
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        50.4913,
+        76.6627
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        40.6925,
+        62.888
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        114.2754,
+        53.1216
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        74.3477,
+        99.87
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        61.1068,
+        97.84
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        49.8853,
+        40.5102
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        46.7685,
+        42.9472
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        48.0982,
+        59.0507
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        59.5544,
+        77.4051
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        71.0345,
+        109.6349
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        40.0426,
+        58.8003
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        38.3618,
+        62.1343
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        51.4509,
+        35.92
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        82.3405,
+        90.27
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        101.6217,
+        92.1743
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        84.5051,
+        80.3464
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        55.6893,
+        77.8428
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        46.5952,
+        60.177
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        83.4288,
+        109.6349
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        44.106,
+        41.1841
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        159.1222,
+        70.32
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        142.5438,
+        107.8124
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        73.1466,
+        77.5225
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        114.2754,
+        112.625
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        99.609,
+        89.5831
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        90.0822,
+        52.6234
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        90.2121,
+        54.5934
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        92.5814,
+        86.9207
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        142.1917,
+        81.8836
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        99.1601,
+        80.2657
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        134.8398,
+        80.3347
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        97.6548,
+        46.8328
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        99.999,
+        87.8592
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        99.7832,
+        36.0804
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        96.5933,
+        42.9693
+      ],
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "xy": [
+        96.9034,
+        78.2077
+      ],
+      "front_tented": true,
+      "back_tented": true
+    }
+  ],
+  "outline": [
+    [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        160.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.0,
+        120.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        160.0,
+        0.0
+      ],
+      [
+        160.0,
+        120.0
+      ]
+    ],
+    [
+      [
+        160.0,
+        120.0
+      ],
+      [
+        0.0,
+        120.0
+      ]
+    ]
+  ]
+}

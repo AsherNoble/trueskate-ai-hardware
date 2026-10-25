@@ -8,6 +8,7 @@ tax and assembly. Copper/thermal qualification is stopped.
 
 | I want to… | Open |
 |---|---|
+| Upload Gerbers to JLCPCB | [Current manufacturing ZIP](manufacturing/trueskate-main-v1-2layer-1oz-JLCPCB.zip) · [Order settings](manufacturing/README.md) |
 | Edit the board or schematic in KiCad | [trueskate-main-v1.kicad_pro](design/trueskate-main-v1.kicad_pro) |
 | See the assembled board | [Perspective](renders/populated-perspective.png) · [Top](renders/populated-top.png) · [Rear](renders/populated-rear.png) |
 | Buy parts | [BOM](bom/bom-review.csv) · [BOM changes](bom/bom-diff.md) |
@@ -24,6 +25,7 @@ tax and assembly. Copper/thermal qualification is stopped.
 |---|---|
 | `design/` | Current KiCad project, board, schematics and local libraries. `data/` holds generator inputs and route records; `routing/` holds the frozen signal-routing exchange. |
 | `bom/` | Current purchasing list and BOM changes. |
+| `manufacturing/` | Current Gerber/drill ZIP, order settings and export checks. |
 | `renders/` | Current populated images, bare-board views and copper plots. |
 | `review/` | Printable PDFs and drill overlay in `drawings/`; machine-readable checks in `checks/`. |
 | `scripts/` | Generation, validation and rendering tools; [commands](scripts/README.md). |

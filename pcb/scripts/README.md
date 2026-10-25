@@ -37,3 +37,9 @@ with `rebuild.py` rather than invoking each stage manually.
 and the BOM diff. `freerouting.rb` pins the optional autorouter; no autorouter is
 run by the review-export command. Archived four-layer/thermal tools are excluded
 from this workflow.
+
+## Export the manufacturing ZIP
+
+Run `export_manufacturing.py` with Python 3.11. Fresh ERC/strict DRC, native hole
+matching and ZIP integrity checks gate the output in `../manufacturing/`.
+The script exports fabrication files only; it does not upload or order boards.
