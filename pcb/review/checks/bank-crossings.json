@@ -1,0 +1,159 @@
+{
+  "definition": "Physical crossings of Y=70 mm; includes all routed signal nets, buffers and shared supplies. Not equivalent to the 14 pin-row mismatch estimate.",
+  "crossings": [
+    {
+      "net": "A4_CS",
+      "layer": "B.Cu",
+      "x_mm": 47.69,
+      "under_teensy": true
+    },
+    {
+      "net": "3V3",
+      "layer": "B.Cu",
+      "x_mm": 132.16,
+      "under_teensy": false
+    },
+    {
+      "net": "3V3",
+      "layer": "B.Cu",
+      "x_mm": 36.26,
+      "under_teensy": true
+    },
+    {
+      "net": "3V3",
+      "layer": "B.Cu",
+      "x_mm": 8.32,
+      "under_teensy": true
+    },
+    {
+      "net": "3V3",
+      "layer": "B.Cu",
+      "x_mm": 68.0163,
+      "under_teensy": false
+    },
+    {
+      "net": "12V_FUSED",
+      "layer": "F.Cu",
+      "x_mm": 112.0,
+      "under_teensy": false
+    },
+    {
+      "net": "A2_EN_CMD",
+      "layer": "B.Cu",
+      "x_mm": 112.1218,
+      "under_teensy": false
+    },
+    {
+      "net": "SPI_SCK",
+      "layer": "F.Cu",
+      "x_mm": 14.0,
+      "under_teensy": true
+    },
+    {
+      "net": "SPI_MISO",
+      "layer": "F.Cu",
+      "x_mm": 68.75,
+      "under_teensy": false
+    },
+    {
+      "net": "SPI_MISO",
+      "layer": "B.Cu",
+      "x_mm": 31.1665,
+      "under_teensy": true
+    },
+    {
+      "net": "SPI_MISO",
+      "layer": "B.Cu",
+      "x_mm": 69.0,
+      "under_teensy": false
+    },
+    {
+      "net": "SPI_MOSI",
+      "layer": "B.Cu",
+      "x_mm": 28.64,
+      "under_teensy": true
+    },
+    {
+      "net": "A2_PWM1",
+      "layer": "B.Cu",
+      "x_mm": 15.94,
+      "under_teensy": true
+    },
+    {
+      "net": "A2_EN",
+      "layer": "B.Cu",
+      "x_mm": 104.4372,
+      "under_teensy": false
+    },
+    {
+      "net": "A3_EN_CMD",
+      "layer": "B.Cu",
+      "x_mm": 110.9136,
+      "under_teensy": false
+    },
+    {
+      "net": "A3_PWM1",
+      "layer": "B.Cu",
+      "x_mm": 62.6846,
+      "under_teensy": false
+    },
+    {
+      "net": "A3_PWM3",
+      "layer": "B.Cu",
+      "x_mm": 56.58,
+      "under_teensy": true
+    },
+    {
+      "net": "A3_EN",
+      "layer": "B.Cu",
+      "x_mm": 114.754,
+      "under_teensy": false
+    },
+    {
+      "net": "EN_DISABLE",
+      "layer": "B.Cu",
+      "x_mm": 123.8058,
+      "under_teensy": false
+    },
+    {
+      "net": "A4_EN_CMD",
+      "layer": "F.Cu",
+      "x_mm": 21.616,
+      "under_teensy": true
+    },
+    {
+      "net": "A6_CS",
+      "layer": "B.Cu",
+      "x_mm": 51.5,
+      "under_teensy": true
+    },
+    {
+      "net": "A5_EN",
+      "layer": "B.Cu",
+      "x_mm": 126.7021,
+      "under_teensy": false
+    },
+    {
+      "net": "A2_CS",
+      "layer": "B.Cu",
+      "x_mm": 41.34,
+      "under_teensy": true
+    },
+    {
+      "net": "A5_PWM1",
+      "layer": "B.Cu",
+      "x_mm": 94.3798,
+      "under_teensy": false
+    },
+    {
+      "net": "A3_CS",
+      "layer": "B.Cu",
+      "x_mm": 61.9579,
+      "under_teensy": false
+    }
+  ],
+  "unique_nets": 20,
+  "events": 25,
+  "top_under_teensy_events": 2,
+  "bottom_under_teensy_events": 9
+}

@@ -1,3 +1,5 @@
+> Historical layout notes. Superseded by the [current 3+3 layout](3plus3-layout.md).
+
 > Current layer decision: two layers, 1 oz, stitched GND. See [current review](two-layer-ground.md); any four-layer discussion below is historical.
 
 # Edge-layout follow-up review

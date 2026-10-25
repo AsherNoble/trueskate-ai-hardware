@@ -61,9 +61,9 @@
       85
     ],
     "pcb": [
-      155.24,
-      118.03,
-      180
+      1.97,
+      77.62,
+      90
     ],
     "price": 1.5,
     "note": "Physical pin legend: GND,0,1,2,3,4,5,6,7,8,9,10,11,12,3V3,24,25,26,27,28,29,30,31,32",
@@ -132,9 +132,9 @@
       85
     ],
     "pcb": [
-      140,
-      118.03,
-      180
+      1.97,
+      62.38,
+      90
     ],
     "price": 1.5,
     "note": "Physical pin legend: VIN,GND,3V3,23,22,21,20,19,18,17,16,15,14,13,GND,41,40,39,38,37,36,35,34,33",
@@ -185,9 +185,9 @@
       65
     ],
     "pcb": [
-      26,
-      23,
-      270
+      13,
+      127,
+      90
     ],
     "price": 0.7,
     "note": "Optional axis; female 2x5 + female 1x3 + two >=3A single receptacles; matched mating height",
@@ -214,9 +214,9 @@
       45
     ],
     "pcb": [
-      11.58,
-      3,
-      270
+      27.42,
+      137,
+      90
     ],
     "price": 0.1,
     "note": "Optional axis; outward cable clearance at front edge",
@@ -249,14 +249,14 @@
       90
     ],
     "pcb": [
-      23,
-      3.3,
-      180
+      16,
+      136.7,
+      0
     ],
     "price": 0.5,
     "note": "Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED",
     "lcsc": "C7588156",
-    "assembly": "JLCPCB"
+    "assembly": "Hand"
   },
   {
     "ref": "R21",
@@ -276,9 +276,9 @@
       120
     ],
     "pcb": [
-      7,
-      51,
-      270
+      32,
+      103.5,
+      90
     ],
     "price": 0.05,
     "note": "Optional axis; fit with Mini; 10k, 5% or better",
@@ -303,9 +303,9 @@
       185
     ],
     "pcb": [
-      19.6,
-      61,
-      0
+      9,
+      103,
+      90
     ],
     "price": 0.05,
     "note": "Optional axis; fit with encoder; 10k, 5% or better",
@@ -330,9 +330,9 @@
       155
     ],
     "pcb": [
-      17.5,
-      51.5,
-      0
+      21.5,
+      98.5,
+      180
     ],
     "price": 0,
     "note": "Optional axis; owned Panasonic diameter12.5mm height20mm pitch5mm",
@@ -357,9 +357,9 @@
       155
     ],
     "pcb": [
-      10,
-      47,
-      270
+      29,
+      103,
+      90
     ],
     "price": 0.13,
     "note": "Optional axis; Vishay K104K10X7RF5UH5",
@@ -410,8 +410,8 @@
       65
     ],
     "pcb": [
-      51,
-      23,
+      29,
+      13,
       270
     ],
     "price": 0.7,
@@ -439,7 +439,7 @@
       45
     ],
     "pcb": [
-      36.58,
+      14.58,
       3,
       270
     ],
@@ -474,14 +474,14 @@
       90
     ],
     "pcb": [
-      48,
+      26,
       3.3,
       180
     ],
     "price": 0.5,
     "note": "Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED",
     "lcsc": "C7588156",
-    "assembly": "JLCPCB"
+    "assembly": "Hand"
   },
   {
     "ref": "R22",
@@ -501,8 +501,8 @@
       120
     ],
     "pcb": [
-      32,
-      51,
+      10,
+      36.5,
       270
     ],
     "price": 0.05,
@@ -528,9 +528,9 @@
       185
     ],
     "pcb": [
-      44.6,
-      61,
-      0
+      33,
+      37,
+      270
     ],
     "price": 0.05,
     "note": "Optional axis; fit with encoder; 10k, 5% or better",
@@ -555,8 +555,8 @@
       155
     ],
     "pcb": [
-      42.5,
-      51.5,
+      20.5,
+      41.5,
       0
     ],
     "price": 0,
@@ -582,8 +582,8 @@
       155
     ],
     "pcb": [
-      35,
-      47,
+      13,
+      37,
       270
     ],
     "price": 0.13,
@@ -635,8 +635,8 @@
       65
     ],
     "pcb": [
-      76,
-      23,
+      64,
+      13,
       270
     ],
     "price": 0.7,
@@ -664,7 +664,7 @@
       45
     ],
     "pcb": [
-      61.58,
+      49.58,
       3,
       270
     ],
@@ -699,14 +699,14 @@
       90
     ],
     "pcb": [
-      73,
+      61,
       3.3,
       180
     ],
     "price": 0.5,
     "note": "Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED",
     "lcsc": "C7588156",
-    "assembly": "JLCPCB"
+    "assembly": "Hand"
   },
   {
     "ref": "R23",
@@ -726,8 +726,8 @@
       120
     ],
     "pcb": [
-      57,
-      51,
+      45,
+      36.5,
       270
     ],
     "price": 0.05,
@@ -753,9 +753,9 @@
       185
     ],
     "pcb": [
-      69.6,
-      61,
-      0
+      68,
+      37,
+      270
     ],
     "price": 0.05,
     "note": "Optional axis; fit with encoder; 10k, 5% or better",
@@ -780,8 +780,8 @@
       155
     ],
     "pcb": [
-      67.5,
-      51.5,
+      55.5,
+      41.5,
       0
     ],
     "price": 0,
@@ -807,8 +807,8 @@
       155
     ],
     "pcb": [
-      60,
-      47,
+      48,
+      37,
       270
     ],
     "price": 0.13,
@@ -860,9 +860,9 @@
       65
     ],
     "pcb": [
-      101,
-      23,
-      270
+      48,
+      127,
+      90
     ],
     "price": 0.7,
     "note": "Optional axis; female 2x5 + female 1x3 + two >=3A single receptacles; matched mating height",
@@ -889,9 +889,9 @@
       45
     ],
     "pcb": [
-      86.58,
-      3,
-      270
+      62.42,
+      137,
+      90
     ],
     "price": 0.1,
     "note": "Optional axis; outward cable clearance at front edge",
@@ -924,14 +924,14 @@
       90
     ],
     "pcb": [
-      98,
-      3.3,
-      180
+      51,
+      136.7,
+      0
     ],
     "price": 0.5,
     "note": "Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED",
     "lcsc": "C7588156",
-    "assembly": "JLCPCB"
+    "assembly": "Hand"
   },
   {
     "ref": "R24",
@@ -951,9 +951,9 @@
       120
     ],
     "pcb": [
-      82,
-      51,
-      270
+      67,
+      103.5,
+      90
     ],
     "price": 0.05,
     "note": "Optional axis; fit with Mini; 10k, 5% or better",
@@ -978,9 +978,9 @@
       185
     ],
     "pcb": [
-      94.6,
-      61,
-      0
+      44,
+      103,
+      90
     ],
     "price": 0.05,
     "note": "Optional axis; fit with encoder; 10k, 5% or better",
@@ -1005,9 +1005,9 @@
       155
     ],
     "pcb": [
-      92.5,
-      51.5,
-      0
+      56.5,
+      98.5,
+      180
     ],
     "price": 0,
     "note": "Optional axis; owned Panasonic diameter12.5mm height20mm pitch5mm",
@@ -1032,9 +1032,9 @@
       155
     ],
     "pcb": [
-      85,
-      47,
-      270
+      64,
+      103,
+      90
     ],
     "price": 0.13,
     "note": "Optional axis; Vishay K104K10X7RF5UH5",
@@ -1085,8 +1085,8 @@
       65
     ],
     "pcb": [
-      126,
-      23,
+      99,
+      13,
       270
     ],
     "price": 0.7,
@@ -1114,7 +1114,7 @@
       45
     ],
     "pcb": [
-      111.58,
+      84.58,
       3,
       270
     ],
@@ -1149,14 +1149,14 @@
       90
     ],
     "pcb": [
-      123,
+      96,
       3.3,
       180
     ],
     "price": 0.5,
     "note": "Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED",
     "lcsc": "C7588156",
-    "assembly": "JLCPCB"
+    "assembly": "Hand"
   },
   {
     "ref": "R25",
@@ -1176,8 +1176,8 @@
       120
     ],
     "pcb": [
-      107,
-      51,
+      80,
+      36.5,
       270
     ],
     "price": 0.05,
@@ -1203,9 +1203,9 @@
       185
     ],
     "pcb": [
-      119.6,
-      61,
-      0
+      103,
+      37,
+      270
     ],
     "price": 0.05,
     "note": "Optional axis; fit with encoder; 10k, 5% or better",
@@ -1230,8 +1230,8 @@
       155
     ],
     "pcb": [
-      117.5,
-      51.5,
+      90.5,
+      41.5,
       0
     ],
     "price": 0,
@@ -1257,8 +1257,8 @@
       155
     ],
     "pcb": [
-      110,
-      47,
+      83,
+      37,
       270
     ],
     "price": 0.13,
@@ -1310,9 +1310,9 @@
       65
     ],
     "pcb": [
-      151,
-      23,
-      270
+      83,
+      127,
+      90
     ],
     "price": 0.7,
     "note": "Optional axis; female 2x5 + female 1x3 + two >=3A single receptacles; matched mating height",
@@ -1339,9 +1339,9 @@
       45
     ],
     "pcb": [
-      136.58,
-      3,
-      270
+      97.42,
+      137,
+      90
     ],
     "price": 0.1,
     "note": "Optional axis; outward cable clearance at front edge",
@@ -1374,14 +1374,14 @@
       90
     ],
     "pcb": [
-      148,
-      3.3,
-      180
+      86,
+      136.7,
+      0
     ],
     "price": 0.5,
     "note": "Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED",
     "lcsc": "C7588156",
-    "assembly": "JLCPCB"
+    "assembly": "Hand"
   },
   {
     "ref": "R26",
@@ -1401,9 +1401,9 @@
       120
     ],
     "pcb": [
-      132,
-      51,
-      270
+      102,
+      103.5,
+      90
     ],
     "price": 0.05,
     "note": "Optional axis; fit with Mini; 10k, 5% or better",
@@ -1428,9 +1428,9 @@
       185
     ],
     "pcb": [
-      144.6,
-      61,
-      0
+      79,
+      103,
+      90
     ],
     "price": 0.05,
     "note": "Optional axis; fit with encoder; 10k, 5% or better",
@@ -1455,9 +1455,9 @@
       155
     ],
     "pcb": [
-      142.5,
-      51.5,
-      0
+      91.5,
+      98.5,
+      180
     ],
     "price": 0,
     "note": "Optional axis; owned Panasonic diameter12.5mm height20mm pitch5mm",
@@ -1482,9 +1482,9 @@
       155
     ],
     "pcb": [
-      135,
-      47,
-      270
+      99,
+      103,
+      90
     ],
     "price": 0.13,
     "note": "Optional axis; Vishay K104K10X7RF5UH5",
@@ -1509,9 +1509,9 @@
       55
     ],
     "pcb": [
-      12,
-      115,
-      0
+      145,
+      56,
+      90
     ],
     "price": 2,
     "note": "Phoenix1715721 17.5A nominal; verify wire size and applicable rating",
@@ -1528,7 +1528,7 @@
     ],
     "nets": [
       "12V_IN",
-      "12V_FUSED"
+      "12V_PREPOL"
     ],
     "page": "power",
     "sch": [
@@ -1536,9 +1536,9 @@
       55
     ],
     "pcb": [
-      30,
-      112.5,
-      0
+      135,
+      42,
+      90
     ],
     "price": 1.68,
     "note": "One complete holder includes both contacts for one standard ATO fuse; fuse purchased separately",
@@ -1563,9 +1563,9 @@
       85
     ],
     "pcb": [
-      61,
-      117,
-      90
+      147,
+      95,
+      0
     ],
     "price": 0.1,
     "note": "Open loop disables every Mini; closed loop permits firmware EN",
@@ -1590,8 +1590,8 @@
       85
     ],
     "pcb": [
-      60,
-      110,
+      126,
+      127,
       0
     ],
     "price": 0.05,
@@ -1641,8 +1641,8 @@
       135
     ],
     "pcb": [
-      76,
-      89,
+      125,
+      67,
       0
     ],
     "price": 1,
@@ -1684,9 +1684,9 @@
       175
     ],
     "pcb": [
-      83.62,
-      85,
-      180
+      125,
+      61,
+      0
     ],
     "price": 0.13,
     "note": "",
@@ -1711,9 +1711,9 @@
       145
     ],
     "pcb": [
-      63,
-      88,
-      0
+      139,
+      65,
+      270
     ],
     "price": 0.05,
     "note": "Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better",
@@ -1738,9 +1738,9 @@
       170
     ],
     "pcb": [
-      63,
-      96,
-      0
+      139,
+      78,
+      270
     ],
     "price": 0.05,
     "note": "Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better",
@@ -1765,9 +1765,9 @@
       195
     ],
     "pcb": [
-      63,
-      104,
-      0
+      139,
+      91,
+      270
     ],
     "price": 0.05,
     "note": "Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better",
@@ -1816,8 +1816,8 @@
       135
     ],
     "pcb": [
+      125,
       103,
-      89,
       0
     ],
     "price": 1,
@@ -1859,9 +1859,9 @@
       175
     ],
     "pcb": [
-      110.62,
-      85,
-      180
+      125,
+      97,
+      0
     ],
     "price": 0.13,
     "note": "",
@@ -1886,9 +1886,9 @@
       145
     ],
     "pcb": [
-      90,
-      88,
-      0
+      139,
+      104,
+      270
     ],
     "price": 0.05,
     "note": "Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better",
@@ -1913,9 +1913,9 @@
       170
     ],
     "pcb": [
-      90,
-      96,
-      0
+      139,
+      117,
+      270
     ],
     "price": 0.05,
     "note": "Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better",
@@ -1940,13 +1940,105 @@
       195
     ],
     "pcb": [
-      90,
-      104,
-      0
+      139,
+      130,
+      270
     ],
     "price": 0.05,
     "note": "Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better",
     "lcsc": "",
     "assembly": "Hand"
+  },
+  {
+    "ref": "Q1",
+    "value": "IRF4905PBF",
+    "fp": "TrueSkate:Edge_TO-220-3_Vertical",
+    "pins": [
+      "1",
+      "2",
+      "3"
+    ],
+    "nets": [
+      "POL_GATE",
+      "12V_PREPOL",
+      "12V_FUSED"
+    ],
+    "page": "protection",
+    "sch": [
+      70,
+      60
+    ],
+    "pcb": [
+      126,
+      24,
+      90
+    ],
+    "price": 0.62,
+    "note": "Infineon TO-220AB; G,D(tab),S; -55V; 20mOhm max at -10V; 74A case rating; heat sink required for sustained12A",
+    "lcsc": "C2564",
+    "assembly": "Hand",
+    "pin_names": [
+      "G",
+      "D / tab",
+      "S"
+    ]
+  },
+  {
+    "ref": "R2",
+    "value": "10k gate pull-down",
+    "fp": "TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "nets": [
+      "POL_GATE",
+      "GND"
+    ],
+    "page": "protection",
+    "sch": [
+      70,
+      110
+    ],
+    "pcb": [
+      122,
+      32,
+      270
+    ],
+    "price": 0.01,
+    "note": "TyoHM RD1/4W10KJT/BA1; 0.25W,5%; gate bias; 10k, 5% or better",
+    "lcsc": "C433778",
+    "assembly": "Hand"
+  },
+  {
+    "ref": "D1",
+    "value": "1N4742A 12V",
+    "fp": "TrueSkate:Edge_D_DO-41_SOD81_P10.16mm_Horizontal",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "nets": [
+      "12V_FUSED",
+      "POL_GATE"
+    ],
+    "page": "protection",
+    "sch": [
+      190,
+      110
+    ],
+    "pcb": [
+      120,
+      9,
+      0
+    ],
+    "price": 0.03,
+    "note": "ST(Semtech); DO-41 12V 1W; band/cathode pad1 to source, anode pad2 to gate",
+    "lcsc": "C2545",
+    "assembly": "Hand",
+    "pin_names": [
+      "K / source",
+      "A / gate"
+    ]
   }
 ]

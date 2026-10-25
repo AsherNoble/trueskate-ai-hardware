@@ -18,13 +18,13 @@ used += list(d['spi0'].values())
 assert len(used)==len(set(used))==33
 assert set(range(42))-set(used)==set(d['unused_pins'])
 assert sorted(d['encoder_pin_order'])==sorted(['CLK','MISO','MOSI','CSn','3V3','GND'])
-assert d['board_mm']==[160,120] and d['layers']==2 and d['copper_oz']==1
+assert d['board_mm']==[150,140] and d['layers']==2 and d['copper_oz']==1
 ini=(ROOT.parent/'firmware/platformio.ini').read_text()
 assert 'lib_archive = no' in ini
 assert '-D SIMPLEFOC_TEENSY4_FORCE_CENTER_ALIGNED_3PWM' not in ini
 parts=json.loads((ROOT/'design/data/circuit.json').read_text())
-assert len(parts)==58
-assert {p['ref'] for p in parts if p['assembly']=='JLCPCB'}=={f'J{i}' for i in range(31,37)}
+assert len(parts)==61
+assert not any(p['assembly']=='JLCPCB' for p in parts)
 settings=json.loads((ROOT/'design/trueskate-main-v1.kicad_pro').read_text())['board']['design_settings']
 for key,value in dict(min_clearance=.2,min_track_width=.2,min_via_diameter=.7,
                       min_via_annular_width=.2,min_hole_clearance=.45,
@@ -34,6 +34,6 @@ for key,value in dict(min_clearance=.2,min_track_width=.2,min_via_diameter=.7,
 assert not settings.get('drc_exclusions')
 assert all(value!='ignore'for value in settings['rule_severities'].values())
 print('PASS: unchanged six-axis map; 18 PWM; 12 plain-digital EN/CS; SPI0; 9 spare contacts.')
-print('PASS: USB-only carrier; 58 references; exactly six JST connectors factory assembled.')
+print('PASS: USB-powered Teensy carrier; 61 references; all parts hand soldered including the six JST connectors.')
 print('PASS: conservative two-layer rules persisted; no DRC exclusions or ignored checks.')
 print('Static checks only. Six-axis electrical operation still requires bench testing.')

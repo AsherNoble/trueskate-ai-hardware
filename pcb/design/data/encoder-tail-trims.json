@@ -1,16 +1,176 @@
 [
   {
     "before": {
-      "net": "SPI_MISO",
+      "net": "SPI_SCK",
       "layer": "F.Cu",
       "width": 0.25,
       "start": [
-        101.5,
-        40.0
+        100.3,
+        30.0
       ],
       "end": [
-        101.5,
-        45.0
+        100.3,
+        35.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_SCK",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        94.8,
+        24.5
+      ],
+      "end": [
+        100.3,
+        30.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_SCK",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        65.3,
+        30.0
+      ],
+      "end": [
+        65.3,
+        35.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_SCK",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        59.8,
+        24.5
+      ],
+      "end": [
+        65.3,
+        30.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_SCK",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        46.7,
+        110.0
+      ],
+      "end": [
+        46.7,
+        105.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_SCK",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        30.3,
+        30.0
+      ],
+      "end": [
+        30.3,
+        35.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_SCK",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        81.7,
+        110.0
+      ],
+      "end": [
+        81.7,
+        105.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_SCK",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        87.2,
+        115.5
+      ],
+      "end": [
+        81.7,
+        110.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_SCK",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        11.7,
+        110.0
+      ],
+      "end": [
+        11.7,
+        105.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_SCK",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        17.2,
+        115.5
+      ],
+      "end": [
+        11.7,
+        110.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_SCK",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        17.2,
+        129.8
+      ],
+      "end": [
+        17.2,
+        115.5
       ]
     },
     "after": null
@@ -21,12 +181,12 @@
       "layer": "F.Cu",
       "width": 0.25,
       "start": [
-        96.0,
-        34.5
+        64.5,
+        30.0
       ],
       "end": [
-        101.5,
-        40.0
+        64.5,
+        35.0
       ]
     },
     "after": null
@@ -37,12 +197,12 @@
       "layer": "F.Cu",
       "width": 0.25,
       "start": [
-        51.5,
-        40.0
+        59.0,
+        24.5
       ],
       "end": [
-        51.5,
-        45.0
+        64.5,
+        30.0
       ]
     },
     "after": null
@@ -53,42 +213,338 @@
       "layer": "F.Cu",
       "width": 0.25,
       "start": [
-        46.0,
-        34.5
+        18.0,
+        130.0
       ],
       "end": [
-        51.5,
-        40.0
-      ]
-    },
-    "after": null
-  },
-  {
-    "before": {
-      "net": "A2_CS",
-      "layer": "F.Cu",
-      "width": 0.25,
-      "start": [
-        49.9,
-        40.0
-      ],
-      "end": [
-        49.9,
-        45.0
+        18.0,
+        115.5
       ]
     },
     "after": {
-      "net": "A2_CS",
+      "net": "SPI_MISO",
       "layer": "F.Cu",
       "width": 0.25,
       "start": [
-        49.9,
-        40.0
+        18.0,
+        130.0
       ],
       "end": [
-        49.9,
-        40.4955
+        18.0,
+        117.0
       ]
     }
+  },
+  {
+    "before": {
+      "net": "SPI_MISO",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        12.5,
+        110.0
+      ],
+      "end": [
+        12.5,
+        105.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MISO",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        18.0,
+        115.5
+      ],
+      "end": [
+        12.5,
+        110.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MISO",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        94.0,
+        10.0
+      ],
+      "end": [
+        94.0,
+        24.5
+      ]
+    },
+    "after": {
+      "net": "SPI_MISO",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        94.0,
+        10.0
+      ],
+      "end": [
+        94.0,
+        24.0
+      ]
+    }
+  },
+  {
+    "before": {
+      "net": "SPI_MISO",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        99.5,
+        30.0
+      ],
+      "end": [
+        99.5,
+        35.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MISO",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        94.0,
+        24.5
+      ],
+      "end": [
+        99.5,
+        30.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        85.5,
+        133.5
+      ],
+      "end": [
+        88.8,
+        130.199999
+      ]
+    },
+    "after": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        85.5,
+        133.5
+      ],
+      "end": [
+        85.75,
+        133.25
+      ]
+    }
+  },
+  {
+    "before": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        83.3,
+        110.0
+      ],
+      "end": [
+        83.3,
+        105.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        88.8,
+        115.5
+      ],
+      "end": [
+        83.3,
+        110.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        88.8,
+        130.199999
+      ],
+      "end": [
+        88.8,
+        115.5
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        98.7,
+        30.0
+      ],
+      "end": [
+        98.7,
+        35.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        93.2,
+        24.5
+      ],
+      "end": [
+        98.7,
+        30.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        93.2,
+        9.799999
+      ],
+      "end": [
+        93.2,
+        24.5
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        48.3,
+        110.0
+      ],
+      "end": [
+        48.3,
+        105.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        53.8,
+        115.5
+      ],
+      "end": [
+        48.3,
+        110.0
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        53.8,
+        130.199999
+      ],
+      "end": [
+        53.8,
+        115.5
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        50.5,
+        133.5
+      ],
+      "end": [
+        53.8,
+        130.199999
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        50.5,
+        134.7
+      ],
+      "end": [
+        50.5,
+        133.5
+      ]
+    },
+    "after": null
+  },
+  {
+    "before": {
+      "net": "SPI_MOSI",
+      "layer": "F.Cu",
+      "width": 0.25,
+      "start": [
+        85.5,
+        133.5
+      ],
+      "end": [
+        85.75,
+        133.25
+      ]
+    },
+    "after": null
   }
 ]

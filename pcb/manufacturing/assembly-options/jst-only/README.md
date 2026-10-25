@@ -1,0 +1,1 @@
+Use the shared ../../trueskate-main-v1-2layer-1oz-JLCPCB.zip. ALTERNATIVE ONLY; current choice is bare PCB. For a future JST-only order select top-side assembly and upload BOM.csv and CPL.csv. Six JST connectors per board; all remaining parts hand assembled.

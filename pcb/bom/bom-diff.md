@@ -1,7 +1,15 @@
-# BOM diff from f5fce90
+# BOM diff from rollback checkpoint 800ba4a
 
 | Change | Reference(s) | Details |
 |---|---|---|
-| Changed | F1 | ATO fuse holder / fuse TBD → Keystone 3557-2 ATO holder; Hand |
+| Added | D1 | 1N4742A 12V; Hand |
+| Changed | J31 | C7588156 → C160405; SM06B-SRSS-TB; Hand |
+| Changed | J32 | C7588156 → C160405; SM06B-SRSS-TB; Hand |
+| Changed | J33 | C7588156 → C160405; SM06B-SRSS-TB; Hand |
+| Changed | J34 | C7588156 → C160405; SM06B-SRSS-TB; Hand |
+| Changed | J35 | C7588156 → C160405; SM06B-SRSS-TB; Hand |
+| Changed | J36 | C7588156 → C160405; SM06B-SRSS-TB; Hand |
+| Added | Q1 | IRF4905PBF; Hand |
+| Added | R2 | 10k gate pull-down; Hand |
 
-F1 changes to one Keystone3557-2 complete standard-ATO holder (C352820); both fuse contacts are included in that single part. No fuse amperage is specified. Six bulk capacitors and six ceramics move outside the GKO+0.5mm Mini courtyard; their quantities and MPNs do not change. CS pull-ups move behind the Minis to free the encoder lanes. Resistors are specified as 10k, 5% or better. No Teensy pin changes.
+This pass adds Q1 (Infineon IRF4905PbF, C2564), D1 (ST(Semtech) 1N4742A 12V, C2545), and R2 (TyoHM RD1/4W10KJT/BA1, C433778), one each. All three are hand-soldered through-hole. No removals or footprint/placement changes. J31-J36 change supplier code and assembly to Hand. F1 remains one complete Keystone 3557-2; fuse rated to the connected supply. Q1 needs no heat sink below ~5 A continuous; 12 A is copper sizing only. J31-J36 use stocked JST lead-free/tin supplier code C160405 in place of C7588156, without footprint/placement changes.

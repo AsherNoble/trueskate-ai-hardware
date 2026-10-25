@@ -3,6 +3,10 @@
 import json,re,tempfile
 from collections import defaultdict
 from pathlib import Path
+import json as _guard_json
+_guard_root=Path(__file__).resolve().parents[1]
+if _guard_json.loads((_guard_root/'design/data/design.json').read_text())['board_mm']!=[160,120]:
+ raise SystemExit('Historical layout-specific tool; use rebuild.py for the current 3+3 carrier.')
 import pcbnew as k
 ROOT=Path(__file__).resolve().parents[1];PCB=ROOT/'design/trueskate-main-v1.kicad_pcb'
 source=PCB.read_text()

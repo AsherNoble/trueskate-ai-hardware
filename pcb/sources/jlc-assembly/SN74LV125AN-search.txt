@@ -1,0 +1,193 @@
+24
+SMT
+ Coupons
+ Download APP
+Ship to 
+
+Assembly Parts Lib
+
+For PCBA Only
+
+Upload BOM
+0
+Parts Cart
+Sign In
+Products
+In Stock Parts
+Bom Tool
+Request a Quote
+Support 
+JLCPCB 
+Parts Library 
+All Components 
+Search SN74LV125AN
+SN74LV125AN Search results (3 Found)
+Category
+Logic
+Buffers, Drivers, Receivers, Transceivers
+Manufacturer
+Texas Instruments
+PackageType
+PDIP-14
+SO-14
+SOIC-14
+Parts Type
+Basic
+Promotional Extended
+Extended
+Mechanical Assembly
+PCBA Type
+Economic
+Standard
+Information
+Datasheet
+Photo
+Results remaining:
+3
+Reset All Apply
+Hide unavailable options
+Hide Filters
+Pre-order Parts
+		
+Compare
+MFR Part #
+		Description		Manufacturer		
+Stock
+≥
+		
+Price
+		
+	
+	
+SN74LV125AN
+C1548088
+Extended
+	
+	
+-40℃~+125℃ 1 16mA 16mA 20uA 2V~5.5V 4 7.5ns@5V,50pF 74LV Tri-State Unidirectional PDIP-14 Buffers, Drivers, Receivers, Transceivers ROHS
+	
+	
+Texas Instruments
+	
+	
+0
+	
+	
+Est. unit price:
+$0.1140
+	
+	
+
+Min: 25
+
+Total: $2.85
+Pre-order
+
+
+	
+	
+SN74LV125ANS
+C3754655
+Extended
+	
+	
+-40℃~+85℃ 1 16mA 16mA 20uA 2V~5.5V 4 7.5ns@5V,50pF 74LV Output enable Tri-State Unidirectional SO-14 Buffers, Drivers, Receivers, Transceivers ROHS
+	
+	
+Texas Instruments
+	
+	
+0
+	
+	
+Est. unit price:
+$0.2595
+	
+	
+
+Min: 34
+
+Total: $8.82
+Pre-order
+
+
+	
+	
+SN74LV125ANSR
+C2860846
+Extended
+	
+	
+-40℃~+125℃ 1 16mA 16mA 20uA 2V~5.5V 4 7.5ns@5V,50pF 74LV Tri-State SOIC-14 Buffers, Drivers, Receivers, Transceivers ROHS
+	
+	
+Texas Instruments
+	
+	
+0
+	
+	
+Est. unit price:
+$0.1629
+	
+	
+
+Min: 54
+
+Total: $8.80
+Pre-order
+3 items in total
+1
+Online Chat >
+Chat with our live agent for fast reply.
+Mon-Fri: 24 hours, Sat: 9am-6pm, GMT+8
+Email Us >
+Contact us at supportjlcpcb.com
+Typically reply within hours.
+Help Center >
+Get instant answers.
+24/7 Available.
+Services & Tools
+Electronic Parts
+BOM Tool
+Request a Quote
+Manufacturers
+PCB Assembly
+Support
+Contact Us
+How to Order
+User Guides
+Sourcing Tips
+Payment Methods
+Company
+About Us
+Quality Assurance
+How We Work
+Certifications
+Security
+Environment
+JLCAPI
+News
+Cooperation
+Electronics
+EasyEDA
+JLCPCB
+JLCDFM
+LCSC
+OSHWLAB
+Mechanical
+JLC3DP
+JLCCNC
+JLCMC
+Order on JLCONE Desktop, Save $1–$20 Every Time
+Windows
+MAC
+Android
+IOS
+CONNECT WITH US
+© 2026 JLCPCB.COM All Rights Reserved.
+Privacy Policy
+Terms & Conditions
+Cookies Policy
+Do Not Sell or Share My Personal Information
+ Welcome back, may I help you? Chat Now

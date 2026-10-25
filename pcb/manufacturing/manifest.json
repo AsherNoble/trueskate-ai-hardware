@@ -1,12 +1,13 @@
 {
-  "exported_at": "2026-10-24T23:38:02.529151+00:00",
-  "source_commit": "52ca9a16e5d532eef455dec7262e889e229c9cb6",
+  "exported_at": "2026-10-25T07:21:49.260709+00:00",
+  "source_commit": "800ba4a8757fa72f87c8a876ba7b89d1e1523b1b",
+  "source_worktree_dirty": true,
   "source_pcb": "design/trueskate-main-v1.kicad_pcb",
-  "source_pcb_sha256": "d3d834778e56cac8adad3efcc863834e2f8e0042e190e49a91a666569cb6c2ba",
+  "source_pcb_sha256": "5c983eb297c08f215ecf9bb5d336e2fdbbb5d0ce841ad47cf6f8f5b0588959ca",
   "kicad_version": "10.0.6",
   "board_mm": [
-    160.0,
-    120.0
+    150.0,
+    140.0
   ],
   "layers": 2,
   "copper_oz": 1,
@@ -31,12 +32,12 @@
     }
   ],
   "strict_drc": "PASS (no ignored checks)",
-  "plated_holes": 721,
+  "plated_holes": 773,
   "nonplated_holes": 4,
   "native_hole_match": "All hits matched; metric decimal coordinates rounded to 0.001mm by KiCad",
-  "max_drill_position_error_mm": 0.0007071067811899238,
+  "max_drill_position_error_mm": 0.0006403124237445668,
   "drill_coordinate_resolution_mm": 0.001,
-  "vias": 463,
+  "vias": 508,
   "via_tenting": "front and back",
   "drill_origin": "absolute, shared with Gerbers; no mirroring",
   "layers_exported": [
@@ -51,22 +52,32 @@
     "Edge.Cuts"
   ],
   "files_sha256": {
-    "trueskate-main-v1-B_Cu.gbl": "5d7f755b96257a77b06de71d652c3ba75c73675b5396dd44710dc7696e9ed9ae",
-    "trueskate-main-v1-B_Mask.gbs": "26d030d9ca5df041b513aafe6877dbb786444a86681b6424a369b4bcc17cf7ca",
-    "trueskate-main-v1-B_Paste.gbp": "0fe70ecb9a9c8732b6510a0adfac80e4be6f68432834fd8510224454b70eed01",
-    "trueskate-main-v1-B_Silkscreen.gbo": "1726069c54bfb1965b45b278b28b02d40ffdbad88f4c5d52d64b340a59c8d274",
-    "trueskate-main-v1-Edge_Cuts.gm1": "4a1f947f3a1f9b9c109e1bd3d1fe846f0a025d28af6c3919629db9919f4089d3",
-    "trueskate-main-v1-F_Cu.gtl": "da09d6c70a14b3c0a2ad411ddbc7934e82574e958863183a8f3047227d641956",
-    "trueskate-main-v1-F_Mask.gts": "9d00b3ce2a9d17b465fdc25edfb51b26bd6a5b4757262c1d7816fab63a714aaf",
-    "trueskate-main-v1-F_Paste.gtp": "2e5180ff6b3302a469230ab7182113d507de6a99eb256f971956290a4e0cd497",
-    "trueskate-main-v1-F_Silkscreen.gto": "70c42ea00c1de8f0007e9f631536d4a83ef80cbd7f491c0c1cfc6ec92890e4a0",
-    "trueskate-main-v1-NPTH.drl": "26214f0c9c53abb1526217ad202579ea8b32c6fd28ee296cc4bffefd2f941a85",
-    "trueskate-main-v1-PTH.drl": "fb16c4c7ffce7c3738cdb54cf935d1e9748e24efd01fbe45646bed049b5da9b0",
-    "trueskate-main-v1-job.gbrjob": "14a68743b96e2c40a20f1e22bbf3c1514ef0e166c1a107c276c2d74076a0ae9c"
+    "trueskate-main-v1-B_Cu.gbl": "a40af7521e38486ae7b12f5c6f8372f2873c60ac8440ea13ace5688b6b7d1de8",
+    "trueskate-main-v1-B_Mask.gbs": "e9f7137f7cf56534713631bf508541ff7eac35adf9115da0ade49249a5a9ce61",
+    "trueskate-main-v1-B_Paste.gbp": "5ba421752a65900493489c7c94e7b4bb280dec2d38f2505e68fad42d5922c190",
+    "trueskate-main-v1-B_Silkscreen.gbo": "19e169e86f50f69011d9be86790b298dd0f16b2bde58d32845250b73c786575a",
+    "trueskate-main-v1-Edge_Cuts.gm1": "628a9420a9aecb1a1dd8bdae03a4047bade64d6693c1f5100916d8bb7f196cf1",
+    "trueskate-main-v1-F_Cu.gtl": "6b6feace32a111a677b231fb163382febe225e4fa57ce5139bf70eff6b29a327",
+    "trueskate-main-v1-F_Mask.gts": "2fd079aad4a147cff1e9885498127b4e8d2eb4570bc5d0b3424bf4306e30d364",
+    "trueskate-main-v1-F_Paste.gtp": "56d25185bfc0207599f07971ae68627782da7bf7de42baff46f9d01e60a29ac9",
+    "trueskate-main-v1-F_Silkscreen.gto": "dee3147b67a9a8771a8ff1371249f2515cc46d4d96ea0e7b174528623772c0f3",
+    "trueskate-main-v1-NPTH.drl": "570f3d8d3273d7d0e440ed0521b8ec6bb2b42b88289fabd5131173e5a1f2243a",
+    "trueskate-main-v1-PTH.drl": "c82b56a32beb9af336ead058ead08823808ec1aaf77ba3b495d8c50c26df2514",
+    "trueskate-main-v1-job.gbrjob": "8fbafbcecec6fc4ffd1808a3c7d6fd7e98f52237024fc0f573fe21ae58918ff0"
   },
   "zip_filename": "trueskate-main-v1-2layer-1oz-JLCPCB.zip",
-  "zip_sha256": "296e263271ba7d4d830f9a87da054d57bcfca97afa794b5ded0032807dbf7841",
+  "zip_sha256": "e3b27693b04f423fed9cb88cee067fbf8dc8f2e61085c49bdd815131620a210c",
   "zip_crc": "PASS",
   "uploaded": false,
-  "order_placed": false
+  "order_placed": false,
+  "assembly": {
+    "source_pcb_sha256": "5c983eb297c08f215ecf9bb5d336e2fdbbb5d0ce841ad47cf6f8f5b0588959ca",
+    "mode": "bare-pcb",
+    "assembly_references": [],
+    "parts_per_board": 0,
+    "instruction": "PCB assembly OFF; all carrier parts including JSTs hand soldered",
+    "hand_assembly_bom": "trueskate-main-v1-hand-assembly-BOM.csv",
+    "uploaded": false,
+    "order_placed": false
+  }
 }

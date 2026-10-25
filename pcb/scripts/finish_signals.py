@@ -16,7 +16,7 @@ trims=[]
 manual=[t for t in b.GetTracks() if t.IsLocked() and not isinstance(t,k.PCB_VIA)]
 for tail in manual:
     a,z=mm(tail.GetStart()),mm(tail.GetEnd())
-    if a[0]!=z[0] or a[1]!=40 or z[1]!=45 or tail.GetNetname()=='GND':continue
+    if a[0]!=z[0] or (a[1],z[1]) not in [(30,35),(110,105)] or tail.GetNetname()=='GND':continue
     # Walk backward from each escape's free end to its last routed junction.
     chain=[];t=tail;end=z;seen=set()
     while t.m_Uuid.AsString() not in seen:
@@ -43,6 +43,11 @@ for tail in manual:
         prev=[v for v in manual if v.GetNetname()==t.GetNetname() and v.m_Uuid.AsString() not in seen and start in [mm(v.GetStart()),mm(v.GetEnd())]]
         if len(prev)!=1:break
         t=prev[0];end=start
+# A redundant fixed fanout stub remains after the recorded MOSI completion.
+# Remove its exact geometry; retain the change in the manual-route audit ledger.
+for t in list(b.GetTracks()):
+    if t.IsLocked() and not isinstance(t,k.PCB_VIA) and t.GetNetname()=='SPI_MOSI' and sorted([mm(t.GetStart()),mm(t.GetEnd())])==sorted([[85.5,133.5],[85.75,133.25]]):
+        trims.append(dict(before=record(t),after=None));b.Remove(t)
 # 0.0046mm native hole-clearance deficit in this frozen routing session.
 # Move the offending via away from the adjacent MOSI segment, including its leads.
 fixes=json.loads((ROOT/'design/routing/signal-adjustments.json').read_text())

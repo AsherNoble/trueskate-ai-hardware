@@ -28,7 +28,7 @@ disposable PCB/log files to the ignored `../renders/.cache/` directory.
 
 Run `rebuild.py` with KiCad's bundled Python **only when intentionally regenerating**
 the board: it overwrites native design and route data. It uses the frozen signal
-session and then restores the two-layer stack and GND stitching. Rerun strict
+session plus `signal-completions.json`, trims fanout, then fills and replays the reviewed ground stitches. Rerun strict
 checks afterwards. Changes to placement or pin assignments require a new routing
 session. `generate.py` and its helper scripts are implementation tools; start
 with `rebuild.py` rather than invoking each stage manually.
@@ -43,3 +43,11 @@ from this workflow.
 Run `export_manufacturing.py` with Python 3.11. Fresh ERC/strict DRC, native hole
 matching and ZIP integrity checks gate the output in `../manufacturing/`.
 The script exports fabrication files only; it does not upload or order boards.
+
+`layout_3plus3.py` defines placement. `complete_routes.py --apply` replays frozen clearance-checked completions; search mode needs NumPy/Shapely and fresh routing geometry. `audit_return_paths.py` records exact centreline reference gaps and the SVG map; the documented continuous-plane requirement is relaxed by user decision.
+
+`apply_silkscreen.py` runs at the end of rebuild. `verify_silkscreen.py` checks required strings and text/module bounds; strict DRC additionally checks copper/mask/edge clearance. `verify_protection.py` checks Q1 G/D/S, D1 K/A and gate pull-down topology. Q1 lead escapes use parallel top/bottom copper and eight reviewed power vias, separately from GND stitching.
+
+`export_assembly.py` exports the six-JST JLC BOM/CPL without saving the board, then runs `compare_assembly.py` for bare/JST/full-scope comparison. Full-scope files are NOT upload files while stocked compatible parts and mechanical placements remain unresolved.
+
+Current selected export mode is **bare-pcb**: no factory assembly, no default JLC BOM/CPL. `export_assembly.py` emits a hand-assembly BOM; optional comparison files are retained separately.

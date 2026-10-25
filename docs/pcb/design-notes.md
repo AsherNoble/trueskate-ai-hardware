@@ -1,3 +1,5 @@
+> Historical layout notes. Superseded by the [current 3+3 layout](3plus3-layout.md).
+
 > **Historical scope:** the [edge-layout revision](edge-layout.md) supersedes layout, ground, assembly and hardware-kill descriptions below. Use the current PCB README and review artifacts for this revision.
 
 # v1: a six-axis wiring carrier

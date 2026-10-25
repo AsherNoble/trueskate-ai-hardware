@@ -1,0 +1,58 @@
+[
+  {
+    "net": "12V_PREPOL",
+    "x": 131,
+    "y": 21.46,
+    "diameter_mm": 1.2,
+    "drill_mm": 0.6
+  },
+  {
+    "net": "12V_PREPOL",
+    "x": 132.5,
+    "y": 21.46,
+    "diameter_mm": 1.2,
+    "drill_mm": 0.6
+  },
+  {
+    "net": "12V_PREPOL",
+    "x": 131,
+    "y": 22.96,
+    "diameter_mm": 1.2,
+    "drill_mm": 0.6
+  },
+  {
+    "net": "12V_PREPOL",
+    "x": 132.5,
+    "y": 22.96,
+    "diameter_mm": 1.2,
+    "drill_mm": 0.6
+  },
+  {
+    "net": "12V_FUSED",
+    "x": 120,
+    "y": 18.92,
+    "diameter_mm": 1.2,
+    "drill_mm": 0.6
+  },
+  {
+    "net": "12V_FUSED",
+    "x": 121.5,
+    "y": 18.92,
+    "diameter_mm": 1.2,
+    "drill_mm": 0.6
+  },
+  {
+    "net": "12V_FUSED",
+    "x": 120,
+    "y": 17.42,
+    "diameter_mm": 1.2,
+    "drill_mm": 0.6
+  },
+  {
+    "net": "12V_FUSED",
+    "x": 121.5,
+    "y": 17.42,
+    "diameter_mm": 1.2,
+    "drill_mm": 0.6
+  }
+]

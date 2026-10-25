@@ -25,7 +25,7 @@ for populated in itertools.product((False,True),repeat=6):
             en=[int(closed and cmd) if present else None for present,cmd in zip(populated,commands)]
             assert closed or all(v in (None,0) for v in en)
 print('PASS: six verified buffer channels, CS pullups and EN pulldowns; 8192 population/command/loop cases.')
-print('Static circuit check; switch behavior, startup and loss of supply still require bench qualification.')
+print('Static circuit check retained; supply-ramp behavior is accepted for v1 under the documented boot/PWM policy.')
 # DC bounds for the requested states, using TI SCES124O and SLVSBA5D.
 # Each Mini has three DRV8313 EN inputs behind its upstream 10k series R4.
 # Include all three EN low-input leakage currents; do not credit internal pulldowns.
@@ -44,5 +44,6 @@ for i in range(1,7):
     assert [net(f'R{40+i}',p) for p in (1,2)]==[f'A{i}_EN_CMD','GND']
 states=[dict(state='Teensy unpowered',rail_v=0,buffer='Ioff / high impedance',carrier_en_max_v=high_z_carrier_max,drv8313_en_max_v=high_z_driver_max),dict(state='Teensy boot, GPIO high impedance',rail_v=3.3,buffer='input pulled low; enabled output low, or disabled output pulled low',carrier_en_max_v=max(boot_carrier_max,high_z_carrier_max),drv8313_en_max_v=max(boot_driver_max,high_z_driver_max)),dict(state='Kill loop open',rail_v=3.3,buffer='/OE high, output high impedance',carrier_en_max_v=high_z_carrier_max,drv8313_en_max_v=high_z_driver_max)]
 report=dict(part='SN74LV125AN',logic_family='LV-A low-voltage CMOS',supply='Teensy USB-powered 3V3; no connection to Mini regulator outputs',axes=list(range(1,7)),states=states,conservative_drv8313_low_limit_v=.6,assumptions=['Carrier pull-downs 10k, <=5% tolerance; Mini R4 10k, <=10% tolerance','Boot state uses valid 3.3V rail and high-impedance GPIO without a pull-up','No external back-powering; all GND connections intact'],scope='Datasheet DC analysis, not an oscilloscope measurement; the 0<VCC<2V transition is outside the buffer recommended operating range')
+report['prototype_supply_ramp_status']='accepted for v1: no PWM during supply ramp; boot disabled and initFOC only on command'
 (r/'review/checks/kill-state-review.json').write_text(json.dumps(report,indent=2)+'\n')
 print(f'PASS: all six EN lines low in the three DC states; worst carrier EN {high_z_carrier_max:.3f}V, downstream driver EN {high_z_driver_max:.3f}V <0.6V.')

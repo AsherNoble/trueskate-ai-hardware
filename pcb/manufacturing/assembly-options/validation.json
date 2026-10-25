@@ -1,0 +1,24 @@
+{
+  "source_pcb_sha256": "5c983eb297c08f215ecf9bb5d336e2fdbbb5d0ce841ad47cf6f8f5b0588959ca",
+  "selected_option": "bare-pcb",
+  "policy": "For alternative factory assembly: stocked JLC library parts only; no sourcing/consignment",
+  "full_physical_parts_per_board": 79,
+  "full_package_orderable": false,
+  "full_quote_available": false,
+  "full_blockers": [
+    "SN74LV125AN PDIP-14 C1548088 has zero stock",
+    "No stocked matched Mini socket/receptacle set selected",
+    "Exact bulk capacitor stock insufficient for 30"
+  ],
+  "board_changed": false,
+  "files": {
+    "bare-pcb/README.md": "7017b188acce26ecdeef75c2c3d2056c7c9c561d7901eae804bea6fedd4ab206",
+    "cost-comparison.csv": "9d029314fcdf7892284579c3cdbc2f6e4587f36457d5eb22f6968b5ae595c036",
+    "full-carrier-planning/BOM-NOT-FOR-UPLOAD.csv": "bcf4cf99e464574cf5e4d5f679d40ef2d08bdbd0691b566a1d85aacb3d20de88",
+    "full-carrier-planning/PLACEMENTS-NOT-FOR-UPLOAD.csv": "2b8f29883905c25e1a24db36ec3adbc1a4fcc2888a842b89e7412e7a61c37a59",
+    "full-carrier-planning/README.md": "e57d4bb84906cd3db648de41d94b3742243a4b894e7bd7279fe3142e2d145c25",
+    "jst-only/BOM.csv": "61711bc2e37ae97eacc229e33031f879e24d3051a4dd51fb80308619b05d4b81",
+    "jst-only/CPL.csv": "64c10832150e185869c6bab657a2da9680c43d71e50b48742e2a26778c7debab",
+    "jst-only/README.md": "2920cf4cc5b7ad20c1827c782dc97cbc0b0f2502ec0952a3cf1e511bbde88f9b"
+  }
+}

@@ -1,0 +1,4 @@
+Variant,Boards,Factory parts per board,Factory parts for 5,PCB USD for 5,Known component subtotal USD for 5,Assembly fees USD,Total USD,Readiness
+Bare PCB,5,0,0,15.80,0,0,15.80 before shipping/tax,PCB quote recorded 2026-10-25
+JST only,5,6,30,15.80,19.836 (30 x 0.6612; excludes attrition),JLC quote required,,Upload BOM/CPL; parts plus base PCB 35.636 before fees/shipping/tax
+Full carrier,5,79,395,15.80,,Unavailable,,BLOCKED under stocked-only policy; planning files only

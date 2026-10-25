@@ -1,52 +1,30 @@
-# Current Gerber upload package
+# JLCPCB upload package
 
-Upload **[trueskate-main-v1-2layer-1oz-JLCPCB.zip](trueskate-main-v1-2layer-1oz-JLCPCB.zip)**
-as a single file to JLCPCB. The ZIP contains the current board's Gerbers and
-separate plated/non-plated drill files. No upload or order was made here.
+Current revision: **TSAI-FOC6 v1 · 2026-10**, with Q1 reverse-input protection and the revised assembly silkscreen.
 
-## Order settings
+Upload **[trueskate-main-v1-2layer-1oz-JLCPCB.zip](trueskate-main-v1-2layer-1oz-JLCPCB.zip)** as one ZIP. It contains the nine Gerber layers, plated/non-plated drills and job file at its root.
 
-| Setting | Value |
-|---|---|
-| Board | FR-4, 160 × 120 mm, single PCB |
-| Layers | 2 |
-| Thickness | 1.6 mm |
-| Copper | 1 oz on both sides |
-| Solder mask / silkscreen | Green / white |
-| Finish | Lead-free HASL |
-| Via covering | Tented on both sides |
-| Electrical test | Standard full flying-probe test |
-| Impedance control | None |
+Settings: **150 × 140 mm, two layers, 1 oz, 1.6 mm FR4, green mask, white silk, lead-free HASL, tented vias**. Select **PCB assembly OFF**. All components, including J31–J36 JST connectors, are hand soldered. The ZIP includes Gerbers and both drill files; do not upload a BOM or CPL for this order. The [hand-assembly BOM](trueskate-main-v1-hand-assembly-BOM.csv) is for purchasing and bench assembly.
 
-The reference quote used five boards. The ZIP is for PCB fabrication; optional
-component assembly uses separate BOM/placement uploads. Check that JLC detects
-the 160 × 120 mm outline and two copper layers. Keep the original scale and orientation.
+Fresh ERC and strict DRC pass. Every exported drill hit matches the native board: 773 plated holes and four non-plated mounting holes. Source/ZIP hashes and rounding tolerances are in [manifest.json](manifest.json). The manifest's commit is the rollback base; its PCB hash identifies the current uncommitted working-tree revision.
 
-## Contents and checks
+Read the [protection/silkscreen report](../../docs/pcb/reverse-polarity-silkscreen.md) before ordering. Q1 needs no heat sink below ~5 A continuous; 12 A is a copper-sizing worst case. Charged-output reversal, inrush and surge tests are out of scope. Copper/thermal qualification is stopped, and the retained gap audit is accepted for v1. Outstanding: user 1:1 print fit check, user SH pin order verification, and optional human review. No upload or order was made.
 
-- Nine Gerbers: top/bottom copper, paste, mask and silkscreen, plus board outline.
-- Two Excellon drill files: **721 plated holes, 4 non-plated holes**.
-- Gerber job metadata.
-- All twelve upload files are at the ZIP root, with no enclosing folder.
 
-Fresh KiCad 10.0.6 ERC reports zero violations under the existing reviewed project
-configuration; its four pre-existing ignored check types are listed in
-[validation/erc.json](validation/erc.json). Strict DRC reports zero violations,
-opens or schematic mismatches, with no ignored checks or exclusions.
-All 725 exported hole positions/tool sizes match the native board within KiCad's
-0.001 mm drill-coordinate rounding; maximum position difference is **0.000708 mm**.
-The native board was not modified. ZIP contents and CRC were checked.
+## Assembly and cost comparison (five carriers)
 
-[manifest.json](manifest.json) records source commit, source PCB hash and export
-hashes. [validation/](validation/) contains ERC/DRC, the native hole list, drill
-report and drill maps. [preview/](preview/) contains independent Gerber-parser
-copper/silkscreen/drill overlays, viewed from the top for both sides; these omit
-solder mask so traces and via drills can be inspected.
+**Selected: bare PCB; solder all parts, including the JSTs, by hand.**
 
-The package describes the selected two-layer, 1 oz board. The earlier copper/
-thermal evaluation remains stopped, as recorded in
-[copper-options.md](../../docs/pcb/copper-options.md).
+All options use the same Gerber ZIP above. [Comparison CSV](assembly-options/cost-comparison.csv) records costs and unknowns separately.
 
-To regenerate: run `pcb/scripts/export_manufacturing.py` with Python 3.11 and the
-installed KiCad 10 CLI/bundled Python. It rechecks ERC/DRC and hole geometry before
-creating the ZIP. It does not upload files or place orders.
+| Option | Files / selection | Factory parts per board | Price status for five |
+| --- | --- | ---: | --- |
+| Bare PCB | [Instructions](assembly-options/bare-pcb/README.md); assembly OFF | 0 | Recorded PCB quote US$15.80 before shipping/tax |
+| JST only | [BOM](assembly-options/jst-only/BOM.csv) + [CPL](assembly-options/jst-only/CPL.csv); top side | 6 | PCB + 30 connectors US$35.64 before assembly fees, attrition, shipping/tax |
+| Full carrier | [Planning scope and blockers](assembly-options/full-carrier-planning/README.md) | 79 | Unavailable under stocked-only policy; NOT upload-ready |
+
+The JST price uses C160405 at US$0.6612 each at quantity 30; this is a parts subtotal, not a PCBA quote. JLC's checkout must calculate setup, placement/assembly and any part-handling fees. PCB price evidence: `../sources/jlc-3plus3/quote.json`. No quote/order upload was performed.
+
+Full assembly excludes plug-in Teensy/Mini modules and external accessories. The 15-hole Mini footprints expand into 24 physical socket parts, including 12 single machine-pin power receptacles. The full files deliberately use non-upload headers and filenames: unresolved MPNs and body-centroid/rotation qualification cannot be represented as approved JLC selections. Live JLC search found SN74LV125AN C1548088 at zero stock; exact bulk capacitors C128476 also have zero stock. No board substitutions or sourcing/consignment were made.
+
+The selected order is bare PCB. Optional JST-only CSVs remain only in `assembly-options/jst-only/` for comparison; there are no default PCBA upload CSVs at the manufacturing root. Coordinates use the Gerber absolute origin, mm, X right/Y up; negative Y values are intentional. SH wiring TODOs stay unchanged pending the user's multimeter check.

@@ -23,11 +23,7 @@ developer mode. No cloud routing, PCB upload, firmware flash or remote git push.
 '/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3' '/Users/ashernoble/Projects/Robotics & hardware/trueskate-ai-hardware/pcb/scripts/rebuild.py'
 ```
 
-Sequence: `pcb/scripts/extract_mini.py` → `generate.py` →
-`route_signals.py export/import` → `finish_signals.py` → `finish_ground.py` →
-`convert_two_layer.py` → two passes of `stitch_ground.py`. It reuses
-`pcb/design/routing/signals.ses`; it does not launch an autorouter. Do not
-regenerate over unrecorded manual KiCad edits.
+Sequence: extract verified source → generate 3+3 placement/manual copper → export/import frozen SES → apply recorded signal completions → trim unused fanout → prepare fills → replay reviewed ground stitches. It does not launch the autorouter. Placement or net changes require rerouting; do not replay old completions after such changes.
 
 `pcb/design/data/design.json` is the agreed pin map. `pcb/scripts/kicad_source.py`
 writes schematic/project files into `pcb/design/`. `generate.py` writes placement,
@@ -74,7 +70,7 @@ traces EasyEDA schematic wires, and obtains the GKO outline without grid snappin
 `verify_mini.py --checks-only` independently reads actual native library and
 board pads and checks all 105 contacts against the drill file. Without that flag
 it writes the PNG/SVG overlay (Python 3.11 plus matplotlib).
-`pcb/scripts/verify_power.py` confirms the restored locked outer-layer routes
+`pcb/scripts/verify_power.py` checks the new locked 3+3 power geometry
 and records their geometry. Copper/thermal qualification is stopped; that script
 does not run a temperature or current-capacity calculation.
 

@@ -1,0 +1,232 @@
+24-hour PCB production. Fast Delivery to United States.
+Coupons
+APP Download
+USD
+Assembly Parts Lib
+For PCBA Only
+Upload BOM
+0
+Parts Cart
+Sign In
+Products
+In Stock Parts
+Bom Tool
+Request a Quote
+Support
+JLCPCB
+Parts Library
+All Components
+Diodes
+Zener Diodes
+1N4742A
+
+* Images are for reference only
+
+1N4742A
+Extended
+Manufacturer
+ST(Semtech)
+MFR.Part #
+1N4742A
+JLCPCB Part #
+C2545
+Package
+DO-41
+Description
+1 Independent 11.4V~12.6V 12V 1W 5uA 700Ω 9Ω DO-41 Zener Diodes ROHS
+EasyEDA Libraries
+PCB Footprint or Symbol
+Datasheet
+Download
+Source
+JLCPCB
+Assembly Type
+Wave Soldering
+PCBA Type
+Economic and Standard
+MSL Level
+MSL 1
+
+Note: The purchased components are stored in your JLCPCB parts library for future PCBA orders only, and cannot be shipped separately.
+
+Specifications
+PCB Assembly Tips
+Documents
+PCB Footprint/Symbol
+1N4742A Specifications
+
+1N4742A technical specifications, attributes, and parameters.
+
+Report an Error?
+	Attributes	Value
+
+	Category	Diodes/Zener Diodes
+
+	Manufacturer	ST(Semtech)
+
+	Package	DO-41
+
+	Operating Junction Temperature Range	-65℃~+200℃
+
+	Diode Configuration	1 Independent
+
+	Impedance(Zzk)	700Ω
+
+	Impedance(Zzt)	9Ω
+
+	Zener Voltage(Range)	11.4V~12.6V
+
+	Zener Voltage(Nom)	12V
+
+	Pd - Power Dissipation	1W
+
+	Reverse Leakage Current (Ir)	5uA
+Results remaining: 63221
+View Similar
+PCB Assembly Tips
+
+From components to fully assembled PCBs. JLCPCB supports PCB assembly for the 1N4742A. Sign up to receive and start your assembly today →
+
+1
+
+Step 1 - Pre-order the parts you need from JLCPCB.
+
+2
+
+Step 2 - Place a PCBA order to have those parts assembled onto your boards.
+
+3
+
+Step 3 - JLCPCB manufactures and assembles your boards in as fast as 3 days.
+
+Learn more about JLCPCB Assembly
+1N4742A Documents
+
+1N4742A datasheets or manufacturer documentation.
+
+Datasheet: 1N4742A Datasheet (PDF)
+
+1N4742A Schematic Symbol & PCB Footprint
+
+The 1N4742A schematic symbol and PCB footprint are available in the EasyEDA PCB design tool.
+
+In Stock: 6
+
+Minimum: 1
+Full Reel: 250
+$0.03
+Save $30.00
+Add to My Part Lib for Assembly
+
+Available Order Qty: 6
+
+Qty
+Unit Price
+1+
+$0.0339
+250+
+$0.0253
+750+
+$0.0213
+2500+
+$0.0189
+12500+
+$0.0169
+25000+
+$0.0157
+Related Products
+
+1N4741A
+
+JLCPCB Assembly
+
+$0.0398
+
+1N4746A
+
+Taiwan Semiconductor
+
+$0.1398
+
+1N4749A
+
+ST(Semtech)
+
+$0.0114
+
+JANTX1N3023C-1
+
+Microchip Tech
+
+$65.3123
+
+BZV85-C6V2,133
+
+Nexperia
+
+$0.0588
+
+1N5927
+
+ShunYe
+
+$0.0649
+
+Online Chat >
+Chat with our live agent for fast reply.
+Mon-Fri: 24 hours, Sat: 9am-6pm, GMT+8
+Email Us >
+Contact us at support@jlcpcb.com
+Typically reply within hours.
+Help Center >
+Get instant answers.
+24/7 Available.
+Services & Tools
+Electronic Parts
+BOM Tool
+Request a Quote
+Manufacturers
+PCB Assembly
+Support
+Contact Us
+How to Order
+User Guides
+Sourcing Tips
+Payment Methods
+Company
+About Us
+Quality Assurance
+How We Work
+Certifications
+Security
+JLCAPI
+News
+Cooperation
+Careers
+Electronics
+EasyEDA
+JLCPCB
+JLCDFM
+LCSC
+OSHWLAB
+Mechanical
+JLC3DP
+JLCCNC
+JLCMC
+
+Download JLCONE Desktop—Get $524 Exclusive Coupons
+
+Windows
+MAC
+Android
+IOS
+
+CONNECT WITH US
+
+© 2026 JLCPCB.COM All Rights Reserved.
+Privacy Policy
+Terms & Conditions
+Cookies Policy
+Do Not Sell or Share My Personal Information
+Welcome back, may I help you?
+Chat Now

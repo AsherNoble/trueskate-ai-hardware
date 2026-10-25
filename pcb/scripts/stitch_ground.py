@@ -7,6 +7,7 @@ must touch each added via; the via joins and restores the opposite-side fill. Di
 import json,math
 from pathlib import Path
 import pcbnew as k
+from layout_3plus3 import WIDTH, HEIGHT
 ROOT=Path(__file__).resolve().parents[1];PCB=ROOT/'design/trueskate-main-v1.kicad_pcb'
 b=k.LoadBoard(str(PCB));assert b.GetCopperLayerCount()==2
 xy=lambda x,y:k.VECTOR2I(k.FromMM(x),k.FromMM(y))
@@ -29,7 +30,7 @@ for t in b.GetTracks():
  elif t.GetNetname()!='GND':segments.append((*mm(t.GetStart()),*mm(t.GetEnd()),k.ToMM(t.GetWidth())/2))
  else:ground_ends.extend([mm(t.GetStart()),mm(t.GetEnd())])
 def allowed(x,y):
- if not(1.25<=x<=158.75 and 1.25<=y<=118.75):return False
+ if not(1.25<=x<=WIDTH-1.25 and 1.25<=y<=HEIGHT-1.25):return False
  if any(.00001<math.dist((x,y),p)<.65 for p in ground_ends):return False
  for px,py,r in holes:
   if math.hypot(x-px,y-py)<r+.15+.46:return False
@@ -48,9 +49,9 @@ def valid(p):
 added=[];existing=original[:];targets=[]
 spi={'SPI_SCK','SPI_MISO','SPI_MOSI'}|{f'A{i}_CS' for i in range(1,7)}
 for side in ['front','back','left','right']:
- length=160 if side in ['front','back'] else 120
+ length=WIDTH if side in ['front','back'] else HEIGHT
  for n in range(2,length,8):
-  p={'front':(n,2),'back':(n,118),'left':(2,n),'right':(158,n)}[side]
+  p={'front':(n,2),'back':(n,HEIGHT-2),'left':(2,n),'right':(WIDTH-2,n)}[side]
   targets.append(dict(kind='edge',group=side,point=p))
 # Sample EVERY segment, including all six column branches and the rear fanout.
 for t in b.GetTracks():
@@ -67,7 +68,7 @@ for target in targets:
    q=(round(p[0]*2)/2+ix*.5,round(p[1]*2)/2+iy*.5)
    distance=math.dist(p,q)
    if distance>10:continue
-   if target['kind']=='edge' and min(q[0],160-q[0],q[1],120-q[1])>4:continue
+   if target['kind']=='edge' and min(q[0],WIDTH-q[0],q[1],HEIGHT-q[1])>4:continue
    candidates.append((distance,q))
  for distance,q in sorted(candidates):
   if any(math.dist(q,v)<1.0 for v in existing) or not valid(q):continue

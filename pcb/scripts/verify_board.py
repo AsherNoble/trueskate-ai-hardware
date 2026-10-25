@@ -10,6 +10,7 @@ import math
 from pathlib import Path
 import xml.etree.ElementTree as ET
 import pcbnew as k
+from layout_3plus3 import BANKS, HEIGHT
 root=Path(__file__).resolve().parents[1]
 b=k.LoadBoard(str(root/'design/trueskate-main-v1.kicad_pcb'))
 parts=json.loads((root/'design/data/circuit.json').read_text())
@@ -30,12 +31,12 @@ for n in xml.findall('./nets/net'):
 board={}
 for p in parts:
     f=fps[p['ref']]
-    assert f.GetAttributes() & (k.FP_SMD if p['assembly']=='JLCPCB' else k.FP_THROUGH_HOLE),(p['ref'],'assembly mismatch')
+    assert f.GetAttributes() & (k.FP_SMD if p['ref'] in {f'J{i}' for i in range(31,37)} else k.FP_THROUGH_HOLE),(p['ref'],'assembly mismatch')
     for number,name in zip(p['pins'],p['nets']):
         actual=rawnet(p['ref'],number)
         assert actual==name if name else actual.startswith('unconnected-'),(p['ref'],number,actual,name)
         board[(p['ref'],number)]=actual
-    assert all(x.GetAttribute()==(k.PAD_ATTRIB_SMD if p['assembly']=='JLCPCB' else k.PAD_ATTRIB_PTH) for x in f.Pads() if x.GetNumber()),p['ref']
+    assert all(x.GetAttribute()==(k.PAD_ATTRIB_SMD if p['ref'] in {f'J{i}' for i in range(31,37)} else k.PAD_ATTRIB_PTH) for x in f.Pads() if x.GetNumber()),p['ref']
 assert board==sch,'PCB/schematic net mismatch'
 unused=collections.Counter(n for n in board.values() if n.startswith('unconnected-'))
 assert len(unused)==36 and all(count==1 for count in unused.values())
@@ -44,7 +45,7 @@ assert not any(t.GetNetname().startswith('unconnected-') for t in b.GetTracks())
 # Independent interface checks; placement fit is also checked by strict DRC.
 assert net('J2',1)=='' and net('J1',1)=='GND'
 assert net('J1',2)=='A4_PWM2'
-assert pos('J2',1)==(140,118.03) and pos('J1',24)==(155.24,59.61)
+assert pos('J2',1)==(1.97,62.38) and pos('J1',24)==(60.39,77.62)
 for i in range(1,7):
     mini=f'J{10+i}'
     assert net(mini,9)==net(f'R{20+i}',1)==f'A{i}_EN'
@@ -52,13 +53,13 @@ for i in range(1,7):
     assert net(mini,'VIN')=='12V_FUSED'
     assert net(f'R{30+i}',1)==f'A{i}_CS' and net(f'R{30+i}',2)=='3V3'
     assert net(mini,1)==net(mini,4)=='GND'
-    assert fps[f'J{30+i}'].GetOrientationDegrees()==180
-    assert abs(pos(f'J{30+i}',1)[1]-5.3)<1e-5
+    assert fps[f'J{30+i}'].GetOrientationDegrees()==(180 if i in BANKS['upper'] else 0)
+    assert abs(pos(f'J{30+i}',1)[1]-(5.3 if i in BANKS['upper'] else HEIGHT-5.3))<1e-5
     for phase in (1,2,3):assert net(f'J{20+i}',phase)==net(mini,f'P{4-phase}')==f'A{i}_PH{phase}'
     assert f'J{40+i}' not in fps
 assert len(list(b.Zones()))==2
 assert {(b.GetLayerName(z.GetLayer()),z.GetNetname())for z in b.Zones()}=={('F.Cu','GND'),('B.Cu','GND')}
-assert b.GetCopperLayerCount()==2 and len(fps)==62
+assert b.GetCopperLayerCount()==2 and len(fps)==65
 assert k.ToMM(b.GetDesignSettings().m_SolderMaskMinWidth)>=.1
 
 def signature(t):
@@ -78,7 +79,7 @@ links=collections.Counter((t['net'],t['layer'],round(t['width'],6),tuple(sorted(
                           for t in json.loads((root/'design/data/ground-links.json').read_text()))
 assert actual==expected+links,'Manual power/ground routing was altered'
 stitches=json.loads((root/'design/data/ground-stitching.json').read_text())
-ground_vias=[t for t in b.GetTracks() if t.IsLocked() and isinstance(t,k.PCB_VIA)]
+ground_vias=[t for t in b.GetTracks() if t.IsLocked() and isinstance(t,k.PCB_VIA) and t.GetNetname()=='GND']
 assert {(round(k.ToMM(t.GetPosition().x),3),round(k.ToMM(t.GetPosition().y),3)) for t in ground_vias}=={(v['x'],v['y']) for v in stitches}
 assert all(t.GetNetname()=='GND' for t in ground_vias)
 from route_signals import SIGNALS

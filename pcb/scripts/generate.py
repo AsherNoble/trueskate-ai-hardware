@@ -13,6 +13,7 @@ from pathlib import Path
 import uuid
 import pcbnew as k
 from kicad_source import write_schematic, write_project
+from layout_3plus3 import WIDTH, HEIGHT, BANKS, SD_SERVICE, axis_point, place
 
 ROOT=Path(__file__).resolve().parents[1]
 SHARE=Path(os.environ.get("KICAD_SHARE","/Applications/KiCad/KiCad.app/Contents/SharedSupport"))
@@ -70,8 +71,8 @@ for i,a in enumerate(D["axes"],1):
         [1,2,3],[f"A{i}_PH{n}" for n in (1,2,3)],pg,(190,45),(x+6.58,3,270),.1,"Optional axis; outward cable clearance at front edge")
     encmap={"CLK":"SPI_SCK","MISO":"SPI_MISO","MOSI":"SPI_MOSI","CSn":f"A{i}_CS","3V3":"3V3","GND":"GND"}
     add(f"J{30+i}","SM06B-SRSS-TB","Connector_JST:JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
-        list(range(1,7)),[encmap[n] for n in D['encoder_pin_order']],pg,(190,90),(x+18,3.3,180),.5,
-        "Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED",lcsc="C7588156",assembly="JLCPCB")
+        list(range(1,7)),[encmap[n] for n in D['encoder_pin_order']],pg,(190,90),(x+18,3.3,180),.9,
+        "Optional axis; side entry opens toward front (-Y); SH harness pin order UNVERIFIED",lcsc="C160405",assembly="Hand")
     add(f"R{20+i}","10k EN pull-down",RFP,[1,2],[f"A{i}_EN","GND"],pg,(70,120),(x+2,51,270),.05,"Optional axis; fit with Mini")
     add(f"R{30+i}","10k CS pull-up",RFP,[1,2],[f"A{i}_CS","3V3"],pg,(190,185),(x+14.6,61,0),.05,"Optional axis; fit with encoder")
     add(f"C{10+i}","1000uF 35V EEUFR1V102B","Capacitor_THT:CP_Radial_D12.5mm_P5.00mm",
@@ -88,7 +89,7 @@ page("power","08 / Power and hardware kill",[
 add("J5","12V INPUT + / -","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
     [1,2],["12V_IN","GND"],"power",(60,55),(12,115,0),2,"Phoenix1715721 17.5A nominal; verify wire size and applicable rating")
 add("F1","Keystone 3557-2 ATO holder","TrueSkate:Keystone_3557-2_ATO",
-    [1,2],["12V_IN","12V_FUSED"],"power",(190,55),(30,112.5,0),1.68,"One complete holder includes both contacts for one standard ATO fuse; fuse purchased separately",lcsc="C352820")
+    [1,2],["12V_IN","12V_PREPOL"],"power",(190,55),(30,112.5,0),1.68,"One complete holder includes both contacts for one standard ATO fuse; fuse purchased separately",lcsc="C352820")
 add("J6","NC KILL SWITCH","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
     [1,2],["EN_DISABLE","GND"],"power",(60,85),(61,117,90),.1,"Open loop disables every Mini; closed loop permits firmware EN")
 add("R1","10k /OE pull-up",RFP,[1,2],["EN_DISABLE","3V3"],"power",(190,85),(60,110,0),.05)
@@ -104,6 +105,23 @@ for chip in (1,2):
         i=a+n
         add(f"R{40+i}","10k EN command pull-down",RFP,[1,2],[f"A{i}_EN_CMD","GND"],"controller",(65 if chip==1 else 190,145+n*25),(xx-13,88+n*8,0),.05,"Shared buffer input bias; may omit with corresponding axis")
 
+page('protection','09 / Fused reverse-polarity protection',[
+    'F1 -> Q1 drain; Q1 source -> protected 12V_FUSED bus. P-MOS body diode points input to load.',
+    'D1 cathode (band/pad1) to source; anode to gate. R2 10k from gate to GND.',
+    'IRF4905PbF: -55V, 20mOhm max at VGS=-10V, -74A case rating. TO-220 pin1 G,2 D/tab,3 S.',
+    'V1 operates at a few amps, current-limited. No heat sink below ~5A continuous; 12A copper sizing only.',
+    'Single MOSFET is reverse-input protection, not reverse-current or load-disconnect protection.'])
+add('Q1','IRF4905PBF','Package_TO_SOT_THT:TO-220-3_Vertical',[1,2,3],
+    ['POL_GATE','12V_PREPOL','12V_FUSED'],'protection',(70,60),(126,24,90),.62,
+    'Infineon TO-220AB; G,D(tab),S; -55V; 20mOhm max at -10V; 74A case rating; no heat sink below ~5A continuous; 12A copper sizing only',lcsc='C2564')
+parts[-1]['pin_names']=['G','D / tab','S']
+add('R2','10k gate pull-down',RFP,[1,2],['POL_GATE','GND'],'protection',(70,110),(122,32,270),.01,
+    'TyoHM RD1/4W10KJT/BA1; 0.25W,5%; gate bias',lcsc='C433778')
+add('D1','1N4742A 12V','Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal',[1,2],
+    ['12V_FUSED','POL_GATE'],'protection',(190,110),(120,9,0),.03,
+    'ST(Semtech); DO-41 12V 1W; band/cathode pad1 to source, anode pad2 to gate',lcsc='C2545')
+parts[-1]['pin_names']=['K / source','A / gate']
+
 def line(fp,a,z,layer,width=.15):
     s=k.PCB_SHAPE(fp);s.SetShape(k.SHAPE_T_SEGMENT);s.SetStart(xy(*a));s.SetEnd(xy(*z))
     s.SetLayer(layer);s.SetWidth(k.FromMM(width));fp.Add(s)
@@ -114,6 +132,8 @@ def pth(fp,num,x,y,size=1.8,drill=1):
     p.SetLayerSet(layers(k.F_Cu,k.B_Cu,k.F_Mask,k.B_Mask));fp.Add(p)
 def save_fp(fp):
     path=ROOT/'design/TrueSkate.pretty'/(str(fp.GetFPID().GetLibItemName())+'.kicad_mod')
+    # The verified Mini library is authoritative across placement-only revisions.
+    if path.exists() and fp.GetFPID().GetLibItemName()=='SimpleFOC_Mini_v1.0':return
     previous=path.read_text() if path.exists() else None
     k.PCB_IO_MGR.FindPlugin(k.PCB_IO_MGR.KICAD_SEXP).FootprintSave(str(ROOT/'design/TrueSkate.pretty'),fp)
     # Preserve identical libraries rather than rewriting randomly assigned UUIDs.
@@ -174,6 +194,9 @@ def edge_libraries():
         lib,name=p['fp'].split(':',1)
         folder=ROOT/'design/TrueSkate.pretty' if lib=='TrueSkate' else SHARE/'footprints'/(lib+'.pretty')
         f=k.FootprintLoad(str(folder),name)
+        if p['ref']=='Q1':
+            # Max lead rectangle 1.01 x .61 mm (1.18 mm diagonal): allow a 1.4 mm finished hole.
+            for pad in f.Pads():pad.SetDrillSize(xy(1.4,1.4));pad.SetSize(xy(2.2,2.2))
         for g in f.GraphicalItems():
             if g.GetLayer()==k.F_SilkS:g.SetLayer(k.F_Fab)
         if lib!='TrueSkate':name='Edge_'+name
@@ -203,27 +226,26 @@ def board():
             name=dict(zip(p["pins"],p["nets"])).get(pad.GetNumber())
             if pad.GetNumber() in p["pins"]: pad.SetNet(nets[name or nc_name(p,pad.GetNumber())])
         b.Add(f);fps[p["ref"]]=f
-    for n,(x,y) in enumerate([(3,82),(157,18),(130,116),(3,110)],1):
+    for n,(x,y) in enumerate([(4,4),(WIDTH-4,4),(WIDTH-4,HEIGHT-4),(4,HEIGHT-4)],1):
         f=k.FootprintLoad(str(SHARE/"footprints/MountingHole.pretty"),"MountingHole_3.2mm_M3")
         f.SetAttributes(k.FP_BOARD_ONLY|k.FP_EXCLUDE_FROM_BOM|k.FP_EXCLUDE_FROM_POS_FILES)
-        f.SetReference(f"H{n}");f.SetPosition(xy(x,y));f.Value().SetVisible(False);b.Add(f)
-    for a,z in [((0,0),(160,0)),((160,0),(160,120)),((160,120),(0,120)),((0,120),(0,0))]: line(b,a,z,k.Edge_Cuts,.05)
+        f.SetReference(f"H{n}");f.Reference().SetVisible(False);f.SetPosition(xy(x,y));f.Value().SetVisible(False);b.Add(f)
+    for a,z in [((0,0),(WIDTH,0)),((WIDTH,0),(WIDTH,HEIGHT)),((WIDTH,HEIGHT),(0,HEIGHT)),((0,HEIGHT),(0,0))]: line(b,a,z,k.Edge_Cuts,.05)
     def text(label,x,y,size=1,layer=k.F_SilkS):
         t=k.PCB_TEXT(b);t.SetText(label);t.SetPosition(xy(x,y));t.SetLayer(layer)
         size=max(size,1.0) if layer==k.F_SilkS else size
         t.SetTextSize(xy(size,size));t.SetTextThickness(k.FromMM(.15));b.Add(t)
-    text("TrueSkate / 160 x 120 / USB ONLY",80,80,1.2)
-    text("NC KILL",62,113);text("12V + / -",15,106);text("F1 / ATO",37,106)
-    text("USB",147.6,117)
-    for i in range(1,7):
-        x=5+25*(i-1)
-        text(f"A{i}",x+5,17,1.5)
-        text(f"M{i} 3 2 1",x+4,7)
-        text(f"ENC{i}",x+18,8)
-        text(f"CS{i} 10k",x+16,63.5)
-        text(f"MINI {i}",x+12,38)
-    for a,z in [((55,125),(105,125)),((55,123),(55,127)),((105,123),(105,127))]: line(b,a,z,k.Dwgs_User,.2)
-    for label,x,y in [("TOP VIEW / PRINT 100% / NOT MIRRORED",80,-5),("50 mm between ticks - check print scale",80,130)]: text(label,x,y,1.1,k.Dwgs_User)
+    text("NC KILL",143,102);text("12V + / -",141,62);text("F1 / ATO",136,19)
+    text("USB",8,70)
+    for bank,axes in BANKS.items():
+        for i in axes:
+            x,y=axis_point(i,13,8)
+            text(f"A{i}",x,y,1.5)
+            for label,lx in [(f"M{i}",5),(f"ENC{i}",20)]:
+                xx,yy=axis_point(i,lx,7);text(label,xx,yy)
+    sx0,sy0,sx1,sy1=SD_SERVICE
+    for a,z in [((sx0,sy0),(sx1,sy0)),((sx1,sy0),(sx1,sy1)),((sx1,sy1),(sx0,sy1)),((sx0,sy1),(sx0,sy0))]:line(b,a,z,k.Dwgs_User,.15)
+    text("SD CARD SERVICE / KEEP CLEAR",72,70,.8,k.Dwgs_User)
     def pad(ref,n): return next(p for p in fps[ref].Pads() if p.GetNumber()==str(n))
     def pos(p): return k.ToMM(p.GetPosition().x),k.ToMM(p.GetPosition().y)
     def track(name,points,width,layer):
@@ -234,39 +256,53 @@ def board():
     def route(ref,n,ref2,n2,width=1,layer=k.F_Cu,bends=()):
         a,z=pad(ref,n),pad(ref2,n2);assert a.GetNetname()==z.GetNetname()
         track(a.GetNetname(),[pos(a),*bends,pos(z)],width,layer)
-    # Phase lanes occupy the left of each column. Encoder fanout is on the right.
+    # Rotated, never mirrored axis geometry; phases and encoder escapes stay separated.
     for i in range(1,7):
-        x=5+25*(i-1)
+        ap=lambda x,y:axis_point(i,x,y)
         for ph in (1,2,3):
             a=pos(pad(f"J{10+i}",f"P{4-ph}"));end=pos(pad(f"J{20+i}",ph))
-            lane=x+1.4-(ph-1)*1.4
-            track(f"A{i}_PH{ph}",[a,(lane,a[1]),(lane,12-2*ph),(end[0],12-2*ph),end],1,k.F_Cu)
-        # Locked encoder fanout stays in the JST/right half. It passes between
-        # the control/phase socket rows and then around the Mini power annuli.
+            lane=1.4-(ph-1)*1.4
+            phase_y={1:16.556,2:19.096,3:21.636}[ph]
+            track(f"A{i}_PH{ph}",[a,ap(lane,phase_y),ap(lane,12-2*ph),ap(6.58-2.54*(ph-1),12-2*ph),end],1,k.F_Cu)
         for pin in range(1,7):
-            p=pad(f'J{30+i}',pin);start=pos(p);lane=x+16.8-.8*(pin-1)
-            jog=5.5;endx=lane+jog
-            track(p.GetNetname(),[start,(start[0],6.5),(lane,6.5+start[0]-lane),(lane,34.5),(endx,40),(endx,45)],.25 if pin<=4 else .3,k.F_Cu)
+            p=pad(f'J{30+i}',pin);start=pos(p)
+            # Local pin X is 20.5-(pin-1); fanout reaches the inboard side.
+            startx=20.5-(pin-1);lane=16.8-.8*(pin-1);endx=lane+5.5
+            track(p.GetNetname(),[start,ap(startx,6.5),ap(lane,6.5+startx-lane),ap(lane,24.5),ap(endx,30),ap(endx,35)],.25 if pin<=4 else .3,k.F_Cu)
         mini,bulk,cer=f"J{10+i}",f"C{10+i}",f"C{20+i}"
-        vx,vy=pos(pad(mini,'VIN'))
-        route(mini,'VIN',bulk,1,2,k.F_Cu,[(vx,51.5)])
-        route(mini,'VIN',cer,1,.6,k.F_Cu,[(vx,47)])
-        # Fused 12V has a 12mm backbone. Each branch is 2mm, no power vias.
-        bx,by=pos(pad(bulk,1))
-        track('12V_FUSED',([(129.8,70),(129.8,47.5),(bx,47.5),(bx,by)] if i==6 else [(bx,70),(bx,by)]),2,k.F_Cu)
-    # Wide common rail stops before Teensy sockets; axis6 branches around its end.
-    track('12V_FUSED',[(42.8,92),(42.8,70),(131,70)],12,k.F_Cu)
-    track('12V_FUSED',[(17.5,70),(42.8,70)],12,k.F_Cu)
-    # Keystone has two legs per contact; 6mm output stem and dual-layer input.
+        route(mini,'VIN',bulk,1,2,k.F_Cu,[ap(12.237,41.5)])
+        route(mini,'VIN',cer,1,.6,k.F_Cu,[ap(12.237,37)])
+        track('12V_FUSED',[ap(12.5,53),pos(pad(bulk,1))],2,k.F_Cu)
+    # Both bank backbones and the common right-hand feed retain 12 mm copper.
+    track('12V_FUSED',[(20.5,53),(112,53),(112,87),(21.5,87)],12,k.F_Cu)
     for p in fps['F1'].Pads():
-        if p.GetNumber()=='2':track('12V_FUSED',[pos(p),(pos(p)[0],96),(42.8,92)],6,k.F_Cu)
-        if p.GetNumber()=='1':
-            for l in (k.F_Cu,k.B_Cu):track('12V_IN',[pos(p),(pos(p)[0],118),(12,118),pos(pad('J5',1))],2,l)
+        pp=pos(p)
+        if p.GetNumber()=='2':track('12V_PREPOL',[pp,(pp[0],21.46),(131,21.46)],6,k.F_Cu)
+        if p.GetNumber()=='1':track('12V_IN',[pp,(pp[0],56),pos(pad('J5',1))],6,k.F_Cu)
+    # Opposite-side escapes keep G/D/S separated at 2.54 mm pitch, then flare.
+    track('12V_PREPOL',[pos(pad('Q1',2)),(131,21.46)],2,k.F_Cu)
+    track('12V_FUSED',[pos(pad('Q1',3)),(121.5,18.92)],2,k.F_Cu)
+    track('12V_FUSED',[(121.5,18.92),(112,18.92)],6,k.F_Cu)
+    track('12V_FUSED',[(112,18.92),(112,53)],12,k.F_Cu)
+    track('POL_GATE',[pos(pad('Q1',1)),(126,28),pos(pad('R2',1))],.3,k.F_Cu)
+    track('POL_GATE',[pos(pad('D1',2)),(145,9),(145,34),(124,34),pos(pad('R2',1))],.3,k.B_Cu)
+    track('12V_FUSED',[pos(pad('D1',1)),(120,15.5),(121.5,18.92)],.6,k.F_Cu)
+    # Parallel top/bottom short lead necks, joined to the broad top routes by four vias each.
+    track('12V_PREPOL',[pos(pad('Q1',2)),(131,21.46),(132.5,21.46)],2,k.B_Cu)
+    track('12V_PREPOL',[(131,21.46),(132.5,21.46)],6,k.B_Cu)
+    track('12V_FUSED',[pos(pad('Q1',3)),(121.5,18.92)],2,k.B_Cu)
+    track('12V_FUSED',[(121.5,18.92),(120,18.92)],6,k.B_Cu)
+    power_vias=[]
+    for name,points in [('12V_PREPOL',[(131,21.46),(132.5,21.46),(131,22.96),(132.5,22.96)]),('12V_FUSED',[(120,18.92),(121.5,18.92),(120,17.42),(121.5,17.42)])]:
+        for x,y in points:
+            v=k.PCB_VIA(b);v.SetPosition(xy(x,y));v.SetWidth(k.FromMM(1.2));v.SetDrill(k.FromMM(.6));v.SetLayerPair(k.F_Cu,k.B_Cu);v.SetViaType(k.VIATYPE_THROUGH);v.SetNet(nets[name]);v.SetLocked(True);b.Add(v)
+            power_vias.append(dict(net=name,x=x,y=y,diameter_mm=1.2,drill_mm=.6))
+    (ROOT/'design/data/power-vias.json').write_text(json.dumps(power_vias,indent=2)+'\n')
     for layer in (k.F_Cu,k.B_Cu):
         z=k.ZONE(b);z.SetLayer(layer);z.SetNet(nets["GND"]);z.SetLocalClearance(k.FromMM(.3))
-        z.SetMinThickness(k.FromMM(.25));z.SetPadConnection(k.ZONE_CONNECTION_FULL)
+        z.SetIslandRemovalMode(k.ISLAND_REMOVAL_MODE_ALWAYS);z.SetMinThickness(k.FromMM(.25));z.SetPadConnection(k.ZONE_CONNECTION_FULL)
         outline=z.Outline();outline.NewOutline()
-        for x,y in [(1,1),(159,1),(159,119),(1,119)]:outline.Append(int(k.FromMM(x)),int(k.FromMM(y)))
+        for x,y in [(1,1),(WIDTH-1,1),(WIDTH-1,HEIGHT-1),(1,HEIGHT-1)]:outline.Append(int(k.FromMM(x)),int(k.FromMM(y)))
         b.Add(z)
     k.ZONE_FILLER(b).Fill(b.Zones())
     k.SaveBoard(str(ROOT/'design'/(PROJECT+".kicad_pcb")),b,True)
@@ -277,7 +313,7 @@ def board():
     (ROOT/"design/data/manual-routes.json").write_text(json.dumps([
         dict(net=t.GetNetname(),layer=t.GetLayerName(),width=k.ToMM(t.GetWidth(k.F_Cu) if isinstance(t,k.PCB_VIA) else t.GetWidth()),
              start=[k.ToMM(t.GetStart().x),k.ToMM(t.GetStart().y)],end=[k.ToMM(t.GetEnd().x),k.ToMM(t.GetEnd().y)])
-        for t in b.GetTracks()],indent=2)+"\n")
+        for t in b.GetTracks() if not isinstance(t,k.PCB_VIA)],indent=2)+"\n")
 def bom():
     (ROOT/"design/data/circuit.json").write_text(json.dumps(parts,indent=2)+"\n")
     with (ROOT/"bom/bom-review.csv").open("w",newline="") as f:
@@ -285,6 +321,6 @@ def bom():
         for p in parts: w.writerow([p["ref"],1,p["value"],p["fp"],p["lcsc"],p["assembly"],p["price"],p["note"]])
         w.writerow(["J11-J16 VIN/GND",12,"Single machine-pin receptacle","Included in SimpleFOC_Mini_v1.0","","Hand",.5,">=3 A/contact; body/tail fits 1.101 mm finished hole; compatible pin and matching seated height; MPN pending mechanical selection"])
 if __name__=="__main__":
-    custom();edge_libraries();write_project(ROOT/'design',PROJECT,parts);write_schematic(ROOT/'design',PROJECT,parts,pages,uid);bom();board()
+    place(parts);custom();edge_libraries();write_project(ROOT/'design',PROJECT,parts);write_schematic(ROOT/'design',PROJECT,parts,pages,uid);bom();board()
     print(f"Generated {len(parts)}-item carrier. Signal routing follows separately.")
     print("Review only: no manufacturing exports.")

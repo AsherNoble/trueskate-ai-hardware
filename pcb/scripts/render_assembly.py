@@ -62,29 +62,30 @@ for i in range(1,7):
  x,y=transform(f,14,3);box((x,y,11.1),(3,4,1),black)
  for q in range(5):
   x,y=transform(f,3+q*2.3,13.4);box((x,y,10.95),(1.1,.65,.55),(.55,.43,.27))
-# Teensy 4.1 body oriented with the actual two socket rows and USB facing Y=120.
-xs=[mm(p.GetPosition())[0]for ref in ('J1','J2')for p in fps[ref].Pads()]
-xc=(min(xs)+max(xs))/2
-box((xc,89.55,9.8),(17.78,60.96,1.6),green)
+# PJRC header geometry: USB shell at X=0, PCB X=.70..61.66.
+box((31.18,70,9.8),(60.96,17.78,1.6),green)
 for ref in ('J1','J2'):
  for pad in fps[ref].Pads():
   x,y=mm(pad.GetPosition());box((x,y,8.4),(.64,.64,4),gold);cyl((x,y,10.65),.85,.12,silver)
-box((xc,88,11.4),(9,9,1.6),black)
-box((xc,65,11.6),(12,10,2),silver)
-box((xc,65,12.64),(10,7,.1),black)
-box((xc,117.2,12),(7.5,5.6,2.8),silver)
-box((xc,120.02,12),(5.8,.12,1.6),black)
-box((xc-4,109,11.1),(2.8,4,1),black)
-for q in range(8):box((xc+4.5,77+q*3,10.95),(1,.6,.55),(.55,.43,.27))
-# One complete Keystone 3557-2 holder plus illustrative unmarked ATO fuse.
-f=fps['F1'];ox,oy=mm(f.GetPosition());cx,cy=ox+6.735,oy+1.7
-box((cx,cy,1.0),(19.81,6.73,2),black)
+box((33,70,11.4),(9,9,1.6),black)
+box((56.66,70,11.6),(10,12,2),silver)
+box((56.66,70,12.64),(7,10,.1),black)
+box((2.8,70,12),(5.6,7.5,2.8),silver)
+box((-.02,70,12),(.12,5.8,1.6),black)
+box((12,74,11.1),(4,2.8,1),black)
+for q in range(8):box((22+q*3,65.5,10.95),(.6,1,.55),(.55,.43,.27))
+# Illustrative card partly withdrawn; not a qualified socket insertion-depth model.
+box((66.66,70,11.7),(15,11,1),black)
+# Holder rotates with its verified native footprint. Dimensions are envelopes.
+f=fps['F1'];cx,cy=transform(f,6.735,1.7)
+box((cx,cy,1.0),(6.73,19.81,2),black)
 for dx in (-6.735,6.735):
- box((cx+dx,cy,4.3),(3.6,5.7,5.4),silver)
- box((cx+dx,cy,6.9),(2.5,1.6,1.0),black)
- box((cx+dx,cy,7.7),(1.0,.8,6),silver)
-box((cx,cy,12.2),(19.1,5.1,9.2),(.65,.68,.7))
-box((cx,cy,17),(19.1,5.1,.6),black)
+ x,y=transform(f,6.735+dx,1.7)
+ box((x,y,4.3),(5.7,3.6,5.4),silver)
+ box((x,y,6.9),(1.6,2.5,1.0),black)
+ box((x,y,7.7),(.8,1.0,6),silver)
+box((cx,cy,12.2),(5.1,19.1,9.2),(.65,.68,.7))
+box((cx,cy,17),(5.1,19.1,.6),black)
 (OUT/'.cache').mkdir(exist_ok=True)
 model=OUT/'models/populated-components.wrl';model.write_text(''.join(shapes))
 f=k.FOOTPRINT(b);f.SetReference('ASSEMBLY_VISUAL_ONLY');f.SetPosition(k.VECTOR2I(0,0));f.Reference().SetVisible(False);f.Value().SetVisible(False)
@@ -96,11 +97,11 @@ for fp in b.GetFootprints():
 review=OUT/'.cache/populated-review.kicad_pcb';k.SaveBoard(str(review),b,True)
 cli='/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli'
 def render(spec):
- name,rot=spec
- cmd=[cli,'pcb','render','--width','2000','--height','1600','--quality','high','--background','opaque','--side','top','--output',str(OUT/(name+'.png'))]
+ name,side,rot=spec
+ cmd=[cli,'pcb','render','--width','2000','--height','1600','--quality','high','--background','opaque','--side',side,'--output',str(OUT/(name+'.png'))]
  if rot:cmd+=['--rotate',rot,'--perspective','--zoom','.72']
  cmd.append(str(review));result=subprocess.run(cmd,check=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT);(OUT/'.cache'/(name+'.log')).write_bytes(result.stdout)
-with ThreadPoolExecutor(max_workers=3)as ex:list(ex.map(render,[('populated-top',None),('populated-perspective','-35,0,25'),('populated-rear','-35,0,155')]))
+with ThreadPoolExecutor(max_workers=3)as ex:list(ex.map(render,[('populated-top','top',None),('populated-bottom','bottom',None),('populated-perspective','top','-35,0,25')]))
 assert hashlib.sha256(PCB.read_bytes()).hexdigest()==source_hash
-(OUT/'provenance.json').write_text(json.dumps(dict(source_pcb_sha256=source_hash,geometry='current native carrier; exact tagged Mini outline/contact placement',simplifications=['Mini component bodies and locations illustrative','Teensy component bodies illustrative; socket rows native','module seating heights illustrative','holder and unmarked fuse simplified envelopes','no external cables']),indent=2)+'\n')
+(OUT/'provenance.json').write_text(json.dumps(dict(source_pcb_sha256=source_hash,geometry='current native carrier; exact tagged Mini outline/contact placement',simplifications=['Mini component bodies and locations illustrative','Teensy PCB and header placement dimensioned; socket and partly withdrawn card illustrative; physical socket revision unverified','module seating heights illustrative','holder and unmarked fuse simplified envelopes','no external cables']),indent=2)+'\n')
 print('Rendered 3 populated views. Source PCB unchanged.')

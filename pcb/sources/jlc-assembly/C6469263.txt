@@ -1,0 +1,222 @@
+24-hour PCB production. Fast Delivery to United States.
+Coupons
+APP Download
+USD
+Assembly Parts Lib
+For PCBA Only
+Upload BOM
+0
+Parts Cart
+Sign In
+Products
+In Stock Parts
+Bom Tool
+Request a Quote
+Support
+JLCPCB
+Parts Library
+All Components
+Connectors
+Female Headers
+801-43-006-10-001000
+
+* Images are for reference only
+
+801-43-006-10-001000
+Extended
+Manufacturer
+Mill-Max Mfg. Corp.
+MFR.Part #
+801-43-006-10-001000
+JLCPCB Part #
+C6469263
+Package
+Plugin,P=2.54mm
+Description
+-55℃~+125℃ 1 2.54mm 4.5A 6P 7mm Through Hole Tin Plugin,P=2.54mm Female Headers ROHS
+EasyEDA Libraries
+PCB Footprint or Symbol
+ECCN
+EAR99
+Datasheet
+Download
+Source
+JLCPCB
+Assembly Type
+Wave Soldering
+PCBA Type
+Economic and Standard
+MSL Level
+MSL 1
+
+Note: The purchased components are stored in your JLCPCB parts library for future PCBA orders only, and cannot be shipped separately.
+
+Specifications
+PCB Assembly Tips
+Documents
+PCB Footprint/Symbol
+801-43-006-10-001000 Specifications
+
+801-43-006-10-001000 technical specifications, attributes, and parameters.
+
+Report an Error?
+	Attributes	Value
+
+	Category	Connectors/Female Headers
+
+	Manufacturer	Mill-Max Mfg. Corp.
+
+	Package	Plugin,P=2.54mm
+
+	Operating Temperature	-55℃~+125℃
+
+	Number of Rows	1
+
+	Insulation Height	7mm
+
+	Number of Positions	6P
+
+	Contact Plating	Tin
+
+	Pitch	2.54mm
+
+	Current Rating	4.5A
+
+	Mounting Type	Through Hole
+Results remaining: 101570
+View Similar
+PCB Assembly Tips
+
+From components to fully assembled PCBs. JLCPCB supports PCB assembly for the 801-43-006-10-001000. Sign up to receive and start your assembly today →
+
+1
+
+Step 1 - Pre-order the parts you need from JLCPCB.
+
+2
+
+Step 2 - Place a PCBA order to have those parts assembled onto your boards.
+
+3
+
+Step 3 - JLCPCB manufactures and assembles your boards in as fast as 3 days.
+
+Learn more about JLCPCB Assembly
+801-43-006-10-001000 Documents
+
+801-43-006-10-001000 datasheets or manufacturer documentation.
+
+Datasheet: 801-43-006-10-001000 Datasheet (PDF)
+
+801-43-006-10-001000 Schematic Symbol & PCB Footprint
+
+The 801-43-006-10-001000 schematic symbol and PCB footprint are available in the EasyEDA PCB design tool.
+
+In Stock: 0
+
+Minimum: 6
+Full Reel: 6
+$8.02
+Save $30.00
+Pre-order
+
+Pre-order Items Pricing
+
+Estimated unit price: $1.3371
+
+Related Products
+
+801-41-006-10-001000
+
+Mill-Max Mfg. Corp.
+
+$14.4388
+
+801-43-016-10-001000
+
+Mill-Max Mfg. Corp.
+
+$2.9948
+
+801-47-006-10-001000
+
+Mill-Max Mfg. Corp.
+
+$0.8314
+
+315-99-113-61-003000
+
+Mill-Max Mfg. Corp.
+
+$18.0931
+
+324-11-153-41-002000
+
+Mill-Max Mfg. Corp.
+
+$40.8665
+
+SSW-125-01-G-D
+
+Samtec
+
+$8.3461
+
+Online Chat >
+Chat with our live agent for fast reply.
+Mon-Fri: 24 hours, Sat: 9am-6pm, GMT+8
+Email Us >
+Contact us at support@jlcpcb.com
+Typically reply within hours.
+Help Center >
+Get instant answers.
+24/7 Available.
+Services & Tools
+Electronic Parts
+BOM Tool
+Request a Quote
+Manufacturers
+PCB Assembly
+Support
+Contact Us
+How to Order
+User Guides
+Sourcing Tips
+Payment Methods
+Company
+About Us
+Quality Assurance
+How We Work
+Certifications
+Security
+JLCAPI
+News
+Cooperation
+Careers
+Electronics
+EasyEDA
+JLCPCB
+JLCDFM
+LCSC
+OSHWLAB
+Mechanical
+JLC3DP
+JLCCNC
+JLCMC
+
+Download JLCONE Desktop—Get $524 Exclusive Coupons
+
+Windows
+MAC
+Android
+IOS
+
+CONNECT WITH US
+
+© 2026 JLCPCB.COM All Rights Reserved.
+Privacy Policy
+Terms & Conditions
+Cookies Policy
+Do Not Sell or Share My Personal Information
+Welcome back, may I help you?
+Chat Now

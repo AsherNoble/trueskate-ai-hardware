@@ -1,14 +1,14 @@
 {
   "layers": 2,
   "copper_oz": 1,
-  "power_segments": 51,
+  "power_segments": 52,
   "widths_mm": [
     0.6,
     2.0,
     6.0,
     12.0
   ],
-  "routing": "Original outer-layer input, fuse, bus and Mini feeds restored from 62ef1ea conversion log",
+  "routing": "3+3: 12 mm bank backbones/common trunk; 6 mm fuse/input paths, parallel 2 mm top/bottom Q1 lead escapes flaring into 6/12 mm copper with four 1.2/.6 mm vias per power node; 2 mm Mini supply branches; 0.6 mm ceramic taps",
   "qualification": "STOPPED by user decision; no current/temperature qualification claimed",
   "historical_report": "../../../docs/pcb/copper-options.md"
 }

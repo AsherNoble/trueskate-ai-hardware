@@ -13,8 +13,10 @@ from pypdf import PdfReader
 ROOT=Path(__file__).resolve().parents[1]
 DOCS=ROOT.parent/'docs/pcb'
 groups=[
-(['12V_IN'],'J5 positive to F1 input, before the fuse. Original outer-layer input route; correct polarity required.'),
-(['12V_FUSED'],'F1 output to all Mini VIN contacts and local capacitors. Original outer-layer bus and feeds; 1 oz copper.'),
+(['12V_IN'],'J5 positive to F1 input, before the fuse. 3+3 top-layer input route; correct polarity required.'),
+(['12V_PREPOL'],'F1 output to Q1 drain before reverse-polarity protection; unprotected positive input.'),
+(['POL_GATE'],'Q1 gate, R2 pull-down to GND and D1 zener anode; D1 cathode joins the source.'),
+(['12V_FUSED'],'Q1 protected source output to all Mini VIN contacts and local capacitors. 3+3 top-layer backbones and feeds; 1 oz copper.'),
 (['3V3'],'Teensy regulator to encoders, CS pull-ups, kill buffers and /OE pull-up. USB powers the Teensy.'),
 (['GND'],'Stitched top/bottom GND fills join supply negative, logic, Minis and capacitor returns. No isolation.'),
 (['SPI_SCK'],'Teensy 13 to all encoders. SH contact assignment is provisional; see README verification table.'),
@@ -34,7 +36,7 @@ axes=json.loads((ROOT/'design/data/design.json').read_text())['axes']
 title='TrueSkate v1 - every net, in plain English'
 intro=('Identical labels are one electrical net. Shared copper remains continuous with any axis unpopulated. '
        'The two shared kill buffers and their bias/bypass parts remain fitted. Plug-in modules perform motor control.')
-labels=['12V_IN','12V_FUSED','3V3','GND','SPI_SCK','SPI_MOSI','SPI_MISO',
+labels=['12V_IN','12V_PREPOL','POL_GATE','12V_FUSED','3V3','GND','SPI_SCK','SPI_MOSI','SPI_MISO',
         'A<n>_PWM<p>','A<n>_EN_CMD','EN_DISABLE','A<n>_EN','A<n>_CS','A<n>_PH<p>']
 footer=('SH pin-to-net order is UNVERIFIED: see README and check the actual AS5048A board with a multimeter. '
         'Opening kill disables EN but does not disconnect 12V; reclosing permits the current command without a latch. '

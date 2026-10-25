@@ -1,7 +1,5 @@
 # Current mechanical layout
 
-See [edge-layout.md](edge-layout.md). Board: 160 × 120 × 1.6 mm. Columns: 25 mm pitch.
-Front is Y=0. JST openings face -Y; Mini rotations are 270° KiCad / not mirrored.
-Mounting holes H1–H4 are (3,82), (157,18), (130,116), (3,110) mm, Ø3.2 mm.
-Teensy first socket contacts are Y=118.03; USB shell projects to Y=120 by PJRC dimensions.
-Use the new `review/drawings/mechanical-fit-review.pdf`; verify actual socket and enclosure tolerances.
+150 × 140 × 1.6 mm; upper A2/A3/A5, lower A1/A4/A6 at 35 mm pitch. Four Ø3.2 mm M3 holes: (4,4), (146,4), (146,136), (4,136) mm. Teensy USB shell is flush at X=0, SD end at PCB X=61.66 mm. Reserve X=61.66…81.66, Y=62.5…77.5 mm for card access.
+
+See the [3+3 report](3plus3-layout.md), [SD drawing](../../pcb/review/drawings/sd-access.svg) and [1:1 fit drawing](../../pcb/review/drawings/mechanical-fit-review.pdf). Actual socket, card, cable and enclosure fit still require checking.

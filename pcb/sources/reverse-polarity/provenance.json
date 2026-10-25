@@ -1,0 +1,12 @@
+{
+  "parts": {
+    "Q1": "C2564",
+    "D1": "C2545",
+    "R2": "C433778"
+  },
+  "source": "Live JLC parts library, browser-read page snapshots in this directory",
+  "manufacturer_datasheet": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irf4905-datasheet-en.pdf",
+  "part_values_verified": true,
+  "uploaded": false,
+  "ordered": false
+}

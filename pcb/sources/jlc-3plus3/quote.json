@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-25",
+  "url": "https://cart.jlcpcb.com/quote",
+  "quantity": 5,
+  "layers": 2,
+  "copper_oz": 1,
+  "thickness_mm": 1.6,
+  "finish": "LeadFree HASL",
+  "colour": "green",
+  "silk": "white",
+  "prices_usd": {
+    "150x100": 12.7,
+    "150x140": 15.8
+  },
+  "excludes": [
+    "shipping",
+    "tax",
+    "assembly"
+  ],
+  "uploaded": false,
+  "ordered": false
+}

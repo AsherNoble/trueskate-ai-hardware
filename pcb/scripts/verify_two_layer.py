@@ -30,5 +30,5 @@ report.update(footprints_preserved=len(actual),layers=2,copper_oz=1,ground_regio
 assert report['max_spi_distance_mm']<=10.2 and report['max_edge_target_distance_mm']<=5.1
 report['scope']='Electrical geometry only; no thermal or impedance qualification. Region interconnection additionally checked in ground-connectivity-review.json.'
 (ROOT/'review/checks/two-layer-ground-review.json').write_text(json.dumps(report,indent=2)+'\n')
-print(f'PASS: 2 layers, 1 oz, {len(actual)} unchanged footprints; {len(vias)} GND vias, island removal enabled on both fills, zero isolated zone islands.')
+print(f'PASS: 2 layers, 1 oz, {len(actual)} footprints match the approved placement baseline; {len(vias)} GND vias, island removal enabled on both fills, zero isolated zone islands.')
 print(f"PASS: every SPI/CS route sampled at <=3mm; maximum distance to a GND stitch {report['max_spi_distance_mm']:.3f}mm; edge targets {report['max_edge_target_distance_mm']:.3f}mm.")

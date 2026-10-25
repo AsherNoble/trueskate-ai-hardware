@@ -1,0 +1,220 @@
+24-hour PCB production. Fast Delivery to United States.
+Coupons
+APP Download
+USD
+Assembly Parts Lib
+For PCBA Only
+Upload BOM
+0
+Parts Cart
+Sign In
+Products
+In Stock Parts
+Bom Tool
+Request a Quote
+Support
+JLCPCB
+Parts Library
+All Components
+Capacitors
+Aluminum Electrolytic Capacitors - Leaded
+EEUFR1V102B
+
+* Images are for reference only
+
+EEUFR1V102B
+Extended
+Manufacturer
+PANASONIC
+MFR.Part #
+EEUFR1V102B
+JLCPCB Part #
+C128476
+Package
+Plugin
+Description
+-40℃~+105℃ 1.95A@120Hz 10000hrs@105℃ 1000uF 35V 5mm ±20% 有极性 Plugin Aluminum Electrolytic Capacitors - Leaded ROHS
+EasyEDA Libraries
+PCB Footprint or Symbol
+ECCN
+EAR99
+Datasheet
+Download
+Source
+JLCPCB
+Assembly Type
+Wave Soldering
+PCBA Type
+Economic and Standard
+
+Note: The purchased components are stored in your JLCPCB parts library for future PCBA orders only, and cannot be shipped separately.
+
+Specifications
+PCB Assembly Tips
+Documents
+PCB Footprint/Symbol
+EEUFR1V102B Specifications
+
+EEUFR1V102B technical specifications, attributes, and parameters.
+
+Report an Error?
+	Attributes	Value
+
+	Category	Capacitors/Aluminum Electrolytic Capacitors - Leaded
+
+	Manufacturer	PANASONIC
+
+	Package	Plugin
+
+	Operating Temperature	-40℃~+105℃
+
+	Lifetime	10000hrs@105℃
+
+	Pin Spacing	5mm
+
+	Voltage Rating	35V
+
+	Tolerance	±20%
+
+	Polarity type	有极性
+
+	Capacitance	1000uF
+
+	Ripple Current	1.95A@120Hz
+Results remaining: 42004
+View Similar
+PCB Assembly Tips
+
+From components to fully assembled PCBs. JLCPCB supports PCB assembly for the EEUFR1V102B. Sign up to receive and start your assembly today →
+
+1
+
+Step 1 - Pre-order the parts you need from JLCPCB.
+
+2
+
+Step 2 - Place a PCBA order to have those parts assembled onto your boards.
+
+3
+
+Step 3 - JLCPCB manufactures and assembles your boards in as fast as 3 days.
+
+Learn more about JLCPCB Assembly
+EEUFR1V102B Documents
+
+EEUFR1V102B datasheets or manufacturer documentation.
+
+Datasheet: EEUFR1V102B Datasheet (PDF)
+
+EEUFR1V102B Schematic Symbol & PCB Footprint
+
+The EEUFR1V102B schematic symbol and PCB footprint are available in the EasyEDA PCB design tool.
+
+In Stock: 0
+
+Minimum: 19
+Full Reel: 500
+$9.45
+Save $30.00
+Pre-order
+
+Pre-order Items Pricing
+
+Estimated unit price: $0.4975
+
+Related Products
+
+EEUFM1V102B
+
+PANASONIC
+
+$0.8838
+
+EEU-FR1V182B
+
+PANASONIC
+
+$0.9705
+
+EEU-FR1V101B
+
+PANASONIC
+
+$0.2182
+
+672D826H050DM5D
+
+Vishay Intertech
+
+$4.2124
+
+UPV1H2R2MFD1TD
+
+Nichicon
+
+$0.1673
+
+B41851A7477M8
+
+TDK
+
+$0.1889
+
+Online Chat >
+Chat with our live agent for fast reply.
+Mon-Fri: 24 hours, Sat: 9am-6pm, GMT+8
+Email Us >
+Contact us at support@jlcpcb.com
+Typically reply within hours.
+Help Center >
+Get instant answers.
+24/7 Available.
+Services & Tools
+Electronic Parts
+BOM Tool
+Request a Quote
+Manufacturers
+PCB Assembly
+Support
+Contact Us
+How to Order
+User Guides
+Sourcing Tips
+Payment Methods
+Company
+About Us
+Quality Assurance
+How We Work
+Certifications
+Security
+JLCAPI
+News
+Cooperation
+Careers
+Electronics
+EasyEDA
+JLCPCB
+JLCDFM
+LCSC
+OSHWLAB
+Mechanical
+JLC3DP
+JLCCNC
+JLCMC
+
+Download JLCONE Desktop—Get $524 Exclusive Coupons
+
+Windows
+MAC
+Android
+IOS
+
+CONNECT WITH US
+
+© 2026 JLCPCB.COM All Rights Reserved.
+Privacy Policy
+Terms & Conditions
+Cookies Policy
+Do Not Sell or Share My Personal Information
+Welcome back, may I help you?
+Chat Now

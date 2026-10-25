@@ -1,8 +1,8 @@
 {
   "status": "EDGE CARRIER REVIEW - NOT RELEASED FOR MANUFACTURE",
   "board_mm": [
-    160,
-    120
+    150,
+    140
   ],
   "layers": 2,
   "copper_oz": 1,

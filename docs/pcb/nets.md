@@ -4,8 +4,10 @@ Identical labels are one electrical net. Shared copper remains continuous with a
 
 | Net or repeated family | What it connects and why |
 |---|---|
-| `12V_IN` | J5 positive to F1 input, before the fuse. Original outer-layer input route; correct polarity required. |
-| `12V_FUSED` | F1 output to all Mini VIN contacts and local capacitors. Original outer-layer bus and feeds; 1 oz copper. |
+| `12V_IN` | J5 positive to F1 input, before the fuse. 3+3 top-layer input route; correct polarity required. |
+| `12V_PREPOL` | F1 output to Q1 drain before reverse-polarity protection; unprotected positive input. |
+| `POL_GATE` | Q1 gate, R2 pull-down to GND and D1 zener anode; D1 cathode joins the source. |
+| `12V_FUSED` | Q1 protected source output to all Mini VIN contacts and local capacitors. 3+3 top-layer backbones and feeds; 1 oz copper. |
 | `3V3` | Teensy regulator to encoders, CS pull-ups, kill buffers and /OE pull-up. USB powers the Teensy. |
 | `GND` | Stitched top/bottom GND fills join supply negative, logic, Minis and capacitor returns. No isolation. |
 | `SPI_SCK` | Teensy 13 to all encoders. SH contact assignment is provisional; see README verification table. |

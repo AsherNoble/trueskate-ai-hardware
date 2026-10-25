@@ -38,22 +38,22 @@
       "silk"
     ]
   ],
-  "plated_drill_hits": 721,
+  "plated_drill_hits": 773,
   "nonplated_drill_hits": 4,
   "outline_bounds_mm_including_0_05mm_plot_stroke": [
     [
       -0.025,
-      -120.025
+      -140.025
     ],
     [
-      160.025,
+      150.025,
       0.025
     ]
   ],
   "previews_from": "exported copper, silkscreen, outline and Excellon; both copper sides viewed from top. Solder mask not shown in these unmasked-copper checks",
   "parser_warnings": [
     "/Users/ashernoble/Projects/Robotics & hardware/trueskate-ai-hardware/pcb/manufacturing/gerbers/trueskate-main-v1-NPTH.drl:12 \"G90\": G90 header statement found after end of header",
-    "/Users/ashernoble/Projects/Robotics & hardware/trueskate-ai-hardware/pcb/manufacturing/gerbers/trueskate-main-v1-PTH.drl:26 \"G90\": G90 header statement found after end of header"
+    "/Users/ashernoble/Projects/Robotics & hardware/trueskate-ai-hardware/pcb/manufacturing/gerbers/trueskate-main-v1-PTH.drl:32 \"G90\": G90 header statement found after end of header"
   ],
   "note": "The G90-after-header warnings concern KiCad command placement; parser successfully reads the absolute-coordinate drill files."
 }

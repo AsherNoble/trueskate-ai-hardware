@@ -69,7 +69,7 @@ def main():
  reviewed_erc=json.loads((ROOT/'review/checks/erc-review.json').read_text())
  assert erc['ignored_checks']==reviewed_erc['ignored_checks'],'ERC configuration changed since review'
  geometry=json.loads(subprocess.check_output([KPY,str(Path(__file__).resolve()),'--collect-geometry'],text=True))
- assert geometry['layers']==2 and geometry['board_mm']==[160.,120.]
+ assert geometry['layers']==2 and geometry['board_mm']==[150.,140.]
  assert all(v['front_tented']and v['back_tented']for v in geometry['vias'])
  run([CLI,'pcb','export','gerbers','--layers',LAYERS,'--subtract-soldermask','--check-zones','--precision','6','--output',GERBERS,PCB])
  run([CLI,'pcb','export','drill','--format','excellon','--drill-origin','absolute','--excellon-units','mm','--excellon-zeros-format','decimal','--excellon-oval-format','alternate','--excellon-separate-th','--generate-report','--report-path',CHECKS/'drill-report.txt','--output',GERBERS,PCB])
@@ -94,9 +94,10 @@ def main():
  with zipfile.ZipFile(ZIP)as z:
   assert z.testzip()is None and len(z.namelist())==12 and all('/'not in n for n in z.namelist())
  revision=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
- report=dict(exported_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),source_commit=revision,source_pcb=str(PCB.relative_to(ROOT)),source_pcb_sha256=source_hash,kicad_version=drc['kicad_version'],board_mm=geometry['board_mm'],layers=2,copper_oz=1,nominal_thickness_mm=1.6,erc='PASS (existing reviewed configuration)',erc_ignored_checks=erc['ignored_checks'],strict_drc='PASS (no ignored checks)',plated_holes=sum(h['plated']for h in actual),nonplated_holes=sum(not h['plated']for h in actual),native_hole_match='All hits matched; metric decimal coordinates rounded to 0.001mm by KiCad',max_drill_position_error_mm=max(errors),drill_coordinate_resolution_mm=.001,vias=len(geometry['vias']),via_tenting='front and back',drill_origin='absolute, shared with Gerbers; no mirroring',layers_exported=LAYERS.split(','),files_sha256={p.name:digest(p)for p in sorted(files)},zip_filename=ZIP.name,zip_sha256=digest(ZIP),zip_crc='PASS',uploaded=False,order_placed=False)
+ report=dict(exported_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),source_commit=revision,source_worktree_dirty=bool(subprocess.check_output(['git','status','--porcelain'],cwd=ROOT,text=True).strip()),source_pcb=str(PCB.relative_to(ROOT)),source_pcb_sha256=source_hash,kicad_version=drc['kicad_version'],board_mm=geometry['board_mm'],layers=2,copper_oz=1,nominal_thickness_mm=1.6,erc='PASS (existing reviewed configuration)',erc_ignored_checks=erc['ignored_checks'],strict_drc='PASS (no ignored checks)',plated_holes=sum(h['plated']for h in actual),nonplated_holes=sum(not h['plated']for h in actual),native_hole_match='All hits matched; metric decimal coordinates rounded to 0.001mm by KiCad',max_drill_position_error_mm=max(errors),drill_coordinate_resolution_mm=.001,vias=len(geometry['vias']),via_tenting='front and back',drill_origin='absolute, shared with Gerbers; no mirroring',layers_exported=LAYERS.split(','),files_sha256={p.name:digest(p)for p in sorted(files)},zip_filename=ZIP.name,zip_sha256=digest(ZIP),zip_crc='PASS',uploaded=False,order_placed=False)
  (CHECKS/'native-geometry.json').write_text(json.dumps(geometry,indent=2)+'\n')
  (OUT/'manifest.json').write_text(json.dumps(report,indent=2)+'\n')
+ run([sys.executable,ROOT/'scripts/export_assembly.py'])
  print('Created',ZIP,flush=True);print('Drills:',report['plated_holes'],'plated,',report['nonplated_holes'],'non-plated. Source PCB unchanged.',flush=True)
 if __name__=='__main__':
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--collect-geometry',action='store_true');args=parser.parse_args()

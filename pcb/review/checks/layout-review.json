@@ -1,7 +1,7 @@
 {
   "board_mm": [
-    160,
-    120
+    150,
+    140
   ],
   "mini_courtyard_offset_mm": 0.5,
   "measured_minimum_offset_mm": 0.498522,
@@ -71,5 +71,19 @@
   "min_body_to_outline_mm": 2.9136,
   "min_body_to_courtyard_mm": 2.4138,
   "encoder_lane_exceptions": [],
-  "keystone_parts_per_fuse": 1
+  "keystone_parts_per_fuse": 1,
+  "sd_service": {
+    "rect_mm": [
+      61.66,
+      62.5,
+      81.66,
+      77.5
+    ],
+    "width_mm": 15,
+    "length_mm": 20,
+    "nearest_component_courtyard_gap_mm": 14.5,
+    "nearest_component": "C13",
+    "teensy_pcb_sd_edge_x_mm": 61.66,
+    "physical_socket_revision_verified": false
+  }
 }

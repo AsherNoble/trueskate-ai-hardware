@@ -1,0 +1,246 @@
+24-hour PCB production. Fast Delivery to United States.
+Coupons
+APP Download
+USD
+Assembly Parts Lib
+For PCBA Only
+Upload BOM
+0
+Parts Cart
+Sign In
+Products
+In Stock Parts
+Bom Tool
+Request a Quote
+Support
+JLCPCB
+Parts Library
+All Components
+Connectors
+Wire To Board Connector
+SM06B-SRSS-TB
+
+* Images are for reference only
+
+SM06B-SRSS-TB
+Extended
+Manufacturer
+JST
+MFR.Part #
+SM06B-SRSS-TB
+JLCPCB Part #
+C7588156
+Package
+SMD,P=1mm,Surface Mount，Right Angle
+Description
+-25℃~+85℃ 1 1A 1mm 1x6P 2.9mm 4.32mm 50V 6 6P 8mm Auxiliary Solder Pin Copper alloy PA SH Surface Mount, Right Angle Tin UL94V-0 White SMD,P=1mm,卧贴 Wire To Board Connector ROHS
+EasyEDA Libraries
+PCB Footprint or Symbol
+ECCN
+EAR99
+Datasheet
+Download
+Source
+JLCPCB
+Assembly Type
+SMT Assembly
+PCBA Type
+Economic and Standard
+MSL Level
+MSL 1
+
+Note: The purchased components are stored in your JLCPCB parts library for future PCBA orders only, and cannot be shipped separately.
+
+Specifications
+PCB Assembly Tips
+Documents
+PCB Footprint/Symbol
+SM06B-SRSS-TB Specifications
+
+SM06B-SRSS-TB technical specifications, attributes, and parameters.
+
+Report an Error?
+	Attributes	Value
+
+	Category	Connectors/Wire To Board Connector
+
+	Manufacturer	JST
+
+	Package	SMD,P=1mm,Surface Mount，Right Angle
+
+	Operating Temperature	-25℃~+85℃
+
+	Number of Rows	1
+
+	Voltage Rating	50V
+
+	Color	White
+
+	Current Rating	1A
+
+	Pins Structure	1x6P
+
+	Mounting Type	Surface Mount, Right Angle
+
+	Flame Retardant Rating	UL94V-0
+
+	Y-Width of Bottom Edge on Board	4.32mm
+
+	X-Length of Bottom Edge on Board (Spacing Line)	8mm
+
+	Reference Series	SH
+
+	Contact Plating	Tin
+
+	Number of Pins	6P
+
+	Pitch	1mm
+
+	Contact Material	Copper Alloy
+
+	Supplementary Features	Auxiliary Solder Pin
+
+	Z-Height of the Board	2.9mm
+
+	Plastic Material	PA
+
+	Number of PINs Per Row	6
+Results remaining: 96260
+View Similar
+PCB Assembly Tips
+
+From components to fully assembled PCBs. JLCPCB supports PCB assembly for the SM06B-SRSS-TB. Sign up to receive and start your assembly today →
+
+1
+
+Step 1 - Pre-order the parts you need from JLCPCB.
+
+2
+
+Step 2 - Place a PCBA order to have those parts assembled onto your boards.
+
+3
+
+Step 3 - JLCPCB manufactures and assembles your boards in as fast as 3 days.
+
+Learn more about JLCPCB Assembly
+SM06B-SRSS-TB Documents
+
+SM06B-SRSS-TB datasheets or manufacturer documentation.
+
+Datasheet: SM06B-SRSS-TB Datasheet (PDF)
+
+SM06B-SRSS-TB Schematic Symbol & PCB Footprint
+
+The SM06B-SRSS-TB schematic symbol and PCB footprint are available in the EasyEDA PCB design tool.
+
+In Stock: 0
+
+Minimum: 54
+Full Reel: 1000
+Consign Part
+Request a Quote
+
+Estimated unit price: $0.1684
+
+The component is currently unavailable for purchase but can still be used in assembly.
+
+You may send us this part for your future PCBA orders.
+
+How to consign parts →
+Related Products
+
+SM05B-SRSS-TB
+
+JLCPCB Assembly
+
+$0.0398
+
+SM05B-SRSS-TB
+
+JST
+
+$0.3436
+
+BM06B-SRSS-TB
+
+JLCPCB Assembly
+
+$0.0398
+
+HCZZ0032-10
+
+Hong Cheng
+
+$0.0688
+
+1.0K-BH-2PWB
+
+HDGC
+
+$0.0439
+
+WT100E1W-183R-001
+
+ZGWD
+
+$0.1493
+
+Online Chat >
+Chat with our live agent for fast reply.
+Mon-Fri: 24 hours, Sat: 9am-6pm, GMT+8
+Email Us >
+Contact us at support@jlcpcb.com
+Typically reply within hours.
+Help Center >
+Get instant answers.
+24/7 Available.
+Services & Tools
+Electronic Parts
+BOM Tool
+Request a Quote
+Manufacturers
+PCB Assembly
+Support
+Contact Us
+How to Order
+User Guides
+Sourcing Tips
+Payment Methods
+Company
+About Us
+Quality Assurance
+How We Work
+Certifications
+Security
+JLCAPI
+News
+Cooperation
+Careers
+Electronics
+EasyEDA
+JLCPCB
+JLCDFM
+LCSC
+OSHWLAB
+Mechanical
+JLC3DP
+JLCCNC
+JLCMC
+
+Download JLCONE Desktop—Get $524 Exclusive Coupons
+
+Windows
+MAC
+Android
+IOS
+
+CONNECT WITH US
+
+© 2026 JLCPCB.COM All Rights Reserved.
+Privacy Policy
+Terms & Conditions
+Cookies Policy
+Do Not Sell or Share My Personal Information
+Welcome back, may I help you?
+Chat Now

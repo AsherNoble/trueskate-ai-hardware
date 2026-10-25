@@ -1,0 +1,71 @@
+{
+  "scope": "Accepted v1 prototype decisions; documentation/export only, no board or firmware changes",
+  "outstanding_items": [
+    "1:1 print fit check",
+    "SH pin order verification",
+    "Optional human review"
+  ],
+  "human_review_required": false,
+  "q1": {
+    "heat_sink_required": false,
+    "readme_note": "Q1 needs no heat sink below ~5 A continuous.",
+    "continuous_operating_current": "A few amps, bench PSU current-limited",
+    "copper_sizing_worst_case_a": 12,
+    "rds_on_reference_ohm": 0.02,
+    "loss_at_3A_w": 0.18,
+    "loss_at_5A_w": 0.5,
+    "status": "accepted for v1"
+  },
+  "out_of_scope": [
+    "Charged-output polarity reversal",
+    "Inrush testing",
+    "Surge testing",
+    "Sustained12A operating-temperature qualification"
+  ],
+  "kill_supply_ramp": {
+    "status": "accepted for v1",
+    "rationale": "No PWM drive while 3.3V ramps; firmware boots motor disabled and initFOC runs only on command. EN alone is not a motion command.",
+    "electrical_guarantee": "Original buffer DC guarantees are unchanged; acceptance is a system/operating-scope decision."
+  },
+  "encoder_3v3_budget": {
+    "pjrc_external_recommended_max_ma": 250,
+    "encoder_count": 6,
+    "assumed_encoder_ma_each": 15,
+    "encoder_nominal_total_ma": 90,
+    "remaining_before_buffers_and_bias_ma": 160,
+    "conclusion": "Within the external3.3V allowance with buffers and bias circuitry; accepted for v1",
+    "source": "https://www.pjrc.com/store/teensy41.html#power"
+  },
+  "spi_return_paths": {
+    "status": "accepted for v1",
+    "retain_measured_audit": true,
+    "clock_policy_mhz": [
+      1,
+      4
+    ],
+    "mitigation": "Reduce SPI clock further if encoder reads glitch",
+    "firmware_changed": false
+  },
+  "sources": [
+    "https://www.pjrc.com/store/teensy41.html#power",
+    "https://www.ti.com/lit/ds/symlink/sn74lv125a.pdf"
+  ],
+  "assembly": {
+    "references": [],
+    "manufacturer": "JST",
+    "mpn": "SM06B-SRSS-TB(LF)(SN)",
+    "lcsc": "C160405",
+    "replaces_supplier_code": "C7588156",
+    "reason": "Same connector/package lead-free/tin variant; original listing out of stock, C160405 stocked at verification",
+    "pcb_changed": false,
+    "mode": "bare-pcb",
+    "default": "No factory assembly; all parts including J31-J36 hand soldered"
+  },
+  "assembly_comparison": {
+    "policy": "Use only currently stocked JLC library parts; no sourcing or consignment",
+    "board_changes_authorized": false,
+    "full_carrier_status": "Blocked: exact PDIP kill buffers C1548088 and bulk capacitors C128476 have zero stock; matched Mini socket set unresolved",
+    "scope_parts_per_board": 79,
+    "selected_option": "bare-pcb"
+  }
+}

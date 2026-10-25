@@ -1,0 +1,244 @@
+24-hour PCB production. Fast Delivery to United States.
+Coupons
+APP Download
+USD
+Assembly Parts Lib
+For PCBA Only
+Upload BOM
+0
+Parts Cart
+Sign In
+Products
+In Stock Parts
+Bom Tool
+Request a Quote
+Support
+JLCPCB
+Parts Library
+All Components
+Transistors/Thyristors
+MOSFETs
+IRF4905PBF
+
+* Images are for reference only
+
+IRF4905PBF
+Extended
+Manufacturer
+Infineon Technologies
+MFR.Part #
+IRF4905PBF
+JLCPCB Part #
+C2564
+Package
+TO-220AB
+Description
+-55℃~+175℃ 1 P-Channel 180nC@10V 200W 20mΩ@10V 3.4nF 4V 55V 640pF 74A P-Channel TO-220AB MOSFETs ROHS
+EasyEDA Libraries
+PCB Footprint or Symbol
+ECCN
+EAR99
+Datasheet
+Download
+Source
+JLCPCB
+Assembly Type
+Wave Soldering
+PCBA Type
+Economic and Standard
+MSL Level
+MSL 1
+
+Note: The purchased components are stored in your JLCPCB parts library for future PCBA orders only, and cannot be shipped separately.
+
+Specifications
+PCB Assembly Tips
+Documents
+PCB Footprint/Symbol
+IRF4905PBF Specifications
+
+IRF4905PBF technical specifications, attributes, and parameters.
+
+Report an Error?
+	Attributes	Value
+
+	Category	Transistors/Thyristors/MOSFETs
+
+	Manufacturer	Infineon Technologies
+
+	Package	TO-220AB
+
+	Operating Temperature	-55℃~+175℃
+
+	Vgs	±20V
+
+	Gate Charge(Qg)	180nC@10V
+
+	Reverse Transfer Capacitance (Crss@Vds)	640pF
+
+	Current - Continuous Drain(Id)	74A
+
+	Drain to Source Voltage	55V
+
+	Output Capacitance(Coss)	1.4nF
+
+	RDS(on)	20mΩ@10V
+
+	Input Capacitance(Ciss)	3.4nF
+
+	Type	P-Channel
+
+	Gate Threshold Voltage (Vgs(th))	4V
+
+	Number	1 P-Channel
+
+	Pd - Power Dissipation	200W
+Results remaining: 75826
+View Similar
+PCB Assembly Tips
+
+From components to fully assembled PCBs. JLCPCB supports PCB assembly for the IRF4905PBF. Sign up to receive and start your assembly today →
+
+1
+
+Step 1 - Pre-order the parts you need from JLCPCB.
+
+2
+
+Step 2 - Place a PCBA order to have those parts assembled onto your boards.
+
+3
+
+Step 3 - JLCPCB manufactures and assembles your boards in as fast as 3 days.
+
+Learn more about JLCPCB Assembly
+IRF4905PBF Documents
+
+IRF4905PBF datasheets or manufacturer documentation.
+
+Datasheet: IRF4905PBF Datasheet (PDF)
+
+IRF4905PBF Schematic Symbol & PCB Footprint
+
+The IRF4905PBF schematic symbol and PCB footprint are available in the EasyEDA PCB design tool.
+
+In Stock: 21,377
+
+Minimum: 1
+Full Reel: 50
+$0.62
+Save $30.00
+Add to My Part Lib for Assembly
+
+Available Order Qty: 21,268
+
+Qty
+Unit Price
+1+
+$0.6154
+10+
+$0.5106
+50+
+$0.4517
+100+
+$0.3912
+500+
+$0.3715
+1000+
+$0.3601
+Related Products
+
+IRF4905SPbF
+
+JLCPCB Assembly
+
+$0.0398
+
+IRF4905SPbF
+
+JLCPCB Assembly
+
+$0.0007
+
+IRF4905LPBF
+
+Infineon Technologies
+
+$3.1307
+
+IRF710
+
+onsemi
+
+$0.4332
+
+PHP23NQ11T-VB
+
+VBsemi Elec
+
+$0.5859
+
+OSP30P03T
+
+OSEN
+
+$0.2437
+
+Online Chat >
+Chat with our live agent for fast reply.
+Mon-Fri: 24 hours, Sat: 9am-6pm, GMT+8
+Email Us >
+Contact us at support@jlcpcb.com
+Typically reply within hours.
+Help Center >
+Get instant answers.
+24/7 Available.
+Services & Tools
+Electronic Parts
+BOM Tool
+Request a Quote
+Manufacturers
+PCB Assembly
+Support
+Contact Us
+How to Order
+User Guides
+Sourcing Tips
+Payment Methods
+Company
+About Us
+Quality Assurance
+How We Work
+Certifications
+Security
+JLCAPI
+News
+Cooperation
+Careers
+Electronics
+EasyEDA
+JLCPCB
+JLCDFM
+LCSC
+OSHWLAB
+Mechanical
+JLC3DP
+JLCCNC
+JLCMC
+
+Download JLCONE Desktop—Get $524 Exclusive Coupons
+
+Windows
+MAC
+Android
+IOS
+
+CONNECT WITH US
+
+© 2026 JLCPCB.COM All Rights Reserved.
+Privacy Policy
+Terms & Conditions
+Cookies Policy
+Do Not Sell or Share My Personal Information
+Welcome back, may I help you?
+Chat Now

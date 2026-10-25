@@ -45,7 +45,7 @@ def write_schematic(root,project,parts,pages,uid):
         s+=f'(property "Sheetname" {q(data["title"])} (at {x} {y-1.27} 0) {eff(1,"(justify left bottom)")}) '
         s+=f'(property "Sheetfile" "{pg}.kicad_sch" (at {x} {y+36.27} 0) {eff(1,"(justify left top)")}) '
         s+=f'(instances (project "{project}" (path "/{uid("root")}" (page "{i+2}"))))) '
-    notes=["REVIEW PACKAGE - STOP BEFORE MANUFACTURING EXPORTS","USB-powered Teensy / six socketed Minis / JST SMD + hand THT / fused 12V motor power","Identical global labels are the same connection. Hardware kill buffers gate all six EN lines.","Drill-verified Mini v1.0 footprint; encoder contact 1 and 160 x 120 mm base retained. Review before ordering."]
+    notes=["REVIEW PACKAGE - STOP BEFORE MANUFACTURING EXPORTS","USB-powered Teensy / six socketed Minis / JST SMD + hand THT / fused 12V motor power","Identical global labels are the same connection. Hardware kill buffers gate all six EN lines.","Drill-verified Mini v1.0 footprint; unchanged encoder mapping; 3+3 placement, 150 x 140 mm. Review before ordering."]
     for n,note in enumerate(notes): s+=f'(text {q(note)} (at 15 {15+n*5} 0) {eff(1.2,"(justify left)")} (uuid {uid("root-note"+str(n))})) '
     (root/(project+".kicad_sch")).write_text(s+f'(sheet_instances (path "/" (page "1"))))\n')
 def write_project(root,project,parts):

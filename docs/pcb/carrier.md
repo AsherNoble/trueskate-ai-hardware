@@ -1,15 +1,8 @@
 # Six-axis edge connector carrier — review only
 
-160 × 120 mm, **two layers, 1 oz copper on each side**. No board growth. Six columns at 25 mm pitch;
-front is Y=0, back is Y=120. J21–J26 motor headers and J31–J36 encoder connectors
-sit at the front. Minis are rotated 90° in-plane, component side up, never mirrored.
-The Mini courtyard follows the tagged GKO outline plus 0.5 mm. Bulk and ceramic bodies are outside it; the measured minimum body gap is 2.9136 mm to the Mini outline (2.4138 mm to its courtyard).
-J5 input, F1 fuse and J6 kill header occupy the back. Teensy USB faces the back;
-first socket contacts are at Y=118.03. PJRC dimensions give 1.27 mm from first contact to PCB end plus 0.70 mm USB-shell projection, placing the USB end at Y=120.00. Verify the actual cable shell clearance.
+**150 × 140 mm, two layers, 1 oz each side.** Upper bank A2/A3/A5, lower A1/A4/A6; 35 mm pitch. Teensy horizontal with USB flush at the left edge and a clear 15 × 20 mm SD service area at its right end. Input, fuse, kill header and buffers occupy the right end. Mini geometry, pin map and SH mapping are unchanged. Q1 now adds fused high-side reverse-input protection; see the [protection/silkscreen revision](reverse-polarity-silkscreen.md). See the [3+3 report](3plus3-layout.md) for dimensions, measured gaps and limitations.
 
-Only J31–J36 (JST SM06B-SRSS-TB, side entry, mouth toward -Y) are JLC assembled.
-Other fitted components are hand-soldered through-hole. The JST shell opening is
-0.725 mm inside the front outline to retain copper-to-edge clearance.
+All carrier parts are hand soldered, including the J31–J36 JST SH connectors facing their respective long edges. The JSTs are SMD; other fitted parts are through-hole.
 
 ## Encoder harness mapping
 
@@ -41,17 +34,16 @@ low-input limit. An actively driven low during boot has a lower bound ceiling of
 0.265 V. These are datasheet DC calculations, not measured waveforms. They assume
 intact grounds, populated pull-downs, no back-powering, carrier resistors ≤5% and
 Mini R4 ≤10% tolerance. The supply transition between 0 and 2 V is outside the
-buffer's guaranteed operating range; a glitch-free supply-ramp guarantee is not
-established by this circuit or by ERC.
+buffer's guaranteed operating range. For v1 this is accepted: PWM is not driven during the ramp, firmware boots disabled and initFOC runs only on command. No separate supply-ramp test remains outstanding.
 
 Kill inhibits EN, not 12 V. Reclosing permits the current firmware command;
 there is no restart latch. See `review/checks/kill-state-review.json` for checks and bounds.
 
 Every axis may be omitted: J1n, J2n, J3n, C1n, C2n, R2n, R3n and R4n are optional
 as a column. Fit its EN pull-down with its Mini and its CS pull-up with its encoder.
-Shared copper does not pass through optional parts. Shared U1/U2, C1/C2, R1, Teensy,
+Shared copper does not pass through optional parts. Shared Q1/D1/R2, U1/U2, C1/C2, R1, Teensy,
 input/fuse and the NC loop must be fitted for operation. Firmware must address only
-present encoders. The USB-powered 3.3 V rail still needs a six-encoder load check.
+present encoders. The six-encoder nominal load is ~90 mA, within PJRC’s 250 mA recommended external 3.3 V allowance including the buffers/bias circuitry; this budget is accepted for v1.
 
 ## Unchanged Teensy allocation
 
@@ -73,7 +65,7 @@ They are not six independently frequency-programmable motor groups. SPI remains
 **Two layers, 1 oz, by user decision. Copper/thermal qualification is stopped.**
 The historical four-layer results remain in [copper-options.md](copper-options.md).
 They do not qualify this two-layer board. The current five-board JLC quote is
-**US$14.80**, excluding shipping, tax and assembly.
+**US$15.80**, excluding shipping, tax and assembly.
 
 ## Fuse and power routing
 
@@ -86,28 +78,17 @@ amperage; the replaceable fuse is separate from the holder. The earlier 12 A des
 
 The custom footprint comes from Keystone's drawing: 13.47 × 3.40 mm hole centres,
 four ≥1.60 mm holes (1.65 mm selected), two electrical pads with two legs each.
-The original outer-layer power bus and Mini feeds are restored from checkpoint
-`62ef1ea`'s conversion log. Both copper layers are nominal 35 µm. The bottom GND
-pour extends to all available board area subject to the existing clearances;
-the top GND pour is retained. Disconnected islands are removed automatically.
-The independent geometry audit confirms one connected GND network and zero
-floating regions. See [two-layer review](two-layer-ground.md).
+Power uses 12 mm shared backbones/trunk, 6 mm fuse/input paths, 2 mm Mini branches and 1 mm phases. These target shared 12 A and per-axis/phase 2.5 A; qualification remains stopped. GND fills both layers, with 389 stitches and one connected network. No floating ground regions remain. The user accepted gaps in continuous opposite-side GND reference; exact measured gaps and long bottom runs are documented in the [3+3 report](3plus3-layout.md).
 
 ## Encoder routing
 
-Each encoder's SPI, CS, 3V3 and GND escape runs down the right/JST half of its
-column. The bundles jog around the Mini power annuli, then join the shared rear
-routing area behind the Minis. Autorouter exclusion areas protect the phase-side
-corridors. The final native-copper audit reports any exception in `review/checks/layout-review.json`.
-There are no column exceptions. GND stitching follows every SPI/CS bundle and
-all four board edges: **347 total GND vias**, including 306 added to the baseline.
-The two-layer layout does not have a dedicated unbroken reference plane.
+All six bundles avoid their phase-side corridors; no column exceptions. Global JST side reverses for the rotated lower bank. Separation, rather than a universal ban on parallel geometry, is the routing objective.
 
 ## Populated assembly views
 
 [Top](../../pcb/renders/populated-top.png),
 [front perspective](../../pcb/renders/populated-perspective.png), and
-[rear perspective](../../pcb/renders/populated-rear.png) show all six Minis, the
+[bottom view](../../pcb/renders/populated-bottom.png) show all six Minis, the
 Teensy, single power receptacles and fuse assembly fitted to the current carrier.
 Added module models are simplified; see [model assumptions](../../pcb/renders/README.md).
 
@@ -121,23 +102,13 @@ Added module models are simplified; see [model assumptions](../../pcb/renders/RE
 - `renders/bare/top-review.png`, `renders/bare/3d-review.png`, `renders/bare/bottom-review.png`: native KiCad renders;
   plug-in modules, fuse holder/fuse, single power receptacles, external switch
   and cables are omitted.
-- `bom/bom-review.csv`, `bom/bom-diff.md`: current BOM and changes from commit f5fce90.
+- `bom/bom-review.csv`, `bom/bom-diff.md`: current BOM and changes from rollback commit 800ba4a.
 - `review/drawings/schematic-review.pdf`, `review/drawings/mechanical-fit-review.pdf`, `review/drawings/net-guide-review.pdf`.
 - `review/drawings/mini-drill-overlay.png`, `review/checks/mini-fit-report.json`: exact tagged Mini geometry.
 - `review/checks/drc-review.json`, `review/checks/erc-review.json`, `review/checks/review-status.json`: validation evidence.
-- [Relayout report](edge-layout.md): decisions and outstanding requirements.
+- [Relayout report](3plus3-layout.md): decisions and outstanding requirements.
 
-Run `scripts/rebuild.py` with KiCad's Python to regenerate/import the frozen outer-layer
-routing session, restore the two-layer/1 oz stack with `scripts/convert_two_layer.py`, and
-add the two passes of `scripts/stitch_ground.py`. Run `scripts/export_review.py` with Python 3
-and `reportlab`, `pypdf`, `Pillow`, and `shapely` installed
-for strict checks and review exports. Changing placement or mapping requires a new
-signal-routing session. Project-local Edge_ footprints preserve manufacturer pad,
-courtyard and 3D geometry while moving crowded body silkscreen to fabrication layers.
-No manufacturing exports are generated. Older `archive/fabrication/` and `archive/mockups/` files
-are historical and do not describe this revision. The old `four-layer-*`,
-`l2-ground-review.*` and `l3-power-review.*` files also describe the archived
-four-layer checkpoint only.
+Run `scripts/rebuild.py` with KiCad Python: generate placement/manual copper, import the frozen SES and recorded signal completions, trim redundant tails, fill and replay reviewed ground stitches. The old conversion/ground-finishing tools describe the earlier layout and are not part of this rebuild. Run `scripts/export_review.py` with Python plus ReportLab, pypdf, Pillow and Shapely for strict checks and review material. Run `scripts/export_manufacturing.py` for the validated current ZIP; no upload/order occurs. Historical files are under `pcb/archive/`.
 
 Sources: [JST SH datasheet](https://www.jst-mfg.com/product/pdf/eng/eSH.pdf),
 [TI SN74LV125A](https://www.ti.com/lit/ds/symlink/sn74lv125a.pdf),
@@ -146,3 +117,5 @@ Sources: [JST SH datasheet](https://www.jst-mfg.com/product/pdf/eng/eSH.pdf),
 [Keystone 3557-2](https://www.keyelco.com/product.cfm/product_id/296),
 [Keystone dimensional drawing](https://www.keyelco.com/product-pdf.cfm?p=296),
 [DRV8313 logic limits](https://www.ti.com/lit/ds/symlink/drv8313.pdf).
+
+Current prototype decisions and the only outstanding items are in the [protection/silkscreen report](reverse-polarity-silkscreen.md). Q1 needs no heat sink below ~5 A continuous; charged-output reversal, inrush and surge tests are outside v1 scope. SPI/return paths are accepted for v1 with the documented clock policy.

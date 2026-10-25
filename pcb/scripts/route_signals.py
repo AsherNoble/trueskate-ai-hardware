@@ -10,6 +10,7 @@ from pathlib import Path
 import re
 import sys
 import pcbnew as k
+from layout_3plus3 import WIDTH, HEIGHT, axis_point
 
 ROOT=Path(__file__).resolve().parents[1]
 PCB=ROOT/"design/trueskate-main-v1.kicad_pcb"
@@ -38,7 +39,10 @@ def export():
     # Routing-only exclusion regions protect all phase corridors. Fixed
     # encoder escape tracks already reach the legal routing area below/right.
     keepouts=[]
-    regions=[(0,0,160,17)]+[(3+25*i,17,17.5+25*i,44.75) for i in range(6)]
+    regions=[]
+    for i in range(1,7):
+        a,z=axis_point(i,-2,0),axis_point(i,12.5,34.75)
+        regions.append((min(a[0],z[0]),min(a[1],z[1]),max(a[0],z[0]),max(a[1],z[1])))
     for i,(x0,y0,x1,y1) in enumerate(regions):
         for layer in ('F.Cu','B.Cu'):
             keepouts.append(f'    (keepout route_guard_{i}_{layer} (rect {layer} {x0*1000:g} {-y1*1000:g} {x1*1000:g} {-y0*1000:g}))')
@@ -59,7 +63,7 @@ def imp():
         # 0.65mm inside the board (>=0.5mm to a 0.25mm trace edge).
         if not isinstance(copied,k.PCB_VIA):
             for getter,setter in [(copied.GetStart,copied.SetStart),(copied.GetEnd,copied.SetEnd)]:
-                q=getter();q.y=max(k.FromMM(.65),min(q.y,k.FromMM(119.35)));q.x=max(k.FromMM(.65),min(q.x,k.FromMM(159.35)));setter(q)
+                q=getter();q.y=max(k.FromMM(.65),min(q.y,k.FromMM(HEIGHT-.65)));q.x=max(k.FromMM(.65),min(q.x,k.FromMM(WIDTH-.65)));setter(q)
         original.Add(copied);count+=1
     k.ZONE_FILLER(original).Fill(original.Zones())
     k.SaveBoard(str(PCB),original,True)

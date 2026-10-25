@@ -39,5 +39,6 @@
     "Boot state uses valid 3.3V rail and high-impedance GPIO without a pull-up",
     "No external back-powering; all GND connections intact"
   ],
-  "scope": "Datasheet DC analysis, not an oscilloscope measurement; the 0<VCC<2V transition is outside the buffer recommended operating range"
+  "scope": "Datasheet DC analysis, not an oscilloscope measurement; the 0<VCC<2V transition is outside the buffer recommended operating range",
+  "prototype_supply_ramp_status": "accepted for v1: no PWM during supply ramp; boot disabled and initFOC only on command"
 }

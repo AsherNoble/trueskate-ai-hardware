@@ -1,0 +1,350 @@
+[
+  {
+    "ref": "J31",
+    "x_mm": 16.0,
+    "y_mm": 136.7,
+    "rotation_deg": 0.0,
+    "footprint": "Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
+    "value": "SM06B-SRSS-TB",
+    "pads": [
+      {
+        "number": "1",
+        "net": "SPI_SCK",
+        "x_mm": 13.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "2",
+        "net": "SPI_MISO",
+        "x_mm": 14.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "3",
+        "net": "SPI_MOSI",
+        "x_mm": 15.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "4",
+        "net": "A1_CS",
+        "x_mm": 16.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "5",
+        "net": "3V3",
+        "x_mm": 17.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "6",
+        "net": "GND",
+        "x_mm": 18.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "x_mm": 12.2,
+        "y_mm": 138.575
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "x_mm": 19.8,
+        "y_mm": 138.575
+      }
+    ]
+  },
+  {
+    "ref": "J32",
+    "x_mm": 26.0,
+    "y_mm": 3.3,
+    "rotation_deg": 180.0,
+    "footprint": "Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
+    "value": "SM06B-SRSS-TB",
+    "pads": [
+      {
+        "number": "1",
+        "net": "SPI_SCK",
+        "x_mm": 28.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "2",
+        "net": "SPI_MISO",
+        "x_mm": 27.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "3",
+        "net": "SPI_MOSI",
+        "x_mm": 26.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "4",
+        "net": "A2_CS",
+        "x_mm": 25.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "5",
+        "net": "3V3",
+        "x_mm": 24.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "6",
+        "net": "GND",
+        "x_mm": 23.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "x_mm": 29.8,
+        "y_mm": 1.425
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "x_mm": 22.2,
+        "y_mm": 1.425
+      }
+    ]
+  },
+  {
+    "ref": "J33",
+    "x_mm": 61.0,
+    "y_mm": 3.3,
+    "rotation_deg": 180.0,
+    "footprint": "Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
+    "value": "SM06B-SRSS-TB",
+    "pads": [
+      {
+        "number": "1",
+        "net": "SPI_SCK",
+        "x_mm": 63.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "2",
+        "net": "SPI_MISO",
+        "x_mm": 62.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "3",
+        "net": "SPI_MOSI",
+        "x_mm": 61.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "4",
+        "net": "A3_CS",
+        "x_mm": 60.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "5",
+        "net": "3V3",
+        "x_mm": 59.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "6",
+        "net": "GND",
+        "x_mm": 58.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "x_mm": 64.8,
+        "y_mm": 1.425
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "x_mm": 57.2,
+        "y_mm": 1.425
+      }
+    ]
+  },
+  {
+    "ref": "J34",
+    "x_mm": 51.0,
+    "y_mm": 136.7,
+    "rotation_deg": 0.0,
+    "footprint": "Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
+    "value": "SM06B-SRSS-TB",
+    "pads": [
+      {
+        "number": "1",
+        "net": "SPI_SCK",
+        "x_mm": 48.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "2",
+        "net": "SPI_MISO",
+        "x_mm": 49.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "3",
+        "net": "SPI_MOSI",
+        "x_mm": 50.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "4",
+        "net": "A4_CS",
+        "x_mm": 51.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "5",
+        "net": "3V3",
+        "x_mm": 52.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "6",
+        "net": "GND",
+        "x_mm": 53.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "x_mm": 47.2,
+        "y_mm": 138.575
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "x_mm": 54.8,
+        "y_mm": 138.575
+      }
+    ]
+  },
+  {
+    "ref": "J35",
+    "x_mm": 96.0,
+    "y_mm": 3.3,
+    "rotation_deg": 180.0,
+    "footprint": "Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
+    "value": "SM06B-SRSS-TB",
+    "pads": [
+      {
+        "number": "1",
+        "net": "SPI_SCK",
+        "x_mm": 98.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "2",
+        "net": "SPI_MISO",
+        "x_mm": 97.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "3",
+        "net": "SPI_MOSI",
+        "x_mm": 96.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "4",
+        "net": "A5_CS",
+        "x_mm": 95.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "5",
+        "net": "3V3",
+        "x_mm": 94.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "6",
+        "net": "GND",
+        "x_mm": 93.5,
+        "y_mm": 5.3
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "x_mm": 99.8,
+        "y_mm": 1.425
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "x_mm": 92.2,
+        "y_mm": 1.425
+      }
+    ]
+  },
+  {
+    "ref": "J36",
+    "x_mm": 86.0,
+    "y_mm": 136.7,
+    "rotation_deg": 0.0,
+    "footprint": "Edge_JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
+    "value": "SM06B-SRSS-TB",
+    "pads": [
+      {
+        "number": "1",
+        "net": "SPI_SCK",
+        "x_mm": 83.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "2",
+        "net": "SPI_MISO",
+        "x_mm": 84.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "3",
+        "net": "SPI_MOSI",
+        "x_mm": 85.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "4",
+        "net": "A6_CS",
+        "x_mm": 86.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "5",
+        "net": "3V3",
+        "x_mm": 87.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "6",
+        "net": "GND",
+        "x_mm": 88.5,
+        "y_mm": 134.7
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "x_mm": 82.2,
+        "y_mm": 138.575
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "x_mm": 89.8,
+        "y_mm": 138.575
+      }
+    ]
+  }
+]
