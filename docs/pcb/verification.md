@@ -11,3 +11,13 @@ requirements and limitations are in [edge-layout.md](edge-layout.md). DRC is not
 thermal, EMC, firmware or motion-safety test. The generic schematic symbols do not
 simulate power sequencing or logic behavior; `scripts/verify_kill.py` separately checks the
 buffer pin mapping and NC-loop topology against the TI truth table.
+
+## HC buffer substitution
+
+U1/U2 select TI SN74HC125N DIP-14, LCSC C2890. The current
+`kill-state-review.json` supersedes the previous all-three-states PASS.
+All six channels retain their nets and pull-downs; powered boot and kill-open
+DC estimates are below 0.6 V. Unpowered EN and supply ramps remain unverified
+because HC has no Ioff specification. See [state analysis and bench procedure](carrier.md).
+Existing full-board report hashes and fabrication files predate this metadata-only
+substitution; no new full-board DRC or fabrication regeneration was performed.

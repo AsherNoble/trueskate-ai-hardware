@@ -116,5 +116,6 @@
       "reason": "Same connector/package lead-free/tin variant; original listing out of stock, C160405 stocked at verification",
       "pcb_changed": false
     }
-  }
+  },
+  "buffer_substitution_notice": "U1/U2 now TI SN74HC125N C2890; prior report/hashes predate substitution. Current EN review: kill-state-review.json. Unpowered EN low and supply ramps unverified; prior three-state PASS is superseded."
 }

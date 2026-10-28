@@ -65,12 +65,12 @@ J5,J5,1,5,12V INPUT + / -,"TrueSkate:Edge_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_
 F1,F1,1,5,Keystone 3557-2 ATO holder,TrueSkate:Keystone_3557-2_ATO,,UNRESOLVED: exact stocked compatible part not verified; do not order,C352820
 J6,J6,1,5,NC KILL SWITCH,TrueSkate:Edge_PinHeader_1x02_P2.54mm_Vertical,,UNRESOLVED: exact stocked compatible part not verified; do not order,
 R1,R1,1,5,10k /OE pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,UNRESOLVED: exact stocked compatible part not verified; do not order,
-U1,U1,1,5,SN74LV125AN,TrueSkate:Edge_DIP-14_W7.62mm,,UNRESOLVED: exact stocked compatible part not verified; do not order,
+U1,U1,1,5,SN74HC125N,TrueSkate:Edge_DIP-14_W7.62mm,,UNRESOLVED: exact stocked compatible part not verified; do not order,C2890
 C1,C1,1,5,100nF buffer bypass,TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm,,UNRESOLVED: exact stocked compatible part not verified; do not order,
 R41,R41,1,5,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,UNRESOLVED: exact stocked compatible part not verified; do not order,
 R42,R42,1,5,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,UNRESOLVED: exact stocked compatible part not verified; do not order,
 R43,R43,1,5,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,UNRESOLVED: exact stocked compatible part not verified; do not order,
-U2,U2,1,5,SN74LV125AN,TrueSkate:Edge_DIP-14_W7.62mm,,UNRESOLVED: exact stocked compatible part not verified; do not order,
+U2,U2,1,5,SN74HC125N,TrueSkate:Edge_DIP-14_W7.62mm,,UNRESOLVED: exact stocked compatible part not verified; do not order,C2890
 C2,C2,1,5,100nF buffer bypass,TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm,,UNRESOLVED: exact stocked compatible part not verified; do not order,
 R44,R44,1,5,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,UNRESOLVED: exact stocked compatible part not verified; do not order,
 R45,R45,1,5,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,UNRESOLVED: exact stocked compatible part not verified; do not order,

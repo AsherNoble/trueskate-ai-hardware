@@ -47,12 +47,12 @@ J5,1,12V INPUT + / -,"TrueSkate:Edge_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_
 F1,1,Keystone 3557-2 ATO holder,TrueSkate:Keystone_3557-2_ATO,C352820,Hand,1.68,One complete holder includes both contacts for one standard ATO fuse; fuse purchased separately
 J6,1,NC KILL SWITCH,TrueSkate:Edge_PinHeader_1x02_P2.54mm_Vertical,,Hand,0.1,Open loop disables every Mini; closed loop permits firmware EN
 R1,1,10k /OE pull-up,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"; 10k, 5% or better"
-U1,1,SN74LV125AN,TrueSkate:Edge_DIP-14_W7.62mm,,Hand,1,"Shared mandatory kill buffer; pins1/4/10=/OE,13 disabled; TI SCES124O"
+U1,1,SN74HC125N,TrueSkate:Edge_DIP-14_W7.62mm,C2890,Hand,1,"Shared mandatory kill buffer; pins1/4/10=/OE,13 disabled; TI SCLS104F; TI DIP-14 C2890; powered-off EN not guaranteed"
 C1,1,100nF buffer bypass,TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm,,Hand,0.13,
 R41,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better"
 R42,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better"
 R43,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better"
-U2,1,SN74LV125AN,TrueSkate:Edge_DIP-14_W7.62mm,,Hand,1,"Shared mandatory kill buffer; pins1/4/10=/OE,13 disabled; TI SCES124O"
+U2,1,SN74HC125N,TrueSkate:Edge_DIP-14_W7.62mm,C2890,Hand,1,"Shared mandatory kill buffer; pins1/4/10=/OE,13 disabled; TI SCLS104F; TI DIP-14 C2890; powered-off EN not guaranteed"
 C2,1,100nF buffer bypass,TrueSkate:Edge_C_Disc_D5.0mm_W2.5mm_P5.00mm,,Hand,0.13,
 R44,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better"
 R45,1,10k EN command pull-down,TrueSkate:Edge_R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,Hand,0.05,"Shared buffer input bias; may omit with corresponding axis; 10k, 5% or better"

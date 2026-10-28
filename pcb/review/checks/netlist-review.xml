@@ -1571,7 +1571,7 @@
       </units>
     </comp>
     <comp ref="U1">
-      <value>SN74LV125AN</value>
+      <value>SN74HC125N</value>
       <footprint>TrueSkate:Edge_DIP-14_W7.62mm</footprint>
       <fields>
         <field name="Footprint">TrueSkate:Edge_DIP-14_W7.62mm</field>
@@ -1605,7 +1605,7 @@
       </units>
     </comp>
     <comp ref="U2">
-      <value>SN74LV125AN</value>
+      <value>SN74HC125N</value>
       <footprint>TrueSkate:Edge_DIP-14_W7.62mm</footprint>
       <fields>
         <field name="Footprint">TrueSkate:Edge_DIP-14_W7.62mm</field>
@@ -2630,7 +2630,7 @@
     <libpart lib="TrueSkate" part="U1">
       <fields>
         <field name="Reference">U1</field>
-        <field name="Value">SN74LV125AN</field>
+        <field name="Value">SN74HC125N</field>
         <field name="Footprint">TrueSkate:Edge_DIP-14_W7.62mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -2655,7 +2655,7 @@
     <libpart lib="TrueSkate" part="U2">
       <fields>
         <field name="Reference">U2</field>
-        <field name="Value">SN74LV125AN</field>
+        <field name="Value">SN74HC125N</field>
         <field name="Footprint">TrueSkate:Edge_DIP-14_W7.62mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>

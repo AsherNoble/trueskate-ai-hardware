@@ -14,27 +14,51 @@ the README table and BOM diff.
 
 ## Hardware kill and partial population
 
-U1/U2 are **SN74LV125AN, TI LV-A low-voltage CMOS**, PDIP-14. Their supply is
+U1/U2 are **SN74HC125N, TI HC CMOS**, PDIP-14. Their supply is
 **Teensy USB-powered 3V3**. No Mini regulator output connects to this rail.
 
 J6's normally-closed switch joins `EN_DISABLE` to GND. Opening it lets R1 pull
 all six /OE inputs high. R21–R26 are the output pull-downs; R41–R46 bias the buffer
 inputs. All are 10k, 5% or better. Every column has the same circuit:
 
-| State | Buffer behavior | All six Mini EN lines |
+| State (12 V motor rail present) | Buffer behavior | All six Mini EN lines |
 |---|---|---|
-| Teensy unpowered, 3V3=0 V | Ioff isolates outputs | R21–R26 hold low; conservative carrier EN ≤0.210 V |
-| Teensy booting, valid 3.3 V, GPIO floating | R41–R46 pull inputs low; closed kill passes low, open kill gives high impedance | Low in either switch state |
-| Kill switch open, even with GPIO high | /OE high; outputs high impedance | R21–R26 hold low, ≤0.210 V |
+| (a) Teensy and buffer unpowered, 3V3=0 V | HC has no specified Ioff or powered-off high-impedance guarantee | R21–R26 pull toward GND, but low is **not guaranteed by the datasheet** |
+| (b) Teensy booting, valid 3.3 V, GPIO floating | R41–R46 pull inputs low; closed kill passes low, open kill gives high impedance | Expected low in either switch state; DC estimates below |
+| (c) Kill switch open, valid 3.3 V, even with GPIO high | R1 pulls /OE high; outputs high impedance | R21–R26 hold low; estimated carrier EN ≤0.210 V |
 
-The Mini's own 10k R4 is in series with its three DRV8313 EN inputs. Including
-5 µA buffer leakage, 3×5 µA driver-input leakage and resistor tolerances gives a
-conservative downstream EN bound of **0.375 V**, below the conservative **0.6 V**
-low-input limit. An actively driven low during boot has a lower bound ceiling of
-0.265 V. These are datasheet DC calculations, not measured waveforms. They assume
-intact grounds, populated pull-downs, no back-powering, carrier resistors ≤5% and
-Mini R4 ≤10% tolerance. The supply transition between 0 and 2 V is outside the
-buffer's guaranteed operating range. For v1 this is accepted: PWM is not driven during the ramp, firmware boots disabled and initFOC runs only on command. No separate supply-ramp test remains outstanding.
+This is a TI **SN74HC125N, LCSC C2890** substitution, with the same DIP-14
+footprint and pinout; no layout or net changes. Unlike the previous LV-A part,
+HC does not specify powered-off isolation. Do not reuse the old 5 µA Ioff bound
+at VCC=0. With 12 V present the Mini remains powered; its regulator output is
+isolated from carrier 3V3, but its EN input leakage still reaches each EN net.
+The output clamp-current absolute maximum is not a powered-off leakage guarantee.
+Case (a), including an open kill switch with no buffer power, remains unverified.
+
+For powered states, SCLS104F §6.5 gives IOZ ≤5 µA and input leakage ≤1 µA
+at VCC=6 V, and VOL ≤0.1 V at 20 µA at the tabulated 2/4.5/6 V rails.
+Applying those limits at 3.3 V is an engineering estimate (3.3 V has no separate
+DC table row). R1 sees six /OE inputs: 6×1 µA×10.5k = 0.063 V maximum
+pull-up drop. Each floating command input sees ≤0.0105 V from buffer leakage
+alone; assume the Teensy adds no pull-up or material source leakage.
+
+Each Mini has three DRV8313 EN inputs behind a 10k series R4. Using
+3×5 µA driver leakage, 10k carrier pull-downs ±5%, and R4 ±10%:
+carrier EN ≤(5+15) µA×10.5k = **0.210 V** in high impedance, and
+downstream driver EN ≤0.210+15 µA×11k = **0.375 V**, below **0.6 V**.
+For driven low, the buffer sinks at most 15 µA (the output pull-down reduces
+the sink load), within the 20 µA VOL condition: downstream estimate **0.265 V**.
+These are DC estimates, not bench measurements or a guarantee through boot ramps.
+They assume intact grounds, populated bias resistors and no external back-powering.
+
+**Overall re-verification is incomplete:** case (a) has no datasheet bound;
+0<VCC<2 V and brownout behavior also remain unspecified. Bench qualification
+must monitor all six carrier EN and downstream driver EN nodes with 12 V present:
+unpowered Teensy/buffer with kill both closed and open; USB boot/power-down with
+floating command pins; and kill opening with commands high. Check for excursions
+above 0.6 V, including transient pulses. A sample measurement does not establish
+a production powered-off guarantee. Firmware's no-PWM/disabled-boot policy does
+not supply the missing HC isolation specification.
 
 Kill inhibits EN, not 12 V. Reclosing permits the current firmware command;
 there is no restart latch. See `review/checks/kill-state-review.json` for checks and bounds.
@@ -111,7 +135,7 @@ Added module models are simplified; see [model assumptions](../../pcb/renders/RE
 Run `scripts/rebuild.py` with KiCad Python: generate placement/manual copper, import the frozen SES and recorded signal completions, trim redundant tails, fill and replay reviewed ground stitches. The old conversion/ground-finishing tools describe the earlier layout and are not part of this rebuild. Run `scripts/export_review.py` with Python plus ReportLab, pypdf, Pillow and Shapely for strict checks and review material. Run `scripts/export_manufacturing.py` for the validated current ZIP; no upload/order occurs. Historical files are under `pcb/archive/`.
 
 Sources: [JST SH datasheet](https://www.jst-mfg.com/product/pdf/eng/eSH.pdf),
-[TI SN74LV125A](https://www.ti.com/lit/ds/symlink/sn74lv125a.pdf),
+[TI SN74HC125](https://www.ti.com/lit/ds/symlink/sn74hc125.pdf),
 [PJRC timers](https://www.pjrc.com/teensy/td_pulse.html),
 [PJRC dimensions](https://www.pjrc.com/teensy/dimensions.html),
 [Keystone 3557-2](https://www.keyelco.com/product.cfm/product_id/296),

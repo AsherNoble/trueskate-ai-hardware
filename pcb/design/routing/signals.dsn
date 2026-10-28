@@ -89,8 +89,8 @@
       (place C26 99000 -103000 front 90 (PN "100nF 50V ceramic"))
     )
     (component "TrueSkate:Edge_DIP-14_W7.62mm"
-      (place U1 125000 -67000 front 0 (PN SN74LV125AN))
-      (place U2 125000 -103000 front 0 (PN SN74LV125AN))
+      (place U1 125000 -67000 front 0 (PN SN74HC125N))
+      (place U2 125000 -103000 front 0 (PN SN74HC125N))
     )
     (component TrueSkate:Edge_CP_Radial_D12.5mm_P5.00mm
       (place C15 90500 -41500 front 0 (PN "1000uF 35V EEUFR1V102B"))

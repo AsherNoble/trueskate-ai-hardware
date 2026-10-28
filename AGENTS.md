@@ -49,3 +49,13 @@ a phone touch or a finger executed a gesture.
   `voltage_limit` is the only current cap.
 - SimpleFOC is pinned to the version the bench verified. Do not float it.
 - Never move a motor phase lead with the rail live.
+
+## Commit and push rules
+
+- Work in a session worktree/branch; main checkout is read-only.
+- Use `type: message`; make small WIP commits after working steps.
+- Never commit on `main` or bypass hooks with `--no-verify`.
+- Squash locally to one commit, force-push the branch, then use a PR with **Squash and merge**. No bypass.
+- Run archive and public-safety checks before merging.
+- After merging, delete the local branch, remote branch and worktree.
+- Preserve others’ dirty work; never commit secrets or personal identifiers.

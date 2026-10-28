@@ -1,6 +1,8 @@
 {
-  "part": "SN74LV125AN",
-  "logic_family": "LV-A low-voltage CMOS",
+  "part": "SN74HC125N",
+  "manufacturer": "Texas Instruments",
+  "lcsc": "C2890",
+  "logic_family": "HC CMOS",
   "supply": "Teensy USB-powered 3V3; no connection to Mini regulator outputs",
   "axes": [
     1,
@@ -12,33 +14,43 @@
   ],
   "states": [
     {
-      "state": "Teensy unpowered",
+      "state": "Teensy and buffer unpowered, 12V present",
       "rail_v": 0,
-      "buffer": "Ioff / high impedance",
-      "carrier_en_max_v": 0.21000000000000002,
-      "drv8313_en_max_v": 0.37500000000000006
+      "status": "UNVERIFIED",
+      "buffer": "No specified Ioff; do not apply powered IOZ",
+      "carrier_en_max_v": null,
+      "drv8313_en_max_v": null
     },
     {
-      "state": "Teensy boot, GPIO high impedance",
+      "state": "Teensy boot, GPIO high impedance, valid rail",
       "rail_v": 3.3,
+      "status": "DC_ESTIMATE",
       "buffer": "input pulled low; enabled output low, or disabled output pulled low",
       "carrier_en_max_v": 0.21000000000000002,
       "drv8313_en_max_v": 0.37500000000000006
     },
     {
-      "state": "Kill loop open",
+      "state": "Kill loop open, valid rail",
       "rail_v": 3.3,
+      "status": "DC_ESTIMATE",
       "buffer": "/OE high, output high impedance",
       "carrier_en_max_v": 0.21000000000000002,
       "drv8313_en_max_v": 0.37500000000000006
     }
   ],
+  "overall_status": "INCOMPLETE: powered-off EN low is not guaranteed",
   "conservative_drv8313_low_limit_v": 0.6,
   "assumptions": [
     "Carrier pull-downs 10k, <=5% tolerance; Mini R4 10k, <=10% tolerance",
-    "Boot state uses valid 3.3V rail and high-impedance GPIO without a pull-up",
+    "Powered DC estimates apply 6V leakage and tabulated 2/4.5/6V light-load VOL limits at 3.3V; no separate 3.3V table row",
+    "Boot uses valid 3.3V rail, high-impedance GPIO without pull-up or material source leakage",
     "No external back-powering; all GND connections intact"
   ],
-  "scope": "Datasheet DC analysis, not an oscilloscope measurement; the 0<VCC<2V transition is outside the buffer recommended operating range",
-  "prototype_supply_ramp_status": "accepted for v1: no PWM during supply ramp; boot disabled and initFOC only on command"
+  "sources": [
+    "https://www.ti.com/lit/ds/symlink/sn74hc125.pdf (SCLS104F sections 5, 6.1, 6.3, 6.5)",
+    "https://www.ti.com/lit/ds/symlink/drv8313.pdf (SLVSBA5D)"
+  ],
+  "scope": "Topology assertions and DC estimates only; no bench measurements",
+  "prototype_supply_ramp_status": "Unverified: 0<VCC<2V, power-down and brownout; no-PWM policy does not prove EN low",
+  "bench_required": "Monitor all six carrier and downstream EN nodes with 12V present: unpowered with kill closed/open, floating-pin USB boot/power-down, kill opening with commands high; check against 0.6V including pulses"
 }

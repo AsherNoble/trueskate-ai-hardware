@@ -97,7 +97,7 @@
   "mini_source_commit": "848e8ece46d045ac24283e2d6ee9ea4ba8ef95d5",
   "mini_power_connection": "Mini v1.0 VIN/GND at 4.953 mm pitch; two single machine-pin receptacles per Mini; direct 3 A branches",
   "encoder_confirmation": "UNVERIFIED SH harness mapping; multimeter verification required",
-  "kill_reset_decision": "NC loop enables SN74LV125AN buffers; open loop forces EN low through pull-downs",
+  "kill_reset_decision": "NC loop enables SN74HC125N buffers; open loop forces EN low through pull-downs",
   "mini_physical_fit": "RESOLVED by user: 1:1 template verified; source-derived socket footprint retained",
   "base_fit": "160 x 120 mm outline retained; relocated mounting holes require a new fit check",
   "control_ground_bridges": "Removed JP1-JP6 and NT1; Mini control and power grounds connect to continuous GND planes"

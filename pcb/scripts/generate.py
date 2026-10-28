@@ -85,7 +85,7 @@ page("power","08 / Power and hardware kill",[
     "NC switch across J6: closed permits EN commands, open tri-states every EN output.",
     "R1 pulls /OE high on open loop. Local R21-R26 pull EN low independently of firmware.",
     "Reclosing switch restores commanded state; no restart latch. Kill does NOT isolate 12V.",
-    "U1/U2 SN74LV125AN PDIP14, 3.3V, Ioff. Unused inputs tied; unused outputs NC."])
+    "U1/U2 SN74HC125N PDIP14, 3.3V, no Ioff. Unused inputs tied; unused outputs NC."])
 add("J5","12V INPUT + / -","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
     [1,2],["12V_IN","GND"],"power",(60,55),(12,115,0),2,"Phoenix1715721 17.5A nominal; verify wire size and applicable rating")
 add("F1","Keystone 3557-2 ATO holder","TrueSkate:Keystone_3557-2_ATO",
@@ -95,10 +95,10 @@ add("J6","NC KILL SWITCH","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Ver
 add("R1","10k /OE pull-up",RFP,[1,2],["EN_DISABLE","3V3"],"power",(190,85),(60,110,0),.05)
 for chip in (1,2):
     a=1 if chip==1 else 4;xx=76 if chip==1 else 103
-    add(f"U{chip}","SN74LV125AN","Package_DIP:DIP-14_W7.62mm",list(range(1,15)),
+    add(f"U{chip}","SN74HC125N","Package_DIP:DIP-14_W7.62mm",list(range(1,15)),
         ["EN_DISABLE",f"A{a}_EN_CMD",f"A{a}_EN","EN_DISABLE",f"A{a+1}_EN_CMD",f"A{a+1}_EN","GND",
          f"A{a+2}_EN",f"A{a+2}_EN_CMD","EN_DISABLE",None,"GND","3V3","3V3"],
-        "power",(60 if chip==1 else 190,135),(xx,89,0),1,"Shared mandatory kill buffer; pins1/4/10=/OE,13 disabled; TI SCES124O")
+        "power",(60 if chip==1 else 190,135),(xx,89,0),1,"Shared mandatory kill buffer; pins1/4/10=/OE,13 disabled; TI SCLS104F; TI DIP-14 C2890; powered-off EN not guaranteed",lcsc="C2890")
     parts[-1]['pin_names']=['/1OE','1A','1Y','/2OE','2A','2Y','GND','3Y','3A','/3OE','4Y','4A','/4OE','VCC']
     add(f"C{chip}","100nF buffer bypass",CFP,[1,2],["3V3","GND"],"power",(60 if chip==1 else 190,175),(xx+7.62,85,180),.13)
     for n in range(3):

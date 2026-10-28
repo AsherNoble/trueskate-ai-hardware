@@ -43490,7 +43490,7 @@
 				)
 			)
 		)
-		(property "Value" "SN74LV125AN"
+		(property "Value" "SN74HC125N"
 			(at 3.81 17.57 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -54863,7 +54863,7 @@
 				)
 			)
 		)
-		(property "Value" "SN74LV125AN"
+		(property "Value" "SN74HC125N"
 			(at 3.81 17.57 0)
 			(layer "F.Fab")
 			(hide yes)

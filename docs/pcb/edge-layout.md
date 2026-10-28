@@ -33,17 +33,18 @@ The body envelope is 19.81 × 6.73 mm. The BOM contains no fuse amperage. README
 “fuse rated to the connected supply.” Power copper remains sized for the 12 A
 bus target; the requested 12 A thermal-qualification outstanding item is removed.
 
-U1/U2 are **TI LV-A CMOS SN74LV125AN**, supplied from **Teensy 3V3**. The
-[carrier state table](carrier.md) and `review/checks/kill-state-review.json` show all
-six EN outputs low for unpowered Teensy, floating GPIO at valid 3.3 V, and open
-kill switch. Conservative DC driver EN is ≤0.375 V, below 0.6 V; this includes
-all three DRV8313 EN input leakages and Mini R4. Source: TI SCES124O/SLVSBA5D.
+U1/U2 are **TI HC CMOS SN74HC125N, DIP-14, LCSC C2890**, supplied from
+**Teensy 3V3**. Footprint, pinout and layout are unchanged. The
+[carrier state table](carrier.md) and `review/checks/kill-state-review.json`
+record powered boot/kill-open DC estimates (driver EN ≤0.375 V), but the
+unpowered-buffer state is **unverified**: HC has no specified Ioff. Source:
+TI SCLS104F/SLVSBA5D. No bench measurements were made for this substitution.
 
 ## Remaining limitations
 
 - SH harness contact order still requires the requested multimeter check against
   the actual AS5048A board. The single README table remains explicitly unverified.
-- The LV-A datasheet guarantees powered operation from 2 V and Ioff at 0 V.
+- The HC datasheet specifies operation from 2 V, with no Ioff at 0 V.
   **A glitch-free EN guarantee throughout the intervening supply ramp is not proven.**
   The boot result above assumes a valid 3.3 V rail and floating GPIO, not a brownout.
 - Physical cable/socket heights and relocated mounting-hole fit still need checking.
@@ -60,5 +61,5 @@ all three DRV8313 EN input leakages and Mini R4. Source: TI SCES124O/SLVSBA5D.
 Sources: [Keystone product](https://www.keyelco.com/product.cfm/product_id/296),
 [Keystone drawing](https://www.keyelco.com/product-pdf.cfm?p=296),
 [archived manufacturer catalog](../../pcb/sources/keystone-3557-2/catalog.pdf),
-[TI buffer](https://www.ti.com/lit/ds/symlink/sn74lv125a.pdf),
+[TI buffer](https://www.ti.com/lit/ds/symlink/sn74hc125.pdf),
 [TI motor driver](https://www.ti.com/lit/ds/symlink/drv8313.pdf).

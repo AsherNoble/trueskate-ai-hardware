@@ -1601,7 +1601,7 @@
   },
   {
     "ref": "U1",
-    "value": "SN74LV125AN",
+    "value": "SN74HC125N",
     "fp": "TrueSkate:Edge_DIP-14_W7.62mm",
     "pins": [
       "1",
@@ -1646,8 +1646,8 @@
       0
     ],
     "price": 1,
-    "note": "Shared mandatory kill buffer; pins1/4/10=/OE,13 disabled; TI SCES124O",
-    "lcsc": "",
+    "note": "Shared mandatory kill buffer; pins1/4/10=/OE,13 disabled; TI SCLS104F; TI DIP-14 C2890; powered-off EN not guaranteed",
+    "lcsc": "C2890",
     "assembly": "Hand",
     "pin_names": [
       "/1OE",
@@ -1776,7 +1776,7 @@
   },
   {
     "ref": "U2",
-    "value": "SN74LV125AN",
+    "value": "SN74HC125N",
     "fp": "TrueSkate:Edge_DIP-14_W7.62mm",
     "pins": [
       "1",
@@ -1821,8 +1821,8 @@
       0
     ],
     "price": 1,
-    "note": "Shared mandatory kill buffer; pins1/4/10=/OE,13 disabled; TI SCES124O",
-    "lcsc": "",
+    "note": "Shared mandatory kill buffer; pins1/4/10=/OE,13 disabled; TI SCLS104F; TI DIP-14 C2890; powered-off EN not guaranteed",
+    "lcsc": "C2890",
     "assembly": "Hand",
     "pin_names": [
       "/1OE",
